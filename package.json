@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "swaggering-mongoose": "^0.4.1"
+  }
+}

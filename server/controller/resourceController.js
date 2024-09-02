@@ -1,0 +1,115 @@
+// resourceController.js
+
+const Resource = require('../models/ResourceModels/Resource'); // Importiere das Mongoose-Modell
+
+exports.getAllResources = async (req, res) => {
+    try {
+        const filters = {};
+
+        if (req.query.name) {
+            filters.name = req.query.name;
+        }
+        if (req.query.category) {
+            filters.category = req.query.category;
+        }
+        if (req.query.description) {
+            filters.description = req.query.description;
+        }
+        if (req.query.startOperatingDate) {
+            filters.startOperatingDate = { $gte: new Date(req.query.startOperatingDate) };
+        }
+        if (req.query.endOperatingDate) {
+            filters.endOperatingDate = { $lte: new Date(req.query.endOperatingDate) };
+        }
+
+        // Auswahl der Felder, die zurückgegeben werden sollen
+        let fields = null;
+        if (req.query.fields) {
+            fields = req.query.fields.split(',').join(' ');
+        }
+
+        const resources = await Resource.find(filters).select(fields);
+        res.json(resources);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+};
+
+// Controller-Funktion zum Erstellen einer neuen Ressource
+exports.createResource = async (req, res) => {
+    const resource = new Resource({
+        //href-Attribute wird von alleine gesetzt
+        category: req.body.category,
+        name: req.body.name,
+        description: req.body.description,
+        endOperatingDate: req.body.endOperatingDate,
+        startOperatingDate: req.body.startOperatingDate,
+    });
+
+    try {
+        const newResource = await resource.save();
+        res.status(201).json(newResource);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+};
+
+// Controller-Funktion zum Abrufen einer spezifischen Ressource
+exports.getResourceById = async (req, res) => {
+    try {
+        const filters = { _id: req.params.id };
+
+        if (req.query.name) {
+            filters.name = req.query.name;
+        }
+        if (req.query.category) {
+            filters.category = req.query.category;
+        }
+        if (req.query.description) {
+            filters.description = req.query.description;
+        }
+
+        // Auswahl der Felder, die zurückgegeben werden sollen
+        let fields = null;
+        if (req.query.fields) {
+            fields = req.query.fields.split(',').join(' ');
+        }
+
+        const resource = await Resource.findOne(filters).select(fields);
+        if (!resource) {
+            return res.status(404).json({ message: 'Resource not found with the specified criteria' });
+        }
+        res.json(resource);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+};
+
+// Controller-Funktion zum Aktualisieren einer Ressource
+exports.updateResourceById = async (req, res) => {
+    try {
+        const updatedResource = await Resource.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true, runValidators: true }
+        );
+
+        if (!updatedResource) {
+            return res.status(404).json({ message: 'Resource not found' });
+        }
+
+        res.json(updatedResource);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+};
+
+// Controller-Funktion zum Löschen einer Ressource
+exports.deleteResourceById = async (req, res) => {
+    try {
+        await Resource.findByIdAndDelete(req.params.id);
+        res.json({ message: 'Resource deleted' });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+};
