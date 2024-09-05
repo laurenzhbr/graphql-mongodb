@@ -11,7 +11,7 @@ const {
     description: 'Represents an organization, including details such as name, type, and whether it is a legal entity or head office.',
     fields: {
       id: {
-        type: new GraphQLNonNull(GraphQLID),
+        type: GraphQLID,
         description: 'Unique identifier for the organization.',
       },
       isHeadOffice: {

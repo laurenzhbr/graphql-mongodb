@@ -31,6 +31,10 @@ const DigitalIdentitySchema = new mongoose.Schema({
   resourceIdentified: {
     type: ResourceRefSchema,
     description: "Resource identified by this digital identity"
+  },
+  resource: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Resource",
   }
 });
 

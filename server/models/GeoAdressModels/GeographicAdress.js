@@ -28,21 +28,6 @@ const GeographicAddressSchema = new Schema({
   },
   streetNr: {
     type: String,
-  },
-  streetNrLast: {
-    type: String,
-  },
-  streetNrLastSuffix: {
-    type: String,
-  },
-  streetNrSuffix: {
-    type: String,
-  },
-  streetSuffix: {
-    type: String,
-  },
-  streetType: {
-    type: String,
   }
 });
 

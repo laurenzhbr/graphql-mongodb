@@ -1,20 +1,29 @@
-const Organization = require('../PartyModels/Organization');
+const Organization = require('../models/PartyModels/Organization');
 
-function createTestOrganization1() {
-    const newOrganization = new Organization({
+function createTestOrganization() {
+    const newOrganization1 = new Organization({
         isHeadOffice: true,
         isLegalEntity: false,
-        name: "Deutsche Telekom Technik GmbH",
-        organizationType: "equipment supplier"
+        name: "Telekom IT",
+        organizationType: "security supplier"
       });
+    
+    const newOrganization2 = new Organization({
+    isHeadOffice: true,
+    isLegalEntity: false,
+    name: "T-Systems",
+    organizationType: "software supplier"
+    });
       
-      newOrganization.save()
-      .then(() => console.log('new Party (Organization) saved!'))
-      .catch(err => console.error(err));
+    newOrganization1.save()
+    newOrganization2.save()
+    .then(() => console.log('new Party (Organization) saved!'))
+    .catch(err => console.error(err));
 }
 
 
 
+
 module.exports = {
-    createTestOrganization1
+    createTestOrganization
 };

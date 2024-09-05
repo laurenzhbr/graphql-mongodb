@@ -2,11 +2,9 @@ const DigitalIdentity = require('../models/DigtialIdentityModels/DigitalIdentity
 
 function createDigitalIDTest1() {
     const newDigitalIdentity = new DigitalIdentity({
-        nickname: "LaurenzHbr1",
+        nickname: "LaurenzHbr2",
         status: "active",
-        resourceIdentified: {
-          id: "66cf06943a5799a97164e997"
-        }
+        resource: "66cadf46308d3cacdaacd4b0"
       });
       
       newDigitalIdentity.save()

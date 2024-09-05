@@ -1,4 +1,4 @@
-const Resource = require('../ResourceModels/Resource');
+const Resource = require('../models/ResourceModels/Resource');
 
 function createTestResource1() {
     const newResource = new Resource({
@@ -87,7 +87,7 @@ function createTestResource3() {
 
 function createTestResource4() {
   const newResource = new Resource({
-      description: "This is a MSISDN resource with the category Premium and with a reserved resourceStatus for organisations.",
+      description: "testing",
       category: "Premium",
       value: "0170112231",
       endOperatingDate: "2022-07-04",
@@ -96,28 +96,11 @@ function createTestResource4() {
       operationalState: "enable",
       usageState: "active",
       resourceStatus: "reserved",
-      relatedParty: [{
-        id: "66d0795bd88f332326c210c6",
-        role: "equipment supplier",
-      }],
-      note: [{
-        text: "something about this resource"
-      }],
-      place: {
-        id: "66d07f9dfb4f37a194fd70a2",
-      },
-      /* resourceRelationship: [{
-        relationshipType: "contains",
-        resource: {
-          id: "44",
-          href: "http://server:port/resourceInventoryManagement/resource/44"
-        }
-      }], */
-      resourceSpecification: {
-        id: "66d089cc6a1969540afb91dd",
-      },
       startOperatingDate: "2020-03-04",
-      version: "business v2",
+      version: "business v3",
+      placeGql: "66d5b01aeb8705a1b5c64538",
+      relatedPartyGql: ["66d9a132db762da2bdda6261", "66d9a132db762da2bdda6260"],
+      resourceSpecificationGql: "66d9a5cfeda5b8efce737013"
     });
     
     newResource.save().

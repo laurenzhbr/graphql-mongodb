@@ -10,7 +10,7 @@ const {
     description: 'Represents a specification of a resource, including details such as name, category, version, and lifecycle status.',
     fields: {
       id: {
-        type: new GraphQLNonNull(GraphQLID),
+        type: GraphQLID,
         description: 'Unique identifier for the resource specification.',
       },
       category: {

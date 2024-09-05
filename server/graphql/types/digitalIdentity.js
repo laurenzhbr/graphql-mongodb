@@ -8,7 +8,8 @@ const {
     GraphQLScalarType,
   } = require('graphql');
   const { GraphQLDateTime } = require('../customScalars/customScalars');
-  const Resource = require('./resource'); // Typ für das referenzierte Schema
+  const ResourceType = require('./resource'); // resource type
+  const Resource = require('../../models/ResourceModels/Resource')
   
   // Definiere den Enum-Typ für den Status
   const DigitalIdentityStatusEnum = new GraphQLEnumType({
@@ -52,8 +53,11 @@ const {
         description: 'Current lifecycle status of this digital identity',
       },
       resource: {
-        type: Resource, // Nutze den Typ, der das referenzierte ResourceRefSchema beschreibt
+        type: ResourceType,
         description: 'Resource identified by this digital identity',
+        resolve(parent, args){
+            return Resource.findById(parent.resource); //fetches connected resource
+        }
       },
     },
   });

@@ -2,14 +2,14 @@ const GeoAdress = require('../models/GeoAdressModels/GeographicAdress');
 
 function createTestGeoAdress1() {
     const newGeoAdress = new GeoAdress({
-        city: 'Berlin',
+        city: 'Leipzig',
         country: 'Germany',
-        locality: 'Mitte',
-        name: 'Sample Name',
-        postcode: '10115',
-        stateOrProvince: 'Berlin',
+        locality: 'Schönefeld',
+        name: 'Beste leben',
+        postcode: '04347',
+        stateOrProvince: 'Leipzig',
         streetName: 'Unter den Linden',
-        streetNr: '10',
+        streetNr: '4',
         streetNrLast: '20',
         streetNrLastSuffix: 'A',
         streetNrSuffix: 'B',

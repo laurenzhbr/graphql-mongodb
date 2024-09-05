@@ -1,24 +1,56 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const ValidFor = require('../genericModels/ValidFor').schema;
+const Attachment = require('../genericModels/Attachment').schema;
+const RelatedParty = require('../genericModels/RelatedParty').schema;
 
-const ResourceSpecificationSchema = new mongoose.Schema({
-    href: {
-        type: String,
-    },
-    category: {
-        type: String
-    },
-    description: {
-        type: String
-    },
-    name: {
-        type: String
-    },
-    lifecycleStatus: {
-        type: String
-    },
-    version: {
-        type: String
-    },
+
+// Subschema für CharacteristicValueSpecification
+const CharacteristicValueSpecificationSchema = new Schema({
+  value: mongoose.Schema.Types.Mixed,
+  "@type": String,
+});
+
+// Subschema für ResourceSpecCharacteristic
+const ResourceSpecCharacteristicSchema = new Schema({
+  name: String,
+  description: String,
+  valueType: String,
+  configurable: Boolean,
+  minCardinality: Number,
+  maxCardinality: Number,
+  isUnique: Boolean,
+  "@type": String,
+  characteristicValueSpecification: [CharacteristicValueSpecificationSchema],
+});
+
+// Subschema für ResourceSpecRelationship
+const ResourceSpecRelationshipSchema = new Schema({
+  id: String,
+  href: String,
+  name: String,
+  relationshipType: String,
+  "@type": String,
+});
+
+
+// Hauptschema für ResourceSpecification
+const ResourceSpecificationSchema = new Schema({
+  href: String,
+  name: String,
+  description: String,
+  "@type": String,
+  "@schemaLocation": String,
+  version: String,
+  validFor: ValidFor,
+  lastUpdate: Date,
+  lifecycleStatus: String,
+  isBundle: Boolean,
+  category: String,
+  attachment: [Attachment],
+  relatedParty: [RelatedParty],
+  resourceSpecCharacteristic: [ResourceSpecCharacteristicSchema],
+  resourceSpecRelationship: [ResourceSpecRelationshipSchema],
 });
 
 //Pre-save Hook to generate href-attribute
@@ -27,6 +59,6 @@ ResourceSpecificationSchema.pre('save', function(next){
       this.href = `https://{host}/resourceCatalog/resourceSpecification/${this._id}`;
     }
     next();
-  })
+  });
 
 module.exports = mongoose.model('ResourceSpecification', ResourceSpecificationSchema);

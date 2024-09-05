@@ -11,11 +11,15 @@ const {
   ResourceOperationalStateType,
   ResourceStatusType,
   ResourceUsageStateType,
-} = require('./enums'); // Importiere die Enum-Typen
-const RelatedPartyType = require('./organization'); // Importiere den RelatedParty-Typ
-const NoteType = require('./note'); // Importiere den Note-Typ
-const RelatedPlaceRefOrValueType = require('./geographicAdress'); // Importiere den RelatedPlaceRefOrValue-Typ
-const ResourceSpecificationRefType = require('./resourceSpecification'); // Importiere den ResourceSpecificationRef-Typ
+} = require('./enums');
+const OrganizationType = require('./organization');
+const NoteType = require('./note');
+const PlaceType = require('./geographicAdress');
+const ResourceSpecificationType = require('./resourceSpecification');
+
+const GeographicAdress = require('../../models/GeoAdressModels/GeographicAdress')
+const Organization = require('../../models/PartyModels/Organization')
+const ResourceSpecification = require('../../models/ResourceCatalogModels/ResourceSpecification');
 
 const ResourceType = new GraphQLObjectType({
   name: 'Resource',
@@ -53,21 +57,31 @@ const ResourceType = new GraphQLObjectType({
       type: ResourceOperationalStateType,
       description: 'The operational state of the resource, such as enabled or disabled.',
     },
-    relatedParty: {
-      type: new GraphQLList(RelatedPartyType),
+    relatedParties: {
+      type: new GraphQLList(OrganizationType),
       description: 'Related parties linked to this resource.',
+      resolve(parent, args) {
+        return Organization.find({_id: {$in: parent.relatedPartyGql}});
+      }
     },
     note: {
       type: new GraphQLList(NoteType),
       description: 'Additional notes associated with the resource.',
     },
     place: {
-      type: RelatedPlaceRefOrValueType,
+      type: PlaceType,
       description: 'The place related to this resource.',
+      resolve(parent, args) {
+        let id = parent.placeGql
+        return GeographicAdress.findById(id);
+      }
     },
     resourceSpecification: {
-      type: ResourceSpecificationRefType,
+      type: ResourceSpecificationType,
       description: 'The specification that defines this resource.',
+      resolve(parent, args) {
+        return ResourceSpecification.findById(parent.resourceSpecificationGql);
+      }
     },
     resourceStatus: {
       type: ResourceStatusType,
