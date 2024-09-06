@@ -89,9 +89,9 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "Fixed Wireless Modem",
                                                                       "LTE Modem",
                                                                       "VDSL Modem"
-                                                                    ]) },
-            { name: "max_download_speed", value: "1 Gbps" },
-            { name: "max_upload_speed", value: "100 Mbps" },
+                                                                    ]), "valueType": "String" },
+            { name: "max_download_speed", value: `${faker.number.int({ min: 50, max: 300 }).toString()}Gbps`, "valueType": "String"},
+            { name: "max_upload_speed", value: `${faker.number.int({ min: 50, max: 300 }).toString()}Mbps`, "valueType": "String" },
             { name: "connection_type", value: faker.helpers.arrayElement([
                                                                       "DOCSIS 3.1",
                                                                       "DOCSIS 3.0",
@@ -100,7 +100,7 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "FTTH (Fiber to the Home)",
                                                                       "4G LTE",
                                                                       "5G NR"
-                                                                    ]) },
+                                                                    ]), "valueType": "String" },
             { name: "ethernet_ports", value: 4 },
             { name: "usb_ports", value: 1 },
             { name: "coaxial_input", value: true },
@@ -112,9 +112,8 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "Wi-Fi 3 (802.11g)",
                                                                       "Wi-Fi 2 (802.11b)",
                                                                       "Wi-Fi 7 (802.11be)"
-                                                                    ]) },
-            { name: "firmware_version", value: "v3.2.5" },
-            { name: "power_consumption", value: "12W" },
+                                                                    ]), "valueType": "String" },
+            { name: "power_consumption", value: `${faker.number.int({ min: 8, max: 25 }).toString()}W`, "valueType": "String" },
             { name: "security_features", value: faker.helpers.arrayElement([
                                                                       "WPA3, Firewall, MAC Address Filtering",
                                                                       "WPA2, Firewall, VPN Passthrough",
@@ -123,8 +122,8 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "WPA3, DNS Filtering, Parental Controls",
                                                                       "WPA3, IPsec VPN, Stateful Firewall",
                                                                       "WPA2-Enterprise, WPA3-Personal, MAC Whitelisting"
-                                                                    ]) },
-            { name: "last_maintenance", value: faker.date.past() },
+                                                                    ]), "valueType": "String" },
+            { name: "last_maintenance", value: faker.date.between({ from: '2022-01-01', to: Date.now() }), "valueType": "Date-Time" },
             { name: "processor", value: faker.helpers.arrayElement([
                                                                       "Broadcom BCM3390, 1.5 GHz",
                                                                       "Intel Puma 7, 1.2 GHz",
@@ -133,7 +132,7 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "MediaTek MT7621, 880 MHz",
                                                                       "Intel Atom C3558, 2.2 GHz",
                                                                       "Realtek RTL8197F, 1.1 GHz"
-                                                                    ]) },
+                                                                    ]), "valueType": "String" },
             { name: "memory", value: faker.helpers.arrayElement(["2GB DDR3",
                                                                       "1GB DDR4",
                                                                       "512MB DDR3",
@@ -141,7 +140,7 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "256MB DDR2",
                                                                       "8GB LPDDR4",
                                                                       "1GB LPDDR3"
-                                                                    ]) },
+                                                                    ]), "valueType": "String" },
             { name: "storage", value: faker.helpers.arrayElement([
                                                                       "128MB Flash Storage",
                                                                       "256MB NAND Flash",
@@ -150,7 +149,7 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "64MB NOR Flash",
                                                                       "128GB NVMe SSD",
                                                                       "2GB UFS 2.1"
-                                                                    ]) }
+                                                                    ]), "valueType": "String" }
           ],
           endOperatingDate: faker.date.future(),
           startOperatingDate: faker.date.between({ from: '2000-01-01', to: Date.now() }),

@@ -32,10 +32,6 @@
         "value": "Wi-Fi 6 (802.11ax)"
       },
       {
-        "name": "firmware_version",
-        "value": "v1.4.0"
-      },
-      {
         "name": "power_consumption",
         "value": "15W"
       },
