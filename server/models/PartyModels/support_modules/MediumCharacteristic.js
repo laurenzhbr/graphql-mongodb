@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const CharacteristicSchema = new Schema({
+const MediumCharacteristicSchema = new Schema({
     city: String,
     contactType: String,
     country: String,
@@ -18,4 +18,4 @@ const CharacteristicSchema = new Schema({
     "@type": String
 });
 
-module.exports = mongoose.model('Characteristic', CharacteristicSchema);
+module.exports = mongoose.model('MediumCharacteristic', MediumCharacteristicSchema);

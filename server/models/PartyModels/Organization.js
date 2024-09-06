@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ContactMedium = require('./support_modules/ContactMedium').schema;
-const CreditRating = require('./support_modules/CreditRating').schema;
+const PartyCreditProfile = require('./support_modules/PartyCreditProfile').schema;
 const ValidFor = require('../genericModels/ValidFor').schema;
 const ExternalReference = require('./support_modules//ExternalReference').schema;
 const OrganizationChildRelationship = require('./support_modules/OrganizationChildRelationship').schema;
@@ -22,7 +22,7 @@ const OrganizationSchema = new Schema({
     tradingName: String,
     tradeRegisterNumber: String,
     contactMedium: { type: [ContactMedium], default: undefined },
-    creditRating: { type: [CreditRating], default: undefined },
+    creditRating: { type: [PartyCreditProfile], default: undefined },
     existsDuring: ValidFor,
     externalReference: { type: [ExternalReference], default: undefined },
     organizationChildRelationship: { type: [OrganizationChildRelationship], default: undefined },

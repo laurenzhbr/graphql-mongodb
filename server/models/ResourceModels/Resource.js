@@ -25,19 +25,20 @@ const ResourceSchema = new mongoose.Schema({
     type: String,
     enum: ['enable', 'disable'],
   },
-  relatedParty: [RelatedParty], //Ref-Entity -> /partyManagement/individual/:id
+  relatedParty: { type: [RelatedParty], default: undefined }, //Ref-Entity -> /partyManagement/individual/:id
   relatedPartyGql: {
     type: [mongoose.Schema.Types.ObjectId],
+    default: undefined,
     ref: "Organization",
   },
-  note: [Note],
+  note: { type: [Note], default: undefined },
   place: RelatedPlaceRefOrValue, //Ref-Entity -> /geographicAdressManagement/geograhicAdress/:id
   placeGql: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "GeographicAddress",
   },
-  resourceCharacteristic: [ResourceCharacteristic],
-  resourceRelationship: [ResourceRelationship],
+  resourceCharacteristic: { type: [ResourceCharacteristic], default: undefined },
+  resourceRelationship: { type: [ResourceRelationship], default: undefined },
   resourceSpecification: ResourceSpecificationRef, //Ref-Entity -> /resourceCatalogManagement/resourceSpecification/:id
   resourceSpecificationGql: {
     type: mongoose.Schema.Types.ObjectId,

@@ -2,18 +2,79 @@ const Resource = require('../models/ResourceModels/Resource');
 
 function createTestResource1() {
     const newResource = new Resource({
-        description: "Das ist eine beschreibung",
-        category: "Category_1",
-        value: "Das ist ein Value",
-        endOperatingDate: new Date("2022-07-04T08:00:00.000Z"),
-        name: "resource 1",
-        administrativeState: "locked",
-        operationalState: "disable",
-        usageState: "active",
-        resourceStatus: "available",
-        startOperatingDate: new Date("2022-07-03T08:00:00.000Z"),
-        version: "version_1"
-      });
+      "name": "Central Office Berlin Ost",
+      "category": "Central Office",
+      "resourceCharacteristic": [
+        {
+          "name": "connected_lines",
+          "value": 230132
+        },
+        {
+          "name": "building_size",
+          "value": "1032"
+        },
+        {
+          "name": "current_capacity_usage",
+          "value": "78%"
+        },
+        {
+          "name": "maximum_capacity",
+          "value": 300000
+        },
+        {
+          "name": "fiber_backhaul_available",
+          "value": true
+        },
+        {
+          "name": "power_backup_system",
+          "value": "Diesel Generator"
+        },
+        {
+          "name": "cooling_system",
+          "value": "HVAC"
+        },
+        {
+          "name": "security_status",
+          "value": "Access Controlled"
+        }
+      ],
+      "endOperatingDate": "2035-05-12",
+      "startOperatingDate": "2005-05-12",
+      "version": "3.1",
+      "resourceStatus": "available",
+      "usageState": "busy",
+      "administrativeState": "locked",
+      "operationalState": "enable",
+      "relatedParty": [
+        {
+          "id": "party567",
+          "href": "https://{host}/partyManagement/party/party567",
+          "name": "Provider Inc.",
+          "role": "Manufacturer"
+        }
+      ],
+      "note": [
+          {
+            "author": "Admin",
+            "date": "2023-07-25",
+            "text": "everything is fine"
+          }
+      ],
+      "place": {
+        "id": "place12354",
+        "href": "https://{host}/geographicAdressManagement/geographicAdress/place12354"
+      },
+      "resourceRelationship": [
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "9874654",
+          "href": "https://{host}/resourceInventoryManagement/resource/9874654",
+          "category": "Street Cabinet",
+          "name": "Street Cabinet ABC123"
+        }
+      }]
+    });
       
       newResource.save()
       .then(() => console.log('resource saved!'))
@@ -22,23 +83,118 @@ function createTestResource1() {
 
 function createTestResource2() {
     const newResource = new Resource({
-        description: "Das ist eine beschreibung",
-        category: "Premium",
-        value: "Das ist ein Value",
-        endOperatingDate: new Date("2022-07-04T08:00:00.000Z"),
-        name: "resource 2",
-        administrativeState: "locked",
-        operationalState: "disable",
-        usageState: "active",
-        resourceStatus: "available",
-        startOperatingDate: new Date("2022-07-03T08:00:00.000Z"),
-        version: "version_1",
-        note: {
-            author: 'Peggy Huber',
-            date: new Date(),
-            text: "Es gibt essen"
+      "id": "123456789",
+      "name": "Modem X200",
+      "category": "Modem",
+      "resourceCharacteristic": [
+        {
+          "name": "modem_type",
+          "value": "Cable Modem"
+        },
+        {
+          "name": "max_download_speed",
+          "value": "1 Gbps"
+        },
+        {
+          "name": "max_upload_speed",
+          "value": "100 Mbps"
+        },
+        {
+          "name": "connection_type",
+          "value": "DOCSIS 3.1"
+        },
+        {
+          "name": "ethernet_ports",
+          "value": 4
+        },
+        {
+          "name": "usb_ports",
+          "value": 1
+        },
+        {
+          "name": "coaxial_input",
+          "value": true
+        },
+        {
+          "name": "wifi_capability",
+          "value": "Wi-Fi 5 (802.11ac)"
+        },
+        {
+          "name": "firmware_version",
+          "value": "v3.2.5"
+        },
+        {
+          "name": "power_consumption",
+          "value": "12W"
+        },
+        {
+          "name": "security_features",
+          "value": "WPA3, Firewall, MAC Address Filtering"
+        },
+        {
+          "name": "maintenance_status",
+          "value": "Last firmware update: 12.08.2023"
+        },
+        {
+          "name": "processor",
+          "value": "Broadcom BCM3390, 1.5 GHz"
+        },
+        {
+          "name": "memory",
+          "value": "2GB DDR3"
+        },
+        {
+          "name": "storage",
+          "value": "128MB Flash Storage"
         }
-      });
+      ],
+      "endOperatingDate": "2031-06-01",
+      "startOperatingDate": "2021-06-01",
+      "version": "1.0",
+      "resourceStatus": "standby",
+      "usageState": "active",
+      "administrativeState": "unlocked",
+      "operationalState": "enable",
+      "relatedParty": [
+        {
+          "id": "party12345",
+          "href": "https://{host}/partyManagement/party/party12345",
+          "name": "John Doe",
+          "role": "Technician"
+        }
+      ],
+      "note": [
+        {
+          "author": "Admin",
+          "date": "2023-08-12",
+          "text": "Firmware updated successfully"
+        }
+      ],
+      "place": {
+        "id": "place123",
+        "href": "https://{host}/geographicAdressManagement/geographicAdress/place123"
+      },
+      "resourceRelationship": [
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "891156154",
+          "name": "Router R500",
+          "category": "Router",
+          "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+        }
+      },
+      {
+          "relationshipType": "isTargeted",
+          "resource": {
+            "id": "9874654",
+            "name": "Street Cabinet ABC123",
+            "category": "Street Cabinet",
+            "href": "https://{host}/resourceInventoryManagement/resource/135841351564"
+          }
+        }
+      ]
+    });
       
       newResource.save()
       .then(() => console.log('resource saved!'))
@@ -47,38 +203,110 @@ function createTestResource2() {
 
 function createTestResource3() {
     const newResource = new Resource({
-        description: "This is a MSISDN resource with the category Premium and with a reserved resourceStatus for organisations.",
-        category: "Premium",
-        value: "0170112231",
-        endOperatingDate: "2022-07-04",
-        name: "MobileNumber xx",
-        administrativeState: "locked",
-        operationalState: "enable",
-        usageState: "active",
-        resourceStatus: "reserved",
-        relatedParty: [{
-          id: "66d0795bd88f332326c210c6",
-          role: "equipment supplier",
-        }],
-        note: [{
-          text: "something about this resource"
-        }],
-        place: {
-          id: "9912",
+      "id": "891156154",
+      "name": "Router R500",
+      "category": "Router",
+      "resourceCharacteristic": [
+        {
+          "name": "router_type",
+          "value": "Wireless Router"
         },
-        /* resourceRelationship: [{
-          relationshipType: "contains",
-          resource: {
-            id: "44",
-            href: "http://server:port/resourceInventoryManagement/resource/44"
+        {
+          "name": "max_download_speed",
+          "value": "1.2 Gbps"
+        },
+        {
+          "name": "max_upload_speed",
+          "value": "300 Mbps"
+        },
+        {
+          "name": "connection_type",
+          "value": "Gigabit Ethernet"
+        },
+        {
+          "name": "ethernet_ports",
+          "value": 4
+        },
+        {
+          "name": "usb_ports",
+          "value": 2
+        },
+        {
+          "name": "wifi_capability",
+          "value": "Wi-Fi 6 (802.11ax)"
+        },
+        {
+          "name": "firmware_version",
+          "value": "v1.4.0"
+        },
+        {
+          "name": "power_consumption",
+          "value": "15W"
+        },
+        {
+          "name": "security_features",
+          "value": "WPA3, Firewall, Parental Controls"
+        },
+        {
+          "name": "maintenance_status",
+          "value": "Last firmware update: 25.07.2023"
+        },
+        {
+          "name": "processor",
+          "value": "Qualcomm IPQ8074, 2.2 GHz"
+        },
+        {
+          "name": "memory",
+          "value": "512MB DDR4"
+        },
+        {
+          "name": "storage",
+          "value": "256MB Flash Storage"
+        },
+        {
+          "name": "antennas",
+          "value": 4
+        }
+      ],
+      "endOperatingDate": "2032-09-10",
+      "startOperatingDate": "2022-09-10",
+      "version": "1.1",
+      "resourceStatus": "available",
+      "usageState": "active",
+      "administrativeState": "unlocked",
+      "operationalState": "enable",
+      "relatedParty": [
+        {
+          "id": "party67890",
+          "href": "https://{host}/partyManagement/party/party67890",
+          "name": "Jane Smith",
+          "role": "Network Engineer"
+        }
+      ],
+      "note": [
+          {
+            "author": "Admin",
+            "date": "2023-07-25",
+            "text": "Firmware update completed"
           }
-        }], */
-        resourceSpecification: {
-          id: "4",
-        },
-        startOperatingDate: "2020-03-04",
-        version: "business v2",
-      });
+      ],
+      "place": {
+        "id": "place456",
+        "href": "https://{host}/geographicAdressManagement/geographicAdress/place456"
+      },
+      "resourceRelationship": [
+      {
+          "relationshipType": "isTargeted",
+          "resource": {
+            "id": "123456789",
+            "name": "Modem X200",
+            "category": "Modem",
+            "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+          }
+        }
+      ]
+    }
+    );
       
       newResource.save().
       then(() => console.log('Resource saved!')).
@@ -236,10 +464,109 @@ function createTestResource4() {
     catch(err => console.error(err)); 
 };
 
+function createTestResource5() {
+  const newResource = new Resource({
+    "name": "Street Cabinet ABC123",
+    "category": "Street Cabinet",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "value": 1200
+      },
+      {
+        "name": "cabinet_size",
+        "value": "1.5m"
+      },
+      {
+        "name": "network_type",
+        "value": "DSL"
+      },
+      {
+        "name": "current_capacity_usage",
+        "value": "65%"
+      },
+      {
+        "name": "maximum_capacity",
+        "value": 1800
+      },
+      {
+        "name": "fiber_ready",
+        "value": true
+      },
+      {
+        "name": "power_backup",
+        "value": false
+      },
+      {
+        "name": "cooling_system",
+        "value": "Passive Ventilation"
+      },
+      {
+        "name": "security_status",
+        "value": "Locked"
+      },
+      {
+        "name": "last_maintenance",
+        "value": "10.01.2024 10:21:25"
+      }
+    ],
+    "endOperatingDate": "2032-09-10",
+    "startOperatingDate": "2022-09-10",
+    "version": "1.1",
+    "resourceStatus": "available",
+    "usageState": "active",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "party67890",
+        "href": "https://{host}/partyManagement/party/party67890",
+        "name": "Jane Smith",
+        "role": "Network Engineer"
+      }
+    ],
+    "note": [
+        {
+          "author": "Admin",
+          "date": "2023-07-25",
+          "text": "Firmware update completed"
+        }
+    ],
+    "place": {
+      "id": "place456",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/place456"
+    },
+    "resourceRelationship": [
+    {
+      "relationshipType": "targets",
+      "resource": {
+        "id": "123456789",
+        "href": "https://{host}/resourceInventoryManagement/resource/123456789",
+        "category": "Modem",
+        "name": "Modem X200"
+      }
+    },
+    {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "135841351564",
+          "href": "https://{host}/resourceInventoryManagement/resource/135841351564",
+          "category": "Central Office",
+          "name": "Central Office Berlin Ost"
+        }
+      }]
+  });
+    
+    newResource.save().
+    then(() => console.log('Resource saved!')).
+    catch(err => console.error(err)); 
+};
+
 
 module.exports = {
     createTestResource1,
     createTestResource2,
     createTestResource3,
-    createTestResource4
+    createTestResource4,
+    createTestResource5
 };

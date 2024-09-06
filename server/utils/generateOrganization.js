@@ -10,11 +10,6 @@ mongoose.connect('mongodb://localhost:27017/resource_inventory', {
 
 // Funktion zum Generieren von zufälligen Kontaktinformationen
 const generateContactMedium = () => {
-  // Erzeugt mit 50% Wahrscheinlichkeit leere Daten
-  if (Math.random() > 0.5) {
-    return [];
-  }
-
   return [
     {
       mediumType: faker.helpers.arrayElement(['email', 'phone', 'fax']),
@@ -42,11 +37,6 @@ const generateContactMedium = () => {
 
 // Funktion zum Generieren von zufälligem Kreditrating
 const generateCreditRating = () => {
-  // Erzeugt mit 50% Wahrscheinlichkeit leere Daten
-  if (Math.random() > 0.5) {
-    return [];
-  }
-
   return [
     {
       creditAgencyName: faker.company.name(),
@@ -60,6 +50,28 @@ const generateCreditRating = () => {
   ];
 };
 
+function generateCompanyName(organizationType) {
+  if (organizationType == "Energieversorger") {
+    return `${faker.company.name()} ${faker.helpers.arrayElement(['Energie AG', 'Stromnetz AG', 'Energie und Wasser KG', 'Versorgungswerke GmbH', 'Stromnetz AG', 'Energy Supply'])}`;
+  }
+  if (organizationType == "Sicherheitsdienstleister") {
+    return `${faker.company.name()} ${faker.helpers.arrayElement(['Security GmbH', 'Wachdienst GmbH', 'Security Solutions', 'Sicherheitslösungen KG', 'Objektschutz AG', 'Security Services GmbH'])}`;
+  }
+  if (organizationType == "Marketing- und Vertriebspartner") {
+    return `${faker.company.name()} ${faker.helpers.arrayElement(['Marketing Solutions KG', 'Marketing GmbH', 'Sales & Partners AG', 'Vertriebsgesellschaft mbH', 'Marketing- und Vertriebsservice GmbH', 'Sales & Consulting KG'])}`;
+  }
+  if (organizationType == "Logistikunternehmen") {
+    return `${faker.company.name()} ${faker.helpers.arrayElement(['Logistik GmbH', 'Frachtservice KG', 'Spedition und Logistik AG', 'Versandlogistik GmbH', 'Logistikdienstleister AG', 'Transportgesellschaft mbH'])}`;
+  }
+  if (organizationType == "Gerätehersteller") {
+    return `${faker.company.name()} ${faker.helpers.arrayElement(['Hardware Systems AG', 'Technik & Innovation GmbH', 'Produktionssysteme GmbH', 'Manufacturing', 'Constructing oHG', 'Technologies'])}`;
+  }
+  if (organizationType == "Wartungsfirma") {
+    return `${faker.company.name()} ${faker.helpers.arrayElement(['Wartung GmbH', 'Service & Technik AG', 'Instandhaltung GmbH', 'Reparatur & Wartung KG', 'Technische Dienstleistungen GmbH'])}`;
+  }
+  
+};
+
 // Funktion zum Generieren von zufälligen Organisationseinträgen
 const generateOrganization = (randomObject=null) => {
     let relationship_id;
@@ -69,29 +81,26 @@ const generateOrganization = (randomObject=null) => {
         org_name = randomObject.name
     }
     //let relationship_id = new mongoose.Types.ObjectId()
-    let company_name = faker.company.name();
+    let organizationType = faker.helpers.arrayElement(['Energieversorger', 'Marketing- und Vertriebspartner', 'Logistikunternehmen', 'Gerätehersteller', 'Sicherheitsdienstleister', 'Wartungsfirma']);
+    let company_name = generateCompanyName(organizationType);
+    
     const organization = {
-    isHeadOffice: faker.datatype.boolean(),
-    isLegalEntity: faker.datatype.boolean(),
-    name: company_name,
-    organizationType: faker.helpers.arrayElement(['Energieversorger', 'Marketing- und Vertriebspartner', 'Logistikunternehmen', 'Satellitenanbieter', 'Gerätehersteller', 'Sicherheitsdienstleister', 'Unternehmen', 'Wartungsfirma', 'Partner']),
-    tradingName: company_name,
-    tradeRegisterNumber: faker.string.uuid(),
-    contactMedium: generateContactMedium(),
-    creditRating: generateCreditRating(),
-    existsDuring: {
-      startDateTime: faker.date.past(),
-      endDateTime: faker.date.future(),
-    },
-    externalReference: [
-      {
-        externalReferenceType: faker.helpers.arrayElement(['internetSite', 'socialMediaAccount']),
-        name: faker.internet.domainName(),
+      isHeadOffice: faker.datatype.boolean(),
+      isLegalEntity: faker.datatype.boolean(),
+      name: company_name,
+      organizationType: organizationType,
+      tradingName: company_name,
+      existsDuring: {
+        startDateTime: faker.date.past(),
+        endDateTime: faker.date.future(),
       },
-    ],
-    status: faker.helpers.arrayElement(['initialized', 'validated', 'closed']),
-    // Füge organizationParentRelationship nur hinzu, wenn randomObject nicht null ist
-    ...(randomObject && {
+      externalReference: [{
+          externalReferenceType: faker.helpers.arrayElement(['internetSite', 'socialMediaAccount']),
+          name: faker.internet.domainName(),
+        }],
+      status: faker.helpers.arrayElement(['initialized', 'validated', 'closed']),
+      // Füge organizationParentRelationship nur hinzu, wenn randomObject nicht null ist
+      ...(randomObject && {
         organizationParentRelationship: {
           relationshipType: faker.helpers.arrayElement(['parent', 'subsidiary']),
           organization: {
@@ -100,21 +109,25 @@ const generateOrganization = (randomObject=null) => {
             name: org_name,
           },
         }
-      }),
-  };
+      })
+    };
+    if (Math.random() > 0.5) {
+      organization.contactMedium = generateContactMedium();
+      organization.creditRating = generateCreditRating();
+    };
 
   return organization;
 };
 
 // Funktion zum Generieren und Speichern von 1000 Organisationen
-const generateAndSaveOrganizations = async () => {
+const generateAndSaveOrganizations = async (total_amount) => {
     const organizations = [];
     
     // Alle Organisationen aus der Datenbank abrufen
     const existing_orgs = await Organization.find({});
     const count = await Organization.countDocuments(); // Zähle alle Dokumente in der Collection
     
-    for (let i = 0; i < 5000; i++) {
+    for (let i = 0; i < total_amount; i++) {
         let newOrganization; // Deklariere die Variable außerhalb des Blocks
     
         if (i > 0) {
@@ -137,7 +150,7 @@ const generateAndSaveOrganizations = async () => {
     try {
         // Speichere die generierten Organisationen in der Datenbank
         await Organization.insertMany(organizations);
-        console.log('5000 Organisationen erfolgreich in die Datenbank geschrieben.');
+        console.log(`${total_amount} Organisationen erfolgreich in die Datenbank geschrieben.`);
     } catch (error) {
         console.error('Fehler beim Speichern der Organisationen:', error);
     } finally {
@@ -147,4 +160,4 @@ const generateAndSaveOrganizations = async () => {
 };
 
 // Führe die Generierung und Speicherung der Organisationen aus
-generateAndSaveOrganizations();
+generateAndSaveOrganizations(3000);

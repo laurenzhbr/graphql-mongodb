@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const ValidFor = require('../../genericModels/ValidFor');
-const Characteristic = require('./Characteristic');
+const ValidFor = require('../../genericModels/ValidFor').schema;
+const MediumCharacteristic = require('./MediumCharacteristic').schema;
 
 const ContactMediumSchema = new Schema({
     mediumType: String,
     preferred: Boolean,
-    characteristic: Characteristic.schema,
-    validFor: ValidFor.schema,
+    characteristic: MediumCharacteristic,
+    validFor: ValidFor,
     "@baseType": String,
     "@schemaLocation": String,
     "@type": String
