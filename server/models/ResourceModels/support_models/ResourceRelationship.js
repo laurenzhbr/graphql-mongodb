@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const ResourceRefOrValueSchema = require('./ResourceRefOrValue').schema;
+const ResourceRefOrValueSchema = require('../ref_models/ResourceRefOrValue').schema;
 
 const ResourceRelationshipSchema = new mongoose.Schema({
     href: String,
@@ -8,10 +8,10 @@ const ResourceRelationshipSchema = new mongoose.Schema({
         enum: ['bundled', 'reliesOn', 'targets', 'isTargeted'],  // Beschränkung auf die zulässigen Werte
         required: true
     },
-/*     resource: {
+    resource: {
         type: ResourceRefOrValueSchema,
         required: true
-    } */
+    }
 });
 
 const ResourceRelationship = mongoose.model('ResourceRelationship', ResourceRelationshipSchema);

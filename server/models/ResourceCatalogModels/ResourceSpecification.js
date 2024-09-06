@@ -24,15 +24,6 @@ const ResourceSpecCharacteristicSchema = new Schema({
   characteristicValueSpecification: [CharacteristicValueSpecificationSchema],
 });
 
-// Subschema für ResourceSpecRelationship
-const ResourceSpecRelationshipSchema = new Schema({
-  id: String,
-  href: String,
-  name: String,
-  relationshipType: String,
-  "@type": String,
-});
-
 
 // Hauptschema für ResourceSpecification
 const ResourceSpecificationSchema = new Schema({
@@ -50,7 +41,6 @@ const ResourceSpecificationSchema = new Schema({
   attachment: [Attachment],
   relatedParty: [RelatedParty],
   resourceSpecCharacteristic: [ResourceSpecCharacteristicSchema],
-  resourceSpecRelationship: [ResourceSpecRelationshipSchema],
 });
 
 //Pre-save Hook to generate href-attribute

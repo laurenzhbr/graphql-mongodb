@@ -11,12 +11,6 @@ const GeographicAddressSchema = new Schema({
   country: {
     type: String,
   },
-  locality: {
-    type: String,
-  },
-  name: {
-    type: String,
-  },
   postcode: {
     type: String,
   },

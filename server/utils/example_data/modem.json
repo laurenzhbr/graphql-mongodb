@@ -1,0 +1,113 @@
+{
+    "id": "123456789",
+    "name": "Modem X200",
+    "category": "Modem",
+    "resourceCharacteristic": [
+      {
+        "name": "modem_type",
+        "value": "Cable Modem"
+      },
+      {
+        "name": "max_download_speed",
+        "value": "1 Gbps"
+      },
+      {
+        "name": "max_upload_speed",
+        "value": "100 Mbps"
+      },
+      {
+        "name": "connection_type",
+        "value": "DOCSIS 3.1"
+      },
+      {
+        "name": "ethernet_ports",
+        "value": 4
+      },
+      {
+        "name": "usb_ports",
+        "value": 1
+      },
+      {
+        "name": "coaxial_input",
+        "value": true
+      },
+      {
+        "name": "wifi_capability",
+        "value": "Wi-Fi 5 (802.11ac)"
+      },
+      {
+        "name": "firmware_version",
+        "value": "v3.2.5"
+      },
+      {
+        "name": "power_consumption",
+        "value": "12W"
+      },
+      {
+        "name": "security_features",
+        "value": "WPA3, Firewall, MAC Address Filtering"
+      },
+      {
+        "name": "maintenance_status",
+        "value": "Last firmware update: 12.08.2023"
+      },
+      {
+        "name": "processor",
+        "value": "Broadcom BCM3390, 1.5 GHz"
+      },
+      {
+        "name": "memory",
+        "value": "2GB DDR3"
+      },
+      {
+        "name": "storage",
+        "value": "128MB Flash Storage"
+      }
+    ],
+    "endOperatingDate": "2031-06-01",
+    "startOperatingDate": "2021-06-01",
+    "version": "1.0",
+    "resourceStatus": "standby",
+    "usageState": "active",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "party12345",
+        "href": "https://{host}/partyManagement/party/party12345",
+        "name": "John Doe",
+        "role": "Technician"
+      }
+    ],
+    "note": [
+      {
+        "author": "Admin",
+        "date": "2023-08-12",
+        "text": "Firmware updated successfully"
+      }
+    ],
+    "place": {
+      "id": "place123",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/place123"
+    },
+    "resourceRelationship": [
+    {
+      "relationshipType": "targets",
+      "resource": {
+        "id": "891156154",
+        "name": "Router R500",
+        "category": "Router",
+        "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+      }
+    },
+    {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "9874654",
+          "name": "Street Cabinet ABC123",
+          "category": "Street Cabinet",
+          "href": "https://{host}/resourceInventoryManagement/resource/135841351564"
+        }
+      }
+    ]
+  }

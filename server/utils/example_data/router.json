@@ -1,0 +1,105 @@
+{
+    "id": "891156154",
+    "name": "Router R500",
+    "category": "Router",
+    "resourceCharacteristic": [
+      {
+        "name": "router_type",
+        "value": "Wireless Router"
+      },
+      {
+        "name": "max_download_speed",
+        "value": "1.2 Gbps"
+      },
+      {
+        "name": "max_upload_speed",
+        "value": "300 Mbps"
+      },
+      {
+        "name": "connection_type",
+        "value": "Gigabit Ethernet"
+      },
+      {
+        "name": "ethernet_ports",
+        "value": 4
+      },
+      {
+        "name": "usb_ports",
+        "value": 2
+      },
+      {
+        "name": "wifi_capability",
+        "value": "Wi-Fi 6 (802.11ax)"
+      },
+      {
+        "name": "firmware_version",
+        "value": "v1.4.0"
+      },
+      {
+        "name": "power_consumption",
+        "value": "15W"
+      },
+      {
+        "name": "security_features",
+        "value": "WPA3, Firewall, Parental Controls"
+      },
+      {
+        "name": "maintenance_status",
+        "value": "Last firmware update: 25.07.2023"
+      },
+      {
+        "name": "processor",
+        "value": "Qualcomm IPQ8074, 2.2 GHz"
+      },
+      {
+        "name": "memory",
+        "value": "512MB DDR4"
+      },
+      {
+        "name": "storage",
+        "value": "256MB Flash Storage"
+      },
+      {
+        "name": "antennas",
+        "value": 4
+      }
+    ],
+    "endOperatingDate": "2032-09-10",
+    "startOperatingDate": "2022-09-10",
+    "version": "1.1",
+    "resourceStatus": "available",
+    "usageState": "active",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "party67890",
+        "href": "https://{host}/partyManagement/party/party67890",
+        "name": "Jane Smith",
+        "role": "Network Engineer"
+      }
+    ],
+    "note": [
+        {
+          "author": "Admin",
+          "date": "2023-07-25",
+          "text": "Firmware update completed"
+        }
+    ],
+    "place": {
+      "id": "place456",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/place456"
+    },
+    "resourceRelationship": [
+    {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "123456789",
+          "name": "Modem X200",
+          "category": "Modem",
+          "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+        }
+      }
+    ]
+  }
+  

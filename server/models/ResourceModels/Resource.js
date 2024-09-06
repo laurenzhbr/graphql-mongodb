@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-//const ResourceCharacteristic = require('./support_models/Characteristic');
+const ResourceCharacteristic = require('./support_models/Characteristic').schema;
 const ResourceSpecificationRef = require('./ref_models/ResourceSpecificationRef').schema;
 const RelatedPlaceRefOrValue = require('./ref_models/RelatedPlaceRefOrValue').schema;
-//const ResourceRelationship = require('./ResourceRelationship').schema;
+const ResourceRelationship = require('./support_models/ResourceRelationship').schema;
 const Note = require('../genericModels/Note').schema;
 const RelatedParty = require('../genericModels/RelatedParty').schema;
 const ResourceStatusType = require('./support_models/ResourceStatus').schema;
@@ -19,11 +19,11 @@ const ResourceSchema = new mongoose.Schema({
   name: String,
   administrativeState: {
     type: String,
-    enum: ResourceAdministrativeStateType.path('value').enumValues,
+    enum: ['locked', 'unlocked', 'shutdown']
   },
   operationalState: {
     type: String,
-    enum: ResourceOperationalStateType.path('value').enumValues,
+    enum: ['enable', 'disable'],
   },
   relatedParty: [RelatedParty], //Ref-Entity -> /partyManagement/individual/:id
   relatedPartyGql: {
@@ -36,8 +36,8 @@ const ResourceSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "GeographicAddress",
   },
-  //resourceCharacteristic: [Characteristic],
-  //resourceRelationship: [ResourceRelationship],
+  resourceCharacteristic: [ResourceCharacteristic],
+  resourceRelationship: [ResourceRelationship],
   resourceSpecification: ResourceSpecificationRef, //Ref-Entity -> /resourceCatalogManagement/resourceSpecification/:id
   resourceSpecificationGql: {
     type: mongoose.Schema.Types.ObjectId,
@@ -45,11 +45,11 @@ const ResourceSchema = new mongoose.Schema({
   },
   resourceStatus: {
     type: String,
-    enum: ResourceStatusType.path('value').enumValues,
+    enum: ['standby', 'alarm', 'available', 'reserved', 'unknown', 'suspended'],
   },
   usageState: {
     type: String,
-    enum: ResourceUsageStateType.path('value').enumValues,
+    enum: ['idle', 'active', 'busy'],
   },
   startOperatingDate: Date,
   version: String,
