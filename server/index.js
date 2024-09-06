@@ -26,10 +26,10 @@ db_orig = mongoose.connect(`${process.env.DB_URL}`, {
 
   // Test-Ressourcen erstellen
   // Kommentiere die folgenden Zeilen ein oder aus, um die entsprechenden Ressourcen zu erstellen
-  createTestResource1();
+  /* createTestResource1();
   createTestResource2();
   createTestResource3();
-  createTestResource5();
+  createTestResource5(); */
   //createDigitalIDTest1();
   // createTestOrganization();
   //createTestGeoAdress1();

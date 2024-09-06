@@ -62,7 +62,7 @@ function generateRandomNotes() {
   for (let i = 0; i < noteCount; i++) {
     const randomText = noteTexts[Math.floor(Math.random() * noteTexts.length)];
     notes.push({
-      author: faker.person.fullName,
+      author: faker.person.fullName(),
       date: faker.date.between({ from: '2023-01-01', to: Date.now() }),  // Aktuelles Datum
       text: randomText  // Zufälliger Text aus der Liste
     });
@@ -98,15 +98,14 @@ async function createCentralOffices() {
           { name: "fiber_backhaul_available", value: faker.datatype.boolean() },
           { name: "power_backup_system", value: faker.helpers.arrayElement(['Diesel Generator', 'USV', 'Solar Backup', 'Brennstoffzellen', 'Hybrid-System'])},
           { name: "cooling_system", value: faker.helpers.arrayElement(['HVAC', 'Wärmetauscher', 'Flüssigkeitskühlung'])},
-          { name: "security_status", value: faker.helpers.arrayElement(['Guarded', 'Video Surveillance', 'Access Controlled', 'Motion Detectors', 'Remote Monitoring']) }
         ],
-        endOperatingDate: "2035-05-12",
-        startOperatingDate: "2005-05-12",
-        version: "3.1",
-        resourceStatus: "available",
-        usageState: "busy",
-        administrativeState: "locked",
-        operationalState: "enable",
+        endOperatingDate: faker.date.future(),
+        startOperatingDate: faker.date.between({ from: '2000-01-01', to: Date.now() }),
+        version: faker.number.int({ min: 1, max: 5 }).toString(),
+        resourceStatus: faker.helpers.arrayElement(['standby', 'alarm', 'available', 'reserved', 'unknown', 'suspended']),
+        usageState: faker.helpers.arrayElement(['idle', 'active', 'busy']),
+        administrativeState: faker.helpers.arrayElement(['locked', 'unlocked', 'shutdown']),
+        operationalState: faker.helpers.arrayElement(['enable', 'disable']),
         relatedParty: [
           {
             id: organization_energy._id,
@@ -150,3 +149,65 @@ async function createCentralOffices() {
 
 // Starte die Funktion zum Erstellen der CentralOffices
 createCentralOffices();
+
+
+
+
+
+/* // Funktion zur Verknüpfung von Street Cabinets mit Central Offices
+async function linkStreetCabinetsToCentralOffice(centralOfficeId) {
+  try {
+    // Finde alle Street Cabinets, die auf dieses Central Office verweisen
+    const streetCabinets = await Resource.find({
+      category: "Street Cabinet",
+      "resourceRelationship.resource.id": centralOfficeId
+    });
+
+    if (streetCabinets.length === 0) {
+      console.log(`No Street Cabinets found for Central Office ${centralOfficeId}`);
+      return;
+    }
+
+    // Erstelle die "targets"-Verknüpfungen für das Central Office
+    const relationships = streetCabinets.map((cabinet) => ({
+      relationshipType: "targets",
+      resource: {
+        id: cabinet._id,
+        href: `https://{host}/resourceInventoryManagement/resource/${cabinet._id}`,
+        category: "Street Cabinet",
+        name: cabinet.name
+      }
+    }));
+
+    // Füge die Verknüpfungen in das Central Office ein
+    await Resource.updateOne(
+      { _id: centralOfficeId },
+      { $push: { resourceRelationship: { $each: relationships } } }
+    );
+
+    console.log(`Updated Central Office ${centralOfficeId} with Street Cabinet relationships.`);
+  } catch (error) {
+    console.error("Error linking Street Cabinets to Central Office:", error);
+  }
+}
+
+// Funktion, um alle Central Offices zu aktualisieren
+async function linkAllCentralOffices() {
+  try {
+    // Finde alle Central Offices
+    const centralOffices = await Resource.find({ category: "Central Office" });
+
+    // Aktualisiere jedes Central Office, um die zugehörigen Street Cabinets zu verlinken
+    for (const centralOffice of centralOffices) {
+      await linkStreetCabinetsToCentralOffice(centralOffice._id);
+    }
+
+    mongoose.connection.close();
+  } catch (error) {
+    console.error("Error updating Central Offices:", error);
+    mongoose.connection.close();
+  }
+}
+
+// Starte die Verknüpfung der Central Offices mit den Street Cabinets
+linkAllCentralOffices(); */

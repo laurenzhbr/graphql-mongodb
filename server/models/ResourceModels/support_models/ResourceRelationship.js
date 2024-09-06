@@ -12,7 +12,7 @@ const ResourceRelationshipSchema = new mongoose.Schema({
         type: ResourceRefOrValueSchema,
         required: true
     }
-});
+}, { _id: false });
 
 const ResourceRelationship = mongoose.model('ResourceRelationship', ResourceRelationshipSchema);
 
