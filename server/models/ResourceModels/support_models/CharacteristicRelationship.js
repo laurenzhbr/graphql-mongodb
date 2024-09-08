@@ -10,6 +10,6 @@ const CharacteristicRelationshipSchema = new mongoose.Schema({
   relationshipType: {
     type: String,
   }
-});
+}, { _id: false });
 
 module.exports = mongoose.model('CharacteristicRelationship', CharacteristicRelationshipSchema);

@@ -11,6 +11,6 @@ const ContactMediumSchema = new Schema({
     "@baseType": String,
     "@schemaLocation": String,
     "@type": String
-});
+}, { _id: false });
 
 module.exports = mongoose.model('ContactMedium', ContactMediumSchema);

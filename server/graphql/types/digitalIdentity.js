@@ -28,10 +28,10 @@ const {
     name: 'DigitalIdentity',
     description: 'Represents a Digital Identity with associated metadata and resources.',
     fields: {
-      id: {
+/*       id: {
         type: new GraphQLNonNull(GraphQLID),
         description: 'Unique identifier for the digital identity.',
-      },
+      }, */
       href: {
         type: GraphQLString,
         description: 'Hyperlink reference',

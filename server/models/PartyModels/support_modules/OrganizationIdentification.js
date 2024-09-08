@@ -13,6 +13,6 @@ const OrganizationIdentificationSchema = new Schema({
     "@baseType": String,
     "@schemaLocation": String,
     "@type": String
-});
+}, { _id: false });
 
 module.exports = mongoose.model('OrganizationIdentification', OrganizationIdentificationSchema);

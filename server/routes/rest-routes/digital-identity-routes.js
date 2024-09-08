@@ -3,7 +3,7 @@ const router = express.Router();
 const digitalIdentityController = require('../../controller/digitalIdentityController'); // Importiere den Controller
 
 // GET /resource - Alle DigitalIdentities abrufen
-router.get('/', digitalIdentityController.getAllDigitalIdentities);
+router.get('/', digitalIdentityController.getDigitalIdentities);
 
 // POST /resource - Eine neue DigitalIdentity erstellen
 router.post('/', digitalIdentityController.createDigitalIdentity);

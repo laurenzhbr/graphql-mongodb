@@ -9,6 +9,6 @@ const TaxDefinitionSchema = new Schema({
     "@schemaLocation": String,
     "@type": String,
     "@referredType": String
-});
+}, { _id: false });
 
 module.exports = mongoose.model('TaxDefinition', TaxDefinitionSchema);

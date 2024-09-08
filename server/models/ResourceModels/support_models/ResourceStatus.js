@@ -6,7 +6,7 @@ const ResourceStatusSchema = new mongoose.Schema({
         enum: ['standby', 'alarm', 'available', 'reserved', 'unknown', 'suspended'],  // Beschränkung auf die zulässigen Werte
         required: true
     }
-});
+}, { _id: false });
 
 const ResourceStatus = mongoose.model('ResourceStatus', ResourceStatusSchema);
 

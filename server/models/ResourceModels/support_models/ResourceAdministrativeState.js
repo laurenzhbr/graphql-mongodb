@@ -6,7 +6,7 @@ const ResourceAdministrativeStateSchema = new mongoose.Schema({
         enum: ['locked', 'unlocked', 'shutdown'],  // Beschränkung auf die zulässigen Werte
         required: true
     }
-});
+}, { _id: false });
 
 const ResourceAdministrativeState = mongoose.model('ResourceAdministrativeState', ResourceAdministrativeStateSchema);
 

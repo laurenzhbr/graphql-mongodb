@@ -1,0 +1,25 @@
+Q1: GET all "active" DigitalIdentities 
+
+Q2: Abfrage aller Street-Cabinets (im Raum Deutschland,) die Ihre maximale Kapazität fast erreicht haben (>95%)
+
+Q3: Abfrage des ResourceStatus eines Central-Offices basierend auf dem Router einer DigitalIdentity
+
+Q4: Abfrage Street Cabinets in Leipzig, aller Characteristicen und derer Wartungsfirmen
+
+Q5: Abfrage der Namen Top 10 NameMarketing- und Vertriebsdienstleister mit einem Creditrating > 750, die validated sind
+
+Q6: Abfrage einer Resource inkl. Name + Organizationtype der RelatedParty + GeoAdress
+
+Q7: Abfrage aller Modems, deren Verbindungstyp FTTH ist und die in Betrieb (operationalType=enable)
+
+Q8: Liste aller Central Offices in Deutschland mit name, resourceStatus und version
+
+Q9: Update der referenzierten Ressource einer DigitalIdentity
+
+Q10: Update der relatedParty eines Street-Cabinets von einer Party auf die andere
+
+Q11: Erstellung eines Routers mit vorgegebenen Beispielwerten
+
+Q12: Abfrage aller inactiven DigitalIdentities und diese dann löschen
+
+Q13: Löschen eines Routers

@@ -1,4 +1,4 @@
-const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNonNull, GraphQLID } = require('graphql');
+const { GraphQLSchema, GraphQLInt, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNonNull, GraphQLID } = require('graphql');
 const ResourceType = require('../types/resource');
 const DigitalIdentityType = require('../types/digitalIdentity')
 const Resource = require('../../models/ResourceModels/Resource');
@@ -27,8 +27,33 @@ const RootQuery = new GraphQLObjectType({
         return DigitalIdentity.findOne({ _id: args.id }); // Nutze findById, um die DigitalIdentity basierend auf der ID abzurufen
       },
     },
+    digitalIdentitiesByStatus:{
+      type: new GraphQLList(DigitalIdentityType),
+      args: {status: { type: GraphQLString}},
+      resolve(parent, args) {
+        return DigitalIdentity.find({'status': args.status});
+      }
+    },
+    searchResourcesByCategoryAnCapacityUsage:{
+      type: new GraphQLList(ResourceType),
+      args: {category: { type: GraphQLString}, capacity: { type: GraphQLInt }},
+      resolve(parent, args) {
+        // Filter für Kapazitätsnutzung
+        const filterObj = {};
+        if (args.capacity) {
+          filterObj['resourceCharacteristic'] = {
+            $elemMatch: {
+              name: 'current_capacity_usage',
+              value: { $gt: args.capacity },
+            },
+          };
+          return Resource.find(filterObj);
+        }
+      }
+    } 
   },
 });
+
 
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',

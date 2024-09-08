@@ -1,0 +1,586 @@
+digitalIdentity:
+{
+	"_id": "66db7b5fbbe1351f628ed5e7",
+	"nickname": "Giuliana.Kasten94",
+	"status": "suspended",
+	"resourceIdentified": {
+		"id": "66db76c734ed489b211cd3c1",
+		"name": "Router for Modem Burladingen 0 0",
+		"href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1"
+	},
+	"creationDate": "2024-09-06T21:59:59.221Z",
+	"lastUpdate": "2024-09-06T21:59:59.221Z",
+	"href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
+	"__v": 0
+}
+
+Router für digitalIdentity:
+{
+	"_id": "66db76c734ed489b211cd3c1",
+	"category": "Router",
+	"endOperatingDate": "2025-05-12T04:43:45.358Z",
+	"name": "Router for Modem Burladingen 0 0",
+	"administrativeState": "unlocked",
+	"operationalState": "enable",
+	"relatedParty": [
+		{
+			"id": "66db3aa516d68c5f3c138b53",
+			"name": "Walsh LLC Manufacturing",
+			"role": "Gerätehersteller",
+			"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b53"
+		}
+	],
+	"note": [
+		{
+			"author": "Nela Radtke",
+			"date": "2023-10-27T11:27:42.442Z",
+			"text": "Firmware update applied successfully; system stability improved."
+		},
+		{
+			"author": "Noemi Kleinsteuber",
+			"date": "2023-01-11T19:03:06.277Z",
+			"text": "New security patch installed to address WPA3 vulnerability."
+		},
+		{
+			"author": "Ilayda Blochwitz",
+			"date": "2023-05-16T13:16:40.258Z",
+			"text": "New security patch installed to address WPA3 vulnerability."
+		},
+		{
+			"author": "Anny Wallner",
+			"date": "2023-03-18T20:35:48.430Z",
+			"text": "Router configuration updated to improve QoS for video streaming."
+		},
+		{
+			"author": "Philip Peters",
+			"date": "2023-11-10T06:40:57.878Z",
+			"text": "Wi-Fi settings optimized for better coverage in multi-story building."
+		}
+	],
+	"place": {
+		"id": "66db17e94e5b0dd1a47588e5",
+		"href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a47588e5"
+	},
+	"resourceCharacteristic": [
+		{
+			"name": "router_type",
+			"valueType": "String",
+			"value": "Wired Router",
+			"_id": "66db76c734ed489b211cd3c2"
+		},
+		{
+			"name": "max_download_speed",
+			"valueType": "String",
+			"value": "3.2723177298903465Gbps",
+			"_id": "66db76c734ed489b211cd3c3"
+		},
+		{
+			"name": "max_upload_speed",
+			"valueType": "String",
+			"value": "139Mbps",
+			"_id": "66db76c734ed489b211cd3c4"
+		},
+		{
+			"name": "connection_type",
+			"valueType": "String",
+			"value": "4G LTE",
+			"_id": "66db76c734ed489b211cd3c5"
+		},
+		{
+			"name": "ethernet_ports",
+			"valueType": "Number",
+			"value": 4,
+			"_id": "66db76c734ed489b211cd3c6"
+		},
+		{
+			"name": "usb_ports",
+			"valueType": "Number",
+			"value": 1,
+			"_id": "66db76c734ed489b211cd3c7"
+		},
+		{
+			"name": "coaxial_input",
+			"valueType": "Boolean",
+			"value": true,
+			"_id": "66db76c734ed489b211cd3c8"
+		},
+		{
+			"name": "wifi_capability",
+			"valueType": "String",
+			"value": "Wi-Fi 2 (802.11b)",
+			"_id": "66db76c734ed489b211cd3c9"
+		},
+		{
+			"name": "power_consumption",
+			"valueType": "String",
+			"value": "12W",
+			"_id": "66db76c734ed489b211cd3ca"
+		},
+		{
+			"name": "security_features",
+			"valueType": "String",
+			"value": "WPA3-Enterprise, WPA2, MAC Whitelisting",
+			"_id": "66db76c734ed489b211cd3cb"
+		},
+		{
+			"name": "last_maintenance",
+			"valueType": "Date-Time",
+			"value": "2024-05-30T10:33:49.238Z",
+			"_id": "66db76c734ed489b211cd3cc"
+		},
+		{
+			"name": "processor",
+			"valueType": "String",
+			"value": "Broadcom BCM6750, 1.5 GHz",
+			"_id": "66db76c734ed489b211cd3cd"
+		},
+		{
+			"name": "memory",
+			"valueType": "String",
+			"value": "2GB DDR3",
+			"_id": "66db76c734ed489b211cd3ce"
+		},
+		{
+			"name": "storage",
+			"valueType": "String",
+			"value": "128MB Flash Storage",
+			"_id": "66db76c734ed489b211cd3cf"
+		}
+	],
+	"resourceRelationship": [
+		{
+			"relationshipType": "isTargeted",
+			"resource": {
+				"id": "66db6d6c658d40350e57e46b",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
+				"name": "Modem Burladingen 0"
+			}
+		}
+	],
+	"resourceStatus": "reserved",
+	"usageState": "idle",
+	"startOperatingDate": "2015-04-12T08:32:48.876Z",
+	"version": "4",
+	"href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1",
+	"__v": 0
+}
+
+entsprechendes Modem zum Router:
+{
+	"_id": "66db6d6c658d40350e57e46b",
+	"category": "Modem",
+	"endOperatingDate": "2024-11-17T05:30:22.984Z",
+	"name": "Modem Burladingen 0",
+	"administrativeState": "locked",
+	"operationalState": "enable",
+	"relatedParty": [
+		{
+			"id": "66db3aa516d68c5f3c138b53",
+			"name": "Walsh LLC Manufacturing",
+			"role": "Gerätehersteller",
+			"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b53"
+		}
+	],
+	"note": [],
+	"place": {
+		"id": "66db17e94e5b0dd1a47588e5",
+		"href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a47588e5"
+	},
+	"resourceCharacteristic": [
+		{
+			"name": "modem_type",
+			"value": "VDSL Modem",
+			"_id": "66db6d6c658d40350e57e46c"
+		},
+		{
+			"name": "max_download_speed",
+			"value": "1 Gbps",
+			"_id": "66db6d6c658d40350e57e46d"
+		},
+		{
+			"name": "max_upload_speed",
+			"value": "100 Mbps",
+			"_id": "66db6d6c658d40350e57e46e"
+		},
+		{
+			"name": "connection_type",
+			"value": "FTTH (Fiber to the Home)",
+			"_id": "66db6d6c658d40350e57e46f"
+		},
+		{
+			"name": "ethernet_ports",
+			"value": 4,
+			"_id": "66db6d6c658d40350e57e470"
+		},
+		{
+			"name": "usb_ports",
+			"value": 1,
+			"_id": "66db6d6c658d40350e57e471"
+		},
+		{
+			"name": "coaxial_input",
+			"value": true,
+			"_id": "66db6d6c658d40350e57e472"
+		},
+		{
+			"name": "wifi_capability",
+			"value": "Wi-Fi 4 (802.11n)",
+			"_id": "66db6d6c658d40350e57e473"
+		},
+		{
+			"name": "firmware_version",
+			"value": "v3.2.5",
+			"_id": "66db6d6c658d40350e57e474"
+		},
+		{
+			"name": "power_consumption",
+			"value": "12W",
+			"_id": "66db6d6c658d40350e57e475"
+		},
+		{
+			"name": "security_features",
+			"value": "WPA2-Enterprise, WPA3-Personal, MAC Whitelisting",
+			"_id": "66db6d6c658d40350e57e476"
+		},
+		{
+			"name": "last_maintenance",
+			"value": "2024-06-28T19:39:45.387Z",
+			"_id": "66db6d6c658d40350e57e477"
+		},
+		{
+			"name": "processor",
+			"value": "Intel Puma 7, 1.2 GHz",
+			"_id": "66db6d6c658d40350e57e478"
+		},
+		{
+			"name": "memory",
+			"value": "2GB DDR3",
+			"_id": "66db6d6c658d40350e57e479"
+		},
+		{
+			"name": "storage",
+			"value": "256MB NAND Flash",
+			"_id": "66db6d6c658d40350e57e47a"
+		}
+	],
+	"resourceRelationship": [
+		{
+			"relationshipType": "isTargeted",
+			"resource": {
+				"id": "66db583b79a5c83309347c7e",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
+				"name": "Street Cabinet Baden-Württemberg 1"
+			},
+			"_id": "66db6d6c658d40350e57e47b"
+		},
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db76c734ed489b211cd3c1",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1",
+				"name": "Router for Modem Burladingen 0 0"
+			}
+		}
+	],
+	"resourceStatus": "reserved",
+	"usageState": "busy",
+	"startOperatingDate": "2015-12-28T13:30:16.294Z",
+	"version": "2",
+	"href": "https://{host}/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
+	"__v": 0
+}
+
+entsprechendes Street Cabinet zum Modem:
+{
+	"_id": "66db583b79a5c83309347c7e",
+	"category": "Street Cabinet",
+	"endOperatingDate": "2024-12-20T19:27:18.795Z",
+	"name": "Street Cabinet Baden-Württemberg 1",
+	"administrativeState": "unlocked",
+	"operationalState": "enable",
+	"relatedParty": [
+		{
+			"id": "66db3aa516d68c5f3c138b52",
+			"name": "D'Amore, Kunde and Schuster Logistik GmbH",
+			"role": "Logistikunternehmen",
+			"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b52"
+		},
+		{
+			"id": "66db3aa516d68c5f3c138b61",
+			"name": "Daniel, Turcotte and Rice Reparatur & Wartung KG",
+			"role": "Wartungsfirma",
+			"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b61"
+		}
+	],
+	"note": [
+		{
+			"author": "Liah Rahn",
+			"date": "2023-08-23T19:15:13.839Z",
+			"text": "New power backup system installed; generator integrated."
+		},
+		{
+			"author": "Herr Yannis Krüger",
+			"date": "2024-05-20T06:49:24.907Z",
+			"text": "New power backup system installed; generator integrated."
+		},
+		{
+			"author": "Darian Scherbarth",
+			"date": "2023-06-25T22:08:39.128Z",
+			"text": "Minor network interruptions detected; cause traced to a faulty connection."
+		}
+	],
+	"place": {
+		"id": "66db17e94e5b0dd1a47588bd",
+		"href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a47588bd"
+	},
+	"resourceCharacteristic": [
+		{
+			"name": "connected_lines",
+			"value": "6186",
+			"_id": "66db583b79a5c83309347c7f"
+		},
+		{
+			"name": "cabinet_heigth",
+			"value": "1.8917812135303393m",
+			"_id": "66db583b79a5c83309347c80"
+		},
+		{
+			"name": "cabinet_width",
+			"value": "1.33122624643147m",
+			"_id": "66db583b79a5c83309347c81"
+		},
+		{
+			"name": "current_capacity_usage",
+			"value": "95%",
+			"_id": "66db583b79a5c83309347c82"
+		},
+		{
+			"name": "maximum_capacity",
+			"value": "610",
+			"_id": "66db583b79a5c83309347c83"
+		},
+		{
+			"name": "network_type",
+			"value": "FTTH",
+			"_id": "66db583b79a5c83309347c84"
+		},
+		{
+			"name": "fiber_ready",
+			"value": true,
+			"_id": "66db583b79a5c83309347c85"
+		},
+		{
+			"name": "power_backup",
+			"value": true,
+			"_id": "66db583b79a5c83309347c86"
+		},
+		{
+			"name": "security_status",
+			"value": "Guarded",
+			"_id": "66db583b79a5c83309347c87"
+		},
+		{
+			"name": "last_maintenance",
+			"value": "2024-07-08T08:03:36.732Z",
+			"_id": "66db583b79a5c83309347c88"
+		}
+	],
+	"resourceRelationship": [
+		{
+			"relationshipType": "isTargeted",
+			"resource": {
+				"id": "66db504324b321a19656ca22",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db504324b321a19656ca22",
+				"name": "Central Office Stuttgart"
+			},
+			"_id": "66db583b79a5c83309347c89"
+		},
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db6d6c658d40350e57e46b",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
+				"name": "Modem Burladingen 0"
+			}
+		}
+	],
+	"resourceStatus": "standby",
+	"usageState": "idle",
+	"startOperatingDate": "2013-04-11T03:25:18.267Z",
+	"version": "2",
+	"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
+	"__v": 0
+}
+
+entsprechendes Central Office zum Street Cabinet:
+{
+	"_id": "66db504324b321a19656ca22",
+	"category": "Central Office",
+	"endOperatingDate": "2035-05-12T00:00:00.000Z",
+	"name": "Central Office Stuttgart",
+	"administrativeState": "locked",
+	"operationalState": "enable",
+	"relatedParty": [
+		{
+			"id": "66db3aa516d68c5f3c138b54",
+			"name": "Hodkiewicz Group Energy Supply",
+			"role": "Energieversorger",
+			"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b54"
+		},
+		{
+			"id": "66db3aa516d68c5f3c138b61",
+			"name": "Daniel, Turcotte and Rice Reparatur & Wartung KG",
+			"role": "Wartungsfirma",
+			"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b61"
+		}
+	],
+	"note": [
+		{
+			"author": "Laurin Ritz",
+			"date": "2023-01-30T03:36:21.319Z",
+			"text": "Monthly performance report generated; all systems operating within normal parameters."
+		},
+		{
+			"author": "Ada Moritz",
+			"date": "2023-11-19T08:06:17.145Z",
+			"text": "Expansion plans approved for second data room; construction to begin next month."
+		}
+	],
+	"place": {
+		"id": "66db17e94e5b0dd1a475887b",
+		"href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a475887b"
+	},
+	"resourceCharacteristic": [
+		{
+			"name": "connected_lines",
+			"value": "24088",
+			"_id": "66db504324b321a19656ca23"
+		},
+		{
+			"name": "building_size",
+			"value": "145sqm",
+			"_id": "66db504324b321a19656ca24"
+		},
+		{
+			"name": "current_capacity_usage",
+			"value": "42%",
+			"_id": "66db504324b321a19656ca25"
+		},
+		{
+			"name": "maximum_capacity",
+			"value": "37658",
+			"_id": "66db504324b321a19656ca26"
+		},
+		{
+			"name": "fiber_backhaul_available",
+			"value": true,
+			"_id": "66db504324b321a19656ca27"
+		},
+		{
+			"name": "power_backup_system",
+			"value": "Brennstoffzellen",
+			"_id": "66db504324b321a19656ca28"
+		},
+		{
+			"name": "cooling_system",
+			"value": "Wärmetauscher",
+			"_id": "66db504324b321a19656ca29"
+		},
+		{
+			"name": "security_status",
+			"value": "Remote Monitoring",
+			"_id": "66db504324b321a19656ca2a"
+		}
+	],
+	"resourceStatus": "available",
+	"usageState": "busy",
+	"startOperatingDate": "2005-05-12T00:00:00.000Z",
+	"version": "3.1",
+	"href": "https://{host}/resourceInventoryManagement/resource/66db504324b321a19656ca22",
+	"__v": 0,
+	"resourceRelationship": [
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db583b79a5c83309347c71",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c71",
+				"name": "Street Cabinet Baden-Württemberg 0"
+			},
+			"_id": "66db5c7db4d0328bbd4c0f6f"
+		},
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db583b79a5c83309347c7e",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
+				"name": "Street Cabinet Baden-Württemberg 1"
+			},
+			"_id": "66db5c7db4d0328bbd4c0f70"
+		},
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db583b79a5c83309347c8b",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c8b",
+				"name": "Street Cabinet Baden-Württemberg 2"
+			},
+			"_id": "66db5c7db4d0328bbd4c0f71"
+		},
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db583b79a5c83309347c98",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c98",
+				"name": "Street Cabinet Baden-Württemberg 3"
+			},
+			"_id": "66db5c7db4d0328bbd4c0f72"
+		},
+		{
+			"relationshipType": "targets",
+			"resource": {
+				"id": "66db583b79a5c83309347ca5",
+				"href": "https://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347ca5",
+				"name": "Street Cabinet Baden-Württemberg 4"
+			},
+			"_id": "66db5c7db4d0328bbd4c0f73"
+		}
+	]
+}
+
+relatedParty zu Router:
+{
+	"_id": "66db3aa516d68c5f3c138b53",
+	"href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b53",
+	"isHeadOffice": false,
+	"isLegalEntity": false,
+	"name": "Walsh LLC Manufacturing",
+	"organizationType": "Gerätehersteller",
+	"tradingName": "Walsh LLC Manufacturing",
+	"existsDuring": {
+		"endDateTime": "2024-10-08T10:50:00.493Z",
+		"startDateTime": "2023-12-07T21:19:06.906Z",
+		"_id": "66db3aa516d68c5f3c139713"
+	},
+	"externalReference": [
+		{
+			"externalReferenceType": "internetSite",
+			"name": "untimely-distributor.com",
+			"_id": "66db3aa516d68c5f3c139714"
+		}
+	],
+	"status": "closed",
+	"__v": 0
+}
+
+GeoAdress zum Router:
+{
+	"_id": "66db17e94e5b0dd1a47588e5",
+	"city": "Burladingen",
+	"country": "DE",
+	"postcode": "72393",
+	"stateOrProvince": "Baden-Württemberg",
+	"streetName": "Hufelandstr.",
+	"streetNr": "89",
+	"href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a47588e5",
+	"__v": 0
+}

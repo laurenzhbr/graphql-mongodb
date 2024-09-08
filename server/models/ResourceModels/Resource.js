@@ -5,10 +5,6 @@ const RelatedPlaceRefOrValue = require('./ref_models/RelatedPlaceRefOrValue').sc
 const ResourceRelationship = require('./support_models/ResourceRelationship').schema;
 const Note = require('../genericModels/Note').schema;
 const RelatedParty = require('../genericModels/RelatedParty').schema;
-const ResourceStatusType = require('./support_models/ResourceStatus').schema;
-const ResourceUsageStateType = require('./support_models/ResourceUsageState').schema;
-const ResourceAdministrativeStateType = require('./support_models/ResourceAdministrativeState').schema;
-const ResourceOperationalStateType = require('./support_models/ResourceOperationalState').schema;
 
 const ResourceSchema = new mongoose.Schema({
   href: String,

@@ -6,7 +6,7 @@ const ResourceOperationalStateSchema = new mongoose.Schema({
         enum: ['enable', 'disable'],  // Beschränkung auf die zulässigen Werte
         required: true
     }
-});
+}, { _id: false });
 
 const ResourceOperationalState = mongoose.model('ResourceOperationalState', ResourceOperationalStateSchema);
 

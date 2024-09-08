@@ -1,4 +1,4 @@
-const { faker } = require('@faker-js/faker');
+const { faker } = require('@faker-js/faker/locale/de');
 const mongoose = require('mongoose');
 const Organization = require('../models/PartyModels/Organization'); // Dein Mongoose-Schema hier importieren
 

@@ -22,7 +22,7 @@ const ResourceSpecCharacteristicSchema = new Schema({
   isUnique: Boolean,
   "@type": String,
   characteristicValueSpecification: [CharacteristicValueSpecificationSchema],
-});
+}, { _id: false });
 
 
 // Hauptschema für ResourceSpecification

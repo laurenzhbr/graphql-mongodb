@@ -16,6 +16,6 @@ const CharacteristicSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.Mixed, // Referenz auf das Any Schema
     required: true,
   }
-});
+}, { _id: false });
 
 module.exports = mongoose.model('ResourceCharacteristic', CharacteristicSchema);
