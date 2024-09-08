@@ -6,7 +6,7 @@ Q3: Abfrage des ResourceStatus eines Central-Offices basierend auf dem Router ei
 
 Q4: Abfrage Street Cabinets in Leipzig, aller Characteristicen und derer Wartungsfirmen
 
-Q5: Abfrage der Namen Top 10 NameMarketing- und Vertriebsdienstleister mit einem Creditrating > 750, die validated sind
+Q5: Abfrage der Namen Top 10 Marketing- und Vertriebsdienstleister mit einem Creditrating > 750, die validated sind
 
 Q6: Abfrage einer Resource inkl. Name + Organizationtype der RelatedParty + GeoAdress
 

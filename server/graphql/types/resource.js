@@ -17,9 +17,19 @@ const NoteType = require('./note');
 const PlaceType = require('./geographicAdress');
 const ResourceSpecificationType = require('./resourceSpecification');
 
+const Resource = require('../../models/ResourceModels/Resource')
 const GeographicAdress = require('../../models/GeoAdressModels/GeographicAdress')
 const Organization = require('../../models/PartyModels/Organization')
 const ResourceSpecification = require('../../models/ResourceCatalogModels/ResourceSpecification');
+
+// Schema für ResourceRelationship, das die vollständige Resource zurückgibt
+const ResourceRelationshipType = new GraphQLObjectType({
+  name: 'ResourceRelationship',
+  fields: () => ({
+    relationshipType: { type: GraphQLString },
+    resource: { type: ResourceType } // Vollständige Resource
+  })
+});
 
 const ResourceType = new GraphQLObjectType({
   name: 'Resource',
@@ -61,7 +71,7 @@ const ResourceType = new GraphQLObjectType({
       type: new GraphQLList(OrganizationType),
       description: 'Related parties linked to this resource.',
       resolve(parent, args) {
-        return Organization.find({_id: {$in: parent.relatedPartyGql}});
+        return Organization.find({_id: {$in: parent.relatedParty.id}});
       }
     },
     note: {
@@ -72,8 +82,31 @@ const ResourceType = new GraphQLObjectType({
       type: PlaceType,
       description: 'The place related to this resource.',
       resolve(parent, args) {
-        let id = parent.placeGql
-        return GeographicAdress.findById(id);
+        return GeographicAdress.findById(parent.place.id);
+      }
+    },
+    resourceRelationship: {
+      type: new GraphQLList(ResourceRelationshipType),
+      args: {relationshipType: {type: GraphQLString}},
+      resolve: async (parent, args) => {
+        if (parent.resourceRelationship && parent.resourceRelationship.length > 0) {
+          const filteredRelationships = parent.resourceRelationship.filter(
+            (relationship) => relationship.relationshipType === args.relationshipType
+          );
+
+          const relatedResources = await Promise.all(
+            filteredRelationships.map(async (relationship) => {
+              const relatedResourceID = relationship.resource.id
+              const relatedResource = await Resource.findById(relatedResourceID);
+              return {
+                ...relationship.toObject(),
+                resource: relatedResource
+              };
+            })
+          );
+          return relatedResources;
+        }
+        return null;
       }
     },
     resourceSpecification: {

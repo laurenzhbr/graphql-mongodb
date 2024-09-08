@@ -2,11 +2,33 @@ const axiosInstance = require('../../utils/interceptors');
 
 const query = (status) => `
   {
-    digitalIdentities(status: "${status}"){
-      nickname
-      creationDate
-    }
+	resource(id: "66db76c734ed489b211cd399") {
+		category
+		name
+		resourceRelationship(relationshipType: "isTargeted"){
+			resource{
+				id
+				name
+				category
+				resourceRelationship(relationshipType: "isTargeted"){
+					resource{
+						name
+						category
+						usageState
+						resourceRelationship(relationshipType: "isTargeted"){
+							resource{
+								id
+								name
+								category
+								resourceStatus
+							}
+						}
+					}
+				}
+			}
+		}
   }
+}
 `;
 
 const gql_use_case_1 =  async (id) => {

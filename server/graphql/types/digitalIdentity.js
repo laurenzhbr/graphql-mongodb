@@ -56,7 +56,7 @@ const {
         type: ResourceType,
         description: 'Resource identified by this digital identity',
         resolve(parent, args){
-            return Resource.findById(parent.resource); //fetches connected resource
+            return Resource.findById(parent.resourceIdentified.id); //fetches connected resource
         }
       },
     },
