@@ -21,14 +21,6 @@ const {
         type: GraphQLString,
         description: 'The country where the address is located.',
       },
-      locality: {
-        type: GraphQLString,
-        description: 'A locality within a city, such as a neighborhood or district.',
-      },
-      name: {
-        type: GraphQLString,
-        description: 'The name associated with the address, possibly a building or complex name.',
-      },
       postcode: {
         type: GraphQLString,
         description: 'The postal code for the address.',
@@ -44,27 +36,7 @@ const {
       streetNr: {
         type: GraphQLString,
         description: 'The primary street number of the address.',
-      },
-      streetNrLast: {
-        type: GraphQLString,
-        description: 'The last street number in a range, if applicable.',
-      },
-      streetNrLastSuffix: {
-        type: GraphQLString,
-        description: 'The suffix of the last street number in a range, if applicable.',
-      },
-      streetNrSuffix: {
-        type: GraphQLString,
-        description: 'The suffix of the street number, such as a letter or fraction.',
-      },
-      streetSuffix: {
-        type: GraphQLString,
-        description: 'The suffix of the street, such as "Avenue", "Boulevard", etc.',
-      },
-      streetType: {
-        type: GraphQLString,
-        description: 'The type of street, such as "Street", "Road", etc.',
-      },
+      }
     },
   });
   

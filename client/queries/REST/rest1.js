@@ -7,7 +7,7 @@ const rest_use_case_1 = async (id) => {
     const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active`
     const res = await axiosInstance.get(url);
 
-    return res.duration
+    return {'request_times': res.duration}
 };
 
 

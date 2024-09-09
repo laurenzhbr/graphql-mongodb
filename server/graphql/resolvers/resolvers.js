@@ -3,6 +3,7 @@ const ResourceType = require('../types/resource');
 const DigitalIdentityType = require('../types/digitalIdentity')
 const Resource = require('../../models/ResourceModels/Resource');
 const DigitalIdentity = require('../../models/DigtialIdentityModels/DigitalIdentity')
+const GeographicAddress = require('../../models/GeoAdressModels/GeographicAdress')
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
@@ -50,7 +51,37 @@ const RootQuery = new GraphQLObjectType({
           return Resource.find(filterObj);
         }
       }
-    } 
+    },
+    resourcesByCategoryAndCity:{
+      type: new GraphQLList(ResourceType),
+      args: {
+        category: { type: GraphQLString },
+        city: { type: GraphQLString }
+      },
+      async resolve(parent, args){
+        // Filter nach Kategorie
+        const categoryFilter = { category: args.category };
+
+        // Finde alle Ressourcen der angegebenen Kategorie
+        const resources = await Resource.find(categoryFilter);
+
+        const filteredResources = [];
+
+        // 1. Schritt: Für jede Ressource, die GeographicAddress (relatedPlace) abrufen und Stadt überprüfen
+        for (const resource of resources) {
+          if (resource.place && resource.place.id) {
+            // Abrufen der GeographicAddress anhand der place ID
+            const geographicAddress = await GeographicAddress.findById(resource.place.id);
+            
+            // Prüfen, ob die Stadt der gewünschten Stadt entspricht
+            if (geographicAddress && geographicAddress.city === args.city) {
+              filteredResources.push(resource);
+            }
+          }
+        }
+        return filteredResources;
+      }
+    }, 
   },
 });
 

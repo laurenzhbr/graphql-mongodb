@@ -13,6 +13,7 @@ const ResourceSchema = new mongoose.Schema({
   value: String,
   endOperatingDate: Date,
   name: String,
+  resourceCharacteristic: { type: [ResourceCharacteristic], default: undefined },
   administrativeState: {
     type: String,
     enum: ['locked', 'unlocked', 'shutdown']
@@ -33,7 +34,6 @@ const ResourceSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "GeographicAddress",
   },
-  resourceCharacteristic: { type: [ResourceCharacteristic], default: undefined },
   resourceRelationship: { type: [ResourceRelationship], default: undefined },
   resourceSpecification: ResourceSpecificationRef, //Ref-Entity -> /resourceCatalogManagement/resourceSpecification/:id
   resourceSpecificationGql: {

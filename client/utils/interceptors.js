@@ -22,6 +22,7 @@ axiosInstance.interceptors.response.use(response => {
     const duration = Date.now() - response.config.metadata.startTime;
     const url = `${response.config.method} ${response.config.url}`;
     console.log(`Response time: ${duration} ms for ${url}`);
+    
     response.duration = duration;
     
     return response;

@@ -4,11 +4,11 @@ Q2: Abfrage aller Street-Cabinets (im Raum Deutschland,) die Ihre maximale Kapaz
 
 Q3: Abfrage des ResourceStatus und Name eines Central-Offices basierend auf dem Router einer DigitalIdentity
 
-Q4: Abfrage Street Cabinets in Leipzig, aller Characteristicen und derer Wartungsfirmen
+Q4: Abfrage Street Cabinets in Berlin -> connected_lines, maximum_capacity, power_backup aus Characteristicen und Name + ID der zuständigen Wartungsfirma
 
 Q5: Abfrage der Namen Top 10 Marketing- und Vertriebsdienstleister mit einem Creditrating > 750, die validated sind
 
-Q6: Abfrage einer Resource inkl. Name + Organizationtype der RelatedParty + GeoAdress
+Q6: Abfrage einer Resource inkl. Name + Organizationtype + Status der RelatedParty + GeoAdress
 
 Q7: Abfrage aller Modems, deren Verbindungstyp FTTH ist und die in Betrieb (operationalType=enable)
 

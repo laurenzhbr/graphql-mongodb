@@ -1,6 +1,6 @@
 const axiosInstance = require('../../utils/interceptors');
 
-const rest_use_case_3 = async (id) => {
+const rest_use_case_3 = async (id="66db7b5fbbe1351f628ed5f3") => {
     let total_duration = 0;
     const actualHost = process.env.HOST || 'localhost:4000';
 
@@ -49,8 +49,7 @@ const rest_use_case_3 = async (id) => {
     const res5 = await axiosInstance.get(`${href_resource_central_office}?fields=resourceStatus,name`);
     total_duration += res5.duration;
     
-    res5.duration = total_duration;
-    return res5.duration
+    return {'request_times': total_duration}
 };
 
 module.exports = { rest_use_case_3 };

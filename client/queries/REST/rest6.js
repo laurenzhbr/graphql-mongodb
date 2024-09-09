@@ -1,41 +1,56 @@
 const axiosInstance = require('../../utils/interceptors');
-let total_duration;
 
-const rest_use_case_6 = async (id) => {
+
+const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
+    const transaction_start = Date.now()
+    let total_duration= 0;
     const actualHost = process.env.HOST || 'localhost:4000';
 
-    const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity/${id}`
-    const res1 = await axiosInstance.get(url);
-    total_duration += res1.duration;
+    const resourceUrl = `http://${actualHost}/resourceInventoryManagement/resource/${id}`;
+    const resourceResponse = await axiosInstance.get(resourceUrl);
+    total_duration += resourceResponse.duration;
+    const resourceData = resourceResponse.data;
 
-    const href_resourceIdentified = res1.data.resourceIdentified.href
-            .replace("{host}", actualHost)
-            .replace("https", "http");
-    const res2 = await axiosInstance.get(href_resourceIdentified);
+    // Sammle die RelatedParty IDs und die place href
+    const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href);
+    const href_geoAdress = resourceData.place.href
+        .replace("{host}", actualHost)
+        .replace("https", "http");
+
+    //GET Data from GeoAdress
+    const res2 = await axiosInstance.get(href_geoAdress);
     total_duration += res2.duration;
 
-    const href_geoAdress = res2.data.place.href.replace("{host}", actualHost)
-    const res3 = await axiosInstance.get(href_geoAdress.replace("https", "http"));
-    total_duration += res3.duration;
+    
+    // 2. Abfrage der Related Parties (Organization)
+    const relatedPartyDetails = await Promise.all(
+        relatedPartyHrefs.map(async (partyHref) => {
+            const orgUrl = partyHref.replace("{host}", actualHost).replace("https", "http");
+            const orgResponse = await axiosInstance.get(orgUrl);
+            total_duration += orgResponse.duration;
+            return {
+                name: orgResponse.data.name,
+                organizationType: orgResponse.data.organizationType,
+                status: orgResponse.data.status,
+            };
+        })
+    );
 
-    const relatedParty = res2.data.relatedParty;
-    const matchingParty = relatedParty.find(party => party.role === "equipment supplier");
-    const href_relatedParty = matchingParty.href.replace("{host}", actualHost);
-    const res4 = await axiosInstance.get(href_relatedParty.replace("https", "http"));
-    total_duration += res4.duration;
-
-    const resourceSpecification = res2.data.resourceSpecification
-    const href_resourceSpecification = resourceSpecification.href.replace("{host}", actualHost)
-    const res5 = await axiosInstance.get(href_resourceSpecification.replace("https", "http"));
-    total_duration += res5.duration;
+    /* const resourceSpecification = res1.data.resourceSpecification
+    const href_resourceSpecification = resourceSpecification.href
+        .replace("{host}", actualHost)
+        .replace("https", "http");
+    const res4 = await axiosInstance.get(href_resourceSpecification.replace("https", "http"));
+    total_duration += res4.duration; */
     /* for (resourceSpec of resourceSpecifications) {
         const href_resourceSpecification = resourceSpec.href.replace("{host}", actualHost)
         const res5 = await axiosInstance.get(href_resourceSpecification.replace("https", "http"));
         total_duration += res5.duration;
     }    
  */
-    res5.duration = total_duration;
-    return res5.duration
+    total_transaction_time = Date.now() - transaction_start;
+    const measurements = {'request_times': total_duration, 'total_transaction_time': total_transaction_time}
+    return measurements
 };
 
 

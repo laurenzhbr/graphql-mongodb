@@ -1,8 +1,8 @@
 const axiosInstance = require('../../utils/interceptors');
 
-const query = (status) => `
+const query = (id) => `
   {
-	digitalIdentity(id: "66db7b5fbbe1351f628ed5f3") {
+	digitalIdentity(id: ${id}) {
 		nickname
 		resource{
 			id
@@ -33,10 +33,10 @@ const query = (status) => `
 
 const gql_use_case_1 =  async (id) => {
     const res = await axiosInstance.post('http://localhost:4000/graphql', {
-        query: query("active"),
+        query: query("66db7b5fbbe1351f628ed5f3"),
     });
 
-    return res.duration
+    return {'request_times': res.duration}
 }
 
 module.exports = {gql_use_case_1};

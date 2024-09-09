@@ -1,20 +1,24 @@
 const axiosInstance = require('../../utils/interceptors');
 
-const query = (status) => `
+const query = (category, capacity_usage) => `
   {
-    digitalIdentities(status: "${status}"){
-      nickname
-      creationDate
+    searchResourcesByCategoryAnCapacityUsage(category: ${category}, capacity: ${capacity_usage}){
+      name
+      category
+      note{
+        author
+        text
+      }
     }
   }
 `;
 
-const gql_use_case_1 =  async (id) => {
+const gql_use_case_2 =  async (id) => {
     const res = await axiosInstance.post('http://localhost:4000/graphql', {
-        query: query("active"),
+        query: query("Street Cabinet", 95),
     });
 
     return res.duration
 }
 
-module.exports = {gql_use_case_1};
+module.exports = {gql_use_case_2};
