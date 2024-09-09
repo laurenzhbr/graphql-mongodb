@@ -7,12 +7,12 @@ const path = require('path');
 const { gql_use_case_1 } = require('./queries/GQL/gql1');
 
 // Import REST-Request for Use-Case
-const {rest_use_case_1} = require('./queries/REST/rest1');
+const {rest_use_case_3} = require('./queries/REST/rest3');
 
 
 //const id = "66d5aa5fff81b5b5ab4090f1";  #ID for GraphQL Use-Case
 
-const id = "66d06cd89cd471926c54d8d4";
+const id = "66db7b5fbbe1351f628ed5f3";
 
 /* gql_use_case_1(id)
     .then(data => {
@@ -27,20 +27,20 @@ const gql_queries = [
 ]
 
 const rest_requests = [
-    rest_use_case_1,
+    rest_use_case_3,
 ]
 
 async function runTestSuite(){
 
     // Conduct all REST testcases
-    for (let i = 0; i < rest_requests.length; i++){
-        await runSingleTestProcedure(rest_requests[i], "REST", `rest_use_case_${i+1}`, 50, 1);
-    }
+    /* for (let i = 0; i < rest_requests.length; i++){
+        await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, 50, 1);
+    } */
 
     // Conduct all GraphQL testcases
-    /* for (let i = 0; i < gql_queries.length; i++){
-        await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql_use_case_${i+1}`, 50, 1);
-    } */
+    for (let i = 0; i < gql_queries.length; i++){
+        await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, 50, 1);
+    }
 }
 
 const runSingleTestProcedure = async (method, api, use_case, iterationCount) => {

@@ -2,7 +2,7 @@ const axiosInstance = require('../../utils/interceptors');
 
 const query = (status) => `
   {
-    digitalIdentities(status: "${status}"){
+    digitalIdentitiesByStatus(status: "active"){
       nickname
       creationDate
     }

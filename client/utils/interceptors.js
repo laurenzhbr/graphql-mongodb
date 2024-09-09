@@ -1,7 +1,11 @@
 const axios = require('axios');
 
 // Erstelle eine Instanz von Axios, um Interceptors hinzuzufügen
-const axiosInstance = axios.create();
+const axiosInstance = axios.create({
+    headers: {
+    'Connection': 'keep-alive'  // Keep-Alive Header hinzufügen
+  }
+});
 
 // Füge einen Request Interceptor hinzu
 axiosInstance.interceptors.request.use(config => {
@@ -15,13 +19,10 @@ axiosInstance.interceptors.request.use(config => {
 // Füge einen Response Interceptor hinzu
 axiosInstance.interceptors.response.use(response => {
     // Berechne die Zeit, die für die Anfrage benötigt wurde
-    const endTime = Date.now();
-    const startTime = response.config.metadata.startTime;
-    response.config.metadata.endTime = endTime;
-    response.config.metadata.duration = endTime - startTime;
-
-    console.log(`Response time: ${response.config.metadata.duration} ms`);
-    response.duration = response.config.metadata.duration;
+    const duration = Date.now() - response.config.metadata.startTime;
+    const url = `${response.config.method} ${response.config.url}`;
+    console.log(`Response time: ${duration} ms for ${url}`);
+    response.duration = duration;
     
     return response;
 }, error => {

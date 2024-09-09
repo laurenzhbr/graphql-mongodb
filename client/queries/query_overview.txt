@@ -2,7 +2,7 @@ Q1: GET all "active" DigitalIdentities
 
 Q2: Abfrage aller Street-Cabinets (im Raum Deutschland,) die Ihre maximale Kapazität fast erreicht haben (>95%)
 
-Q3: Abfrage des ResourceStatus eines Central-Offices basierend auf dem Router einer DigitalIdentity
+Q3: Abfrage des ResourceStatus und Name eines Central-Offices basierend auf dem Router einer DigitalIdentity
 
 Q4: Abfrage Street Cabinets in Leipzig, aller Characteristicen und derer Wartungsfirmen
 
