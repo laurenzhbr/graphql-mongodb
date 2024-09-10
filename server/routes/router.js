@@ -19,7 +19,7 @@ router.use('/graphql', graphqlRouter)
 
 // REST routes
 router.use('/resourceInventoryManagement/resource', restResourceRoutes)
-router.use('/partyManagement/party', restPartyRoutes)
+router.use('/partyManagement/organization', restPartyRoutes)
 router.use('/geographicAdressManagement/geographicAdress', restGeoAdressRoutes)
 router.use('/resourceCatalog/resourceSpecification', restResourceCatalogRoutes)
 router.use('/digitalIdentityManagement/digitalIdentity', restDigitalIdentityRoutes)

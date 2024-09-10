@@ -2,8 +2,10 @@ const { GraphQLSchema, GraphQLInt, GraphQLObjectType, GraphQLString, GraphQLList
 const ResourceType = require('../types/resource');
 const DigitalIdentityType = require('../types/digitalIdentity')
 const Resource = require('../../models/ResourceModels/Resource');
-const DigitalIdentity = require('../../models/DigtialIdentityModels/DigitalIdentity')
-const GeographicAddress = require('../../models/GeoAdressModels/GeographicAdress')
+const Organization = require('../../models/PartyModels/Organization');
+const DigitalIdentity = require('../../models/DigtialIdentityModels/DigitalIdentity');
+const GeographicAddress = require('../../models/GeoAdressModels/GeographicAdress');
+const OrganizationType = require('../types/organization');
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
@@ -81,7 +83,70 @@ const RootQuery = new GraphQLObjectType({
         }
         return filteredResources;
       }
-    }, 
+    },
+    resourcesByCategoryAndStates: {
+      type: new GraphQLList(ResourceType),
+      args: {
+        category: { type: GraphQLString },
+        resourceStatus: { type: GraphQLString },
+        operationalState: { type: GraphQLString },
+        administrativeState: { type: GraphQLString },
+      },
+      resolve(parent, args){
+        // Filter nach Kategorie
+        const filter = { category: args.category };
+
+        // Optional: Filter für usageState
+        if (args.resourceStatus) {
+          filter['resourceStatus'] = args.resourceStatus;
+        }
+
+        // Optional: Filter für administrativeState
+        if (args.administrativeState) {
+          filter['administrativeState'] = args.administrativeState;
+        }
+
+        // Optional: Filter für operationalState
+        if (args.operationalState) {
+          filter['operationalState'] = args.operationalState;
+        }
+
+        // Führe die Abfrage basierend auf den Filtern aus
+        return Resource.find(filter);
+      }
+    },
+    organizations: {
+      type: new GraphQLList(OrganizationType),
+      args: {
+        organizationType: { type: GraphQLString },
+        status: { type: GraphQLString },
+        sortBy: { type: GraphQLString},
+        creditRating_gt: { type: GraphQLInt },
+        limit: { type: GraphQLInt},
+      },
+      async resolve(parent, args){
+        let limit = args.limit || 100;
+        // Filter-Objekt
+        const filter = {
+          ...(args.organizationType && { organizationType: { $in: args.organizationType } }), // Füge nur hinzu, wenn organizationType angegeben ist
+          ...(args.status && { status: args.status }), // Füge nur hinzu, wenn status angegeben ist
+          ...(args.creditRating_gt && {
+            creditRating: {
+              $elemMatch: { ratingScore: { $gt: args.creditRating_gt } } // Füge nur hinzu, wenn creditRating_gt angegeben ist
+            }
+          })
+        };
+
+        // Abfrage mit den dynamisch erzeugten Filtern
+        let query = Organization.find(filter);
+
+        // Sortiere nach Creditrating, wenn creditRating_gt angegeben ist
+        query = args.creditRating_gt ? query.sort({ 'creditRating.ratingScore': args.sortBy === 'asc' ? 1 : -1 }) : query;
+
+        // Führe die Abfrage aus
+        return await query.limit(limit);
+      }
+    }
   },
 });
 

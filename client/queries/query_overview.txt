@@ -10,9 +10,7 @@ Q5: Abfrage der Namen Top 10 Marketing- und Vertriebsdienstleister mit einem Cre
 
 Q6: Abfrage einer Resource inkl. Name + Organizationtype + Status der RelatedParty + GeoAdress
 
-Q7: Abfrage aller Modems, deren Verbindungstyp FTTH ist und die in Betrieb (operationalType=enable)
-
-Q8: Liste aller Central Offices in Deutschland mit name, resourceStatus und version
+Q7: Abfrage aller Modems, deren resourceStatus "active", administrativeState "unlocked" und die in Betrieb (operationalType=enable)
 
 Q9: Update der referenzierten Ressource einer DigitalIdentity
 
