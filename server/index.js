@@ -12,10 +12,14 @@ const { createTestResourceSpecification1 } = require('./utils/writeSpecification
 // Import router for REST and GraphQL
 const router = require('./routes/router')
 
+const { getMemoryUsage, getCpuUsage } = require('./utils/tracing'); // Importiere die Tracing-Funktionen
+
 const app = express();
 
 // Middleware für JSON-Verarbeitung
 app.use(express.json());
+
+
 
 // Verbinde dich mit der lokalen MongoDB-Datenbank
 db_orig = mongoose.connect(`${process.env.DB_URL}`, {
@@ -24,20 +28,22 @@ db_orig = mongoose.connect(`${process.env.DB_URL}`, {
 }).then(() => {
   console.log('MongoDB connected');
 
-  // Test-Ressourcen erstellen
-  // Kommentiere die folgenden Zeilen ein oder aus, um die entsprechenden Ressourcen zu erstellen
-  /* createTestResource1();
-  createTestResource2();
-  createTestResource3();
-  createTestResource5(); */
-  //createDigitalIDTest1();
-  // createTestOrganization();
-  //createTestGeoAdress1();
-  //createTestResourceSpecification1();
-
 
 }).catch(err => {
   console.error('MongoDB connection error:', err);
+});
+
+// Add middleware to trace CPU and memory usage
+app.use((req, res, next) => {
+  const memoryUsage = getMemoryUsage();
+  const cpuUsage = getCpuUsage();
+
+  // Add CPU and Memory usage to the response headers
+  res.set('X-Memory-Usage', JSON.stringify(memoryUsage.heapUsed));
+  res.set('X-CPU-Usage', JSON.stringify(cpuUsage.user));
+
+  // Call next middleware or route handler
+  next();
 });
 
 // start router

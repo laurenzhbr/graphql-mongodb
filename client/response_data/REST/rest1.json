@@ -1,0 +1,137 @@
+[
+  {
+    "_id": "66d06cd89cd471926c54d8d4",
+    "nickname": "LaurenzHbr1",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66cf06943a5799a97164e997",
+      "href": "https://{host}/resourceInventoryManagement/resource/66cf06943a5799a97164e997"
+    },
+    "creationDate": "2024-08-29T12:43:04.456Z",
+    "lastUpdate": "2024-08-29T12:43:04.461Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66d06cd89cd471926c54d8d4",
+    "__v": 0
+  },
+  {
+    "_id": "66d5aa5fff81b5b5ab4090f1",
+    "nickname": "LaurenzHbr2",
+    "status": "active",
+    "resource": "66d9bc81603400485a517965",
+    "creationDate": "2024-09-02T12:06:55.983Z",
+    "lastUpdate": "2024-09-02T12:06:55.987Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66d5aa5fff81b5b5ab4090f1",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed5e2",
+    "nickname": "Liz.Ruch",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd399",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd399"
+    },
+    "creationDate": "2024-09-06T21:59:59.202Z",
+    "lastUpdate": "2024-09-06T21:59:59.204Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e2",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed5e7",
+    "nickname": "NewNickname",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66cae3e2d6434ed77a229b79",
+      "href": "https://{host}/resourceInventoryManagement/resource/66cae3e2d6434ed77a229b79",
+      "name": "iPhone handy"
+    },
+    "creationDate": "2024-09-06T21:59:59.221Z",
+    "lastUpdate": "2024-09-10T13:22:08.056Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed5ed",
+    "nickname": "Eleonora_Thust",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd3fd",
+      "name": "Router for Modem Riedhausen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3fd"
+    },
+    "creationDate": "2024-09-06T21:59:59.227Z",
+    "lastUpdate": "2024-09-06T21:59:59.227Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5ed",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed5f3",
+    "nickname": "Isabell.Sinnhuber14",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd439",
+      "name": "Router for Modem Bischbrunn 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd439"
+    },
+    "creationDate": "2024-09-06T21:59:59.233Z",
+    "lastUpdate": "2024-09-06T21:59:59.234Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5f3",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed5f5",
+    "nickname": "Ibrahim88",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd44d",
+      "name": "Router for Modem Pommersfelden 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd44d"
+    },
+    "creationDate": "2024-09-06T21:59:59.235Z",
+    "lastUpdate": "2024-09-06T21:59:59.236Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5f5",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed611",
+    "nickname": "Ilyas17",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd565",
+      "name": "Router for Modem Bremerhaven 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd565"
+    },
+    "creationDate": "2024-09-06T21:59:59.261Z",
+    "lastUpdate": "2024-09-06T21:59:59.261Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed611",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed615",
+    "nickname": "Leandro16",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd58d",
+      "name": "Router for Modem Bremen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd58d"
+    },
+    "creationDate": "2024-09-06T21:59:59.264Z",
+    "lastUpdate": "2024-09-06T21:59:59.264Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed615",
+    "__v": 0
+  },
+  {
+    "_id": "66db7b5fbbe1351f628ed617",
+    "nickname": "Jella5",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66db76c734ed489b211cd5a1",
+      "name": "Router for Modem Hamburg 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd5a1"
+    },
+    "creationDate": "2024-09-06T21:59:59.265Z",
+    "lastUpdate": "2024-09-06T21:59:59.266Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed617",
+    "__v": 0
+  }
+]

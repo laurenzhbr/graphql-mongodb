@@ -6,7 +6,7 @@ const rest_use_case_7 = async () => {
     let total_duration = 0;
 
     // 1. Abfrage aller Modems mit Verbindungstyp "FTTH" und Betriebsstatus "enable"
-    const url = `http://${actualHost}/partyManagement/organizations?organizationType=Marketing-%20und%20Vertriebspartner&status=validated&creditRating_gt=750&limit=10&sort=creditRating`;
+    const url = `http://${actualHost}/partyManagement/organizations?organizationType=Marketing-%20und%20 Vertriebspartner&status=validated&creditRating_gt=750&limit=10&sort=creditRating`;
     const organizationResponse = await axiosInstance.get(url);
     
     // Namen der Organisationen sammeln
