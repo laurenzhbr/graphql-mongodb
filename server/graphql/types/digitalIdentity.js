@@ -1,11 +1,7 @@
 const {
     GraphQLObjectType,
-    GraphQLID,
     GraphQLString,
-    GraphQLNonNull,
-    GraphQLList,
-    GraphQLEnumType,
-    GraphQLScalarType,
+    GraphQLEnumType
   } = require('graphql');
   const { GraphQLDateTime } = require('../customScalars/customScalars');
   const ResourceType = require('./resource'); // resource type

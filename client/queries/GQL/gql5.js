@@ -2,21 +2,12 @@ const axiosInstance = require('../../utils/interceptors');
 
 const query = () => `
 	{
-    resourcesByCategoryAndCity(category: "Street Cabinet", city: "Berlin") {
+    organizations(organizationType: "Marketing- und Vertriebspartner", status: "validated", creditRating_gt: 750, sortBy: "desc") {
       name
-      category
-      resourceCharacteristic(names: ["connected_lines", "maximum_capacity", "power_backup"]){
-        name
-        value
-      }
-      relatedParties {
-        organizationType
-        name
-      }
-      place {
-        id
-        city
-        country
+      organizationType
+      creditRating {
+        ratingScore
+        creditAgencyName
       }
     }
   }

@@ -25,7 +25,7 @@ const query = (id) => `
   }
 `;
 
-const gql_use_case_6 =  async (id) => {
+const gql_use_case_7 =  async (id) => {
     const res = await axiosInstance.post('http://localhost:4000/graphql', {
         query: query("66db76c734ed489b211cd3fd"),
     });
@@ -33,4 +33,4 @@ const gql_use_case_6 =  async (id) => {
     return {'request_times': res.duration}
 }
 
-module.exports = {gql_use_case_6};
+module.exports = {gql_use_case_7};

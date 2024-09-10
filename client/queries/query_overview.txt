@@ -12,12 +12,12 @@ Q6: Abfrage einer Resource inkl. Name + Organizationtype + Status der RelatedPar
 
 Q7: Abfrage aller Modems, deren resourceStatus "active", administrativeState "unlocked" und die in Betrieb (operationalType=enable)
 
-Q9: Update der referenzierten Ressource einer DigitalIdentity
-
-Q10: Update der relatedParty eines Street-Cabinets von einer Party auf die andere
+Q8: Update der referenzierten Ressource einer DigitalIdentity
 
 Q11: Erstellung eines Routers mit vorgegebenen Beispielwerten
 
 Q12: Abfrage aller inactiven DigitalIdentities und diese dann löschen
 
 Q13: Löschen eines Routers
+
+Q10: Update der relatedParty eines Street-Cabinets von einer Party auf die andere

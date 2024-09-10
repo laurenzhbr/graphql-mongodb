@@ -6,6 +6,8 @@ const Organization = require('../../models/PartyModels/Organization');
 const DigitalIdentity = require('../../models/DigtialIdentityModels/DigitalIdentity');
 const GeographicAddress = require('../../models/GeoAdressModels/GeographicAdress');
 const OrganizationType = require('../types/organization');
+const DigitalIdentityUpdateInput = require('../types/inputs/DigitalIdentityInputType');
+const ResourceInputType = require('../types/inputs/ResourceInputType');
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
@@ -154,23 +156,48 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
-    addResource: {
+    createResource: {
       type: ResourceType,
       args: {
-        id: { type: new GraphQLNonNull(GraphQLString) },
-        href: { type: new GraphQLNonNull(GraphQLString) },
-        category: { type: GraphQLString },
-        description: { type: GraphQLString },
-        name: { type: GraphQLString },
-        resourceVersion: { type: GraphQLString },
-        startOperatingDate: { type: GraphQLString },
-        // Hier könntest du weitere Felder wie activationFeature, attachment usw. hinzufügen
+        input: { type: ResourceInputType } // Die Input-Daten für die Ressource
       },
-      resolve(parent, args) {
-        const resource = new Resource(args);
-        return resource.save();
+      async resolve(parent, { input }) {
+        // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
+        const resource = new Resource(input);
+          
+        // Speichern der neuen Ressource in der Datenbank
+        const newResource = await resource.save();
+        
+        // Rückgabe der erstellten Ressource
+        return newResource;
+      }
+    },
+    updateDigitalIdentity: {
+      type: DigitalIdentityType,
+      args: {
+        id: { type: GraphQLID },
+        data: { type: DigitalIdentityUpdateInput }  // Verwende den Input-Type hier
       },
-    }/* ,
+      async resolve(parent, { id, data }) {
+
+        const digitalIdentity = await DigitalIdentity.findById(id);
+
+        // Aktualisiere nur die übermittelten Felder
+        Object.assign(digitalIdentity, data);
+
+        // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+        const updatedDigitalIdentity = await digitalIdentity.save();
+        /* // Führe die Aktualisierung durch
+        if (!data.resourceIdentified.href){
+          data.resourceIdentified.href = `https://{host}/resourceInventoryManagement/resource/${data.resourceIdentified.id}`;
+        }
+        const updatedDigitalIdentity = await DigitalIdentity.findByIdAndUpdate(id, data, {
+          new: true,
+          runValidators: true
+      }); */
+      return updatedDigitalIdentity;
+    }
+    },/* ,
     deleteResource: {
       type: ResourceType,
       args: { id: { type: new GraphQLNonNull(GraphQLString) } },

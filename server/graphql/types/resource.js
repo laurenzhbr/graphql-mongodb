@@ -36,10 +36,6 @@ const CharacteristicType = new GraphQLObjectType({
   name: 'Characteristic',
   description: 'Represents a characteristic of a resource.',
   fields: {
-    id: { 
-      type: GraphQLString, 
-      description: 'The ID of the characteristic.' 
-    },
     name: { 
       type: new GraphQLNonNull(GraphQLString), 
       description: 'The name of the characteristic.' 

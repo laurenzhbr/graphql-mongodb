@@ -103,19 +103,32 @@ exports.getResourceById = async (req, res) => {
 // Controller-Funktion zum Aktualisieren einer Ressource
 exports.updateResourceById = async (req, res) => {
     try {
-        const updatedResource = await Resource.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            { new: true, runValidators: true }
-        );
+        const { id } = req.params; // ID des Street-Cabinets
+        const { newRelatedParty } = req.body; // Neue relatedParty-Daten (ID und andere Details)
 
-        if (!updatedResource) {
-            return res.status(404).json({ message: 'Resource not found' });
+        // Finde das Street-Cabinet basierend auf der ID
+        const streetCabinet = await Resource.findById(id);
+
+        if (!streetCabinet) {
+        return res.status(404).json({ message: 'Resource nicht gefunden' });
         }
 
-        res.json(updatedResource);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
+        // Überprüfe, ob eine relatedParty vorhanden ist und ersetze diese durch die neue Party
+        streetCabinet.relatedParty = streetCabinet.relatedParty.map(party =>
+        party.id === newRelatedParty.oldPartyId
+            ? { ...party.toObject(), id: newRelatedParty.newPartyId, name: newRelatedParty.newPartyName, href: newRelatedParty.newPartyHref }
+            : party
+        );
+
+        // Speichere die aktualisierten Daten (presave-Hook wird ausgeführt)
+        const updatedStreetCabinet = await streetCabinet.save();
+
+        // Rückgabe des aktualisierten Street-Cabinet-Datensatzes
+        res.status(200).json(updatedStreetCabinet);
+
+    } catch (error) {
+        console.error('Error updating relatedParty:', error);
+        res.status(500).json({ message: 'Interner Serverfehler' });
     }
 };
 

@@ -11,6 +11,9 @@ router.post('/', digitalIdentityController.createDigitalIdentity);
 // GET /resource/:id - Eine spezifische DigitalIdentity abrufen
 router.get('/:id', digitalIdentityController.getDigitalIdentityById);
 
+// Patch /resource - Eine DigitalIdentity updaten
+router.patch('/:id', digitalIdentityController.patchDigitalIdentity)
+
 module.exports = router;
 
 

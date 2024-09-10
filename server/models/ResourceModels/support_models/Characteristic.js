@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
 const CharacteristicSchema = new mongoose.Schema({
-  id: {
-    type: String,
-  },
   name: {
     type: String,
     required: true,
