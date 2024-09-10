@@ -14,6 +14,9 @@ router.get('/:id', digitalIdentityController.getDigitalIdentityById);
 // Patch /resource - Eine DigitalIdentity updaten
 router.patch('/:id', digitalIdentityController.patchDigitalIdentity)
 
+// DELETE /resource/:id - Löschen einer DigitalIdentity
+router.delete('/digitalIdentity/:id', digitalIdentityController.deleteDigitalIdentityById);
+
 module.exports = router;
 
 

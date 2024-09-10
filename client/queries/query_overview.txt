@@ -14,10 +14,7 @@ Q7: Abfrage aller Modems, deren resourceStatus "active", administrativeState "un
 
 Q8: Update der referenzierten Ressource einer DigitalIdentity
 
-Q11: Erstellung eines Routers mit vorgegebenen Beispielwerten
+Q9: Erstellung eines Routers mit vorgegebenen Beispielwerten
 
-Q12: Abfrage aller inactiven DigitalIdentities und diese dann löschen
+Q10: Abfrage von 10 suspended DigitalIdentities und diese dann löschen
 
-Q13: Löschen eines Routers
-
-Q10: Update der relatedParty eines Street-Cabinets von einer Party auf die andere

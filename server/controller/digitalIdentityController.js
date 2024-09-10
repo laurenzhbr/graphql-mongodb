@@ -60,6 +60,26 @@ exports.getDigitalIdentities = async (req, res) => {
     }
 };
 
+// Controller zum Löschen einer spezifischen DigitalIdentity anhand der ID
+exports.deleteDigitalIdentityById = async (req, res) => {
+  try {
+      const { id } = req.params;
+
+      // Suche und lösche die DigitalIdentity anhand der ID
+      const deletedDigitalIdentity = await DigitalIdentity.findByIdAndDelete(id);
+
+      // Falls die DigitalIdentity nicht gefunden wurde
+      if (!deletedDigitalIdentity) {
+          return res.status(404).json({ message: `DigitalIdentity mit ID ${id} nicht gefunden.` });
+      }
+
+      // Erfolgreich gelöscht
+      res.status(200).json({ message: `DigitalIdentity mit ID ${id} erfolgreich gelöscht.` });
+  } catch (error) {
+      res.status(500).json({ message: error.message });
+  }
+};
+
 // Controller-Funktion zum Erstellen einer neuen DigitalIdentity
 exports.createDigitalIdentity = async (req, res) => {
     const digitalIdentity = new DigitalIdentity(req.body);

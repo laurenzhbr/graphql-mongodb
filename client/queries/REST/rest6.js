@@ -4,10 +4,12 @@ const axiosInstance = require('../../utils/interceptors');
 const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
     const transaction_start = Date.now()
     let total_duration= 0;
+    let request_counter = 0; 
     const actualHost = process.env.HOST || 'localhost:4000';
 
     const resourceUrl = `http://${actualHost}/resourceInventoryManagement/resource/${id}`;
     const resourceResponse = await axiosInstance.get(resourceUrl);
+    request_counter++;
     total_duration += resourceResponse.duration;
     const resourceData = resourceResponse.data;
 
@@ -20,6 +22,7 @@ const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
     //GET Data from GeoAdress
     const res2 = await axiosInstance.get(href_geoAdress);
     total_duration += res2.duration;
+    request_counter++;
 
     
     // 2. Abfrage der Related Parties (Organization)
@@ -27,6 +30,7 @@ const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
         relatedPartyHrefs.map(async (partyHref) => {
             const orgUrl = partyHref.replace("{host}", actualHost).replace("https", "http");
             const orgResponse = await axiosInstance.get(orgUrl);
+            request_counter++;
             total_duration += orgResponse.duration;
             return {
                 name: orgResponse.data.name,
@@ -49,7 +53,7 @@ const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
     }    
  */
     total_transaction_time = Date.now() - transaction_start;
-    const measurements = {'request_times': total_duration, 'total_transaction_time': total_transaction_time}
+    const measurements = {'request_times': total_duration, 'total_transaction_time': total_transaction_time, 'request_counter': request_counter}
     return measurements
 };
 

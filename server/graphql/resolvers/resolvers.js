@@ -197,7 +197,31 @@ const Mutation = new GraphQLObjectType({
       }); */
       return updatedDigitalIdentity;
     }
-    },/* ,
+    },
+    deleteDigitalIdentitesByStatus: {
+      type: GraphQLInt, // Gibt die Anzahl der gelöschten Dokumente zurück
+      description: 'Deletes specific amount of DigitalIdentities based on their status',
+      args: {
+        status: { type: new GraphQLNonNull(GraphQLString) }, // Filter basierend auf dem Status
+        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)'} // Limit-Argument}
+      },
+      async resolve(parent, { status, limit }) {
+        // Finde die Ressourcen, die gelöscht werden sollen
+        const resourcesToDelete = await Resource.find({ resourceStatus: status })
+          .limit(limit || 0) // Wenn kein Limit gesetzt ist, werden alle passenden gelöscht
+          .select('_id'); // Nur die IDs holen
+
+        // Extrahiere die IDs
+        const idsToDelete = resourcesToDelete.map(resource => resource._id);
+
+        // Lösche die gefundenen Ressourcen
+        const result = await Resource.deleteMany({ _id: { $in: idsToDelete } });
+
+        // Gibt die Anzahl der gelöschten Einträge zurück
+        return result.deletedCount;
+      },
+    },
+    /* ,
     deleteResource: {
       type: ResourceType,
       args: { id: { type: new GraphQLNonNull(GraphQLString) } },
