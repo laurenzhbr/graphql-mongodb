@@ -7,11 +7,11 @@ const rest_use_case_10 = async (status="supsended") => {
     let accumulatedMetrics = {};
 
     const digiIdUrl = `http://${actualHost}//digitalIdentityManagement/digitalIdentity?status=${status}&limit=10`
-    accumulatedMetrics, supsendedDigiIds = await fetchMetrics(digiIdUrl, accumulatedMetrics);
+    accumulatedMetrics = await fetchMetrics(digiIdUrl, accumulatedMetrics);
     
-    for (entry in supsendedDigiIds) {
+    for (entry in accumulatedMetrics.data) {
         const id_digiId = entry._id;
-        accumulatedMetrics, supsendedDigiIds = await fetchMetrics(`http://${actualHost}//digitalIdentityManagement/digitalIdentity/${id_digiId}`, accumulatedMetrics, "delete");
+        accumulatedMetrics = await fetchMetrics(`http://${actualHost}//digitalIdentityManagement/digitalIdentity/${id_digiId}`, accumulatedMetrics, "delete");
     }
 
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;

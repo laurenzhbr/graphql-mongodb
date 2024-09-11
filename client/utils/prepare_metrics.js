@@ -42,8 +42,8 @@ const fetchMetrics = async (url, previousMetrics = {}, method="get", data=null,)
         const total_data_transferred = res.totalDataTransferred;
 
         // Falls vorherige Metriken existieren, summiere die neuen Metriken hinzu
-        const metrics = {
-            res_data: res.data,
+        const accumulatedMetrics = {
+            data: res.data,
             duration_of_all_calls: (previousMetrics.duration_of_all_calls || 0) + responseTime,
             total_data_transferred: (previousMetrics.total_data_transferred || 0) + total_data_transferred,
             api_call_count: (previousMetrics.api_call_count || 0) + 1,
@@ -51,7 +51,7 @@ const fetchMetrics = async (url, previousMetrics = {}, method="get", data=null,)
             memory_used_by_server: (previousMetrics.memory_used_by_server?.heapUsed || 0) + memoryUsage
         };
 
-        return metrics, res;
+        return accumulatedMetrics;
     } catch (error) {
         console.error('Error fetching metrics:', error);
         throw error;

@@ -1,0 +1,652 @@
+[
+  {
+    "_id": "66db5c5ae640a18fa33d5536",
+    "href": "https://{host}/partyManagement/party/66db5c5ae640a18fa33d5536",
+    "isHeadOffice": true,
+    "isLegalEntity": true,
+    "name": "Feeney LLC Marketing GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Feeney LLC Marketing GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": false,
+        "characteristic": {
+          "city": "Duluth",
+          "contactType": "personal",
+          "country": "Argentina",
+          "emailAddress": "Davion53@hotmail.com",
+          "faxNumber": "(674) 341-3477 x254",
+          "phoneNumber": "864-541-7609 x486",
+          "postCode": "21371",
+          "socialNetworkId": "Ciara5",
+          "stateOrProvince": "North Dakota",
+          "street1": "E 6th Street",
+          "street2": "S Washington Street",
+          "_id": "66db5c5be640a18fa33d6998"
+        },
+        "validFor": {
+          "endDateTime": "2024-10-30T17:56:33.492Z",
+          "startDateTime": "2023-11-19T11:46:10.889Z",
+          "_id": "66db5c5be640a18fa33d6999"
+        },
+        "_id": "66db5c5be640a18fa33d6997"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Collier, Kertzmann and Schuster",
+        "ratingScore": 846,
+        "lastExecuted": "2024-09-06T14:27:31.687Z",
+        "validFor": {
+          "endDateTime": "2025-03-30T03:01:06.335Z",
+          "startDateTime": "2024-01-13T16:11:10.798Z",
+          "_id": "66db5c5be640a18fa33d699b"
+        },
+        "_id": "66db5c5be640a18fa33d699a"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-01-16T07:26:48.623Z",
+      "startDateTime": "2023-10-08T13:03:20.274Z",
+      "_id": "66db5c5be640a18fa33d699c"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "warmhearted-chandelier.info",
+        "_id": "66db5c5be640a18fa33d699d"
+      }
+    ],
+    "organizationParentRelationship": {
+      "relationshipType": "subsidiary",
+      "organization": {
+        "id": "66db3aa516d68c5f3c139449",
+        "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139449",
+        "name": "Jacobi - Heathcote Technische Dienstleistungen GmbH",
+        "_id": "66db5c5be640a18fa33d699f"
+      },
+      "_id": "66db5c5be640a18fa33d699e"
+    },
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c1394c1",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c1394c1",
+    "isHeadOffice": true,
+    "isLegalEntity": true,
+    "name": "D'Amore, Lynch and Mohr Sales & Partners AG",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "D'Amore, Lynch and Mohr Sales & Partners AG",
+    "contactMedium": [
+      {
+        "mediumType": "phone",
+        "preferred": true,
+        "characteristic": {
+          "city": "Hermannville",
+          "contactType": "business",
+          "country": "Guernsey",
+          "emailAddress": "Aric_Blanda79@hotmail.com",
+          "faxNumber": "(602) 743-3792 x55363",
+          "phoneNumber": "1-621-938-5875 x87642",
+          "postCode": "61947",
+          "socialNetworkId": "Jerald88",
+          "stateOrProvince": "Maine",
+          "street1": "W Central Avenue",
+          "street2": "St Andrew's Road",
+          "_id": "66db3aa516d68c5f3c13cb2d"
+        },
+        "validFor": {
+          "endDateTime": "2024-09-27T07:30:46.513Z",
+          "startDateTime": "2024-01-09T05:26:10.013Z",
+          "_id": "66db3aa516d68c5f3c13cb2e"
+        },
+        "_id": "66db3aa516d68c5f3c13cb2c"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Denesik, Gibson and White",
+        "ratingScore": 840,
+        "lastExecuted": "2024-09-06T13:02:18.169Z",
+        "validFor": {
+          "endDateTime": "2025-05-31T09:31:49.130Z",
+          "startDateTime": "2024-08-28T14:04:46.890Z",
+          "_id": "66db3aa516d68c5f3c13cb30"
+        },
+        "_id": "66db3aa516d68c5f3c13cb2f"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2024-11-21T01:04:34.784Z",
+      "startDateTime": "2023-11-25T16:23:49.776Z",
+      "_id": "66db3aa516d68c5f3c13cb31"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "forceful-dishwasher.info",
+        "_id": "66db3aa516d68c5f3c13cb32"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c138d29",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138d29",
+    "isHeadOffice": false,
+    "isLegalEntity": false,
+    "name": "Leannon Group Sales & Consulting KG",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Leannon Group Sales & Consulting KG",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": true,
+        "characteristic": {
+          "city": "Nolanshire",
+          "contactType": "business",
+          "country": "Monaco",
+          "emailAddress": "Gerda39@hotmail.com",
+          "faxNumber": "476-320-3308 x983",
+          "phoneNumber": "(589) 444-7254 x736",
+          "postCode": "85793",
+          "socialNetworkId": "Gertrude72",
+          "stateOrProvince": "Missouri",
+          "street1": "Glover Crest",
+          "street2": "Vincenzo Pike",
+          "_id": "66db3aa516d68c5f3c13a137"
+        },
+        "validFor": {
+          "endDateTime": "2025-07-06T04:17:36.583Z",
+          "startDateTime": "2024-06-05T07:30:19.095Z",
+          "_id": "66db3aa516d68c5f3c13a138"
+        },
+        "_id": "66db3aa516d68c5f3c13a136"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Hettinger - Turcotte",
+        "ratingScore": 828,
+        "lastExecuted": "2024-09-05T22:39:33.963Z",
+        "validFor": {
+          "endDateTime": "2024-10-18T09:09:28.409Z",
+          "startDateTime": "2024-05-05T00:32:12.203Z",
+          "_id": "66db3aa516d68c5f3c13a13a"
+        },
+        "_id": "66db3aa516d68c5f3c13a139"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-07-23T14:36:35.611Z",
+      "startDateTime": "2024-05-12T20:10:36.573Z",
+      "_id": "66db3aa516d68c5f3c13a13b"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "rude-poignance.net",
+        "_id": "66db3aa516d68c5f3c13a13c"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c139501",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139501",
+    "isHeadOffice": false,
+    "isLegalEntity": true,
+    "name": "Beahan, Hirthe and Hegmann Marketing- und Vertriebsservice GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Beahan, Hirthe and Hegmann Marketing- und Vertriebsservice GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "phone",
+        "preferred": true,
+        "characteristic": {
+          "city": "Savionstad",
+          "contactType": "personal",
+          "country": "Seychelles",
+          "emailAddress": "Graciela_Franey@hotmail.com",
+          "faxNumber": "687-867-6669 x1358",
+          "phoneNumber": "510-410-6870",
+          "postCode": "03983-8471",
+          "socialNetworkId": "Derrick88",
+          "stateOrProvince": "Nevada",
+          "street1": "Cheyanne Glen",
+          "street2": "Floy Divide",
+          "_id": "66db3aa516d68c5f3c13cc83"
+        },
+        "validFor": {
+          "endDateTime": "2024-12-28T19:41:16.750Z",
+          "startDateTime": "2024-06-29T19:37:37.500Z",
+          "_id": "66db3aa516d68c5f3c13cc84"
+        },
+        "_id": "66db3aa516d68c5f3c13cc82"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Walter LLC",
+        "ratingScore": 826,
+        "lastExecuted": "2024-09-06T04:27:20.073Z",
+        "validFor": {
+          "endDateTime": "2025-01-11T21:16:50.737Z",
+          "startDateTime": "2024-06-22T10:47:20.683Z",
+          "_id": "66db3aa516d68c5f3c13cc86"
+        },
+        "_id": "66db3aa516d68c5f3c13cc85"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-06-30T06:40:03.001Z",
+      "startDateTime": "2023-09-12T01:08:23.337Z",
+      "_id": "66db3aa516d68c5f3c13cc87"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "quick-mask.biz",
+        "_id": "66db3aa516d68c5f3c13cc88"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c139668",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139668",
+    "isHeadOffice": false,
+    "isLegalEntity": false,
+    "name": "Frami - Douglas Marketing GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Frami - Douglas Marketing GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": true,
+        "characteristic": {
+          "city": "Kovacekfurt",
+          "contactType": "personal",
+          "country": "Libyan Arab Jamahiriya",
+          "emailAddress": "Delphia78@hotmail.com",
+          "faxNumber": "700-513-2164 x988",
+          "phoneNumber": "613.897.1888 x0494",
+          "postCode": "18410",
+          "socialNetworkId": "Ambrose.Abbott",
+          "stateOrProvince": "Hawaii",
+          "street1": "Abbey Road",
+          "street2": "Rogahn Ville",
+          "_id": "66db3aa516d68c5f3c13d455"
+        },
+        "validFor": {
+          "endDateTime": "2024-12-20T05:37:15.917Z",
+          "startDateTime": "2023-11-10T09:13:45.112Z",
+          "_id": "66db3aa516d68c5f3c13d456"
+        },
+        "_id": "66db3aa516d68c5f3c13d454"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Denesik, Bins and Cormier",
+        "ratingScore": 825,
+        "lastExecuted": "2024-09-06T14:37:12.005Z",
+        "validFor": {
+          "endDateTime": "2025-02-15T00:53:37.924Z",
+          "startDateTime": "2023-11-12T13:02:26.547Z",
+          "_id": "66db3aa516d68c5f3c13d458"
+        },
+        "_id": "66db3aa516d68c5f3c13d457"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-05-08T18:38:46.748Z",
+      "startDateTime": "2023-10-21T19:22:22.559Z",
+      "_id": "66db3aa516d68c5f3c13d459"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "oily-grandchild.org",
+        "_id": "66db3aa516d68c5f3c13d45a"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db5c5ae640a18fa33d54c8",
+    "href": "https://{host}/partyManagement/party/66db5c5ae640a18fa33d54c8",
+    "isHeadOffice": false,
+    "isLegalEntity": true,
+    "name": "Carter - Von Vertriebsgesellschaft mbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Carter - Von Vertriebsgesellschaft mbH",
+    "contactMedium": [
+      {
+        "mediumType": "fax",
+        "preferred": true,
+        "characteristic": {
+          "city": "Treyville",
+          "contactType": "personal",
+          "country": "Mali",
+          "emailAddress": "Earnest.Weissnat@hotmail.com",
+          "faxNumber": "756-910-1489 x192",
+          "phoneNumber": "1-257-263-9989 x048",
+          "postCode": "89780-8721",
+          "socialNetworkId": "Jovany_Stiedemann",
+          "stateOrProvince": "North Carolina",
+          "street1": "Cormier Spring",
+          "street2": "Mill Street",
+          "_id": "66db5c5be640a18fa33d66c8"
+        },
+        "validFor": {
+          "endDateTime": "2025-05-16T18:43:03.231Z",
+          "startDateTime": "2023-10-09T10:00:55.058Z",
+          "_id": "66db5c5be640a18fa33d66c9"
+        },
+        "_id": "66db5c5be640a18fa33d66c7"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Morar, Larson and Lang",
+        "ratingScore": 822,
+        "lastExecuted": "2024-09-05T20:27:16.496Z",
+        "validFor": {
+          "endDateTime": "2024-10-19T17:54:26.027Z",
+          "startDateTime": "2024-07-11T06:55:47.190Z",
+          "_id": "66db5c5be640a18fa33d66cb"
+        },
+        "_id": "66db5c5be640a18fa33d66ca"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-04-10T08:42:26.974Z",
+      "startDateTime": "2024-04-08T01:55:04.567Z",
+      "_id": "66db5c5be640a18fa33d66cc"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "bruised-goddess.biz",
+        "_id": "66db5c5be640a18fa33d66cd"
+      }
+    ],
+    "organizationParentRelationship": {
+      "relationshipType": "parent",
+      "organization": {
+        "id": "66db3aa516d68c5f3c139657",
+        "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139657",
+        "name": "Koelpin - Runte Transportgesellschaft mbH",
+        "_id": "66db5c5be640a18fa33d66cf"
+      },
+      "_id": "66db5c5be640a18fa33d66ce"
+    },
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c139569",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139569",
+    "isHeadOffice": false,
+    "isLegalEntity": true,
+    "name": "Gusikowski Group Sales & Partners AG",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Gusikowski Group Sales & Partners AG",
+    "contactMedium": [
+      {
+        "mediumType": "phone",
+        "preferred": true,
+        "characteristic": {
+          "city": "McKenziehaven",
+          "contactType": "personal",
+          "country": "Italy",
+          "emailAddress": "Kenneth.Labadie@yahoo.com",
+          "faxNumber": "1-935-493-8251 x887",
+          "phoneNumber": "505-610-9914 x373",
+          "postCode": "42832-3416",
+          "socialNetworkId": "Trudie_Koch82",
+          "stateOrProvince": "Delaware",
+          "street1": "N Front Street",
+          "street2": "Morar Gardens",
+          "_id": "66db3aa516d68c5f3c13cebf"
+        },
+        "validFor": {
+          "endDateTime": "2025-07-12T22:20:45.361Z",
+          "startDateTime": "2024-02-10T08:53:28.841Z",
+          "_id": "66db3aa516d68c5f3c13cec0"
+        },
+        "_id": "66db3aa516d68c5f3c13cebe"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Daniel, Stamm and Herzog",
+        "ratingScore": 821,
+        "lastExecuted": "2024-09-06T14:55:21.730Z",
+        "validFor": {
+          "endDateTime": "2024-10-21T11:46:10.606Z",
+          "startDateTime": "2023-12-06T14:23:39.891Z",
+          "_id": "66db3aa516d68c5f3c13cec2"
+        },
+        "_id": "66db3aa516d68c5f3c13cec1"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-01-11T03:57:56.854Z",
+      "startDateTime": "2023-11-14T19:42:22.603Z",
+      "_id": "66db3aa516d68c5f3c13cec3"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "gaseous-maize.name",
+        "_id": "66db3aa516d68c5f3c13cec4"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db5c5ae640a18fa33d5834",
+    "href": "https://{host}/partyManagement/party/66db5c5ae640a18fa33d5834",
+    "isHeadOffice": true,
+    "isLegalEntity": false,
+    "name": "Rau Inc Marketing- und Vertriebsservice GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Rau Inc Marketing- und Vertriebsservice GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": true,
+        "characteristic": {
+          "city": "Hagenesborough",
+          "contactType": "business",
+          "country": "Barbados",
+          "emailAddress": "Mauricio.Kuhic@hotmail.com",
+          "faxNumber": "1-952-919-3169 x1158",
+          "phoneNumber": "1-674-805-8976 x0195",
+          "postCode": "39402-9841",
+          "socialNetworkId": "Collin_Schneider",
+          "stateOrProvince": "Hawaii",
+          "street1": "Leilani Greens",
+          "street2": "Nella Cove",
+          "_id": "66db5c5be640a18fa33d7d2d"
+        },
+        "validFor": {
+          "endDateTime": "2025-03-10T15:15:49.457Z",
+          "startDateTime": "2024-08-14T17:02:28.328Z",
+          "_id": "66db5c5be640a18fa33d7d2e"
+        },
+        "_id": "66db5c5be640a18fa33d7d2c"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Moore - Crist",
+        "ratingScore": 816,
+        "lastExecuted": "2024-09-06T10:46:52.423Z",
+        "validFor": {
+          "endDateTime": "2024-11-28T03:53:22.820Z",
+          "startDateTime": "2023-10-23T07:43:10.207Z",
+          "_id": "66db5c5be640a18fa33d7d30"
+        },
+        "_id": "66db5c5be640a18fa33d7d2f"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-05-21T02:58:37.945Z",
+      "startDateTime": "2023-10-14T23:03:09.600Z",
+      "_id": "66db5c5be640a18fa33d7d31"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "medium-seat.name",
+        "_id": "66db5c5be640a18fa33d7d32"
+      }
+    ],
+    "organizationParentRelationship": {
+      "relationshipType": "subsidiary",
+      "organization": {
+        "id": "66db3aa516d68c5f3c13966c",
+        "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c13966c",
+        "name": "Cremin, Bergstrom and O'Connell Sales & Consulting KG",
+        "_id": "66db5c5be640a18fa33d7d34"
+      },
+      "_id": "66db5c5be640a18fa33d7d33"
+    },
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c138ecf",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138ecf",
+    "isHeadOffice": true,
+    "isLegalEntity": true,
+    "name": "McLaughlin - Lang Vertriebsgesellschaft mbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "McLaughlin - Lang Vertriebsgesellschaft mbH",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": true,
+        "characteristic": {
+          "city": "West Crystel",
+          "contactType": "business",
+          "country": "Oman",
+          "emailAddress": "Dayna24@hotmail.com",
+          "faxNumber": "541-290-8681",
+          "phoneNumber": "1-902-268-8366 x965",
+          "postCode": "81466",
+          "socialNetworkId": "Ali.Kreiger",
+          "stateOrProvince": "Texas",
+          "street1": "Moore Locks",
+          "street2": "Kylie River",
+          "_id": "66db3aa516d68c5f3c13aa48"
+        },
+        "validFor": {
+          "endDateTime": "2025-06-19T02:21:56.406Z",
+          "startDateTime": "2023-09-29T18:40:39.055Z",
+          "_id": "66db3aa516d68c5f3c13aa49"
+        },
+        "_id": "66db3aa516d68c5f3c13aa47"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Ruecker, Kunze and Lynch",
+        "ratingScore": 812,
+        "lastExecuted": "2024-09-06T13:27:03.870Z",
+        "validFor": {
+          "endDateTime": "2025-04-15T05:10:05.697Z",
+          "startDateTime": "2023-09-19T00:17:21.241Z",
+          "_id": "66db3aa516d68c5f3c13aa4b"
+        },
+        "_id": "66db3aa516d68c5f3c13aa4a"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2024-10-30T14:20:20.344Z",
+      "startDateTime": "2024-01-03T01:45:12.416Z",
+      "_id": "66db3aa516d68c5f3c13aa4c"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "powerless-watchmaker.net",
+        "_id": "66db3aa516d68c5f3c13aa4d"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66db3aa516d68c5f3c139422",
+    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139422",
+    "isHeadOffice": false,
+    "isLegalEntity": false,
+    "name": "Becker, Hyatt and Legros Marketing- und Vertriebsservice GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Becker, Hyatt and Legros Marketing- und Vertriebsservice GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "fax",
+        "preferred": false,
+        "characteristic": {
+          "city": "Halcester",
+          "contactType": "business",
+          "country": "Kuwait",
+          "emailAddress": "Frederick_Hoeger@gmail.com",
+          "faxNumber": "(616) 438-6921 x9713",
+          "phoneNumber": "(854) 759-5585",
+          "postCode": "20364",
+          "socialNetworkId": "Adolf_Kub12",
+          "stateOrProvince": "Montana",
+          "street1": "Gerlach Green",
+          "street2": "Mose Mission",
+          "_id": "66db3aa516d68c5f3c13c775"
+        },
+        "validFor": {
+          "endDateTime": "2025-01-11T10:50:04.015Z",
+          "startDateTime": "2023-10-11T03:21:54.289Z",
+          "_id": "66db3aa516d68c5f3c13c776"
+        },
+        "_id": "66db3aa516d68c5f3c13c774"
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Zemlak - Gorczany",
+        "ratingScore": 786,
+        "lastExecuted": "2024-09-06T00:04:32.726Z",
+        "validFor": {
+          "endDateTime": "2025-01-29T22:17:31.139Z",
+          "startDateTime": "2023-10-30T22:43:14.868Z",
+          "_id": "66db3aa516d68c5f3c13c778"
+        },
+        "_id": "66db3aa516d68c5f3c13c777"
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-07-13T02:56:10.552Z",
+      "startDateTime": "2024-07-15T01:46:30.144Z",
+      "_id": "66db3aa516d68c5f3c13c779"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "heartfelt-thaw.name",
+        "_id": "66db3aa516d68c5f3c13c77a"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  }
+]

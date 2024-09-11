@@ -1,22 +1,24 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
+const rest_use_case_6 = async (id = "66e07529def2563e777ee8db") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
 
     const resourceUrl = `http://${actualHost}/resourceInventoryManagement/resource/${id}`;
-    accumulatedMetrics, resourceResponse = await fetchMetrics(resourceUrl, accumulatedMetrics);
-    const resourceData = resourceResponse.data;
+    accumulatedMetrics = await fetchMetrics(resourceUrl, accumulatedMetrics);
+    const resourceData = accumulatedMetrics.data;
 
     // Sammle die RelatedParty IDs und die place href
-    const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href);
+    const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href
+        .replace("{host}", actualHost)
+        .replace("https", "http"));
     const href_geoAdress = resourceData.place.href
         .replace("{host}", actualHost)
         .replace("https", "http");
 
     //GET Data from GeoAdress
-    accumulatedMetrics, res2 = await fetchMetrics(href_geoAdress, accumulatedMetrics);
+    accumulatedMetrics = await fetchMetrics(href_geoAdress, accumulatedMetrics);
 
     // 2. Abfrage der Related Parties (Organization)
     const relatedPartyDetails = await Promise.all(

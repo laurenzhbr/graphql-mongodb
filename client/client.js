@@ -57,14 +57,14 @@ const rest_requests = [
 async function runTestSuite(){
 
     // Conduct all REST testcases
-    for (let i = 0; i < 7; i++){
-        await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, 50, 1);
-    }
+    /* for (let i = 8; i < 9; i++){
+        await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, 50);
+    } */
 
     // Conduct all GraphQL testcases
-    /* for (let i = 0; i < gql_queries.length; i++){
+    for (let i = 0; i < gql_queries.length; i++){
         await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, 50, 1);
-    } */
+    }
 }
 
 const runSingleTestProcedure = async (method, api, use_case, iterationCount) => {
@@ -83,6 +83,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
     let total_transaction_time = []
     let cpu_used_by_server= []
     let memory_used_by_server= []
+    let total_data_transferred= []
     let api_call_count = 0;
 
 
@@ -91,13 +92,14 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
         // Run test and expect array of results back.
         const test_case_result = await method()
         if (index === 0) {
-            await saveResults(test_case_result.res_data, "response_data", api, use_case)
+            await saveResults(test_case_result.data, "response_data", api, use_case)
             api_call_count = test_case_result.api_call_count;
         }
          
         // Add result to array.
         duration_of_all_calls.push(test_case_result.duration_of_all_calls);
         total_transaction_time.push(test_case_result.total_transaction_time);
+        total_data_transferred.push(test_case_result.total_data_transferred);
         cpu_used_by_server.push(test_case_result.cpu_used_by_server);
         memory_used_by_server.push(test_case_result.memory_used_by_server);
 

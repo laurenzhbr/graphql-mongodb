@@ -122,13 +122,9 @@ const rest_use_case_9 = async () => {
         "__v": 0
     }
 
-    let total_duration = 0;
-
     // 3. Sende PATCH-Anfrage mit den Daten, die aktualisiert werden sollen
     const postUrl = `http://${actualHost}/resourceInventoryManagement/resource`;
     accumulatedMetrics = await fetchMetrics(postUrl, accumulatedMetrics, "post", dataForUpdate);
-    const patchResponse = await axiosInstance.post(postUrl, dataForUpdate);
-    total_duration += patchResponse.duration;
     
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
     accumulatedMetrics.total_transaction_time = total_transaction_time;

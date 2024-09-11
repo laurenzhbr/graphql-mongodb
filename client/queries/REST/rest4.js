@@ -6,9 +6,9 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
     let accumulatedMetrics = {};
 
     const url = `http://${actualHost}/resourceInventoryManagement/resource?category=${category}&fields=name,place,relatedParty,resourceCharacteristic`
-    accumulatedMetrics, res1 = await fetchMetrics(url, accumulatedMetrics);
+    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
-    const streetCabinets = res1.data;
+    const streetCabinets = accumulatedMetrics.data;
 
     const streetCabinetsInBerlin = [];
 
@@ -19,8 +19,8 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
         .replace("https", "http");  // Href der GeographicAddress-Referenz
 
       // Abfrage auf die GeographicAddress, um die Stadt zu erhalten
-      accumulatedMetrics, geo_res = await fetchMetrics(placeHref, accumulatedMetrics);
-      const geographicAddress = geo_res.data;
+      accumulatedMetrics = await fetchMetrics(placeHref, accumulatedMetrics);
+      const geographicAddress = accumulatedMetrics.data;
 
       // Prüfen, ob die Stadt "Leipzig" ist
       if (geographicAddress.city === 'Berlin') {

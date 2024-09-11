@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "66db6dd3658d40350e57e665",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66db6dd4658d40350e57e967",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66db6dd4658d40350e57ea17",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  }
+]
