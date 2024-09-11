@@ -1,16 +1,12 @@
-const axiosInstance = require('../../utils/interceptors');
-
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
-    const transaction_start = Date.now()
-    let total_duration= 0;
-    let request_counter = 0; 
+    const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
+    let accumulatedMetrics = {};
 
     const resourceUrl = `http://${actualHost}/resourceInventoryManagement/resource/${id}`;
-    const resourceResponse = await axiosInstance.get(resourceUrl);
-    request_counter++;
-    total_duration += resourceResponse.duration;
+    accumulatedMetrics, resourceResponse = await fetchMetrics(resourceUrl, accumulatedMetrics);
     const resourceData = resourceResponse.data;
 
     // Sammle die RelatedParty IDs und die place href
@@ -20,18 +16,13 @@ const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
         .replace("https", "http");
 
     //GET Data from GeoAdress
-    const res2 = await axiosInstance.get(href_geoAdress);
-    total_duration += res2.duration;
-    request_counter++;
+    accumulatedMetrics, res2 = await fetchMetrics(href_geoAdress, accumulatedMetrics);
 
-    
     // 2. Abfrage der Related Parties (Organization)
     const relatedPartyDetails = await Promise.all(
         relatedPartyHrefs.map(async (partyHref) => {
             const orgUrl = partyHref.replace("{host}", actualHost).replace("https", "http");
-            const orgResponse = await axiosInstance.get(orgUrl);
-            request_counter++;
-            total_duration += orgResponse.duration;
+            accumulatedMetrics, orgResponse = await fetchMetrics(orgUrl, accumulatedMetrics);
             return {
                 name: orgResponse.data.name,
                 organizationType: orgResponse.data.organizationType,
@@ -52,9 +43,11 @@ const rest_use_case_6 = async (id = "66db76c734ed489b211cd3fd") => {
         total_duration += res5.duration;
     }    
  */
-    total_transaction_time = Date.now() - transaction_start;
-    const measurements = {'request_times': total_duration, 'total_transaction_time': total_transaction_time, 'request_counter': request_counter}
-    return measurements
+    const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+    accumulatedMetrics.total_transaction_time = total_transaction_time;
+   
+    // parse performance tracing results
+    return accumulatedMetrics;
 };
 
 

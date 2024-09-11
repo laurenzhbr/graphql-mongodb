@@ -1,8 +1,11 @@
-const axiosInstance = require('../../utils/interceptors');
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 
 const rest_use_case_9 = async () => {
+    const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
+    let accumulatedMetrics = {};
+
     
     const dataForUpdate = {
         "category": "Router",
@@ -123,15 +126,15 @@ const rest_use_case_9 = async () => {
 
     // 3. Sende PATCH-Anfrage mit den Daten, die aktualisiert werden sollen
     const postUrl = `http://${actualHost}/resourceInventoryManagement/resource`;
+    accumulatedMetrics = await fetchMetrics(postUrl, accumulatedMetrics, "post", dataForUpdate);
     const patchResponse = await axiosInstance.post(postUrl, dataForUpdate);
     total_duration += patchResponse.duration;
     
-
-    if (patchResponse.status != 200) {
-        console.log('Fehler beim POST von Resource via REST');
-    }
-
-    return {'request_times': total_duration};
+    const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+    accumulatedMetrics.total_transaction_time = total_transaction_time;
+   
+    // parse performance tracing results
+    return accumulatedMetrics;
 };
 
 

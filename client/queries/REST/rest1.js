@@ -1,25 +1,22 @@
-
-
-const axiosInstance = require('../../utils/interceptors');
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const rest_use_case_1 = async (id) => {
+    const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
-    let duration_of_all_calls = 0;
-    let total_transaction_time = 0;
+    let accumulatedMetrics = {};
+
+    // 1st API Call
     const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active`
-    const res = await axiosInstance.get(url);
+    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
-
+    const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+    accumulatedMetrics.total_transaction_time = total_transaction_time;
+   
     // parse performance tracing results
-    const results = {res_data: res.data, 
-        'duration_of_all_calls': res.response_time, 
-        'total_transaction_time': total_transaction_time, 
-        'api_call_count': 1,
-        'cpu_used_by_server': JSON.parse(res.headers['x-cpu-usage']),
-        'memory_used_by_server': JSON.parse(res.headers['x-memory-usage']),
-    };
-    return results;
+    return accumulatedMetrics;
 };
 
-
 module.exports = { rest_use_case_1 };
+
+
+

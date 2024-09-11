@@ -39,8 +39,8 @@ app.use((req, res, next) => {
   const cpuUsage = getCpuUsage();
 
   // Add CPU and Memory usage to the response headers
-  res.set('X-Memory-Usage', JSON.stringify(memoryUsage.heapUsed));
-  res.set('X-CPU-Usage', JSON.stringify(cpuUsage.user));
+  res.set('x-memory-usage', JSON.stringify(memoryUsage.heapUsed));
+  res.set('x-cpu-usage', JSON.stringify(cpuUsage.user));
 
   // Call next middleware or route handler
   next();

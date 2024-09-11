@@ -1,22 +1,19 @@
-const axiosInstance = require('../../utils/interceptors');
-
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const rest_use_case_7 = async () => {
+    const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
-    let total_duration = 0;
+    let accumulatedMetrics = {};
 
     // 1. Abfrage aller Modems mit Verbindungstyp "FTTH" und Betriebsstatus "enable"
     const url = `http://${actualHost}/resourceManagement/resources?category=Modem&administrativeState=unlocked&operationalState=enable&resourceStatus=available&fields=category,administrativeState,operationalState,resourceStatus`;
-    const modemResponse = await axiosInstance.get(url);
+    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
     
-    // 2. Überprüfen der Ergebnisse und Rückgabe der Modemdaten
-    const modems = modemResponse.data;
-
-    if (modems.length === 0) {
-        console.log('KEINE Modems gefunden, die ohne Probleme laufen');
-    }
-
-    return {'request_times': modemResponse};
+    const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+    accumulatedMetrics.total_transaction_time = total_transaction_time;
+   
+    // parse performance tracing results
+    return accumulatedMetrics;
 };
 
 

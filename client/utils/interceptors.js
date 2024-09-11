@@ -58,7 +58,7 @@ axiosInstance.interceptors.response.use(response => {
     const totalDataTransferred = response.config.metadata.requestDataSize + responseDataSize;
     // console.log(`Total Data Transferred: ${convertBytes(totalDataTransferred)}`);
     
-    response.response_time = duration;
+    response.responseTime = duration;
     response.totalDataTransferred = totalDataTransferred;
   
     

@@ -112,6 +112,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
         'api_call_count': api_call_count,
         'cpu_used_by_server': cpu_used_by_server,
         'memory_used_by_server': memory_used_by_server,
+        'total_data_transferred': total_data_transferred
     };
 
     // Save the remaining reults.

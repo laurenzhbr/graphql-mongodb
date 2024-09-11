@@ -1,13 +1,12 @@
-const axiosInstance = require('../../utils/interceptors');
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const rest_use_case_4 = async (category="Street%20Cabinet") => {
-    const transaction_start = Date.now()
-    let total_duration = 0;
+    const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
+    let accumulatedMetrics = {};
 
     const url = `http://${actualHost}/resourceInventoryManagement/resource?category=${category}&fields=name,place,relatedParty,resourceCharacteristic`
-    const res1 = await axiosInstance.get(url);
-    total_duration += res1.duration;
+    accumulatedMetrics, res1 = await fetchMetrics(url, accumulatedMetrics);
 
     const streetCabinets = res1.data;
 
@@ -20,9 +19,8 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
         .replace("https", "http");  // Href der GeographicAddress-Referenz
 
       // Abfrage auf die GeographicAddress, um die Stadt zu erhalten
-      const geographicAddressRes = await axiosInstance.get(placeHref);  // Ersetze {host} durch tatsächlichen API-Host
-      total_duration += geographicAddressRes.duration;
-      const geographicAddress = geographicAddressRes.data;
+      accumulatedMetrics, geo_res = await fetchMetrics(placeHref, accumulatedMetrics);
+      const geographicAddress = geo_res.data;
 
       // Prüfen, ob die Stadt "Leipzig" ist
       if (geographicAddress.city === 'Berlin') {
@@ -50,10 +48,11 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
       }
     }
     
-    total_transaction_time = Date.now() - transaction_start;
-
-    const measurements = {'request_times': total_duration, 'total_transaction_time': total_transaction_time}
-    return measurements
+    const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+    accumulatedMetrics.total_transaction_time = total_transaction_time;
+   
+    // parse performance tracing results
+    return accumulatedMetrics;
 };
 
 
