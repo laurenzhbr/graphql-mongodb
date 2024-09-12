@@ -5,8 +5,13 @@ const query = (status) => `
     digitalIdentitiesByStatus(status: "${status}"){
       id
       nickname
+      status
+      resourceIdentified{
+        id
+        name
+      }
       creationDate
-    }
+      lastUpdate
   }
 `;
 

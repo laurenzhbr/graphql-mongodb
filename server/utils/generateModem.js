@@ -70,10 +70,6 @@ async function generateModems(streetCabinet, numModems) {
       const organization_hersteller = await Organization.findOne({ organizationType: "Gerätehersteller" });
       // const organization_logistik = await Organization.findOne({ organizationType: "Logistikunternehmen" });
   
-      if (geoAddresses.length < numModems) {
-        console.log(`Not enough GeoAddresses found in ${cityOfStreetCabinet} for ${numModems} modems.`);
-        return;
-      }
   
       // Generiere Modems
       for (let i = 0; i < numModems; i++) {
@@ -103,9 +99,9 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "4G LTE",
                                                                       "5G NR"
                                                                     ]), "valueType": "String" },
-            { name: "ethernet_ports", value: 4 },
-            { name: "usb_ports", value: 1 },
-            { name: "coaxial_input", value: true },
+            { name: "ethernet_ports", value: faker.number.int({ min: 8, max: 25 }), "valueType": "Number" },
+            { name: "usb_ports", value: faker.number.int({ min: 8, max: 25 }) , "valueType": "Number"},
+            { name: "coaxial_input", value: true, "valueType": "Boolean" },
             { name: "wifi_capability", value: faker.helpers.arrayElement([
                                                                       "Wi-Fi 5 (802.11ac)",
                                                                       "Wi-Fi 6 (802.11ax)",
@@ -115,7 +111,7 @@ async function generateModems(streetCabinet, numModems) {
                                                                       "Wi-Fi 2 (802.11b)",
                                                                       "Wi-Fi 7 (802.11be)"
                                                                     ]), "valueType": "String" },
-            { name: "power_consumption", value: `${faker.number.int({ min: 8, max: 25 }).toString()}W`, "valueType": "String" },
+            { name: "power_consumption", value: faker.number.int({ min: 8, max: 25 }), "valueType": "Number" },
             { name: "security_features", value: faker.helpers.arrayElement([
                                                                       "WPA3, Firewall, MAC Address Filtering",
                                                                       "WPA2, Firewall, VPN Passthrough",
@@ -218,4 +214,4 @@ async function createModemsForAllStreetCabinets(amountModems) {
     }
   }
 // Starte die Erstellung von Street Cabinets für das Beispiel Street Cabinet
-createModemsForAllStreetCabinets(1);
+createModemsForAllStreetCabinets(30);

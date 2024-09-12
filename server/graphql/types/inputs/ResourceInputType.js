@@ -5,7 +5,7 @@ const {
     GraphQLList,
     GraphQLNonNull,
   } = require('graphql');
-  const { GraphQLDateTime } = require('../../customScalars/customScalars'); // Falls du einen Custom Scalar für DateTime verwendest
+  const { GraphQLDateTime, MixedType } = require('../../customScalars/customScalars'); // Falls du einen Custom Scalar für DateTime verwendest
 
   // Enum-Typen, falls sie verwendet werden
   const {
@@ -51,7 +51,7 @@ const {
     fields: {
       name: { type: new GraphQLNonNull(GraphQLString) }, // Name der Characteristic
       valueType: { type: GraphQLString }, // Der Werttyp
-      value: { type: new GraphQLNonNull(GraphQLString) }, // Der tatsächliche Wert
+      value: { type: new GraphQLNonNull(MixedType) }, // Der tatsächliche Wert
     },
   });
   

@@ -1,10 +1,10 @@
-Q1: GET all "active" DigitalIdentities 
+Q1: GET all "active" DigitalIdentities --> simple, field selection, ohne Roundtrip (GQL weniger Felder aufgrund href nicht notwendig)
 
-Q2: Abfrage aller Street-Cabinets (im Raum Deutschland,) die Ihre maximale Kapazität fast erreicht haben (>95%)
+Q2: Abfrage aller Street-Cabinets, die Ihre maximale Kapazität fast erreicht haben (>95%) -> simple, field selection -> GQL weniger Felder aufgrund Field-Selection von Characteristicen
 
-Q3: Abfrage des ResourceStatus und Name eines Central-Offices basierend auf dem Router einer DigitalIdentity
+Q3: Abfrage des ResourceStatus und Name eines Central-Offices basierend auf dem Router einer DigitalIdentity -> 5-fach nested = REST Roundtriping & GQL beliebige Tiefe 
 
-Q4: Abfrage Street Cabinets in Berlin -> connected_lines, maximum_capacity, power_backup aus Characteristicen und Name + ID der zuständigen Wartungsfirma
+Q4: Abfrage Street Cabinets in Leipzig -> connected_lines, maximum_capacity, power_backup aus Characteristicen und Name + ID der zuständigen Wartungsfirma -> REST massives Roundtriping + keine Characteristic selection wegen First-Level -> GQL kein Roundtriping + möglichkeit der field selection
 
 Q5: Abfrage der Namen Top 10 Marketing- und Vertriebsdienstleister mit einem Creditrating > 750, die validated sind
 

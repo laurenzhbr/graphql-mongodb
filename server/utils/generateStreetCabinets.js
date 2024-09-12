@@ -71,11 +71,6 @@ async function generateStreetCabinets(centralOffice, numCabinets) {
     const organization_wartung = await Organization.findOne({ organizationType: "Wartungsfirma" });
     const organization_logistik = await Organization.findOne({ organizationType: "Logistikunternehmen" });
 
-    if (geoAddresses.length < numCabinets) {
-      console.log(`Not enough GeoAddresses found in ${centralOfficeState} for ${numCabinets} cabinets.`);
-      return;
-    }
-
     // Generiere Street Cabinets
     for (let i = 0; i < numCabinets; i++) {
       const geoAddress = getRandomElement(geoAddresses);
@@ -87,7 +82,7 @@ async function generateStreetCabinets(centralOffice, numCabinets) {
           { name: "connected_lines", value: faker.number.int({ min: 1000, max: 60000 }), "valueType": "Number" },
           { name: "cabinet_heigth", value: `${faker.number.float({ min: 0.7, max: 2.0 }).toString()}m`, "valueType": "String" },
           { name: "cabinet_width", value: `${faker.number.float({ min: 0.5, max: 1.5 }).toString()}m`, "valueType": "String" },
-          { name: "current_capacity_usage", value: `${faker.number.int({ min: 1, max: 100 }).toString()}%`, "valueType": "String" },
+          { name: "current_capacity_usage", value: faker.number.int({ min: 1, max: 100 }), "valueType": "Number" },
           { name: "maximum_capacity", value: faker.number.int({ min: 400, max: 1500 }), "valueType": "Number" },
           { name: "network_type", value: faker.helpers.arrayElement(['DSL', 'FTTH','Koaxial']), "valueType": "String"},
           { name: "fiber_ready", value: faker.datatype.boolean(), "valueType": "Boolean" },
@@ -164,4 +159,4 @@ async function createStreetCabinetsForAllCentralOffices(amountStreetCabinets) {
     }
   }
 // Starte die Erstellung von Street Cabinets für das Beispiel Central Office
-createStreetCabinetsForAllCentralOffices(5);
+createStreetCabinetsForAllCentralOffices(30);

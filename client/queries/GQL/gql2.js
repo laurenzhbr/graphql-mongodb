@@ -3,11 +3,11 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 const query = (category, capacity_usage) => `
   {
     searchResourcesByCategoryAnCapacityUsage(category: "${category}", capacity: ${capacity_usage}){
+      id
       name
-      category
-      note{
-        author
-        text
+      resourceCharacteristic{
+        name
+        value
       }
     }
   }

@@ -1,6 +1,6 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_4 = async (category="Street%20Cabinet") => {
+const rest_use_case_4 = async (category="Street%20Cabinet", city="Leipzig") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
@@ -10,7 +10,7 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
 
     const streetCabinets = accumulatedMetrics.data;
 
-    const streetCabinetsInBerlin = [];
+    const streetCabinetsInLeipzig = [];
 
     // 2. Schritt: Prüfen, ob sich die Street Cabinets in Leipzig befinden
     for (const cabinet of streetCabinets) {
@@ -22,34 +22,39 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
       accumulatedMetrics = await fetchMetrics(placeHref, accumulatedMetrics);
       const geographicAddress = accumulatedMetrics.data;
 
-      // Prüfen, ob die Stadt "Leipzig" ist
-      if (geographicAddress.city === 'Berlin') {
+      // Prüfen, ob die Stadt "Berlin" ist
+      if (geographicAddress.city === 'Leipzig') {
         // 3. Schritt: Characteristics und Wartungsfirmen sammeln
-        const filteredCharacteristics = cabinet.resourceCharacteristic.filter((characteristic) =>
+        streetCabinetsInLeipzig.push(cabinet);
+
+
+        ////////////////// underneath for detailed use case
+        /* const filteredCharacteristics = cabinet.resourceCharacteristic.filter((characteristic) =>
             ['connected_lines', 'maximum_capacity', 'power_backup'].includes(characteristic.name)
           );
         const maintenanceCompany = cabinet.relatedParty.find(party => party.role === 'Wartungsfirma');
-        /* relatedOrganizationHref = maintenanceCompanies.href
+        relatedOrganizationHref = maintenanceCompanies.href
         .replace("{host}", actualHost)
         .replace("https", "http");
 
         const relatedOrganization = await axiosInstance.get(placeHref);
         const contactMediumType = relatedOrganization.data.contactMediumType
- */
+
         // Speichern der relevanten Informationen für Street Cabinets in Leipzig
-        streetCabinetsInBerlin.push({
+        streetCabinetsInLeipzig.push({
           name: cabinet.name,
           characteristics: filteredCharacteristics,
           maintenanceCompanies: {
             name: maintenanceCompany.name,
             href: maintenanceCompany.href,
           },
-        });
+        }); */
       }
     }
     
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
     accumulatedMetrics.total_transaction_time = total_transaction_time;
+    accumulatedMetrics.data = streetCabinetsInLeipzig;
    
     // parse performance tracing results
     return accumulatedMetrics;

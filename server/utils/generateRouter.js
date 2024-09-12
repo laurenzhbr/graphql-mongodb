@@ -70,17 +70,12 @@ async function generateRouters(modem, numRouters) {
       const organization_hersteller = await Organization.findOne({ organizationType: "Gerätehersteller" });
       // const organization_logistik = await Organization.findOne({ organizationType: "Logistikunternehmen" });
   
-      if (geoAddresses.length < numRouters) {
-        console.log(`Not enough GeoAddresses found in ${cityOfModem} for ${numRouters} routers.`);
-        return;
-      }
-  
       // Generiere Routers
       for (let i = 0; i < numRouters; i++) {
         const geoAddress = getRandomElement(geoAddresses);
   
         const newRouter = new Resource({
-          name: `Router for ${modem.name} ${i}`,
+          name: `Router ${i} for ${modem.name}`,
           category: "Router",
           resourceCharacteristic: [
             { name: "router_type", "valueType": "String", value: faker.helpers.arrayElement([
@@ -103,9 +98,8 @@ async function generateRouters(modem, numRouters) {
                                                                         "5G NR",
                                                                         "Satellite"
                                                                       ]), "valueType": "String" },
-            { name: "ethernet_ports", value: 4, "valueType": "Number" },
-            { name: "usb_ports", value: 1 , "valueType": "Number"},
-            { name: "coaxial_input", value: true, "valueType": "Boolean" },
+            { name: "ethernet_ports", value: faker.number.int({ min: 8, max: 25 }), "valueType": "Number" },
+            { name: "usb_ports", value: faker.number.int({ min: 8, max: 25 }) , "valueType": "Number"},
             { name: "wifi_capability", value: faker.helpers.arrayElement([
                                                                       "Wi-Fi 5 (802.11ac)",
                                                                       "Wi-Fi 6 (802.11ax)",
@@ -115,7 +109,7 @@ async function generateRouters(modem, numRouters) {
                                                                       "Wi-Fi 2 (802.11b)",
                                                                       "Wi-Fi 7 (802.11be)"
                                                                     ]), "valueType": "String" },
-            { name: "power_consumption", value: `${faker.number.int({ min: 8, max: 25 }).toString()}W`, "valueType": "String" },
+            { name: "power_consumption", value: faker.number.int({ min: 8, max: 25 }), "valueType": "Number" },
             { name: "security_features", value: faker.helpers.arrayElement([
                                                                       "WPA3, Firewall, MAC Address Filtering",
                                                                       "WPA2, VPN Passthrough, Firewall",
@@ -188,7 +182,7 @@ async function generateRouters(modem, numRouters) {
   
         // Speichere das Router in der Datenbank
         await newRouter.save();
-        console.log(`Router for Modem ${modem.name} created.`);
+        //console.log(`Router for Modem ${modem.name} created.`);
       }
     } catch (error) {
       console.error("Error generating Routers:", error);
@@ -219,4 +213,4 @@ async function createRoutersForAllModems(amountRouters) {
     }
   }
 // Starte die Erstellung von Modems für das Beispiel Modem
-createRoutersForAllModems(1);
+createRoutersForAllModems(3);

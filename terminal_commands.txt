@@ -1,0 +1,6 @@
+1. Calculate averages of measurements
+python3 results/helpers/calculate_averages.py client/results/{directory}
+
+2. Create Graphs for TestCases
+python3 results/helpers/generate_diagrams_per_usecase.py client/results/REST client/results/GraphQL
+

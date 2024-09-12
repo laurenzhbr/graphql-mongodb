@@ -73,83 +73,84 @@ function generateRandomNotes() {
 }
 
 // Funktion, um CentralOffices zu erstellen
-async function createCentralOffices() {
+async function createCentralOffices(amount_of_centralOffices) {
   for (const [state, capital] of Object.entries(capitals)) {
-    try {
-      //Suche nach einer Organization mit "organizationType": "Stromversorger"
-      const organization_energy = await Organization.findOne({ organizationType: "Energieversorger" });
-      const organization_wartung = await Organization.findOne({ organizationType: "Wartungsfirma" });
-      // Suche die GeoAddress der Hauptstadt des Bundeslandes
-      const geoAddress = await GeoAddress.findOne({ city: capital });
+    for (let i=1; i < amount_of_centralOffices; i++){
+      try {
+        //Suche nach einer Organization mit "organizationType": "Stromversorger"
+        const organization_energy = await Organization.findOne({ organizationType: "Energieversorger" });
+        const organization_wartung = await Organization.findOne({ organizationType: "Wartungsfirma" });
+        // Suche die GeoAddress der Hauptstadt des Bundeslandes
+        const geoAddress = await GeoAddress.findOne({ city: capital });
 
-      if (!geoAddress) {
-        console.log(`No GeoAddress found for capital: ${capital} in state: ${state}`);
-        continue;
-      }
+        if (!geoAddress) {
+          console.log(`No GeoAddress found for capital: ${capital} in state: ${state}`);
+          continue;
+        }
 
-      // Erstelle einen neuen CentralOffice-Datensatz
-      const newCentralOffice = new Resource({
-        name: `Central Office ${capital}`,
-        category: "Central Office",
-        resourceCharacteristic: [
-          { name: "connected_lines", value: faker.number.int({ min: 1000, max: 60000 }), "valueType": "Number" },
-          { name: "building_size", value: `${faker.number.int({ min: 100, max: 500 }).toString()}sqm`, "valueType": "String" },
-          { name: "current_capacity_usage", value: `${faker.number.int({ min: 1, max: 100 }).toString()}%`, "valueType": "String" },
-          { name: "maximum_capacity", value: faker.number.int({ min: 1000, max: 60000 }), "valueType": "Number" },
-          { name: "fiber_backhaul_available", value: faker.datatype.boolean(), "valueType": "Boolean" },
-          { name: "power_backup_system", value: faker.helpers.arrayElement(['Diesel Generator', 'USV', 'Solar Backup', 'Brennstoffzellen', 'Hybrid-System']), "valueType": "String"},
-          { name: "cooling_system", value: faker.helpers.arrayElement(['HVAC', 'Wärmetauscher', 'Flüssigkeitskühlung']), "valueType": "String"},
-        ],
-        endOperatingDate: faker.date.future(),
-        startOperatingDate: faker.date.between({ from: '2000-01-01', to: Date.now() }),
-        version: faker.number.int({ min: 1, max: 5 }).toString(),
-        resourceStatus: faker.helpers.arrayElement(['standby', 'alarm', 'available', 'reserved', 'unknown', 'suspended']),
-        usageState: faker.helpers.arrayElement(['idle', 'active', 'busy']),
-        administrativeState: faker.helpers.arrayElement(['locked', 'unlocked', 'shutdown']),
-        operationalState: faker.helpers.arrayElement(['enable', 'disable']),
-        relatedParty: [
-          {
-            id: organization_energy._id,
-            name: organization_energy.name,
-            role: organization_energy.organizationType
-          },
-          {
-            id: organization_wartung._id,
-            name: organization_wartung.name,
-            role: organization_wartung.organizationType
-          }
-        ],
-        note: generateRandomNotes(),
-        place: {
-          id: geoAddress._id
-        },
-        /* resourceRelationship: [
-          {
-            relationshipType: "targets",
-            resource: {
-              id: "9874654",
-              href: "https://{host}/resourceInventoryManagement/resource/9874654",
-              category: "Street Cabinet",
-              name: "Street Cabinet ABC123"
+        // Erstelle einen neuen CentralOffice-Datensatz
+        const newCentralOffice = new Resource({
+          name: `Central Office ${capital} ${i}`,
+          category: "Central Office",
+          resourceCharacteristic: [
+            { name: "connected_lines", value: faker.number.int({ min: 1000, max: 60000 }), "valueType": "Number" },
+            { name: "building_size", value: `${faker.number.int({ min: 100, max: 500 }).toString()}sqm`, "valueType": "String" },
+            { name: "current_capacity_usage", value: `${faker.number.int({ min: 1, max: 100 }).toString()}%`, "valueType": "String" },
+            { name: "maximum_capacity", value: faker.number.int({ min: 1000, max: 60000 }), "valueType": "Number" },
+            { name: "fiber_backhaul_available", value: faker.datatype.boolean(), "valueType": "Boolean" },
+            { name: "power_backup_system", value: faker.helpers.arrayElement(['Diesel Generator', 'USV', 'Solar Backup', 'Brennstoffzellen', 'Hybrid-System']), "valueType": "String"},
+            { name: "cooling_system", value: faker.helpers.arrayElement(['HVAC', 'Wärmetauscher', 'Flüssigkeitskühlung']), "valueType": "String"},
+          ],
+          endOperatingDate: faker.date.future(),
+          startOperatingDate: faker.date.between({ from: '2000-01-01', to: Date.now() }),
+          version: faker.number.int({ min: 1, max: 5 }).toString(),
+          resourceStatus: faker.helpers.arrayElement(['standby', 'alarm', 'available', 'reserved', 'unknown', 'suspended']),
+          usageState: faker.helpers.arrayElement(['idle', 'active', 'busy']),
+          administrativeState: faker.helpers.arrayElement(['locked', 'unlocked', 'shutdown']),
+          operationalState: faker.helpers.arrayElement(['enable', 'disable']),
+          relatedParty: [
+            {
+              id: organization_energy._id,
+              name: organization_energy.name,
+              role: organization_energy.organizationType
+            },
+            {
+              id: organization_wartung._id,
+              name: organization_wartung.name,
+              role: organization_wartung.organizationType
             }
-          }
-        ] */
-      });
+          ],
+          note: generateRandomNotes(),
+          place: {
+            id: geoAddress._id
+          },
+          /* resourceRelationship: [
+            {
+              relationshipType: "targets",
+              resource: {
+                id: "9874654",
+                href: "https://{host}/resourceInventoryManagement/resource/9874654",
+                category: "Street Cabinet",
+                name: "Street Cabinet ABC123"
+              }
+            }
+          ] */
+        });
 
-      // Speichere den neuen CentralOffice-Datensatz
-      await newCentralOffice.save();
-      console.log(`Central Office for ${capital}, ${state} created.`);
-    } catch (error) {
-      console.error(`Error creating Central Office for ${capital}, ${state}:`, error);
-    }
-  }
+        // Speichere den neuen CentralOffice-Datensatz
+        await newCentralOffice.save();
+        console.log(`Central Office for ${capital}, ${state} created.`);
+      } catch (error) {
+        console.error(`Error creating Central Office for ${capital}, ${state}:`, error);
+      }
+    }}
 
   // Schließe die MongoDB-Verbindung nach Abschluss
   mongoose.connection.close();
 }
 
 // Starte die Funktion zum Erstellen der CentralOffices
-createCentralOffices();
+createCentralOffices(3);
 
 
 

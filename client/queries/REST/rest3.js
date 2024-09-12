@@ -1,6 +1,6 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_3 = async (id="66db7b5fbbe1351f628ed611") => {
+const rest_use_case_3 = async (id="66e3054dc708e7d6a4bd33ae") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};

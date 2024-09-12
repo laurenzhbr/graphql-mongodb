@@ -7,7 +7,6 @@ const query = (organizationType, status, creditRating_gt, sortBy) => `
       organizationType
       creditRating {
         ratingScore
-        creditAgencyName
       }
     }
   }

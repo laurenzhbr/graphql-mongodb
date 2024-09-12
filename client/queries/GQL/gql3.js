@@ -1,32 +1,24 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 const query = (id) => `
   {
-	digitalIdentity(id: "${id}") {
-		nickname
-		resource{
-			id
-			name
-			category
-			resourceRelationship(relationshipType: "isTargeted"){
-				resource{
-					name
-					category
-					resourceRelationship(relationshipType: "isTargeted"){
-						resource{
-							name
-							category
-							resourceRelationship(relationshipType: "isTargeted"){
-								resource{
-									name
-									resourceStatus
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+    digitalIdentity(id: "${id}") {
+      resourceIdentified{
+        resourceRelationship(relationshipType: "isTargeted"){
+          resource{
+            resourceRelationship(relationshipType: "isTargeted"){
+              resource{
+                resourceRelationship(relationshipType: "isTargeted"){
+                  resource{
+                    name
+                    resourceStatus
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 	}
 `;
 
@@ -37,7 +29,7 @@ const gql_use_case_3 =  async (id) => {
 
   // send API Call + fetch metrics
   const url = 'http://localhost:4000/graphql'
-  const data = { query: query("66db7b5fbbe1351f628ed611")};
+  const data = { query: query("66e3054dc708e7d6a4bd33ae")};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

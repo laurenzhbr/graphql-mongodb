@@ -45,7 +45,7 @@ const {
         type: DigitalIdentityStatusEnum,
         description: 'Current lifecycle status of this digital identity',
       },
-      resource: {
+      resourceIdentified: {
         type: ResourceType,
         description: 'Resource identified by this digital identity',
         resolve(parent, args){

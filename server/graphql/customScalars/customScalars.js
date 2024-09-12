@@ -29,7 +29,32 @@ const GraphQLDateTime = new GraphQLScalarType({
   },
 });
 
+const MixedType = new GraphQLScalarType({
+  name: 'MixedType',
+  description: 'A field that can represent multiple types (String, Boolean, Number)',
+  parseValue(value) {
+    return value; // Eingehende Werte werden nicht verändert
+  },
+  serialize(value) {
+    return value; // Ausgabe wird nicht verändert
+  },
+  parseLiteral(ast) {
+    switch (ast.kind) {
+      case Kind.STRING:
+        return ast.value;
+      case Kind.BOOLEAN:
+        return ast.value;
+      case Kind.INT:
+      case Kind.FLOAT:
+        return parseFloat(ast.value);
+      default:
+        return null;
+    }
+  }
+});
+
 module.exports = {
   GraphQLURL,
   GraphQLDateTime,
+  MixedType
 };

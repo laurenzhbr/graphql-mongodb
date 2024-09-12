@@ -1,13 +1,15 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_6 = async (id = "66e07529def2563e777ee8db") => {
+const rest_use_case_6 = async (id = "66e301dfd4e340e8e8f51322") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
+    let useCaseData = {};
 
     const resourceUrl = `http://${actualHost}/resourceInventoryManagement/resource/${id}`;
     accumulatedMetrics = await fetchMetrics(resourceUrl, accumulatedMetrics);
     const resourceData = accumulatedMetrics.data;
+    useCaseData.resource = resourceData;
 
     // Sammle die RelatedParty IDs und die place href
     const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href
@@ -19,6 +21,8 @@ const rest_use_case_6 = async (id = "66e07529def2563e777ee8db") => {
 
     //GET Data from GeoAdress
     accumulatedMetrics = await fetchMetrics(href_geoAdress, accumulatedMetrics);
+    const addressData = accumulatedMetrics.data;
+    useCaseData.geographicAddress = addressData;
 
     // 2. Abfrage der Related Parties (Organization)
     const relatedPartyDetails = await Promise.all(
@@ -32,6 +36,7 @@ const rest_use_case_6 = async (id = "66e07529def2563e777ee8db") => {
             };
         })
     );
+    useCaseData.relatedParty = relatedPartyDetails;
 
     /* const resourceSpecification = res1.data.resourceSpecification
     const href_resourceSpecification = resourceSpecification.href
@@ -47,6 +52,7 @@ const rest_use_case_6 = async (id = "66e07529def2563e777ee8db") => {
  */
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
     accumulatedMetrics.total_transaction_time = total_transaction_time;
+    accumulatedMetrics.data = useCaseData
    
     // parse performance tracing results
     return accumulatedMetrics;

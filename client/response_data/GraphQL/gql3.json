@@ -1,26 +1,26 @@
 {
   "data": {
     "digitalIdentity": {
-      "nickname": "Giuliana.Kasten94",
-      "resource": {
-        "id": "66e07529def2563e777ee8db",
-        "name": "Router for Modem Hamburg 0 0",
+      "nickname": "Ylvie_Mordhorst",
+      "resourceIdentified": {
+        "id": "66e3021b9db75159a4449753",
+        "name": "Router 2 for Modem Heubach 0",
         "category": "Router",
         "resourceRelationship": [
           {
             "resource": {
-              "name": "Modem Hamburg 0",
+              "name": "Modem Heubach 0",
               "category": "Modem",
               "resourceRelationship": [
                 {
                   "resource": {
-                    "name": "Street Cabinet Hamburg 0",
+                    "name": "Street Cabinet Baden-Württemberg 0",
                     "category": "Street Cabinet",
                     "resourceRelationship": [
                       {
                         "resource": {
-                          "name": "Central Office Hamburg",
-                          "resourceStatus": "available"
+                          "name": "Central Office Stuttgart 1",
+                          "resourceStatus": "reserved"
                         }
                       }
                     ]

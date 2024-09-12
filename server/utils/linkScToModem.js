@@ -68,8 +68,6 @@ async function linkModemsToStreetCabinets() {
         { _id: streetCabinetId },
         { $push: { resourceRelationship: modemRelationship } }
       );
-
-      console.log(`Updated Street Cabinet ${streetCabinet.name} with linked Modem ${modem.name}.`);
     }
 
     mongoose.connection.close();

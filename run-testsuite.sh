@@ -9,7 +9,7 @@ fi
 DB_NAME=$1
 
 # Log-Ordner definieren und erstellen, falls er nicht existiert
-LOG_DIR="./logs_testsuite"
+LOG_DIR="./logs/logs_testsuite"
 mkdir -p "$LOG_DIR"
 
 # Log-Datei definieren (mit Zeitstempel für eindeutige Namen)

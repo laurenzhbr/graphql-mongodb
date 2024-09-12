@@ -25,8 +25,8 @@ async function generateDigitalIdentitiesForRouters() {
     for (const router of routers) {
       const newDigitalIdentity = new DigitalIdentity({
         nickname: faker.internet.displayName(),  // Generiere einen eindeutigen Nickname basierend auf dem Router-Namen
-        // status: faker.helpers.arrayElement(['unknown', 'active', 'suspended', 'archived']),  // Standardstatus für neue Identitäten
-        status: faker.helpers.arrayElement(['suspended', 'archived']),  // Standardstatus für neue Identitäten
+        status: faker.helpers.arrayElement(['unknown', 'active', 'suspended', 'archived']),  // Standardstatus für neue Identitäten
+        //status: faker.helpers.arrayElement(['suspended', 'archived']),  // Standardstatus für neue Identitäten
         resourceIdentified: {
           id: router._id,
           name: router.name
@@ -34,8 +34,12 @@ async function generateDigitalIdentitiesForRouters() {
       });
 
       // Speichere die DigitalIdentity in der Datenbank
-      await newDigitalIdentity.save();
-
+      try{
+        await newDigitalIdentity.save();
+      } catch {
+        newDigitalIdentity.nickname = `${newDigitalIdentity.nickname}${faker.number.int({ min: 1, max: 100 }).toString()}_${faker.number.int({ min: 1, max: 100 }).toString()}`
+        await newDigitalIdentity.save();
+      }
       console.log(`Digital Identity for Router ${router.name} created.`);
     }
 

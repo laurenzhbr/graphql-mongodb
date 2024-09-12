@@ -1,115 +1,32 @@
 {
-  "errors": [
-    {
-      "message": "Cannot read properties of undefined (reading 'map')",
-      "locations": [
-        {
-          "line": 123,
-          "column": 7
-        }
-      ],
-      "path": [
-        "createResource",
-        "relatedParties"
-      ]
-    }
-  ],
   "data": {
     "createResource": {
-      "id": "66e1ac24642e50fc84b19f9e",
+      "id": "66e31a0a750e30ccd1a79800",
+      "name": "Router X1000",
       "category": "Router",
-      "endOperatingDate": "2025-08-12T10:44:10.863Z",
-      "name": "Router for Modem Hüfingen 0 0",
+      "description": "Neue Resource Beschreibung",
       "resourceCharacteristic": [
         {
-          "name": "router_type",
-          "valueType": "String",
-          "value": "Edge Router"
-        },
-        {
           "name": "max_download_speed",
-          "valueType": "String",
-          "value": "1.4073629742488265Gbps"
+          "value": "1 Gbps"
         },
         {
           "name": "max_upload_speed",
-          "valueType": "String",
-          "value": "265Mbps"
-        },
-        {
-          "name": "connection_type",
-          "valueType": "String",
-          "value": "Satellite"
-        },
-        {
-          "name": "ethernet_ports",
-          "valueType": "Number",
-          "value": "4"
-        },
-        {
-          "name": "usb_ports",
-          "valueType": "Number",
-          "value": "1"
-        },
-        {
-          "name": "coaxial_input",
-          "valueType": "Boolean",
-          "value": "true"
-        },
-        {
-          "name": "wifi_capability",
-          "valueType": "String",
-          "value": "Wi-Fi 6 (802.11ax)"
-        },
-        {
-          "name": "power_consumption",
-          "valueType": "String",
-          "value": "12W"
-        },
-        {
-          "name": "security_features",
-          "valueType": "String",
-          "value": "WPA3, AES Encryption, DNS Filtering"
-        },
-        {
-          "name": "last_maintenance",
-          "valueType": "Date-Time",
-          "value": "2022-04-09T07:02:38.086Z"
-        },
-        {
-          "name": "processor",
-          "valueType": "String",
-          "value": "Intel Atom C3338, 1.5 GHz"
-        },
-        {
-          "name": "memory",
-          "valueType": "String",
-          "value": "4GB LPDDR4"
-        },
-        {
-          "name": "storage",
-          "valueType": "String",
-          "value": "1GB SSD"
+          "value": "100 Mbps"
         }
       ],
-      "administrativeState": "unlocked",
-      "operationalState": "disable",
-      "relatedParties": null,
+      "resourceRelationship": [],
       "note": [
         {
-          "author": "Marisa Knoll",
-          "date": "2023-11-18T06:54:47.785Z",
-          "text": "Firmware update applied successfully; system stability improved."
+          "author": "Admin",
+          "text": "Initial configuration",
+          "date": "2024-09-10T12:34:56.000Z"
         }
       ],
       "place": {
-        "id": "66db17e94e5b0dd1a4758935"
-      },
-      "resourceRelationship": [],
-      "resourceStatus": "available",
-      "usageState": "idle",
-      "startOperatingDate": "2008-01-29T22:25:19.167Z",
-      "version": "4"
+        "id": "66e2c81f65afefb37d2bed73",
+        "country": "DE"
+      }
     }
   }
 }

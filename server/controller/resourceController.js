@@ -6,7 +6,7 @@ exports.getAllResources = async (req, res) => {
     try {
 
         // URL-Query-Parameter
-        const { offset = 0, limit = 100, fields, current_capacity_usage, ...filters } = req.query;
+        const { offset = 0, limit = 10000, fields, current_capacity_usage, ...filters } = req.query;
 
         // Offset und Limit für Pagination
         const skip = parseInt(offset, 10);

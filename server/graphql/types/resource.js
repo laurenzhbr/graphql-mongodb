@@ -5,7 +5,7 @@ const {
   GraphQLList,
   GraphQLNonNull,
 } = require('graphql');
-const { GraphQLDateTime } = require('../customScalars/customScalars'); // Falls du einen Custom Scalar für DateTime verwendest
+const { GraphQLDateTime, MixedType } = require('../customScalars/customScalars'); // Falls du einen Custom Scalar für DateTime verwendest
 const {
   ResourceAdministrativeStateType,
   ResourceOperationalStateType,
@@ -45,7 +45,7 @@ const CharacteristicType = new GraphQLObjectType({
       description: 'The type of the characteristic value.' 
     },
     value: { 
-      type: GraphQLString, 
+      type: MixedType, 
       description: 'The value of the characteristic.' 
     },
   },

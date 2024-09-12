@@ -11,7 +11,7 @@ const query = (digi_id, resource_name) => `
     }) {
       nickname
       status
-      resource {
+      resourceIdentified {
         id
         name
       }
@@ -27,7 +27,7 @@ const gql_use_case_8 =  async () => {
 
   // send API Call + fetch metrics
   const url = 'http://localhost:4000/graphql'
-  const data = { query: query("66db7b5fbbe1351f628ed615", "Router for Modem Neuental")};
+  const data = { query: query("66e3054dc708e7d6a4bd33fa", "Router for Modem Neuental")};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

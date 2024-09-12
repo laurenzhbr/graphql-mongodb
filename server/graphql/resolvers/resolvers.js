@@ -191,6 +191,12 @@ const Mutation = new GraphQLObjectType({
 
         // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
         const updatedDigitalIdentity = await digitalIdentity.save();
+
+        // Manuelles Mapping: `resourceIdentified` -> `resource`
+        const updatedDataWithResource = {
+          ...updatedDigitalIdentity.toObject(),
+          resourceIdentified: updatedDigitalIdentity.resourceIdentified // Mappe das Feld `resourceIdentified` zu `resource`
+        };
         /* // Führe die Aktualisierung durch
         if (!data.resourceIdentified.href){
           data.resourceIdentified.href = `https://{host}/resourceInventoryManagement/resource/${data.resourceIdentified.id}`;
@@ -199,7 +205,7 @@ const Mutation = new GraphQLObjectType({
           new: true,
           runValidators: true
       }); */
-      return updatedDigitalIdentity;
+        return updatedDigitalIdentity;
     }
     },
     deleteDigitalIdentitesByStatus: {

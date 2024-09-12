@@ -27,11 +27,6 @@ async function linkStreetCabinetsToCentralOffice(centralOfficeId) {
       "resourceRelationship.resource.id": centralOfficeId
     });
 
-    if (streetCabinets.length === 0) {
-      console.log(`No Street Cabinets found for Central Office ${centralOfficeId}`);
-      return;
-    }
-
     // Erstelle die "targets"-Verknüpfungen für das Central Office
     const relationships = streetCabinets.map((cabinet) => ({
       relationshipType: "targets",
@@ -48,8 +43,6 @@ async function linkStreetCabinetsToCentralOffice(centralOfficeId) {
       { _id: centralOfficeId },
       { $push: { resourceRelationship: { $each: relationships } } }
     );
-
-    console.log(`Updated Central Office ${centralOfficeId} with Street Cabinet relationships.`);
   } catch (error) {
     console.error("Error linking Street Cabinets to Central Office:", error);
   }

@@ -1,20 +1,5634 @@
 [
   {
-    "_id": "66db6dd3658d40350e57e665",
+    "_id": "66e301dfd4e340e8e8f51328",
     "category": "Modem",
     "administrativeState": "unlocked",
     "operationalState": "enable",
     "resourceStatus": "available"
   },
   {
-    "_id": "66db6dd4658d40350e57e967",
+    "_id": "66e301dfd4e340e8e8f51355",
     "category": "Modem",
     "administrativeState": "unlocked",
     "operationalState": "enable",
     "resourceStatus": "available"
   },
   {
-    "_id": "66db6dd4658d40350e57ea17",
+    "_id": "66e301dfd4e340e8e8f51359",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301dfd4e340e8e8f5136b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301dfd4e340e8e8f513ba",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301dfd4e340e8e8f5147b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301dfd4e340e8e8f51590",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301dfd4e340e8e8f5164f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f516a2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f516f7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f5173a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f51779",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f517b0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f51832",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f51836",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f51888",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f518e1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f518fa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f51912",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e0d4e340e8e8f51969",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51b53",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51b69",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51bdb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51bf2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51c72",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51cd7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51d06",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51daf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51dc5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e1d4e340e8e8f51de4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51e78",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51ea5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51ec9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51eea",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51eee",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51f25",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51f7e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51f94",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51faf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f51ffe",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f5201d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f52072",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f52082",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f520a9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f520c1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f52164",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f52186",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e2d4e340e8e8f521fa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f52284",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f522af",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f522c1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f52325",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f52354",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f523a7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f523c7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f5243b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f524d8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f524f8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f52556",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f5257e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f525b1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f525e2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e3d4e340e8e8f5262b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f5269b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f526c2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f526ec",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f52731",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f5276a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f527d2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f5282b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f52833",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f52856",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f5285a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f528e2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f5294e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f52997",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f529a1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e4d4e340e8e8f52a56",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52ad0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52aef",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52bff",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52d48",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52d89",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52d97",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52dde",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52e4e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52ebc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e5d4e340e8e8f52f13",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f52f3e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f52fa4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f52fa8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f53034",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f5303a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f530b8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f530ca",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f5316b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f531bc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f531be",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f53201",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f53216",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f5325f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f53271",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f532cf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f532e9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f53303",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e6d4e340e8e8f5331e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f533b2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f5340a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f5341e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f534a0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f534df",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f535f3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f535f7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f53608",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f5362e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f5369a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f536cf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e7d4e340e8e8f537e7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f537fe",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53820",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53884",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53892",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f538a8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f538e1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f5392e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f5394d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f539c5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53a04",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53a4d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53a59",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53a69",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53a7c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53a92",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53adb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53b10",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53b4d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53b63",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e8d4e340e8e8f53b76",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53c6c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53c88",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53cd7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53cf4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53e14",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53e5b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53f7a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53f92",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53fab",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f53fc5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f54000",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f54004",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f5404d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301e9d4e340e8e8f54080",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54129",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f541c9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f541ee",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f541fe",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54223",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54247",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54274",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f542b1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54313",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54354",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f543ce",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54433",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f5443f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54462",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f54478",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ead4e340e8e8f544d2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f5457c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f545a7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f54609",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f54683",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f5468b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f546ce",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f546f2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f54760",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f547a5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f54803",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f54805",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f5482d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f54887",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ebd4e340e8e8f5491b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54a01",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54a11",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54a13",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54a36",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54a93",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54aff",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54b07",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54b09",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54b19",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54b27",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54b5e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54b99",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54bd0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54c21",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54c8d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54c97",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54cc4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ecd4e340e8e8f54d7d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54e0f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54e3e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54eac",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54ed6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54ee5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54f05",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54f3e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54f7b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f54fa0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301edd4e340e8e8f55046",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f550d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f550f9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f55105",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5510b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5511a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5513e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f551aa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5522c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f55234",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f55316",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5532e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5536d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f55373",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f553d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f55434",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f55477",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301eed4e340e8e8f5548a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f55579",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f555b2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f5563a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f5566f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f556dd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f556e5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f5571c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f5573b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f557b0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f557db",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f557eb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f557ed",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f55818",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f55886",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f558b5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301efd4e340e8e8f55904",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f559c7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55a90",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55a96",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55a9a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55aa0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55af2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55afa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55b7a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55c0c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55c59",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55ca5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55cb9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f0d4e340e8e8f55ccb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55d43",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55d8e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55da5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55de2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55e3f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55ea9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55f33",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55f3f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55f9d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f55fdc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f56025",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f1d4e340e8e8f56043",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f560a3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f560b3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f560ec",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f561a7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f561ab",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f56208",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f5626e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f56315",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f2d4e340e8e8f5636c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f3d4e340e8e8f5645c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f3d4e340e8e8f5647c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f3d4e340e8e8f56689",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f3d4e340e8e8f566b5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f566bc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f56717",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f5674a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f567af",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f56836",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f56881",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f568c6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f568dc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f56956",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f4d4e340e8e8f569a5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f569cc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56a64",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56a87",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56a89",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56a9b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56b21",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56b99",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56bd0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56c17",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56c1b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56cd6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f5d4e340e8e8f56d1d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56d4c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56d73",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56db6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56e50",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56e5d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56ee9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56f03",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56f2e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56f6d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56f71",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f56fa4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f5708d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f570d5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f570f1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f57177",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f6d4e340e8e8f57185",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f57240",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f57305",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f57332",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f5739c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f5745b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f5747b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f574c7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f57520",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f57553",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f57594",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f7d4e340e8e8f575b8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f57651",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f5767c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f576f5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f57753",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f577e3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f5781e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f5787e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f578c5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f578d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f5791c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f57959",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f8d4e340e8e8f57a1e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57acf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57af6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57b88",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57bb7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57bea",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57bec",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57cb3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57d3f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57d59",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57e02",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57e33",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301f9d4e340e8e8f57e45",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f57f47",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f57f74",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f57f86",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f57fee",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f58002",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f58008",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f5805a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f5808a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f58170",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f581b7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fad4e340e8e8f581bd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f581e6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f58266",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f5829d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f58325",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f583ab",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f58415",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f58478",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f58491",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f585b3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fbd4e340e8e8f58601",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f586f2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f586f9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f587c6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58879",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58891",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f588b8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f588d8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58901",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58921",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58995",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f589dc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f589f1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58a30",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fcd4e340e8e8f58aac",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58b07",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58ba8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58baa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58bf5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58c24",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58d0d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58d65",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58da6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58daa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58db0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58dfb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58e1c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58e44",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58e48",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fdd4e340e8e8f58e83",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f58fa2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f58ff1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f59053",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f5907b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f59096",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f590b8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f59134",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f591ae",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f59224",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f5927f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f5928c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f592a4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f592ae",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f592b4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f592d3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f5936b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f5937d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f5938e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301fed4e340e8e8f593a8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f593fd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f5947b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f59496",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f59514",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f595aa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f595e7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f59618",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f5969a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f596d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f596f1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f59743",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f597d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f597db",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e301ffd4e340e8e8f597e1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59892",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f599ec",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59a02",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59a33",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59a7a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59a7c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59af4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59bdd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30200d4e340e8e8f59be4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59caf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59d37",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59d72",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59d88",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59daf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59de4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59e5e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59e6e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59e8c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59ec7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59ef8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59efc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59f23",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59f70",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59fa9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59fdc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f59ff2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f5a03d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f5a04d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f5a084",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30201d4e340e8e8f5a091",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a191",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a195",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a1d8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a1e0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a26e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a325",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a3a3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a41d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a423",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a44a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a485",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30202d4e340e8e8f5a49b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a50d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a540",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a550",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a56e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a613",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a66c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a67d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a6ff",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a71b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a72f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a77d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a7b8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a7dc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a85a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a866",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a8c8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30203d4e340e8e8f5a936",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5a983",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5a9fd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5aa01",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5aa32",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5aa52",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5aa7d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5aac4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5aae2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5ac3c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5ac44",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5ad03",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30204d4e340e8e8f5ad7d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5ae28",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5ae2e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5ae44",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5ae77",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5aeae",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5aec8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5aeed",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5af01",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5af6d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5afb8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5afdf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5aff1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b083",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b090",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b0f3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b109",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b194",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b1f5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b1fb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b21a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30205d4e340e8e8f5b22a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b24d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b265",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b2e1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b34b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b40a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b42c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b46b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b504",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30206d4e340e8e8f5b522",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b5ae",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b5d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b66b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b67c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b702",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b7d3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b8dd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b984",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b986",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30207d4e340e8e8f5b996",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5ba31",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5ba57",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5ba6c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bacf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bae6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5baf6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bb18",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bb4f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bbb3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bbbf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bbe2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bc4f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bc53",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bc74",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bc84",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bcd1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bcf2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bd55",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30208d4e340e8e8f5bdc3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5be49",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5be5c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5be74",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5be7e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5beb1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5bee6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5befa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5bffc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5c050",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5c062",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5c0d4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5c135",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5c176",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30209d4e340e8e8f5c24e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c35c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c39b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c40f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c419",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c454",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c456",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c4d2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c507",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c564",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c576",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ad4e340e8e8f5c5a3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c6ff",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c701",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c70f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c74c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c787",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c7b4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c88d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c8e0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c8e2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c917",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c94c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c964",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c989",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c993",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5c99f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5ca1f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5ca9f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5cab6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020bd4e340e8e8f5cb0f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cb5a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cb95",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cbc6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cbca",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cc2a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cc75",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cc8b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cc9e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5ccf3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cd7d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cdd0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cde5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cdfb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5ce0f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5ce57",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5ce9c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cea0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cebe",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cedd",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5ceef",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020cd4e340e8e8f5cf1e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5cfd7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5cfe3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d08e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d11a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d126",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d15d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d179",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d1b0",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d1eb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d20c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d2b4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d2f1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d2fb",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d34d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d351",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d3b2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d3c7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d3f3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020dd4e340e8e8f5d400",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d410",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d455",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d4e7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d594",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d604",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d61a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d63b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d63f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d7a4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d7cf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020ed4e340e8e8f5d81c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5d87a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5d9af",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5da06",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5da57",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5da59",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5da70",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5da78",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5daaf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5db72",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5db8c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5dbc5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5dbfa",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5dc27",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5dc41",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5dc62",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e3020fd4e340e8e8f5dc90",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5dd21",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5dd6e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5de2b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5de66",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5deb3",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5e006",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5e066",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5e074",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5e104",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5e13d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30210d4e340e8e8f5e17c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e1f4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e219",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e24e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e25a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e2d6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e350",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e403",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e41b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e43e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e44c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e44e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e47d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e48b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e4ea",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e55c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30211d4e340e8e8f5e562",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e638",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e6f7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e70d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e71f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e79b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e7f7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e877",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e8dc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e8ef",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30212d4e340e8e8f5e905",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5e971",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5e98b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5e997",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ea34",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ea87",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5eaa4",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ead6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5eb8b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ebd6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ec3a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ec6f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ed73",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30213d4e340e8e8f5ed7f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ede1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5edef",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5edf9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ee3a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ee81",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ee98",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ef09",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ef32",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ef36",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ef75",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ef7b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5ef85",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5efb6",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5f0e7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5f10a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5f120",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5f136",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30214d4e340e8e8f5f181",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f238",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f255",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f25d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f27d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f28a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f2d9",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f3b8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f3db",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f482",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f4b2",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f4d1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f4e7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f510",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f590",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30215d4e340e8e8f5f5fc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f69e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f757",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f79c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f7e1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f80a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f81e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f888",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f894",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f89e",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f8ec",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f93f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f955",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f968",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f96c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f980",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5f9ea",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5fa00",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5fa4d",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5fac1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30216d4e340e8e8f5fad1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb0a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb29",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb3b",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb64",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb6a",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb74",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fb86",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fbd1",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fbd7",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fbfe",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fc06",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fc10",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fc57",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fcd5",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fd31",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fd3f",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fd8c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fd92",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fdbf",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fdf8",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fdfc",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fe0c",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5fe10",
+    "category": "Modem",
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "resourceStatus": "available"
+  },
+  {
+    "_id": "66e30217d4e340e8e8f5ff1f",
     "category": "Modem",
     "administrativeState": "unlocked",
     "operationalState": "enable",

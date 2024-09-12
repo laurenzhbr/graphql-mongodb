@@ -1,137 +1,142 @@
 [
   {
-    "_id": "66d06cd89cd471926c54d8d4",
-    "nickname": "LaurenzHbr1",
+    "_id": "66e3054dc708e7d6a4bd33ae",
+    "nickname": "Ylvie_Mordhorst",
     "status": "active",
     "resourceIdentified": {
-      "id": "66cf06943a5799a97164e997",
-      "href": "https://{host}/resourceInventoryManagement/resource/66cf06943a5799a97164e997"
+      "id": "66e3021b9db75159a4449753",
+      "name": "Router 2 for Modem Heubach 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a4449753"
     },
-    "creationDate": "2024-08-29T12:43:04.456Z",
-    "lastUpdate": "2024-08-29T12:43:04.461Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66d06cd89cd471926c54d8d4",
+    "creationDate": "2024-09-12T15:14:21.681Z",
+    "lastUpdate": "2024-09-12T15:14:21.681Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33ae",
     "__v": 0
   },
   {
-    "_id": "66d5aa5fff81b5b5ab4090f1",
-    "nickname": "LaurenzHbr2",
+    "_id": "66e3054dc708e7d6a4bd33be",
+    "nickname": "Lya_Niklaus0",
     "status": "active",
-    "resource": "66d9bc81603400485a517965",
-    "creationDate": "2024-09-02T12:06:55.983Z",
-    "lastUpdate": "2024-09-02T12:06:55.987Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66d5aa5fff81b5b5ab4090f1",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a444976c",
+      "name": "Router 1 for Modem Heubach 3",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444976c"
+    },
+    "creationDate": "2024-09-12T15:14:21.703Z",
+    "lastUpdate": "2024-09-12T15:14:21.703Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33be",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed5e2",
-    "nickname": "Liz.Ruch",
+    "_id": "66e3054dc708e7d6a4bd33ca",
+    "nickname": "Jane39",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd399",
-      "name": "Router for Modem Hüfingen 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd399"
+      "id": "66e3021b9db75159a444977e",
+      "name": "Router 1 for Modem Heubach 5",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444977e"
     },
-    "creationDate": "2024-09-06T21:59:59.202Z",
-    "lastUpdate": "2024-09-06T21:59:59.204Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e2",
+    "creationDate": "2024-09-12T15:14:21.711Z",
+    "lastUpdate": "2024-09-12T15:14:21.711Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33ca",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed5e7",
-    "nickname": "neuerUser",
+    "_id": "66e3054dc708e7d6a4bd33d2",
+    "nickname": "Emirhan.Klopsch",
     "status": "active",
     "resourceIdentified": {
-      "id": "8331eacc174faa92eeece18e",
-      "name": "Router for Modem Hüfingen 4 15",
-      "href": "https://{host}/resourceInventoryManagement/resource/8331eacc174faa92eeece18e"
+      "id": "66e3021b9db75159a4449789",
+      "name": "Router 2 for Modem Heubach 6",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a4449789"
     },
-    "creationDate": "2024-09-06T21:59:59.221Z",
-    "lastUpdate": "2024-09-11T14:40:22.138Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
+    "creationDate": "2024-09-12T15:14:21.715Z",
+    "lastUpdate": "2024-09-12T15:14:21.715Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33d2",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed5ed",
-    "nickname": "Eleonora_Thust",
+    "_id": "66e3054dc708e7d6a4bd33d4",
+    "nickname": "Jasmine_Freimann",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd3fd",
-      "name": "Router for Modem Riedhausen 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3fd"
+      "id": "66e3021b9db75159a444978e",
+      "name": "Router 0 for Modem Heubach 7",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444978e"
     },
-    "creationDate": "2024-09-06T21:59:59.227Z",
-    "lastUpdate": "2024-09-06T21:59:59.227Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5ed",
+    "creationDate": "2024-09-12T15:14:21.717Z",
+    "lastUpdate": "2024-09-12T15:14:21.717Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33d4",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed5f3",
-    "nickname": "Isabell.Sinnhuber14",
+    "_id": "66e3054dc708e7d6a4bd33de",
+    "nickname": "Samira_Malkus51",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd439",
-      "name": "Router for Modem Bischbrunn 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd439"
+      "id": "66e3021b9db75159a444979b",
+      "name": "Router 2 for Modem Heubach 8",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444979b"
     },
-    "creationDate": "2024-09-06T21:59:59.233Z",
-    "lastUpdate": "2024-09-06T21:59:59.234Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5f3",
+    "creationDate": "2024-09-12T15:14:21.722Z",
+    "lastUpdate": "2024-09-12T15:14:21.722Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33de",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed5f5",
-    "nickname": "Ibrahim88",
+    "_id": "66e3054dc708e7d6a4bd33e0",
+    "nickname": "Joelina74",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd44d",
-      "name": "Router for Modem Pommersfelden 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd44d"
+      "id": "66e3021b9db75159a44497a0",
+      "name": "Router 0 for Modem Heubach 9",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a44497a0"
     },
-    "creationDate": "2024-09-06T21:59:59.235Z",
-    "lastUpdate": "2024-09-06T21:59:59.236Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5f5",
+    "creationDate": "2024-09-12T15:14:21.726Z",
+    "lastUpdate": "2024-09-12T15:14:21.727Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33e0",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed611",
-    "nickname": "Giuliana.Kasten94",
+    "_id": "66e3054dc708e7d6a4bd33e2",
+    "nickname": "Tia82",
     "status": "active",
     "resourceIdentified": {
-      "id": "66e07529def2563e777ee8db",
-      "name": "Router for Modem Hamburg 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66e07529def2563e777ee8db"
+      "id": "66e3021b9db75159a44497a2",
+      "name": "Router 1 for Modem Heubach 9",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a44497a2"
     },
-    "creationDate": "2024-09-06T21:59:59.261Z",
-    "lastUpdate": "2024-09-11T08:48:07.819Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed611",
+    "creationDate": "2024-09-12T15:14:21.728Z",
+    "lastUpdate": "2024-09-12T15:14:21.728Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33e2",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed615",
-    "nickname": "Leandro16",
+    "_id": "66e3054dc708e7d6a4bd33e8",
+    "nickname": "Nika63",
     "status": "active",
     "resourceIdentified": {
-      "id": "3c4b4588355df688ceb0c2d6",
-      "name": "Router for Modem Neuental 15 7",
-      "href": "https://{host}/resourceInventoryManagement/resource/3c4b4588355df688ceb0c2d6"
+      "id": "66e3021b9db75159a44497ab",
+      "name": "Router 1 for Modem Heubach 10",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a44497ab"
     },
-    "creationDate": "2024-09-06T21:59:59.264Z",
-    "lastUpdate": "2024-09-11T14:35:33.465Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed615",
+    "creationDate": "2024-09-12T15:14:21.735Z",
+    "lastUpdate": "2024-09-12T15:14:21.735Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33e8",
     "__v": 0
   },
   {
-    "_id": "66db7b5fbbe1351f628ed617",
-    "nickname": "Jella5",
+    "_id": "66e3054dc708e7d6a4bd33fa",
+    "nickname": "Vincent0",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd5a1",
-      "name": "Router for Modem Hamburg 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd5a1"
+      "id": "e82fa9a60d9e6a55bdd56dc9",
+      "name": "Router for Modem Neuental 7 5",
+      "href": "https://{host}/resourceInventoryManagement/resource/e82fa9a60d9e6a55bdd56dc9"
     },
-    "creationDate": "2024-09-06T21:59:59.265Z",
-    "lastUpdate": "2024-09-06T21:59:59.266Z",
-    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed617",
+    "creationDate": "2024-09-12T15:14:21.747Z",
+    "lastUpdate": "2024-09-12T16:15:06.688Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33fa",
     "__v": 0
   }
 ]

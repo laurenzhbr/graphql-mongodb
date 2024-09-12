@@ -1,11 +1,98 @@
-{
-  "_id": "66db17e94e5b0dd1a4759428",
-  "city": "Udestedt, Mönchenholzhausen u.a.",
-  "country": "DE",
-  "postcode": "99198",
-  "stateOrProvince": "Thüringen",
-  "streetName": "Albertus-Magnus-Str.",
-  "streetNr": "90",
-  "href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a4759428",
-  "__v": 0
-}
+[
+  {
+    "name": "Street Cabinet Sachsen 9",
+    "characteristics": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 56583
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 411
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      }
+    ],
+    "maintenanceCompanies": {
+      "name": "Krause UG Instandhaltung GmbH",
+      "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+    }
+  },
+  {
+    "name": "Street Cabinet Sachsen 25",
+    "characteristics": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 18173
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 847
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      }
+    ],
+    "maintenanceCompanies": {
+      "name": "Krause UG Instandhaltung GmbH",
+      "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+    }
+  },
+  {
+    "name": "Street Cabinet Sachsen 26",
+    "characteristics": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 21868
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 721
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      }
+    ],
+    "maintenanceCompanies": {
+      "name": "Krause UG Instandhaltung GmbH",
+      "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+    }
+  },
+  {
+    "name": "Street Cabinet Sachsen 11",
+    "characteristics": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 20298
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 738
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      }
+    ],
+    "maintenanceCompanies": {
+      "name": "Krause UG Instandhaltung GmbH",
+      "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+    }
+  }
+]

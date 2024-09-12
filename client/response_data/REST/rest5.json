@@ -1,649 +1,557 @@
 [
   {
-    "_id": "66db5c5ae640a18fa33d5536",
-    "href": "https://{host}/partyManagement/party/66db5c5ae640a18fa33d5536",
-    "isHeadOffice": true,
-    "isLegalEntity": true,
-    "name": "Feeney LLC Marketing GmbH",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Feeney LLC Marketing GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": false,
-        "characteristic": {
-          "city": "Duluth",
-          "contactType": "personal",
-          "country": "Argentina",
-          "emailAddress": "Davion53@hotmail.com",
-          "faxNumber": "(674) 341-3477 x254",
-          "phoneNumber": "864-541-7609 x486",
-          "postCode": "21371",
-          "socialNetworkId": "Ciara5",
-          "stateOrProvince": "North Dakota",
-          "street1": "E 6th Street",
-          "street2": "S Washington Street",
-          "_id": "66db5c5be640a18fa33d6998"
-        },
-        "validFor": {
-          "endDateTime": "2024-10-30T17:56:33.492Z",
-          "startDateTime": "2023-11-19T11:46:10.889Z",
-          "_id": "66db5c5be640a18fa33d6999"
-        },
-        "_id": "66db5c5be640a18fa33d6997"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Collier, Kertzmann and Schuster",
-        "ratingScore": 846,
-        "lastExecuted": "2024-09-06T14:27:31.687Z",
-        "validFor": {
-          "endDateTime": "2025-03-30T03:01:06.335Z",
-          "startDateTime": "2024-01-13T16:11:10.798Z",
-          "_id": "66db5c5be640a18fa33d699b"
-        },
-        "_id": "66db5c5be640a18fa33d699a"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-01-16T07:26:48.623Z",
-      "startDateTime": "2023-10-08T13:03:20.274Z",
-      "_id": "66db5c5be640a18fa33d699c"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "warmhearted-chandelier.info",
-        "_id": "66db5c5be640a18fa33d699d"
-      }
-    ],
-    "organizationParentRelationship": {
-      "relationshipType": "subsidiary",
-      "organization": {
-        "id": "66db3aa516d68c5f3c139449",
-        "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139449",
-        "name": "Jacobi - Heathcote Technische Dienstleistungen GmbH",
-        "_id": "66db5c5be640a18fa33d699f"
-      },
-      "_id": "66db5c5be640a18fa33d699e"
-    },
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db3aa516d68c5f3c1394c1",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c1394c1",
-    "isHeadOffice": true,
-    "isLegalEntity": true,
-    "name": "D'Amore, Lynch and Mohr Sales & Partners AG",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "D'Amore, Lynch and Mohr Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "phone",
-        "preferred": true,
-        "characteristic": {
-          "city": "Hermannville",
-          "contactType": "business",
-          "country": "Guernsey",
-          "emailAddress": "Aric_Blanda79@hotmail.com",
-          "faxNumber": "(602) 743-3792 x55363",
-          "phoneNumber": "1-621-938-5875 x87642",
-          "postCode": "61947",
-          "socialNetworkId": "Jerald88",
-          "stateOrProvince": "Maine",
-          "street1": "W Central Avenue",
-          "street2": "St Andrew's Road",
-          "_id": "66db3aa516d68c5f3c13cb2d"
-        },
-        "validFor": {
-          "endDateTime": "2024-09-27T07:30:46.513Z",
-          "startDateTime": "2024-01-09T05:26:10.013Z",
-          "_id": "66db3aa516d68c5f3c13cb2e"
-        },
-        "_id": "66db3aa516d68c5f3c13cb2c"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Denesik, Gibson and White",
-        "ratingScore": 840,
-        "lastExecuted": "2024-09-06T13:02:18.169Z",
-        "validFor": {
-          "endDateTime": "2025-05-31T09:31:49.130Z",
-          "startDateTime": "2024-08-28T14:04:46.890Z",
-          "_id": "66db3aa516d68c5f3c13cb30"
-        },
-        "_id": "66db3aa516d68c5f3c13cb2f"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2024-11-21T01:04:34.784Z",
-      "startDateTime": "2023-11-25T16:23:49.776Z",
-      "_id": "66db3aa516d68c5f3c13cb31"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "forceful-dishwasher.info",
-        "_id": "66db3aa516d68c5f3c13cb32"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db3aa516d68c5f3c138d29",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138d29",
+    "_id": "66e3071518539291490698a8",
+    "href": "https://{host}/partyManagement/party/66e3071518539291490698a8",
     "isHeadOffice": false,
     "isLegalEntity": false,
-    "name": "Leannon Group Sales & Consulting KG",
+    "name": "Scholz, Haaf und Roggatz Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Leannon Group Sales & Consulting KG",
+    "tradingName": "Scholz, Haaf und Roggatz Sales & Partners AG",
     "contactMedium": [
       {
         "mediumType": "email",
         "preferred": true,
         "characteristic": {
-          "city": "Nolanshire",
+          "city": "Möllerscheid",
           "contactType": "business",
-          "country": "Monaco",
-          "emailAddress": "Gerda39@hotmail.com",
-          "faxNumber": "476-320-3308 x983",
-          "phoneNumber": "(589) 444-7254 x736",
-          "postCode": "85793",
-          "socialNetworkId": "Gertrude72",
-          "stateOrProvince": "Missouri",
-          "street1": "Glover Crest",
-          "street2": "Vincenzo Pike",
-          "_id": "66db3aa516d68c5f3c13a137"
+          "country": "Osttimor",
+          "emailAddress": "Giada.Michel30@hotmail.com",
+          "faxNumber": "+49-660-1765376",
+          "phoneNumber": "+49-5014-93848913",
+          "postCode": "40970",
+          "socialNetworkId": "Vito88",
+          "stateOrProvince": "Sachsen",
+          "street1": "Köpenicker Str.",
+          "street2": "Gezelinallee"
         },
         "validFor": {
-          "endDateTime": "2025-07-06T04:17:36.583Z",
-          "startDateTime": "2024-06-05T07:30:19.095Z",
-          "_id": "66db3aa516d68c5f3c13a138"
-        },
-        "_id": "66db3aa516d68c5f3c13a136"
+          "endDateTime": "2024-09-30T16:12:21.370Z",
+          "startDateTime": "2024-06-03T20:26:26.707Z"
+        }
       }
     ],
     "creditRating": [
       {
-        "creditAgencyName": "Hettinger - Turcotte",
-        "ratingScore": 828,
-        "lastExecuted": "2024-09-05T22:39:33.963Z",
+        "creditAgencyName": "Loska KG",
+        "ratingScore": 848,
+        "lastExecuted": "2024-09-11T19:47:18.986Z",
         "validFor": {
-          "endDateTime": "2024-10-18T09:09:28.409Z",
-          "startDateTime": "2024-05-05T00:32:12.203Z",
-          "_id": "66db3aa516d68c5f3c13a13a"
-        },
-        "_id": "66db3aa516d68c5f3c13a139"
+          "endDateTime": "2025-05-01T13:20:18.594Z",
+          "startDateTime": "2023-09-23T11:39:55.629Z"
+        }
       }
     ],
     "existsDuring": {
-      "endDateTime": "2025-07-23T14:36:35.611Z",
-      "startDateTime": "2024-05-12T20:10:36.573Z",
-      "_id": "66db3aa516d68c5f3c13a13b"
+      "endDateTime": "2025-02-28T07:21:57.998Z",
+      "startDateTime": "2024-07-28T16:26:47.779Z"
     },
     "externalReference": [
       {
         "externalReferenceType": "socialMediaAccount",
-        "name": "rude-poignance.net",
-        "_id": "66db3aa516d68c5f3c13a13c"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db3aa516d68c5f3c139501",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139501",
-    "isHeadOffice": false,
-    "isLegalEntity": true,
-    "name": "Beahan, Hirthe and Hegmann Marketing- und Vertriebsservice GmbH",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Beahan, Hirthe and Hegmann Marketing- und Vertriebsservice GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "phone",
-        "preferred": true,
-        "characteristic": {
-          "city": "Savionstad",
-          "contactType": "personal",
-          "country": "Seychelles",
-          "emailAddress": "Graciela_Franey@hotmail.com",
-          "faxNumber": "687-867-6669 x1358",
-          "phoneNumber": "510-410-6870",
-          "postCode": "03983-8471",
-          "socialNetworkId": "Derrick88",
-          "stateOrProvince": "Nevada",
-          "street1": "Cheyanne Glen",
-          "street2": "Floy Divide",
-          "_id": "66db3aa516d68c5f3c13cc83"
-        },
-        "validFor": {
-          "endDateTime": "2024-12-28T19:41:16.750Z",
-          "startDateTime": "2024-06-29T19:37:37.500Z",
-          "_id": "66db3aa516d68c5f3c13cc84"
-        },
-        "_id": "66db3aa516d68c5f3c13cc82"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Walter LLC",
-        "ratingScore": 826,
-        "lastExecuted": "2024-09-06T04:27:20.073Z",
-        "validFor": {
-          "endDateTime": "2025-01-11T21:16:50.737Z",
-          "startDateTime": "2024-06-22T10:47:20.683Z",
-          "_id": "66db3aa516d68c5f3c13cc86"
-        },
-        "_id": "66db3aa516d68c5f3c13cc85"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-06-30T06:40:03.001Z",
-      "startDateTime": "2023-09-12T01:08:23.337Z",
-      "_id": "66db3aa516d68c5f3c13cc87"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "quick-mask.biz",
-        "_id": "66db3aa516d68c5f3c13cc88"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db3aa516d68c5f3c139668",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139668",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
-    "name": "Frami - Douglas Marketing GmbH",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Frami - Douglas Marketing GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "Kovacekfurt",
-          "contactType": "personal",
-          "country": "Libyan Arab Jamahiriya",
-          "emailAddress": "Delphia78@hotmail.com",
-          "faxNumber": "700-513-2164 x988",
-          "phoneNumber": "613.897.1888 x0494",
-          "postCode": "18410",
-          "socialNetworkId": "Ambrose.Abbott",
-          "stateOrProvince": "Hawaii",
-          "street1": "Abbey Road",
-          "street2": "Rogahn Ville",
-          "_id": "66db3aa516d68c5f3c13d455"
-        },
-        "validFor": {
-          "endDateTime": "2024-12-20T05:37:15.917Z",
-          "startDateTime": "2023-11-10T09:13:45.112Z",
-          "_id": "66db3aa516d68c5f3c13d456"
-        },
-        "_id": "66db3aa516d68c5f3c13d454"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Denesik, Bins and Cormier",
-        "ratingScore": 825,
-        "lastExecuted": "2024-09-06T14:37:12.005Z",
-        "validFor": {
-          "endDateTime": "2025-02-15T00:53:37.924Z",
-          "startDateTime": "2023-11-12T13:02:26.547Z",
-          "_id": "66db3aa516d68c5f3c13d458"
-        },
-        "_id": "66db3aa516d68c5f3c13d457"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-05-08T18:38:46.748Z",
-      "startDateTime": "2023-10-21T19:22:22.559Z",
-      "_id": "66db3aa516d68c5f3c13d459"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "oily-grandchild.org",
-        "_id": "66db3aa516d68c5f3c13d45a"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db5c5ae640a18fa33d54c8",
-    "href": "https://{host}/partyManagement/party/66db5c5ae640a18fa33d54c8",
-    "isHeadOffice": false,
-    "isLegalEntity": true,
-    "name": "Carter - Von Vertriebsgesellschaft mbH",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Carter - Von Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": true,
-        "characteristic": {
-          "city": "Treyville",
-          "contactType": "personal",
-          "country": "Mali",
-          "emailAddress": "Earnest.Weissnat@hotmail.com",
-          "faxNumber": "756-910-1489 x192",
-          "phoneNumber": "1-257-263-9989 x048",
-          "postCode": "89780-8721",
-          "socialNetworkId": "Jovany_Stiedemann",
-          "stateOrProvince": "North Carolina",
-          "street1": "Cormier Spring",
-          "street2": "Mill Street",
-          "_id": "66db5c5be640a18fa33d66c8"
-        },
-        "validFor": {
-          "endDateTime": "2025-05-16T18:43:03.231Z",
-          "startDateTime": "2023-10-09T10:00:55.058Z",
-          "_id": "66db5c5be640a18fa33d66c9"
-        },
-        "_id": "66db5c5be640a18fa33d66c7"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Morar, Larson and Lang",
-        "ratingScore": 822,
-        "lastExecuted": "2024-09-05T20:27:16.496Z",
-        "validFor": {
-          "endDateTime": "2024-10-19T17:54:26.027Z",
-          "startDateTime": "2024-07-11T06:55:47.190Z",
-          "_id": "66db5c5be640a18fa33d66cb"
-        },
-        "_id": "66db5c5be640a18fa33d66ca"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-04-10T08:42:26.974Z",
-      "startDateTime": "2024-04-08T01:55:04.567Z",
-      "_id": "66db5c5be640a18fa33d66cc"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "bruised-goddess.biz",
-        "_id": "66db5c5be640a18fa33d66cd"
+        "name": "kenntnisreich-unterernahrung.name"
       }
     ],
     "organizationParentRelationship": {
       "relationshipType": "parent",
       "organization": {
-        "id": "66db3aa516d68c5f3c139657",
-        "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139657",
-        "name": "Koelpin - Runte Transportgesellschaft mbH",
-        "_id": "66db5c5be640a18fa33d66cf"
-      },
-      "_id": "66db5c5be640a18fa33d66ce"
+        "id": "66e2c8efa4a4ceda4e6d9c34",
+        "href": "https://{host}/partyManagement/party/66e2c8efa4a4ceda4e6d9c34",
+        "name": "Krieger AG Energie AG"
+      }
     },
     "status": "validated",
     "__v": 0
   },
   {
-    "_id": "66db3aa516d68c5f3c139569",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139569",
+    "_id": "66e3092f0c8d998659a60b04",
+    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a60b04",
     "isHeadOffice": false,
-    "isLegalEntity": true,
-    "name": "Gusikowski Group Sales & Partners AG",
+    "isLegalEntity": false,
+    "name": "Heinrich-Oeser Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Gusikowski Group Sales & Partners AG",
+    "tradingName": "Heinrich-Oeser Vertriebsgesellschaft mbH",
     "contactMedium": [
       {
         "mediumType": "phone",
-        "preferred": true,
+        "preferred": false,
         "characteristic": {
-          "city": "McKenziehaven",
-          "contactType": "personal",
-          "country": "Italy",
-          "emailAddress": "Kenneth.Labadie@yahoo.com",
-          "faxNumber": "1-935-493-8251 x887",
-          "phoneNumber": "505-610-9914 x373",
-          "postCode": "42832-3416",
-          "socialNetworkId": "Trudie_Koch82",
-          "stateOrProvince": "Delaware",
-          "street1": "N Front Street",
-          "street2": "Morar Gardens",
-          "_id": "66db3aa516d68c5f3c13cebf"
+          "city": "Nord Arved",
+          "contactType": "business",
+          "country": "Tonga",
+          "emailAddress": "Tia90@hotmail.com",
+          "faxNumber": "+49-9937-40329516",
+          "phoneNumber": "(0095) 985562275",
+          "postCode": "50790",
+          "socialNetworkId": "Nathalie.Komoll54",
+          "stateOrProvince": "Saarland",
+          "street1": "Sebastianusweg",
+          "street2": "In der Hartmannswiese"
         },
         "validFor": {
-          "endDateTime": "2025-07-12T22:20:45.361Z",
-          "startDateTime": "2024-02-10T08:53:28.841Z",
-          "_id": "66db3aa516d68c5f3c13cec0"
-        },
-        "_id": "66db3aa516d68c5f3c13cebe"
+          "endDateTime": "2024-12-05T17:57:57.719Z",
+          "startDateTime": "2023-09-22T01:21:02.316Z"
+        }
       }
     ],
     "creditRating": [
       {
-        "creditAgencyName": "Daniel, Stamm and Herzog",
-        "ratingScore": 821,
-        "lastExecuted": "2024-09-06T14:55:21.730Z",
+        "creditAgencyName": "Malek, Schönebeck und Hohnheiser",
+        "ratingScore": 848,
+        "lastExecuted": "2024-09-12T13:16:17.031Z",
         "validFor": {
-          "endDateTime": "2024-10-21T11:46:10.606Z",
-          "startDateTime": "2023-12-06T14:23:39.891Z",
-          "_id": "66db3aa516d68c5f3c13cec2"
-        },
-        "_id": "66db3aa516d68c5f3c13cec1"
+          "endDateTime": "2024-11-07T19:26:19.395Z",
+          "startDateTime": "2024-01-05T09:39:43.883Z"
+        }
       }
     ],
     "existsDuring": {
-      "endDateTime": "2025-01-11T03:57:56.854Z",
-      "startDateTime": "2023-11-14T19:42:22.603Z",
-      "_id": "66db3aa516d68c5f3c13cec3"
+      "endDateTime": "2024-10-20T08:11:11.916Z",
+      "startDateTime": "2023-12-19T14:09:03.529Z"
     },
     "externalReference": [
       {
         "externalReferenceType": "internetSite",
-        "name": "gaseous-maize.name",
-        "_id": "66db3aa516d68c5f3c13cec4"
+        "name": "bildhubsch-stahl.de"
       }
     ],
     "status": "validated",
     "__v": 0
   },
   {
-    "_id": "66db5c5ae640a18fa33d5834",
-    "href": "https://{host}/partyManagement/party/66db5c5ae640a18fa33d5834",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
-    "name": "Rau Inc Marketing- und Vertriebsservice GmbH",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Rau Inc Marketing- und Vertriebsservice GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "Hagenesborough",
-          "contactType": "business",
-          "country": "Barbados",
-          "emailAddress": "Mauricio.Kuhic@hotmail.com",
-          "faxNumber": "1-952-919-3169 x1158",
-          "phoneNumber": "1-674-805-8976 x0195",
-          "postCode": "39402-9841",
-          "socialNetworkId": "Collin_Schneider",
-          "stateOrProvince": "Hawaii",
-          "street1": "Leilani Greens",
-          "street2": "Nella Cove",
-          "_id": "66db5c5be640a18fa33d7d2d"
-        },
-        "validFor": {
-          "endDateTime": "2025-03-10T15:15:49.457Z",
-          "startDateTime": "2024-08-14T17:02:28.328Z",
-          "_id": "66db5c5be640a18fa33d7d2e"
-        },
-        "_id": "66db5c5be640a18fa33d7d2c"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Moore - Crist",
-        "ratingScore": 816,
-        "lastExecuted": "2024-09-06T10:46:52.423Z",
-        "validFor": {
-          "endDateTime": "2024-11-28T03:53:22.820Z",
-          "startDateTime": "2023-10-23T07:43:10.207Z",
-          "_id": "66db5c5be640a18fa33d7d30"
-        },
-        "_id": "66db5c5be640a18fa33d7d2f"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-05-21T02:58:37.945Z",
-      "startDateTime": "2023-10-14T23:03:09.600Z",
-      "_id": "66db5c5be640a18fa33d7d31"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "medium-seat.name",
-        "_id": "66db5c5be640a18fa33d7d32"
-      }
-    ],
-    "organizationParentRelationship": {
-      "relationshipType": "subsidiary",
-      "organization": {
-        "id": "66db3aa516d68c5f3c13966c",
-        "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c13966c",
-        "name": "Cremin, Bergstrom and O'Connell Sales & Consulting KG",
-        "_id": "66db5c5be640a18fa33d7d34"
-      },
-      "_id": "66db5c5be640a18fa33d7d33"
-    },
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db3aa516d68c5f3c138ecf",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138ecf",
-    "isHeadOffice": true,
-    "isLegalEntity": true,
-    "name": "McLaughlin - Lang Vertriebsgesellschaft mbH",
-    "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "McLaughlin - Lang Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "West Crystel",
-          "contactType": "business",
-          "country": "Oman",
-          "emailAddress": "Dayna24@hotmail.com",
-          "faxNumber": "541-290-8681",
-          "phoneNumber": "1-902-268-8366 x965",
-          "postCode": "81466",
-          "socialNetworkId": "Ali.Kreiger",
-          "stateOrProvince": "Texas",
-          "street1": "Moore Locks",
-          "street2": "Kylie River",
-          "_id": "66db3aa516d68c5f3c13aa48"
-        },
-        "validFor": {
-          "endDateTime": "2025-06-19T02:21:56.406Z",
-          "startDateTime": "2023-09-29T18:40:39.055Z",
-          "_id": "66db3aa516d68c5f3c13aa49"
-        },
-        "_id": "66db3aa516d68c5f3c13aa47"
-      }
-    ],
-    "creditRating": [
-      {
-        "creditAgencyName": "Ruecker, Kunze and Lynch",
-        "ratingScore": 812,
-        "lastExecuted": "2024-09-06T13:27:03.870Z",
-        "validFor": {
-          "endDateTime": "2025-04-15T05:10:05.697Z",
-          "startDateTime": "2023-09-19T00:17:21.241Z",
-          "_id": "66db3aa516d68c5f3c13aa4b"
-        },
-        "_id": "66db3aa516d68c5f3c13aa4a"
-      }
-    ],
-    "existsDuring": {
-      "endDateTime": "2024-10-30T14:20:20.344Z",
-      "startDateTime": "2024-01-03T01:45:12.416Z",
-      "_id": "66db3aa516d68c5f3c13aa4c"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "powerless-watchmaker.net",
-        "_id": "66db3aa516d68c5f3c13aa4d"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
-  },
-  {
-    "_id": "66db3aa516d68c5f3c139422",
-    "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c139422",
+    "_id": "66e307151853929149068e1c",
+    "href": "https://{host}/partyManagement/party/66e307151853929149068e1c",
     "isHeadOffice": false,
     "isLegalEntity": false,
-    "name": "Becker, Hyatt and Legros Marketing- und Vertriebsservice GmbH",
+    "name": "Decker KG Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Becker, Hyatt and Legros Marketing- und Vertriebsservice GmbH",
+    "tradingName": "Decker KG Vertriebsgesellschaft mbH",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": false,
+        "characteristic": {
+          "city": "Brandenburg an der Havel",
+          "contactType": "personal",
+          "country": "Estland",
+          "emailAddress": "Liam_Ruter@yahoo.com",
+          "faxNumber": "+49-1490-73446830",
+          "phoneNumber": "(0407) 187073389",
+          "postCode": "13326",
+          "socialNetworkId": "Eleni8",
+          "stateOrProvince": "Sachsen",
+          "street1": "Winand-Rossi-Str.",
+          "street2": "Treptower Str."
+        },
+        "validFor": {
+          "endDateTime": "2025-02-02T12:20:09.328Z",
+          "startDateTime": "2024-08-18T12:04:07.329Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Kulimann-Knetsch",
+        "ratingScore": 847,
+        "lastExecuted": "2024-09-11T21:21:56.071Z",
+        "validFor": {
+          "endDateTime": "2025-01-09T02:24:45.858Z",
+          "startDateTime": "2024-04-17T10:58:35.934Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-03-07T12:32:12.496Z",
+      "startDateTime": "2023-09-18T15:09:25.342Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "hochwirksam-chemie.com"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e2c8efa4a4ceda4e6d93de",
+    "href": "https://{host}/partyManagement/party/66e2c8efa4a4ceda4e6d93de",
+    "isHeadOffice": false,
+    "isLegalEntity": false,
+    "name": "Rüdiger, Werrmann und Achilles Sales & Consulting KG",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Rüdiger, Werrmann und Achilles Sales & Consulting KG",
+    "contactMedium": [
+      {
+        "mediumType": "phone",
+        "preferred": false,
+        "characteristic": {
+          "city": "Leonhardscheid",
+          "contactType": "personal",
+          "country": "Sudan",
+          "emailAddress": "Niels21@yahoo.com",
+          "faxNumber": "(0045) 273234196",
+          "phoneNumber": "+49-998-9331820",
+          "postCode": "00517",
+          "socialNetworkId": "Pius33",
+          "stateOrProvince": "Schleswig-Holstein",
+          "street1": "Sauerbruchstr.",
+          "street2": "Auf der Ohmer"
+        },
+        "validFor": {
+          "endDateTime": "2025-05-18T18:52:26.289Z",
+          "startDateTime": "2024-09-04T01:46:06.846Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Roloff UG",
+        "ratingScore": 846,
+        "lastExecuted": "2024-09-12T03:13:05.320Z",
+        "validFor": {
+          "endDateTime": "2025-06-11T21:13:53.418Z",
+          "startDateTime": "2023-10-06T19:38:16.443Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2024-12-11T08:05:59.017Z",
+      "startDateTime": "2024-02-19T05:57:46.052Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "phantasievoll-erdbeben.org"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e3092f0c8d998659a60840",
+    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a60840",
+    "isHeadOffice": false,
+    "isLegalEntity": true,
+    "name": "Paesler-Görmer Sales & Partners AG",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Paesler-Görmer Sales & Partners AG",
     "contactMedium": [
       {
         "mediumType": "fax",
         "preferred": false,
         "characteristic": {
-          "city": "Halcester",
+          "city": "Mirjaland",
           "contactType": "business",
-          "country": "Kuwait",
-          "emailAddress": "Frederick_Hoeger@gmail.com",
-          "faxNumber": "(616) 438-6921 x9713",
-          "phoneNumber": "(854) 759-5585",
-          "postCode": "20364",
-          "socialNetworkId": "Adolf_Kub12",
-          "stateOrProvince": "Montana",
-          "street1": "Gerlach Green",
-          "street2": "Mose Mission",
-          "_id": "66db3aa516d68c5f3c13c775"
+          "country": "Brunei Darussalam",
+          "emailAddress": "Madita_Achilles67@hotmail.com",
+          "faxNumber": "+49-108-0993615",
+          "phoneNumber": "(07151) 2652841",
+          "postCode": "22874",
+          "socialNetworkId": "Timo_Grothkopp",
+          "stateOrProvince": "Berlin",
+          "street1": "Dahlemer Str.",
+          "street2": "Wilhelm-Liebknecht-Str."
         },
         "validFor": {
-          "endDateTime": "2025-01-11T10:50:04.015Z",
-          "startDateTime": "2023-10-11T03:21:54.289Z",
-          "_id": "66db3aa516d68c5f3c13c776"
-        },
-        "_id": "66db3aa516d68c5f3c13c774"
+          "endDateTime": "2025-06-30T22:56:42.727Z",
+          "startDateTime": "2024-02-09T11:46:31.727Z"
+        }
       }
     ],
     "creditRating": [
       {
-        "creditAgencyName": "Zemlak - Gorczany",
-        "ratingScore": 786,
-        "lastExecuted": "2024-09-06T00:04:32.726Z",
+        "creditAgencyName": "Friess AG",
+        "ratingScore": 846,
+        "lastExecuted": "2024-09-12T13:46:35.911Z",
         "validFor": {
-          "endDateTime": "2025-01-29T22:17:31.139Z",
-          "startDateTime": "2023-10-30T22:43:14.868Z",
-          "_id": "66db3aa516d68c5f3c13c778"
-        },
-        "_id": "66db3aa516d68c5f3c13c777"
+          "endDateTime": "2025-07-30T22:12:25.799Z",
+          "startDateTime": "2024-04-14T16:31:17.115Z"
+        }
       }
     ],
     "existsDuring": {
-      "endDateTime": "2025-07-13T02:56:10.552Z",
-      "startDateTime": "2024-07-15T01:46:30.144Z",
-      "_id": "66db3aa516d68c5f3c13c779"
+      "endDateTime": "2025-08-19T05:08:25.413Z",
+      "startDateTime": "2024-07-02T19:03:58.706Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "mutig-tanz.org"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e3092f0c8d998659a6078d",
+    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a6078d",
+    "isHeadOffice": false,
+    "isLegalEntity": false,
+    "name": "Soller, Frauendorf und Grosser Vertriebsgesellschaft mbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Soller, Frauendorf und Grosser Vertriebsgesellschaft mbH",
+    "contactMedium": [
+      {
+        "mediumType": "phone",
+        "preferred": false,
+        "characteristic": {
+          "city": "Ost Leoniestadt",
+          "contactType": "business",
+          "country": "Mikronesien",
+          "emailAddress": "Mads.Goller@gmail.com",
+          "faxNumber": "(0093) 632853813",
+          "phoneNumber": "+49-5136-76478487",
+          "postCode": "68460",
+          "socialNetworkId": "Rahel_Sachse",
+          "stateOrProvince": "Niedersachsen",
+          "street1": "Höltgestal",
+          "street2": "Ewald-Röll-Str."
+        },
+        "validFor": {
+          "endDateTime": "2025-04-13T19:30:52.486Z",
+          "startDateTime": "2024-02-21T18:49:38.488Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Pöge, Schlangen und Hiller",
+        "ratingScore": 846,
+        "lastExecuted": "2024-09-12T10:32:26.575Z",
+        "validFor": {
+          "endDateTime": "2025-07-27T12:33:52.755Z",
+          "startDateTime": "2024-06-19T13:33:31.160Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2024-11-04T04:02:18.478Z",
+      "startDateTime": "2023-10-17T05:59:03.855Z"
     },
     "externalReference": [
       {
         "externalReferenceType": "socialMediaAccount",
-        "name": "heartfelt-thaw.name",
-        "_id": "66db3aa516d68c5f3c13c77a"
+        "name": "heilsam-automobil.com"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e3092f0c8d998659a5fb9e",
+    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a5fb9e",
+    "isHeadOffice": true,
+    "isLegalEntity": false,
+    "name": "Schreiner, Riethmüller und Malkus Marketing- und Vertriebsservice GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Schreiner, Riethmüller und Malkus Marketing- und Vertriebsservice GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "fax",
+        "preferred": false,
+        "characteristic": {
+          "city": "Leanndorf",
+          "contactType": "business",
+          "country": "Malediven",
+          "emailAddress": "Tore_Schwennen@hotmail.com",
+          "faxNumber": "+49-724-6808400",
+          "phoneNumber": "+49-779-2795227",
+          "postCode": "90362",
+          "socialNetworkId": "Nika0",
+          "stateOrProvince": "Hessen",
+          "street1": "Tempelhofer Str.",
+          "street2": "Zauberkuhle"
+        },
+        "validFor": {
+          "endDateTime": "2025-03-05T12:51:31.625Z",
+          "startDateTime": "2024-06-10T05:35:43.986Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Neumair-Blum",
+        "ratingScore": 846,
+        "lastExecuted": "2024-09-12T09:57:24.275Z",
+        "validFor": {
+          "endDateTime": "2025-03-19T04:26:54.274Z",
+          "startDateTime": "2024-08-07T17:59:28.810Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-08-27T03:05:49.523Z",
+      "startDateTime": "2023-11-14T16:15:59.454Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "fokussiert-brust.ch"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e3092f0c8d998659a609b3",
+    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a609b3",
+    "isHeadOffice": true,
+    "isLegalEntity": false,
+    "name": "Norris-Gutschank Marketing- und Vertriebsservice GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Norris-Gutschank Marketing- und Vertriebsservice GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "fax",
+        "preferred": true,
+        "characteristic": {
+          "city": "Süd Ricostadt",
+          "contactType": "business",
+          "country": "Niederlande",
+          "emailAddress": "Angelo_Hordt15@gmail.com",
+          "faxNumber": "(0248) 938229604",
+          "phoneNumber": "(03326) 2575599",
+          "postCode": "26841",
+          "socialNetworkId": "Noel_Spiegelburg",
+          "stateOrProvince": "Schleswig-Holstein",
+          "street1": "Lindenstr.",
+          "street2": "Löchergraben"
+        },
+        "validFor": {
+          "endDateTime": "2025-06-08T08:11:03.482Z",
+          "startDateTime": "2023-09-29T07:12:06.240Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Kluge KG",
+        "ratingScore": 846,
+        "lastExecuted": "2024-09-12T13:48:57.498Z",
+        "validFor": {
+          "endDateTime": "2025-07-15T16:14:49.500Z",
+          "startDateTime": "2024-06-25T11:37:39.226Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-03-08T20:40:42.871Z",
+      "startDateTime": "2024-03-27T14:33:13.641Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "gewaltig-pocken.name"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e2c8efa4a4ceda4e6d94d8",
+    "href": "https://{host}/partyManagement/party/66e2c8efa4a4ceda4e6d94d8",
+    "isHeadOffice": false,
+    "isLegalEntity": false,
+    "name": "Umminger-Hanniske Marketing- und Vertriebsservice GmbH",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Umminger-Hanniske Marketing- und Vertriebsservice GmbH",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": true,
+        "characteristic": {
+          "city": "Miloland",
+          "contactType": "personal",
+          "country": "Finnland",
+          "emailAddress": "Jane68@hotmail.com",
+          "faxNumber": "+49-3652-04018411",
+          "phoneNumber": "+49-6677-40510460",
+          "postCode": "23385",
+          "socialNetworkId": "Carina_Hensel",
+          "stateOrProvince": "Hamburg",
+          "street1": "An den Irlen",
+          "street2": "Fürstenbergstr."
+        },
+        "validFor": {
+          "endDateTime": "2025-07-19T15:29:49.606Z",
+          "startDateTime": "2024-03-28T06:15:04.179Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Baseda OHG",
+        "ratingScore": 844,
+        "lastExecuted": "2024-09-11T14:20:33.161Z",
+        "validFor": {
+          "endDateTime": "2024-12-14T09:59:42.550Z",
+          "startDateTime": "2024-01-28T13:59:39.935Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2024-10-28T10:35:37.587Z",
+      "startDateTime": "2024-02-17T22:33:08.967Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "internetSite",
+        "name": "querdenkend-elektronik.name"
+      }
+    ],
+    "status": "validated",
+    "__v": 0
+  },
+  {
+    "_id": "66e3092f0c8d998659a60b56",
+    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a60b56",
+    "isHeadOffice": true,
+    "isLegalEntity": false,
+    "name": "Burmeister, Thomas und Milde Marketing Solutions KG",
+    "organizationType": "Marketing- und Vertriebspartner",
+    "tradingName": "Burmeister, Thomas und Milde Marketing Solutions KG",
+    "contactMedium": [
+      {
+        "mediumType": "email",
+        "preferred": false,
+        "characteristic": {
+          "city": "Alistadt",
+          "contactType": "personal",
+          "country": "Schweiz",
+          "emailAddress": "Zehra_Molitor5@hotmail.com",
+          "faxNumber": "(02507) 7494287",
+          "phoneNumber": "(06708) 2207447",
+          "postCode": "45318",
+          "socialNetworkId": "Leni_Michel",
+          "stateOrProvince": "Schleswig-Holstein",
+          "street1": "Johann-Janssen-Str.",
+          "street2": "Feldtorstr."
+        },
+        "validFor": {
+          "endDateTime": "2025-07-05T20:54:39.500Z",
+          "startDateTime": "2023-11-08T14:15:15.338Z"
+        }
+      }
+    ],
+    "creditRating": [
+      {
+        "creditAgencyName": "Abt Gruppe",
+        "ratingScore": 843,
+        "lastExecuted": "2024-09-11T22:28:37.374Z",
+        "validFor": {
+          "endDateTime": "2025-01-28T20:19:03.748Z",
+          "startDateTime": "2023-12-09T23:49:52.202Z"
+        }
+      }
+    ],
+    "existsDuring": {
+      "endDateTime": "2025-01-08T17:06:13.342Z",
+      "startDateTime": "2024-05-29T05:41:32.800Z"
+    },
+    "externalReference": [
+      {
+        "externalReferenceType": "socialMediaAccount",
+        "name": "bescheiden-weizen.de"
       }
     ],
     "status": "validated",

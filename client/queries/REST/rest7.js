@@ -6,7 +6,7 @@ const rest_use_case_7 = async () => {
     let accumulatedMetrics = {};
 
     // 1. Abfrage aller Modems mit Verbindungstyp "FTTH" und Betriebsstatus "enable"
-    const url = `http://${actualHost}/resourceInventoryManagement/resource?category=Modem&administrativeState=unlocked&operationalState=enable&resourceStatus=available&fields=category,administrativeState,operationalState,resourceStatus`;
+    const url = `http://${actualHost}/resourceInventoryManagement/resource?category=Modem&administrativeState=unlocked&operationalState=enable&resourceStatus=available&fields=name,administrativeState,operationalState,resourceStatus`;
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
     
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;

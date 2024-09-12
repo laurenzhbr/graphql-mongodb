@@ -1,14 +1,14 @@
 {
-  "_id": "66db7b5fbbe1351f628ed5e7",
-  "nickname": "neuerUser",
+  "_id": "66e3054dc708e7d6a4bd3406",
+  "nickname": "Heidi_Häber70",
   "status": "active",
   "resourceIdentified": {
-    "id": "625ed31d7f26d3f87dab1391",
-    "name": "Router for Modem Hüfingen 8 18",
-    "href": "https://{host}/resourceInventoryManagement/resource/625ed31d7f26d3f87dab1391"
+    "id": "e2eced993a2d5533e4773c67",
+    "name": "Router for Modem Hüfingen 14 11",
+    "href": "https://{host}/resourceInventoryManagement/resource/e2eced993a2d5533e4773c67"
   },
-  "creationDate": "2024-09-06T21:59:59.221Z",
-  "lastUpdate": "2024-09-11T14:41:38.265Z",
-  "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
+  "creationDate": "2024-09-12T15:14:21.759Z",
+  "lastUpdate": "2024-09-12T16:42:09.972Z",
+  "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd3406",
   "__v": 0
 }

@@ -71,12 +71,12 @@ const iteration_count = [
 async function runTestSuite(){
 
     // Conduct all REST testcases
-    for (let i = 0; i < rest_requests.length; i++){
+    for (let i = 5; i < 8; i++){
         await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, iteration_count[i]);
     }
 
     // Conduct all GraphQL testcases
-    for (let i = 9; i < gql_queries.length; i++){
+    for (let i = 0; i < 8; i++){
         await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, iteration_count[i]);
     }
 }
@@ -110,7 +110,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
         // Run test and expect array of results back.
         const test_case_result = await method()
         if (index === 0) {
-            await saveResults(test_case_result.data, "response_data", api, use_case)
+            await saveResults(test_case_result.data, "response_data", api, use_case) // save response data from every test case
             api_call_count = test_case_result.api_call_count;
         }
          
@@ -147,8 +147,7 @@ const saveResults = async (data, directory, api, use_case) => {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true });
     }
-
-    // Schreibe die Ergebnisse in die Datei
+    
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
     
     console.log(`Results saved to ${filePath}`);

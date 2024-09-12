@@ -2,22 +2,5636 @@
   "data": {
     "resourcesByCategoryAndStates": [
       {
-        "id": "66db6dd3658d40350e57e665",
+        "id": "66e301dfd4e340e8e8f51328",
+        "name": "Modem Heubach 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f51355",
+        "name": "Modem Gütenbach 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f51359",
+        "name": "Modem Gütenbach 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f5136b",
+        "name": "Modem Gütenbach 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f513ba",
+        "name": "Modem Karlsruhe 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f5147b",
+        "name": "Modem Weisweil 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f51590",
+        "name": "Modem Süßen 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301dfd4e340e8e8f5164f",
+        "name": "Modem Gundelsheim 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f516a2",
+        "name": "Modem Friedenweiler 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f516f7",
+        "name": "Modem Niedernhall 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f5173a",
+        "name": "Modem Lahr/Schwarzwald 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f51779",
+        "name": "Modem Riesbürg 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f517b0",
+        "name": "Modem Sandhausen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f51832",
+        "name": "Modem Schliengen 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f51836",
+        "name": "Modem Schliengen 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f51888",
+        "name": "Modem Villingendorf 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f518e1",
+        "name": "Modem Kolbingen 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f518fa",
+        "name": "Modem Gutenzell-Hürbel 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f51912",
+        "name": "Modem Gutenzell-Hürbel 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e0d4e340e8e8f51969",
+        "name": "Modem Rudersberg 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51b53",
+        "name": "Modem Wolfach, Oberwolfach 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51b69",
+        "name": "Modem Wolfach, Oberwolfach 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51bdb",
+        "name": "Modem Friedrichshafen 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51bf2",
+        "name": "Modem Villingen-Schwenningen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51c72",
+        "name": "Modem Angelbachtal 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51cd7",
+        "name": "Modem Mannheim 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51d06",
+        "name": "Modem Stegen 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51daf",
+        "name": "Modem Bönnigheim 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51dc5",
+        "name": "Modem Bönnigheim 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e1d4e340e8e8f51de4",
+        "name": "Modem Kappelrodeck 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51e78",
+        "name": "Modem Schlaitdorf 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51ea5",
+        "name": "Modem Oberried 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51ec9",
+        "name": "Modem Oberried 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51eea",
+        "name": "Modem Lörrach 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51eee",
+        "name": "Modem Lörrach 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51f25",
+        "name": "Modem Hügelsheim 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51f7e",
+        "name": "Modem Oberharmersbach 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51f94",
+        "name": "Modem Oberharmersbach 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51faf",
+        "name": "Modem Sindelfingen 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f51ffe",
+        "name": "Modem Unterschneidheim 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f5201d",
+        "name": "Modem Freiamt 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f52072",
+        "name": "Modem Heitersheim 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f52082",
+        "name": "Modem Heitersheim 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f520a9",
+        "name": "Modem Bad Saulgau, Allmannsweiler 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f520c1",
+        "name": "Modem Bad Saulgau, Allmannsweiler 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f52164",
+        "name": "Modem Reutlingen 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f52186",
+        "name": "Modem Reutlingen 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e2d4e340e8e8f521fa",
+        "name": "Modem Türkenfeld 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f52284",
+        "name": "Modem Postmünster 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f522af",
+        "name": "Modem Zeitlarn 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f522c1",
+        "name": "Modem Zeitlarn 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f52325",
+        "name": "Modem Erdweg 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f52354",
+        "name": "Modem Halsbach 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f523a7",
+        "name": "Modem Gochsheim 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f523c7",
+        "name": "Modem Gochsheim 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f5243b",
+        "name": "Modem Olching 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f524d8",
+        "name": "Modem Wilhelmsdorf 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f524f8",
+        "name": "Modem Wilhelmsdorf 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f52556",
+        "name": "Modem Riedenheim 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f5257e",
+        "name": "Modem Riedenheim 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f525b1",
+        "name": "Modem Ortenburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f525e2",
+        "name": "Modem Erlenbach a.Main 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e3d4e340e8e8f5262b",
+        "name": "Modem Raubling 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f5269b",
+        "name": "Modem Pleinfeld 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f526c2",
+        "name": "Modem Weidhausen b. Coburg 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f526ec",
+        "name": "Modem Weidhausen b. Coburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f52731",
+        "name": "Modem Gottfrieding 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f5276a",
+        "name": "Modem Würzburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f527d2",
+        "name": "Modem Freising 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f5282b",
+        "name": "Modem Eglfing 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f52833",
+        "name": "Modem Eglfing 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f52856",
+        "name": "Modem Freudenberg 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f5285a",
+        "name": "Modem Freudenberg 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f528e2",
+        "name": "Modem Pielenhofen 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f5294e",
+        "name": "Modem Gremsdorf 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f52997",
+        "name": "Modem Augsburg 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f529a1",
+        "name": "Modem Augsburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e4d4e340e8e8f52a56",
+        "name": "Modem Weilbach 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52ad0",
+        "name": "Modem Kaisheim 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52aef",
+        "name": "Modem Hutthurm 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52bff",
+        "name": "Modem Lehrberg 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52d48",
+        "name": "Modem Nagel 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52d89",
+        "name": "Modem Straßkirchen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52d97",
+        "name": "Modem Straßkirchen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52dde",
+        "name": "Modem Altenstadt 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52e4e",
+        "name": "Modem Kirchanschöring 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52ebc",
+        "name": "Modem Lehrberg 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e5d4e340e8e8f52f13",
+        "name": "Modem Otterfing 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f52f3e",
+        "name": "Modem Hawangen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f52fa4",
+        "name": "Modem Eresing 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f52fa8",
+        "name": "Modem Eresing 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f53034",
+        "name": "Modem München 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f5303a",
+        "name": "Modem München 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f530b8",
+        "name": "Modem Berlin Prenzlauer Berg 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f530ca",
+        "name": "Modem Berlin Prenzlauer Berg 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f5316b",
+        "name": "Modem Berlin Staaken 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f531bc",
+        "name": "Modem Berlin Schöneberg 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f531be",
+        "name": "Modem Berlin Schöneberg 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f53201",
+        "name": "Modem Berlin Wilmersdorf 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f53216",
+        "name": "Modem Berlin 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f5325f",
+        "name": "Modem Berlin Mariendorf 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f53271",
+        "name": "Modem Berlin Mariendorf 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f532cf",
+        "name": "Modem Berlin Moabit 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f532e9",
+        "name": "Modem Berlin Moabit 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f53303",
+        "name": "Modem Berlin Moabit 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e6d4e340e8e8f5331e",
+        "name": "Modem Berlin Moabit 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f533b2",
+        "name": "Modem Berlin Märkisches Viertel 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f5340a",
+        "name": "Modem Berlin Oberschöneweide 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f5341e",
+        "name": "Modem Berlin Oberschöneweide 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f534a0",
+        "name": "Modem Berlin Britz 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f534df",
+        "name": "Modem Berlin Alt Treptow 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f535f3",
+        "name": "Modem Berlin Buckow 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f535f7",
+        "name": "Modem Berlin Buckow 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f53608",
+        "name": "Modem Berlin Alt-Hohenschönhausen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f5362e",
+        "name": "Modem Berlin Alt-Hohenschönhausen 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f5369a",
+        "name": "Modem Berlin Prenzlauer Berg 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f536cf",
+        "name": "Modem Berlin Lankwitz 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e7d4e340e8e8f537e7",
+        "name": "Modem Berlin Mitte 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f537fe",
+        "name": "Modem Berlin 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53820",
+        "name": "Modem Berlin 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53884",
+        "name": "Modem Berlin-West 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53892",
+        "name": "Modem Berlin-West 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f538a8",
+        "name": "Modem Berlin-West 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f538e1",
+        "name": "Modem Berlin Moabit 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f5392e",
+        "name": "Modem Berlin Wilmersdorf 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f5394d",
+        "name": "Modem Berlin Neukölln 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f539c5",
+        "name": "Modem Berlin Köpenick 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53a04",
+        "name": "Modem Berlin-West 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53a4d",
+        "name": "Modem Berlin Haselhorst 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53a59",
+        "name": "Modem Berlin Haselhorst 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53a69",
+        "name": "Modem Berlin Haselhorst 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53a7c",
+        "name": "Modem Berlin Kreuzberg 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53a92",
+        "name": "Modem Berlin Kreuzberg 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53adb",
+        "name": "Modem Berlin Kreuzberg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53b10",
+        "name": "Modem Berlin Moabit 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53b4d",
+        "name": "Modem Berlin Wilmersdorf 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53b63",
+        "name": "Modem Berlin Wilmersdorf 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e8d4e340e8e8f53b76",
+        "name": "Modem Berlin Bohnsdorf 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53c6c",
+        "name": "Modem Berlin Lichtenfelde 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53c88",
+        "name": "Modem Berlin Lichtenfelde 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53cd7",
+        "name": "Modem Berlin 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53cf4",
+        "name": "Modem Berlin Lankwitz 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53e14",
+        "name": "Modem Berlin Hellersdorf 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53e5b",
+        "name": "Modem Berlin Oberschöneweide 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53f7a",
+        "name": "Modem Liebenwalde 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53f92",
+        "name": "Modem Liebenwalde 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53fab",
+        "name": "Modem Fehrbellin, Temnitzquell, Märkisch Linden u.a. 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f53fc5",
+        "name": "Modem Fehrbellin, Temnitzquell, Märkisch Linden u.a. 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f54000",
+        "name": "Modem Rüdersdorf 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f54004",
+        "name": "Modem Rüdersdorf 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f5404d",
+        "name": "Modem Neustadt (Dosse) u.a. 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301e9d4e340e8e8f54080",
+        "name": "Modem Mühlenbecker Land 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54129",
+        "name": "Modem Neu-Seeland, Neupetershain 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f541c9",
+        "name": "Modem Herzberg/ Elster 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f541ee",
+        "name": "Modem Brandenburg/ Havel 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f541fe",
+        "name": "Modem Brandenburg/ Havel 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54223",
+        "name": "Modem Neuenhagen, Hoppegarten 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54247",
+        "name": "Modem Neuenhagen, Hoppegarten 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54274",
+        "name": "Modem Wiesenburg 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f542b1",
+        "name": "Modem Ludwigsfelde 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54313",
+        "name": "Modem Friesack 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54354",
+        "name": "Modem Hohen Neuendorf OT Bergfelde 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f543ce",
+        "name": "Modem Mittenwalde 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54433",
+        "name": "Modem Ludwigsfelde 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f5443f",
+        "name": "Modem Ludwigsfelde 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54462",
+        "name": "Modem Rheinsberg 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f54478",
+        "name": "Modem Rheinsberg 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ead4e340e8e8f544d2",
+        "name": "Modem Eberswalde 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f5457c",
+        "name": "Modem Elsterwerda 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f545a7",
+        "name": "Modem Heidesee 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f54609",
+        "name": "Modem Prenzlau, Nordwestuckermark u.a. 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f54683",
+        "name": "Modem Briesen, Rauen u.a. 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f5468b",
+        "name": "Modem Briesen, Rauen u.a. 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f546ce",
+        "name": "Modem Potsdam 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f546f2",
+        "name": "Modem Potsdam 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f54760",
+        "name": "Modem Uckerland, Groß Luckow, Schönhausen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f547a5",
+        "name": "Modem Treplin, Jacobsdorf, Frankfurt (Oder) 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f54803",
+        "name": "Modem Potsdam 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f54805",
+        "name": "Modem Potsdam 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f5482d",
+        "name": "Modem Potsdam 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f54887",
+        "name": "Modem Dahme u.a. 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ebd4e340e8e8f5491b",
+        "name": "Modem Potsdam 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54a01",
+        "name": "Modem Wriezen 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54a11",
+        "name": "Modem Wriezen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54a13",
+        "name": "Modem Wriezen 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54a36",
+        "name": "Modem Schwedt 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54a93",
+        "name": "Modem Baruth 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54aff",
+        "name": "Modem Cottbus 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54b07",
+        "name": "Modem Cottbus 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54b09",
+        "name": "Modem Cottbus 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54b19",
+        "name": "Modem Cottbus 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54b27",
+        "name": "Modem Cottbus 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54b5e",
+        "name": "Modem Jüterbog 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54b99",
+        "name": "Modem Nuthetal 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54bd0",
+        "name": "Modem Brück, Borkheide u.a. 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54c21",
+        "name": "Modem Mühlberg, Bad Liebenwerda 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54c8d",
+        "name": "Modem Luckenwalde 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54c97",
+        "name": "Modem Luckenwalde 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54cc4",
+        "name": "Modem Briesen, Rauen u.a. 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ecd4e340e8e8f54d7d",
+        "name": "Modem Gumtow, Kyritz u.a. 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54e0f",
+        "name": "Modem Frankfurt/ Oder 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54e3e",
+        "name": "Modem Bremen 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54eac",
+        "name": "Modem Bremen 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54ed6",
+        "name": "Modem Bremen 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54ee5",
+        "name": "Modem Bremen 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54f05",
+        "name": "Modem Bremen 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54f3e",
+        "name": "Modem Bremen 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54f7b",
+        "name": "Modem Bremen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f54fa0",
+        "name": "Modem Bremen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301edd4e340e8e8f55046",
+        "name": "Modem Bremen 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f550d9",
+        "name": "Modem Bremen 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f550f9",
+        "name": "Modem Bremen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f55105",
+        "name": "Modem Bremen 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5510b",
+        "name": "Modem Bremen 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5511a",
+        "name": "Modem Bremen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5513e",
+        "name": "Modem Bremen 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f551aa",
+        "name": "Modem Bremen 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5522c",
+        "name": "Modem Bremen 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f55234",
+        "name": "Modem Bremen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f55316",
+        "name": "Modem Bremen 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5532e",
+        "name": "Modem Bremen 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5536d",
+        "name": "Modem Bremen 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f55373",
+        "name": "Modem Bremen 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f553d9",
+        "name": "Modem Bremen 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f55434",
+        "name": "Modem Bremen 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f55477",
+        "name": "Modem Bremerhaven 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301eed4e340e8e8f5548a",
+        "name": "Modem Bremen 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f55579",
+        "name": "Modem Bremen 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f555b2",
+        "name": "Modem Bremen 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f5563a",
+        "name": "Modem Bremen 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f5566f",
+        "name": "Modem Bremen 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f556dd",
+        "name": "Modem Bremerhaven, Bremen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f556e5",
+        "name": "Modem Bremerhaven, Bremen 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f5571c",
+        "name": "Modem Bremen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f5573b",
         "name": "Modem Bremen 0",
         "resourceStatus": "available",
         "administrativeState": "unlocked",
         "operationalState": "enable"
       },
       {
-        "id": "66db6dd4658d40350e57e967",
-        "name": "Modem Raguhn-Jeßnitz 0",
+        "id": "66e301efd4e340e8e8f557b0",
+        "name": "Modem Bremen 27",
         "resourceStatus": "available",
         "administrativeState": "unlocked",
         "operationalState": "enable"
       },
       {
-        "id": "66db6dd4658d40350e57ea17",
-        "name": "Modem Arenshausen, Uder u.a. 0",
+        "id": "66e301efd4e340e8e8f557db",
+        "name": "Modem Bremerhaven 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f557eb",
+        "name": "Modem Bremerhaven 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f557ed",
+        "name": "Modem Bremerhaven 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f55818",
+        "name": "Modem Bremen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f55886",
+        "name": "Modem Bremen 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f558b5",
+        "name": "Modem Bremen 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301efd4e340e8e8f55904",
+        "name": "Modem Bremen 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f559c7",
+        "name": "Modem Bremen 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55a90",
+        "name": "Modem Bremen 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55a96",
+        "name": "Modem Bremen 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55a9a",
+        "name": "Modem Bremen 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55aa0",
+        "name": "Modem Bremen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55af2",
+        "name": "Modem Bremen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55afa",
+        "name": "Modem Bremen 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55b7a",
+        "name": "Modem Bremen 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55c0c",
+        "name": "Modem Bremerhaven, Bremen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55c59",
+        "name": "Modem Bremen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55ca5",
+        "name": "Modem Bremen 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55cb9",
+        "name": "Modem Bremen 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f0d4e340e8e8f55ccb",
+        "name": "Modem Bremen 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55d43",
+        "name": "Modem Hamburg 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55d8e",
+        "name": "Modem Hamburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55da5",
+        "name": "Modem Hamburg 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55de2",
+        "name": "Modem Hamburg 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55e3f",
+        "name": "Modem Hamburg 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55ea9",
+        "name": "Modem Hamburg 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55f33",
+        "name": "Modem Hamburg 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55f3f",
+        "name": "Modem Hamburg 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55f9d",
+        "name": "Modem Hamburg 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f55fdc",
+        "name": "Modem Hamburg 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f56025",
+        "name": "Modem Hamburg 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f1d4e340e8e8f56043",
+        "name": "Modem Hamburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f560a3",
+        "name": "Modem Hamburg 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f560b3",
+        "name": "Modem Hamburg 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f560ec",
+        "name": "Modem Hamburg 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f561a7",
+        "name": "Modem Hamburg 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f561ab",
+        "name": "Modem Hamburg 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f56208",
+        "name": "Modem Hamburg 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f5626e",
+        "name": "Modem Hamburg 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f56315",
+        "name": "Modem Hamburg 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f2d4e340e8e8f5636c",
+        "name": "Modem Hamburg 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f3d4e340e8e8f5645c",
+        "name": "Modem Hamburg 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f3d4e340e8e8f5647c",
+        "name": "Modem Hamburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f3d4e340e8e8f56689",
+        "name": "Modem Hamburg 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f3d4e340e8e8f566b5",
+        "name": "Modem Hamburg 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f566bc",
+        "name": "Modem Hamburg 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f56717",
+        "name": "Modem Hamburg 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f5674a",
+        "name": "Modem Hamburg 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f567af",
+        "name": "Modem Hamburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f56836",
+        "name": "Modem Hamburg 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f56881",
+        "name": "Modem Hamburg 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f568c6",
+        "name": "Modem Hamburg 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f568dc",
+        "name": "Modem Hamburg 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f56956",
+        "name": "Modem Hamburg 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f4d4e340e8e8f569a5",
+        "name": "Modem Hamburg 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f569cc",
+        "name": "Modem Hamburg 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56a64",
+        "name": "Modem Hamburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56a87",
+        "name": "Modem Hamburg 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56a89",
+        "name": "Modem Hamburg 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56a9b",
+        "name": "Modem Hamburg 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56b21",
+        "name": "Modem Hamburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56b99",
+        "name": "Modem Hamburg 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56bd0",
+        "name": "Modem Hohenroda 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56c17",
+        "name": "Modem Frankfurt am Main 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56c1b",
+        "name": "Modem Frankfurt am Main 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56cd6",
+        "name": "Modem Korbach 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f5d4e340e8e8f56d1d",
+        "name": "Modem Rimbach 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56d4c",
+        "name": "Modem Eiterfeld 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56d73",
+        "name": "Modem Witzenhausen 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56db6",
+        "name": "Modem Geisenheim 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56e50",
+        "name": "Modem Rimbach 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56e5d",
+        "name": "Modem Seeheim-Jugenheim 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56ee9",
+        "name": "Modem Lohra 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56f03",
+        "name": "Modem Lohra 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56f2e",
+        "name": "Modem Großalmerode 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56f6d",
+        "name": "Modem Kirchhain 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56f71",
+        "name": "Modem Kirchhain 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f56fa4",
+        "name": "Modem Lohra 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f5708d",
+        "name": "Modem Felsberg 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f570d5",
+        "name": "Modem Philippsthal 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f570f1",
+        "name": "Modem Philippsthal 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f57177",
+        "name": "Modem Frankfurt am Main 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f6d4e340e8e8f57185",
+        "name": "Modem Frankfurt am Main 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f57240",
+        "name": "Modem Frankfurt am Main 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f57305",
+        "name": "Modem Kassel, Fuldatal 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f57332",
+        "name": "Modem Brombachtal 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f5739c",
+        "name": "Modem Rockenberg 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f5745b",
+        "name": "Modem Witzenhausen 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f5747b",
+        "name": "Modem Witzenhausen 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f574c7",
+        "name": "Modem Kirchhain 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f57520",
+        "name": "Modem Schrecksbach 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f57553",
+        "name": "Modem Offenbach am Main 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f57594",
+        "name": "Modem Großalmerode 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f7d4e340e8e8f575b8",
+        "name": "Modem Großalmerode 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f57651",
+        "name": "Modem Echzell 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f5767c",
+        "name": "Modem Twistetal 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f576f5",
+        "name": "Modem Morschen 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f57753",
+        "name": "Modem Eppstein 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f577e3",
+        "name": "Modem Groß-Bieberau 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f5781e",
+        "name": "Modem Ebsdorfergrund 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f5787e",
+        "name": "Modem Wettenberg 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f578c5",
+        "name": "Modem Pohlheim 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f578d9",
+        "name": "Modem Pohlheim 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f5791c",
+        "name": "Modem Darmstadt 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f57959",
+        "name": "Modem Otzberg 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f8d4e340e8e8f57a1e",
+        "name": "Modem Wiesbaden 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57acf",
+        "name": "Modem Rostock, Graal-Müritz 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57af6",
+        "name": "Modem Domsühl, Mestlin, Obere Warnow u.a. 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57b88",
+        "name": "Modem Karlshagen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57bb7",
+        "name": "Modem Wismar 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57bea",
+        "name": "Modem Karlshagen 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57bec",
+        "name": "Modem Karlshagen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57cb3",
+        "name": "Modem Vogelsang-Warsin, Meiersberg, Mönkebude u.a. 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57d3f",
+        "name": "Modem Ribnitz-Damgarten 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57d59",
+        "name": "Modem Ribnitz-Damgarten 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57e02",
+        "name": "Modem Blankensee, Grambow u.a. 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57e33",
+        "name": "Modem Krackow, Nadrensee 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301f9d4e340e8e8f57e45",
+        "name": "Modem Krackow, Nadrensee 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f57f47",
+        "name": "Modem Schwaan u.a. 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f57f74",
+        "name": "Modem Uckerland, Groß Luckow, Schönhausen 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f57f86",
+        "name": "Modem Uckerland, Groß Luckow, Schönhausen 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f57fee",
+        "name": "Modem Wismar, Groß Krankow u.a. 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f58002",
+        "name": "Modem Wismar, Groß Krankow u.a. 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f58008",
+        "name": "Modem Wismar, Groß Krankow u.a. 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f5805a",
+        "name": "Modem Schönberg 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f5808a",
+        "name": "Modem Schönberg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f58170",
+        "name": "Modem Lübstorf 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f581b7",
+        "name": "Modem Wismar 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fad4e340e8e8f581bd",
+        "name": "Modem Wismar 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f581e6",
+        "name": "Modem Samtens 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f58266",
+        "name": "Modem Stralsund 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f5829d",
+        "name": "Modem Woldegk 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f58325",
+        "name": "Modem Lübstorf 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f583ab",
+        "name": "Modem Krackow, Nadrensee 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f58415",
+        "name": "Modem Feldberger Seenlandschaft 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f58478",
+        "name": "Modem Zingst a. Darß 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f58491",
+        "name": "Modem Benz, Heringsdorf u.a. 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f585b3",
+        "name": "Modem Insel Poel 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fbd4e340e8e8f58601",
+        "name": "Modem Boizenburg, Gresse, Greven u.a. 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f586f2",
+        "name": "Modem Rostock 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f586f9",
+        "name": "Modem Sanitz 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f587c6",
+        "name": "Modem Sagard 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58879",
+        "name": "Modem Neuenkirchen 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58891",
+        "name": "Modem Neuenkirchen 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f588b8",
+        "name": "Modem Altentreptow 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f588d8",
+        "name": "Modem Altentreptow 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58901",
+        "name": "Modem Sagard 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58921",
+        "name": "Modem Sagard 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58995",
+        "name": "Modem Lamstedt 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f589dc",
+        "name": "Modem Delmenhorst 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f589f1",
+        "name": "Modem Ostercappeln 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58a30",
+        "name": "Modem Hannover 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fcd4e340e8e8f58aac",
+        "name": "Modem Melbeck, Barnstedt 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58b07",
+        "name": "Modem Uelsen, Halle, Gölenkamp, Getelo 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58ba8",
+        "name": "Modem Salzgitter 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58baa",
+        "name": "Modem Salzgitter 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58bf5",
+        "name": "Modem Dersum 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58c24",
+        "name": "Modem Braunschweig 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58d0d",
+        "name": "Modem Freiburg (Elbe) 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58d65",
+        "name": "Modem Diepenau 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58da6",
+        "name": "Modem Bruchhausen-Vilsen, Süstedt 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58daa",
+        "name": "Modem Bruchhausen-Vilsen, Süstedt 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58db0",
+        "name": "Modem Bruchhausen-Vilsen, Süstedt 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58dfb",
+        "name": "Modem Mittelstenahe 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58e1c",
+        "name": "Modem Ovelgönne 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58e44",
+        "name": "Modem Ovelgönne 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58e48",
+        "name": "Modem Ovelgönne 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fdd4e340e8e8f58e83",
+        "name": "Modem Steinhorst 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f58fa2",
+        "name": "Modem Mechtersen 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f58ff1",
+        "name": "Modem Ringe, Laar, Emlichheim 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f59053",
+        "name": "Modem Hann. Münden, Gutsbezirk Reinhardswald 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f5907b",
+        "name": "Modem Hann. Münden, Gutsbezirk Reinhardswald 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f59096",
+        "name": "Modem Woltersdorf 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f590b8",
+        "name": "Modem Woltersdorf 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f59134",
+        "name": "Modem Binnen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f591ae",
+        "name": "Modem Edewecht 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f59224",
+        "name": "Modem Bad Sachsa 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f5927f",
+        "name": "Modem Müden (Aller) 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f5928c",
+        "name": "Modem Göttingen 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f592a4",
+        "name": "Modem Göttingen 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f592ae",
+        "name": "Modem Göttingen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f592b4",
+        "name": "Modem Göttingen 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f592d3",
+        "name": "Modem Nordhorn 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f5936b",
+        "name": "Modem Uelzen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f5937d",
+        "name": "Modem Uelzen 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f5938e",
+        "name": "Modem Brackel 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301fed4e340e8e8f593a8",
+        "name": "Modem Brackel 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f593fd",
+        "name": "Modem Stelle 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f5947b",
+        "name": "Modem Weste 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f59496",
+        "name": "Modem Ostrhauderfehn 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f59514",
+        "name": "Modem Springe 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f595aa",
+        "name": "Modem Goslar 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f595e7",
+        "name": "Modem Wittingen 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f59618",
+        "name": "Modem Prezelle 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f5969a",
+        "name": "Modem Lauenhagen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f596d9",
+        "name": "Modem Obernkirchen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f596f1",
+        "name": "Modem Obernkirchen 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f59743",
+        "name": "Modem Walkenried 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f597d9",
+        "name": "Modem Pohle, Lauenau, Messenkamp, Hülsede etc 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f597db",
+        "name": "Modem Pohle, Lauenau, Messenkamp, Hülsede etc 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e301ffd4e340e8e8f597e1",
+        "name": "Modem Pohle, Lauenau, Messenkamp, Hülsede etc 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59892",
+        "name": "Modem Essen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f599ec",
+        "name": "Modem Nörvenich 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59a02",
+        "name": "Modem Nörvenich 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59a33",
+        "name": "Modem Köln 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59a7a",
+        "name": "Modem Paderborn 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59a7c",
+        "name": "Modem Paderborn 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59af4",
+        "name": "Modem Radevormwald 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59bdd",
+        "name": "Modem Herne 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30200d4e340e8e8f59be4",
+        "name": "Modem Köln 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59caf",
+        "name": "Modem Remscheid 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59d37",
+        "name": "Modem Gütersloh 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59d72",
+        "name": "Modem Nieheim 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59d88",
+        "name": "Modem Nieheim 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59daf",
+        "name": "Modem Hemer 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59de4",
+        "name": "Modem Ratingen 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59e5e",
+        "name": "Modem Ratingen 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59e6e",
+        "name": "Modem Ratingen 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59e8c",
+        "name": "Modem Ratingen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59ec7",
+        "name": "Modem Stolberg (Rhld.) 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59ef8",
+        "name": "Modem Morsbach 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59efc",
+        "name": "Modem Morsbach 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59f23",
+        "name": "Modem Münster 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59f70",
+        "name": "Modem Morsbach 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59fa9",
+        "name": "Modem Remscheid 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59fdc",
+        "name": "Modem Gelsenkirchen 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f59ff2",
+        "name": "Modem Gelsenkirchen 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f5a03d",
+        "name": "Modem Mönchengladbach 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f5a04d",
+        "name": "Modem Mönchengladbach 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f5a084",
+        "name": "Modem Leverkusen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30201d4e340e8e8f5a091",
+        "name": "Modem Düsseldorf 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a191",
+        "name": "Modem Rheine 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a195",
+        "name": "Modem Rheine 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a1d8",
+        "name": "Modem Tönisvorst 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a1e0",
+        "name": "Modem Tönisvorst 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a26e",
+        "name": "Modem Billerbeck 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a325",
+        "name": "Modem Grefrath 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a3a3",
+        "name": "Modem Duisburg 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a41d",
+        "name": "Modem Meerbusch 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a423",
+        "name": "Modem Meerbusch 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a44a",
+        "name": "Modem Kranenburg 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a485",
+        "name": "Modem Waldfeucht, Heinsberg 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30202d4e340e8e8f5a49b",
+        "name": "Modem Waldfeucht, Heinsberg 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a50d",
+        "name": "Modem Wuppertal 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a540",
+        "name": "Modem Kerpen 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a550",
+        "name": "Modem Kerpen 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a56e",
+        "name": "Modem Kerpen 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a613",
+        "name": "Modem Leverkusen 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a66c",
+        "name": "Modem Espelkamp 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a67d",
+        "name": "Modem Minden 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a6ff",
+        "name": "Modem Grünstadt 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a71b",
+        "name": "Modem Grünstadt 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a72f",
+        "name": "Modem Grünstadt 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a77d",
+        "name": "Modem Serrig 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a7b8",
+        "name": "Modem Birnbach 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a7dc",
+        "name": "Modem Birnbach 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a85a",
+        "name": "Modem Hagenbach 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a866",
+        "name": "Modem Hagenbach 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a8c8",
+        "name": "Modem Brücken (Pfalz) 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30203d4e340e8e8f5a936",
+        "name": "Modem Gebhardshain 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5a983",
+        "name": "Modem Hinzweiler 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5a9fd",
+        "name": "Modem Annweiler am Trifels 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5aa01",
+        "name": "Modem Annweiler am Trifels 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5aa32",
+        "name": "Modem Mayschoß 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5aa52",
+        "name": "Modem Mayschoß 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5aa7d",
+        "name": "Modem Rodenbach 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5aac4",
+        "name": "Modem Mehren u.a. 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5aae2",
+        "name": "Modem Mehren u.a. 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5ac3c",
+        "name": "Modem Armsheim 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5ac44",
+        "name": "Modem Armsheim 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5ad03",
+        "name": "Modem Gönnheim 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30204d4e340e8e8f5ad7d",
+        "name": "Modem Mayen 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5ae28",
+        "name": "Modem Körperich u.a. 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5ae2e",
+        "name": "Modem Körperich u.a. 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5ae44",
+        "name": "Modem Körperich u.a. 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5ae77",
+        "name": "Modem Rockenhausen, Bisterschied u.a. 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5aeae",
+        "name": "Modem Kröv 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5aec8",
+        "name": "Modem Kröv 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5aeed",
+        "name": "Modem Oberrod u.a. 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5af01",
+        "name": "Modem Oberrod u.a. 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5af6d",
+        "name": "Modem Hinzweiler 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5afb8",
+        "name": "Modem Heimbach 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5afdf",
+        "name": "Modem Zeltingen-Rachtig, Erden, Lösnich u.a. 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5aff1",
+        "name": "Modem Zeltingen-Rachtig, Erden, Lösnich u.a. 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b083",
+        "name": "Modem Neuwied 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b090",
+        "name": "Modem Niederwörresbach 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b0f3",
+        "name": "Modem Mainz 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b109",
+        "name": "Modem Mainz 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b194",
+        "name": "Modem Ransbach-Baumbach 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b1f5",
+        "name": "Modem Kretz 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b1fb",
+        "name": "Modem Kretz 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b21a",
+        "name": "Modem Kastellaun 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30205d4e340e8e8f5b22a",
+        "name": "Modem Kastellaun 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b24d",
+        "name": "Modem Burgschwalbach 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b265",
+        "name": "Modem Burgschwalbach 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b2e1",
+        "name": "Modem Baumholder 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b34b",
+        "name": "Modem Callbach 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b40a",
+        "name": "Modem Kandel 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b42c",
+        "name": "Modem Kandel 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b46b",
+        "name": "Modem Dirmstein 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b504",
+        "name": "Modem Rothselberg u.a. 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30206d4e340e8e8f5b522",
+        "name": "Modem Rothselberg u.a. 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b5ae",
+        "name": "Modem Marpingen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b5d9",
+        "name": "Modem Schmelz 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b66b",
+        "name": "Modem Merzig 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b67c",
+        "name": "Modem Saarbrücken 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b702",
+        "name": "Modem Namborn 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b7d3",
+        "name": "Modem Großrosseln 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b8dd",
+        "name": "Modem Tholey 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b984",
+        "name": "Modem Überherrn 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b986",
+        "name": "Modem Überherrn 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30207d4e340e8e8f5b996",
+        "name": "Modem Überherrn 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5ba31",
+        "name": "Modem Neunkirchen 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5ba57",
+        "name": "Modem Neunkirchen 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5ba6c",
+        "name": "Modem Völklingen 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bacf",
+        "name": "Modem Homburg 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bae6",
+        "name": "Modem Neunkirchen 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5baf6",
+        "name": "Modem Neunkirchen 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bb18",
+        "name": "Modem Neunkirchen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bb4f",
+        "name": "Modem Völklingen 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bbb3",
+        "name": "Modem Saarbrücken 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bbbf",
+        "name": "Modem Saarbrücken 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bbe2",
+        "name": "Modem Namborn 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bc4f",
+        "name": "Modem Ottweiler 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bc53",
+        "name": "Modem Ottweiler 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bc74",
+        "name": "Modem Marpingen 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bc84",
+        "name": "Modem Marpingen 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bcd1",
+        "name": "Modem Namborn 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bcf2",
+        "name": "Modem Marpingen 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bd55",
+        "name": "Modem Rehlingen-Siersburg 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30208d4e340e8e8f5bdc3",
+        "name": "Modem Heusweiler 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5be49",
+        "name": "Modem Neunkirchen 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5be5c",
+        "name": "Modem Nalbach 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5be74",
+        "name": "Modem Nalbach 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5be7e",
+        "name": "Modem Nalbach 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5beb1",
+        "name": "Modem Saarbrücken 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5bee6",
+        "name": "Modem Merchweiler 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5befa",
+        "name": "Modem Merchweiler 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5bffc",
+        "name": "Modem Saarbrücken 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5c050",
+        "name": "Modem Saarbrücken 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5c062",
+        "name": "Modem Saarbrücken 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5c0d4",
+        "name": "Modem Sankt Wendel 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5c135",
+        "name": "Modem Wallerfangen 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5c176",
+        "name": "Modem Saarbrücken 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30209d4e340e8e8f5c24e",
+        "name": "Modem Namborn 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c35c",
+        "name": "Modem Gersheim 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c39b",
+        "name": "Modem Püttlingen 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c40f",
+        "name": "Modem Dillingen/Saar 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c419",
+        "name": "Modem Dillingen/Saar 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c454",
+        "name": "Modem Strehla 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c456",
+        "name": "Modem Strehla 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c4d2",
+        "name": "Modem Belgern-Schildau 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c507",
+        "name": "Modem Brandis 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c564",
+        "name": "Modem Chemnitz 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c576",
+        "name": "Modem Chemnitz 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ad4e340e8e8f5c5a3",
+        "name": "Modem Radebeul 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c6ff",
+        "name": "Modem Weißenborn, Oberschöna 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c701",
+        "name": "Modem Weißenborn, Oberschöna 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c70f",
+        "name": "Modem Weißenborn, Oberschöna 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c74c",
+        "name": "Modem Bergen 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c787",
+        "name": "Modem Zittau 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c7b4",
+        "name": "Modem Rodewisch 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c88d",
+        "name": "Modem Wehlen 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c8e0",
+        "name": "Modem Weischlitz u.a. 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c8e2",
+        "name": "Modem Weischlitz u.a. 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c917",
+        "name": "Modem Coswig 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c94c",
+        "name": "Modem Jöhstadt 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c964",
+        "name": "Modem Jöhstadt 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c989",
+        "name": "Modem Dresden 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c993",
+        "name": "Modem Dresden 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5c99f",
+        "name": "Modem Dresden 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5ca1f",
+        "name": "Modem Leubsdorf, Gornau, Augustusburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5ca9f",
+        "name": "Modem Leipzig 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5cab6",
+        "name": "Modem Leipzig 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020bd4e340e8e8f5cb0f",
+        "name": "Modem Wilthen 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cb5a",
+        "name": "Modem Großschönau 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cb95",
+        "name": "Modem Trebsen/Mulde 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cbc6",
+        "name": "Modem Chemnitz 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cbca",
+        "name": "Modem Chemnitz 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cc2a",
+        "name": "Modem Kreischa 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cc75",
+        "name": "Modem Rackwitz 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cc8b",
+        "name": "Modem Rackwitz 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cc9e",
+        "name": "Modem Chemnitz 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5ccf3",
+        "name": "Modem Thalheim/Erzgebirge 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cd7d",
+        "name": "Modem Sehma 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cdd0",
+        "name": "Modem Görlitz 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cde5",
+        "name": "Modem Thalheim/Erzgebirge 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cdfb",
+        "name": "Modem Thalheim/Erzgebirge 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5ce0f",
+        "name": "Modem Thalheim/Erzgebirge 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5ce57",
+        "name": "Modem Leipzig 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5ce9c",
+        "name": "Modem Seifhennersdorf 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cea0",
+        "name": "Modem Seifhennersdorf 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cebe",
+        "name": "Modem Seifhennersdorf 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cedd",
+        "name": "Modem Torgau 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5ceef",
+        "name": "Modem Torgau 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020cd4e340e8e8f5cf1e",
+        "name": "Modem Elsterberg 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5cfd7",
+        "name": "Modem Werdau 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5cfe3",
+        "name": "Modem Werdau 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d08e",
+        "name": "Modem Sehma 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d11a",
+        "name": "Modem Reichenbach, Vierkirchen 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d126",
+        "name": "Modem Reichenbach, Vierkirchen 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d15d",
+        "name": "Modem Großpösna 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d179",
+        "name": "Modem Großpösna 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d1b0",
+        "name": "Modem Stolpen, Dürrröhrsdorf-Dittersbach 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d1eb",
+        "name": "Modem Bischofswerda u.a. 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d20c",
+        "name": "Modem Chemnitz 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d2b4",
+        "name": "Modem Weißwasser, Boxberg 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d2f1",
+        "name": "Modem Arzberg, Beilrode 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d2fb",
+        "name": "Modem Arzberg, Beilrode 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d34d",
+        "name": "Modem Oebisfelde 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d351",
+        "name": "Modem Oebisfelde 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d3b2",
+        "name": "Modem Mansfeld 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d3c7",
+        "name": "Modem Zeitz 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d3f3",
+        "name": "Modem Zeitz 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020dd4e340e8e8f5d400",
+        "name": "Modem Salzatal 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d410",
+        "name": "Modem Salzatal 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d455",
+        "name": "Modem Freyburg, Balgstädt 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d4e7",
+        "name": "Modem Seeland 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d594",
+        "name": "Modem Bitterfeld-Wolfen 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d604",
+        "name": "Modem Wanzleben-Börde 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d61a",
+        "name": "Modem Wanzleben-Börde 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d63b",
+        "name": "Modem Salzatal 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d63f",
+        "name": "Modem Salzatal 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d7a4",
+        "name": "Modem Arendsee 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d7cf",
+        "name": "Modem Hettstedt, Endorf 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020ed4e340e8e8f5d81c",
+        "name": "Modem Goldbeck, Arneburg u.a. 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5d87a",
+        "name": "Modem Querfurt, Obhausen, Mücheln u.a. 6",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5d9af",
+        "name": "Modem Milower Land, Schollene, Nennhausen u.a. 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5da06",
+        "name": "Modem Wittenberg 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5da57",
+        "name": "Modem Bad Schmiedeberg 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5da59",
+        "name": "Modem Bad Schmiedeberg 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5da70",
+        "name": "Modem Wallhausen, Blankenheim 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5da78",
+        "name": "Modem Wallhausen, Blankenheim 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5daaf",
+        "name": "Modem Egeln, Borne, Wolmirsleben u.a. 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5db72",
+        "name": "Modem Ballenstedt, Harzgerode 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5db8c",
+        "name": "Modem Ballenstedt, Harzgerode 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5dbc5",
+        "name": "Modem Halle/ Saale 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5dbfa",
+        "name": "Modem Bitterfeld-Wolfen 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5dc27",
+        "name": "Modem Allstedt 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5dc41",
+        "name": "Modem Allstedt 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5dc62",
+        "name": "Modem Biederitz, Gerwisch, Menz u.a. 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e3020fd4e340e8e8f5dc90",
+        "name": "Modem Biederitz, Gerwisch, Menz u.a. 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5dd21",
+        "name": "Modem Haldensleben, Flechtingen, Bülstringen u.a. 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5dd6e",
+        "name": "Modem Lanitz-Hassel-Tal, Molauer Land 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5de2b",
+        "name": "Modem Weißenfels, Stößen 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5de66",
+        "name": "Modem Haldensleben, Flechtingen, Bülstringen u.a. 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5deb3",
+        "name": "Modem Mücheln 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5e006",
+        "name": "Modem Naumburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5e066",
+        "name": "Modem Weißenfels, Stößen 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5e074",
+        "name": "Modem Weißenfels, Stößen 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5e104",
+        "name": "Modem Eisleben 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5e13d",
+        "name": "Modem Zerbst/Anhalt 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30210d4e340e8e8f5e17c",
+        "name": "Modem Dessau-Roßlau 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e1f4",
+        "name": "Modem Brokstedt 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e219",
+        "name": "Modem Kaltenkirchen 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e24e",
+        "name": "Modem Kiel 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e25a",
+        "name": "Modem Kiel 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e2d6",
+        "name": "Modem Kiel 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e350",
+        "name": "Modem Woltersdorf, Müssen u.a. 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e403",
+        "name": "Modem Rantrum 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e41b",
+        "name": "Modem Rantrum 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e43e",
+        "name": "Modem Fahrdorf 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e44c",
+        "name": "Modem Fahrdorf 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e44e",
+        "name": "Modem Fahrdorf 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e47d",
+        "name": "Modem Kiel 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e48b",
+        "name": "Modem Kiel 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e4ea",
+        "name": "Modem Flensburg, Tastrup 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e55c",
+        "name": "Modem Borsfleth 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30211d4e340e8e8f5e562",
+        "name": "Modem Borsfleth 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e638",
+        "name": "Modem Schenefeld 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e6f7",
+        "name": "Modem Borstel-Hohenraden 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e70d",
+        "name": "Modem Borstel-Hohenraden 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e71f",
+        "name": "Modem Borstel-Hohenraden 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e79b",
+        "name": "Modem Beringstedt 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e7f7",
+        "name": "Modem Hamfelde, Kasseburg, Köthel, Rausdorf, Schönberg 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e877",
+        "name": "Modem Lübeck 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e8dc",
+        "name": "Modem Großenbrode 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e8ef",
+        "name": "Modem Rumohr 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30212d4e340e8e8f5e905",
+        "name": "Modem Rumohr 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5e971",
+        "name": "Modem Tensfeld 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5e98b",
+        "name": "Modem Tensfeld 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5e997",
+        "name": "Modem Tensfeld 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ea34",
+        "name": "Modem Hamfelde, Kasseburg, Köthel, Rausdorf, Schönberg 7",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ea87",
+        "name": "Modem Norderstedt 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5eaa4",
+        "name": "Modem Leezen 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ead6",
+        "name": "Modem Leezen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5eb8b",
+        "name": "Modem Lensahn 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ebd6",
+        "name": "Modem Süderoog, Pellworm 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ec3a",
+        "name": "Modem Barkelsby 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ec6f",
+        "name": "Modem Hallig Hooge 9",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ed73",
+        "name": "Modem Schleswig 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30213d4e340e8e8f5ed7f",
+        "name": "Modem Schleswig 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ede1",
+        "name": "Modem Seth 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5edef",
+        "name": "Modem Seth 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5edf9",
+        "name": "Modem Seth 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ee3a",
+        "name": "Modem Großsolt 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ee81",
+        "name": "Modem Hetlingen 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ee98",
+        "name": "Modem Lägerdorf 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ef09",
+        "name": "Modem Steinburg 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ef32",
+        "name": "Modem Wrist 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ef36",
+        "name": "Modem Wrist 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ef75",
+        "name": "Modem Nordstrand, Elisabeth-Sophien-Koog, Südfall 18",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ef7b",
+        "name": "Modem Nordstrand, Elisabeth-Sophien-Koog, Südfall 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5ef85",
+        "name": "Modem Nordstrand, Elisabeth-Sophien-Koog, Südfall 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5efb6",
+        "name": "Modem Henstedt-Ulzburg 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5f0e7",
+        "name": "Modem Bad Blankenburg 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5f10a",
+        "name": "Modem Erfurt 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5f120",
+        "name": "Modem Erfurt 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5f136",
+        "name": "Modem Erfurt 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30214d4e340e8e8f5f181",
+        "name": "Modem Oberhof 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f238",
+        "name": "Modem Frankenblick, Schalkau, Bachfeld 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f255",
+        "name": "Modem Rudolstadt 8",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f25d",
+        "name": "Modem Rudolstadt 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f27d",
+        "name": "Modem Rudolstadt 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f28a",
+        "name": "Modem Breitungen/Werra 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f2d9",
+        "name": "Modem Weißensee 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f3b8",
+        "name": "Modem Erfurt 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f3db",
+        "name": "Modem Jena 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f482",
+        "name": "Modem Bad Tennstedt 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f4b2",
+        "name": "Modem Bad Tennstedt 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f4d1",
+        "name": "Modem Großbreitenbach 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f4e7",
+        "name": "Modem Großbreitenbach 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f510",
+        "name": "Modem Rudolstadt 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f590",
+        "name": "Modem Schwarzburg 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30215d4e340e8e8f5f5fc",
+        "name": "Modem Lucka 3",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f69e",
+        "name": "Modem Katzhütte 21",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f757",
+        "name": "Modem Erfurt 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f79c",
+        "name": "Modem Arenshausen, Uder u.a. 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f7e1",
+        "name": "Modem Roßleben-Wiehe, Gehofen 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f80a",
+        "name": "Modem Jena, Bucha, Großpürschütz u.a. 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f81e",
+        "name": "Modem Jena, Bucha, Großpürschütz u.a. 24",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f888",
+        "name": "Modem Weimar 14",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f894",
+        "name": "Modem Weimar 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f89e",
+        "name": "Modem Weimar 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f8ec",
+        "name": "Modem Ziegenrück 1",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f93f",
+        "name": "Modem Altenburg 11",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f955",
+        "name": "Modem Altenburg 22",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f968",
+        "name": "Modem Udestedt, Mönchenholzhausen u.a. 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f96c",
+        "name": "Modem Udestedt, Mönchenholzhausen u.a. 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f980",
+        "name": "Modem Udestedt, Mönchenholzhausen u.a. 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5f9ea",
+        "name": "Modem Gera, Zedlitz u.a. 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5fa00",
+        "name": "Modem Gera, Zedlitz u.a. 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5fa4d",
+        "name": "Modem Ellrich 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5fac1",
+        "name": "Modem Münchenbernsdorf, Schwarzbach, Bocka 15",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30216d4e340e8e8f5fad1",
+        "name": "Modem Münchenbernsdorf, Schwarzbach, Bocka 23",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb0a",
+        "name": "Modem Großbreitenbach 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb29",
+        "name": "Modem Erfurt 4",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb3b",
+        "name": "Modem Erfurt 13",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb64",
+        "name": "Modem Schlotheim 2",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb6a",
+        "name": "Modem Schlotheim 5",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb74",
+        "name": "Modem Schlotheim 10",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fb86",
+        "name": "Modem Schlotheim 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fbd1",
+        "name": "Modem Ranis 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fbd7",
+        "name": "Modem Ranis 28",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fbfe",
+        "name": "Modem Bad Tennstedt 16",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fc06",
+        "name": "Modem Bad Tennstedt 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fc10",
+        "name": "Modem Bad Tennstedt 25",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fc57",
+        "name": "Modem Walldorf 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fcd5",
+        "name": "Modem Stadtroda u.a. 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fd31",
+        "name": "Modem Crossen, Heideland u.a. 12",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fd3f",
+        "name": "Modem Crossen, Heideland u.a. 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fd8c",
+        "name": "Modem Steinbach-Hallenberg 26",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fd92",
+        "name": "Modem Steinbach-Hallenberg 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fdbf",
+        "name": "Modem Gräfenthal 20",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fdf8",
+        "name": "Modem Tabarz/ Thür. Wald 17",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fdfc",
+        "name": "Modem Tabarz/ Thür. Wald 19",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fe0c",
+        "name": "Modem Tabarz/ Thür. Wald 27",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5fe10",
+        "name": "Modem Tabarz/ Thür. Wald 29",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66e30217d4e340e8e8f5ff1f",
+        "name": "Modem Erfurt 7",
         "resourceStatus": "available",
         "administrativeState": "unlocked",
         "operationalState": "enable"

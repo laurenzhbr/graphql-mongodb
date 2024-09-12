@@ -25,11 +25,6 @@ async function linkRoutersToModems() {
       category: "Router",
     });
 
-    if (routers.length === 0) {
-      console.log("No Routers with linked Modems found.");
-      return;
-    }
-
     // Für jedes Router das zugehörige Modem finden und aktualisieren
     for (const router of routers) {
       // Finde die ID des übergeordneten Modems
@@ -68,8 +63,6 @@ async function linkRoutersToModems() {
         { _id: modemId },
         { $push: { resourceRelationship: routerRelationship } }
       );
-
-      console.log(`Updated Modem ${modem.name} with linked Router ${router.name}.`);
     }
 
     mongoose.connection.close();

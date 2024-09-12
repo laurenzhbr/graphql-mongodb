@@ -3,137 +3,52 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 const query = () => `
 	mutation {
     createResource(input: {
+      description: "Neue Resource Beschreibung",
       category: "Router",
-      endOperatingDate: "2025-08-12T10:44:10.863Z",
-      name: "Router for Modem Hüfingen 0 0",
-      resourceCharacteristic: [
-        {
-          name: "router_type",
-          valueType: "String",
-          value: "Edge Router"
-        },
-        {
-          name: "max_download_speed",
-          valueType: "String",
-          value: "1.4073629742488265Gbps"
-        },
-        {
-          name: "max_upload_speed",
-          valueType: "String",
-          value: "265Mbps"
-        },
-        {
-          name: "connection_type",
-          valueType: "String",
-          value: "Satellite"
-        },
-        {
-          name: "ethernet_ports",
-          valueType: "Number",
-          value: "4"
-        },
-        {
-          name: "usb_ports",
-          valueType: "Number",
-          value: "1"
-        },
-        {
-          name: "coaxial_input",
-          valueType: "Boolean",
-          value: "true"
-        },
-        {
-          name: "wifi_capability",
-          valueType: "String",
-          value: "Wi-Fi 6 (802.11ax)"
-        },
-        {
-          name: "power_consumption",
-          valueType: "String",
-          value: "12W"
-        },
-        {
-          name: "security_features",
-          valueType: "String",
-          value: "WPA3, AES Encryption, DNS Filtering"
-        },
-        {
-          name: "last_maintenance",
-          valueType: "Date-Time",
-          value: "2022-04-09T07:02:38.086Z"
-        },
-        {
-          name: "processor",
-          valueType: "String",
-          value: "Intel Atom C3338, 1.5 GHz"
-        },
-        {
-          name: "memory",
-          valueType: "String",
-          value: "4GB LPDDR4"
-        },
-        {
-          name: "storage",
-          valueType: "String",
-          value: "1GB SSD"
-        }
-      ],
+      value: "1234",
+      endOperatingDate: "2030-12-31T23:59:59Z",
+      name: "Router X1000",
       administrativeState: unlocked,
-      operationalState: disable,
-      relatedParties: [
-        {
-          id: "66db3aa516d68c5f3c138b53",
-          name: "Walsh LLC Manufacturing",
-          role: "Gerätehersteller",
-        }
+      operationalState: enable,
+      resourceStatus: available,
+      usageState: active,
+      startOperatingDate: "2022-01-01T00:00:00Z",
+      version: "1.0",
+      resourceCharacteristic: [
+        { name: "max_download_speed", value: "1 Gbps", valueType: "String" },
+        { name: "max_upload_speed", value: "100 Mbps", valueType: "String" }
       ],
       note: [
-        {
-          author: "Marisa Knoll",
-          date: "2023-11-18T06:54:47.785Z",
-          text: "Firmware update applied successfully; system stability improved."
-        }
+        { author: "Admin", date: "2024-09-10T12:34:56Z", text: "Initial configuration" }
       ],
       place: {
-        id: "66db17e94e5b0dd1a4758935",
+        id: "66e2c81f65afefb37d2bed73",
+        name: "Berlin"
       },
       resourceRelationship: [
-        {
-          relationshipType: "isTargeted",
+        { 
+          relationshipType: "targets", 
           resource: {
-            id: "66db6d63658d40350e57e43f",
-            name: "Modem Hüfingen 0"
+            id: "66e301dfd4e340e8e8f51322",
+            name: "Router for Modem Burladingen 0 0"
           }
         }
       ],
-      resourceStatus: available,
-      usageState: idle,
-      startOperatingDate: "2008-01-29T22:25:19.167Z",
-      version: "4",
+      relatedParties: [
+            {
+                id: "66e2c8efa4a4ceda4e6d9087",
+                name: "Schütze, Hamann und Riester Technik & Innovation GmbH",
+                role: "Gerätehersteller",
+            }
+        ],
     }) {
       id
-      category
-      endOperatingDate
       name
+      category
+      description
       resourceCharacteristic {
         name
-        valueType
         value
-      }
-      administrativeState
-      operationalState
-      relatedParties {
-        id
-        name
-        organizationType
-      }
-      note {
-        author
-        date
-        text
-      }
-      place {
-        id
       }
       resourceRelationship {
         relationshipType
@@ -142,10 +57,15 @@ const query = () => `
           name
         }
       }
-      resourceStatus
-      usageState
-      startOperatingDate
-      version
+      note {
+        author
+        text
+        date
+      }
+      place {
+        id
+        country
+      }
     }
   }
 
