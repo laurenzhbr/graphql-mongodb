@@ -7,15 +7,15 @@
         "resourceCharacteristic": [
           {
             "name": "connected_lines",
-            "value": "56583"
+            "value": 56583
           },
           {
             "name": "maximum_capacity",
-            "value": "411"
+            "value": 411
           },
           {
             "name": "power_backup",
-            "value": "false"
+            "value": false
           }
         ],
         "relatedParties": [
@@ -40,15 +40,15 @@
         "resourceCharacteristic": [
           {
             "name": "connected_lines",
-            "value": "18173"
+            "value": 18173
           },
           {
             "name": "maximum_capacity",
-            "value": "847"
+            "value": 847
           },
           {
             "name": "power_backup",
-            "value": "true"
+            "value": true
           }
         ],
         "relatedParties": [
@@ -73,15 +73,15 @@
         "resourceCharacteristic": [
           {
             "name": "connected_lines",
-            "value": "21868"
+            "value": 21868
           },
           {
             "name": "maximum_capacity",
-            "value": "721"
+            "value": 721
           },
           {
             "name": "power_backup",
-            "value": "false"
+            "value": false
           }
         ],
         "relatedParties": [
@@ -106,15 +106,15 @@
         "resourceCharacteristic": [
           {
             "name": "connected_lines",
-            "value": "20298"
+            "value": 20298
           },
           {
             "name": "maximum_capacity",
-            "value": "738"
+            "value": 738
           },
           {
             "name": "power_backup",
-            "value": "true"
+            "value": true
           }
         ],
         "relatedParties": [

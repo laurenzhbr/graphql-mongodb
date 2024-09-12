@@ -36,7 +36,7 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(DigitalIdentityType),
       args: {
         status: { type: GraphQLString}, 
-        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)', defaultValue: 100}
+        //limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)'}
       },
       resolve(parent, args) {
         const limit = args.limit;

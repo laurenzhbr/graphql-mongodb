@@ -17,5 +17,3 @@ Q8: Update der referenzierten Ressource einer DigitalIdentity
 Q9: Erstellung eines Routers mit vorgegebenen Beispielwerten
 
 Q10: Abfrage von 10 suspended DigitalIdentities und diese dann löschen
-
-"\n\t{\n    resourcesByCategoryAndCity(category: \"Steet Cabinet\", city: \"Berlin\") {\n      name\n      category\n      resourceCharacteristic(names: connected_lines,maximum_capacity,power_backup){\n        name\n        value\n      }\n      relatedParties {\n        organizationType\n        name\n      }\n      place {\n        id\n        city\n        country\n      }\n    }\n  }\n"

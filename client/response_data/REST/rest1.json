@@ -130,12 +130,12 @@
     "nickname": "Vincent0",
     "status": "active",
     "resourceIdentified": {
-      "id": "e82fa9a60d9e6a55bdd56dc9",
-      "name": "Router for Modem Neuental 7 5",
-      "href": "https://{host}/resourceInventoryManagement/resource/e82fa9a60d9e6a55bdd56dc9"
+      "id": "e9a81ddab4e74dd45e579c0e",
+      "name": "Router for Modem Neuental 9 11",
+      "href": "https://{host}/resourceInventoryManagement/resource/e9a81ddab4e74dd45e579c0e"
     },
     "creationDate": "2024-09-12T15:14:21.747Z",
-    "lastUpdate": "2024-09-12T16:15:06.688Z",
+    "lastUpdate": "2024-09-12T16:42:50.670Z",
     "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33fa",
     "__v": 0
   }

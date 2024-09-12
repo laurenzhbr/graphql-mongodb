@@ -1,21 +1,13 @@
 {
   "data": {
     "digitalIdentity": {
-      "nickname": "Ylvie_Mordhorst",
       "resourceIdentified": {
-        "id": "66e3021b9db75159a4449753",
-        "name": "Router 2 for Modem Heubach 0",
-        "category": "Router",
         "resourceRelationship": [
           {
             "resource": {
-              "name": "Modem Heubach 0",
-              "category": "Modem",
               "resourceRelationship": [
                 {
                   "resource": {
-                    "name": "Street Cabinet Baden-Württemberg 0",
-                    "category": "Street Cabinet",
                     "resourceRelationship": [
                       {
                         "resource": {

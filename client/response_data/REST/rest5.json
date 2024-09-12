@@ -1,35 +1,8 @@
 [
   {
     "_id": "66e3071518539291490698a8",
-    "href": "https://{host}/partyManagement/party/66e3071518539291490698a8",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Scholz, Haaf und Roggatz Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Scholz, Haaf und Roggatz Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "Möllerscheid",
-          "contactType": "business",
-          "country": "Osttimor",
-          "emailAddress": "Giada.Michel30@hotmail.com",
-          "faxNumber": "+49-660-1765376",
-          "phoneNumber": "+49-5014-93848913",
-          "postCode": "40970",
-          "socialNetworkId": "Vito88",
-          "stateOrProvince": "Sachsen",
-          "street1": "Köpenicker Str.",
-          "street2": "Gezelinallee"
-        },
-        "validFor": {
-          "endDateTime": "2024-09-30T16:12:21.370Z",
-          "startDateTime": "2024-06-03T20:26:26.707Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Loska KG",
@@ -41,58 +14,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2025-02-28T07:21:57.998Z",
-      "startDateTime": "2024-07-28T16:26:47.779Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "kenntnisreich-unterernahrung.name"
-      }
-    ],
-    "organizationParentRelationship": {
-      "relationshipType": "parent",
-      "organization": {
-        "id": "66e2c8efa4a4ceda4e6d9c34",
-        "href": "https://{host}/partyManagement/party/66e2c8efa4a4ceda4e6d9c34",
-        "name": "Krieger AG Energie AG"
-      }
-    },
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e3092f0c8d998659a60b04",
-    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a60b04",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Heinrich-Oeser Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Heinrich-Oeser Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "phone",
-        "preferred": false,
-        "characteristic": {
-          "city": "Nord Arved",
-          "contactType": "business",
-          "country": "Tonga",
-          "emailAddress": "Tia90@hotmail.com",
-          "faxNumber": "+49-9937-40329516",
-          "phoneNumber": "(0095) 985562275",
-          "postCode": "50790",
-          "socialNetworkId": "Nathalie.Komoll54",
-          "stateOrProvince": "Saarland",
-          "street1": "Sebastianusweg",
-          "street2": "In der Hartmannswiese"
-        },
-        "validFor": {
-          "endDateTime": "2024-12-05T17:57:57.719Z",
-          "startDateTime": "2023-09-22T01:21:02.316Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Malek, Schönebeck und Hohnheiser",
@@ -104,50 +31,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2024-10-20T08:11:11.916Z",
-      "startDateTime": "2023-12-19T14:09:03.529Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "bildhubsch-stahl.de"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e307151853929149068e1c",
-    "href": "https://{host}/partyManagement/party/66e307151853929149068e1c",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Decker KG Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Decker KG Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": false,
-        "characteristic": {
-          "city": "Brandenburg an der Havel",
-          "contactType": "personal",
-          "country": "Estland",
-          "emailAddress": "Liam_Ruter@yahoo.com",
-          "faxNumber": "+49-1490-73446830",
-          "phoneNumber": "(0407) 187073389",
-          "postCode": "13326",
-          "socialNetworkId": "Eleni8",
-          "stateOrProvince": "Sachsen",
-          "street1": "Winand-Rossi-Str.",
-          "street2": "Treptower Str."
-        },
-        "validFor": {
-          "endDateTime": "2025-02-02T12:20:09.328Z",
-          "startDateTime": "2024-08-18T12:04:07.329Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Kulimann-Knetsch",
@@ -159,50 +48,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2025-03-07T12:32:12.496Z",
-      "startDateTime": "2023-09-18T15:09:25.342Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "hochwirksam-chemie.com"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e2c8efa4a4ceda4e6d93de",
-    "href": "https://{host}/partyManagement/party/66e2c8efa4a4ceda4e6d93de",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Rüdiger, Werrmann und Achilles Sales & Consulting KG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Rüdiger, Werrmann und Achilles Sales & Consulting KG",
-    "contactMedium": [
-      {
-        "mediumType": "phone",
-        "preferred": false,
-        "characteristic": {
-          "city": "Leonhardscheid",
-          "contactType": "personal",
-          "country": "Sudan",
-          "emailAddress": "Niels21@yahoo.com",
-          "faxNumber": "(0045) 273234196",
-          "phoneNumber": "+49-998-9331820",
-          "postCode": "00517",
-          "socialNetworkId": "Pius33",
-          "stateOrProvince": "Schleswig-Holstein",
-          "street1": "Sauerbruchstr.",
-          "street2": "Auf der Ohmer"
-        },
-        "validFor": {
-          "endDateTime": "2025-05-18T18:52:26.289Z",
-          "startDateTime": "2024-09-04T01:46:06.846Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Roloff UG",
@@ -214,50 +65,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2024-12-11T08:05:59.017Z",
-      "startDateTime": "2024-02-19T05:57:46.052Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "phantasievoll-erdbeben.org"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e3092f0c8d998659a60840",
-    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a60840",
-    "isHeadOffice": false,
-    "isLegalEntity": true,
     "name": "Paesler-Görmer Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Paesler-Görmer Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": false,
-        "characteristic": {
-          "city": "Mirjaland",
-          "contactType": "business",
-          "country": "Brunei Darussalam",
-          "emailAddress": "Madita_Achilles67@hotmail.com",
-          "faxNumber": "+49-108-0993615",
-          "phoneNumber": "(07151) 2652841",
-          "postCode": "22874",
-          "socialNetworkId": "Timo_Grothkopp",
-          "stateOrProvince": "Berlin",
-          "street1": "Dahlemer Str.",
-          "street2": "Wilhelm-Liebknecht-Str."
-        },
-        "validFor": {
-          "endDateTime": "2025-06-30T22:56:42.727Z",
-          "startDateTime": "2024-02-09T11:46:31.727Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Friess AG",
@@ -269,50 +82,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2025-08-19T05:08:25.413Z",
-      "startDateTime": "2024-07-02T19:03:58.706Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "mutig-tanz.org"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e3092f0c8d998659a6078d",
-    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a6078d",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Soller, Frauendorf und Grosser Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Soller, Frauendorf und Grosser Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "phone",
-        "preferred": false,
-        "characteristic": {
-          "city": "Ost Leoniestadt",
-          "contactType": "business",
-          "country": "Mikronesien",
-          "emailAddress": "Mads.Goller@gmail.com",
-          "faxNumber": "(0093) 632853813",
-          "phoneNumber": "+49-5136-76478487",
-          "postCode": "68460",
-          "socialNetworkId": "Rahel_Sachse",
-          "stateOrProvince": "Niedersachsen",
-          "street1": "Höltgestal",
-          "street2": "Ewald-Röll-Str."
-        },
-        "validFor": {
-          "endDateTime": "2025-04-13T19:30:52.486Z",
-          "startDateTime": "2024-02-21T18:49:38.488Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Pöge, Schlangen und Hiller",
@@ -324,50 +99,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2024-11-04T04:02:18.478Z",
-      "startDateTime": "2023-10-17T05:59:03.855Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "heilsam-automobil.com"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e3092f0c8d998659a5fb9e",
-    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a5fb9e",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
     "name": "Schreiner, Riethmüller und Malkus Marketing- und Vertriebsservice GmbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Schreiner, Riethmüller und Malkus Marketing- und Vertriebsservice GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": false,
-        "characteristic": {
-          "city": "Leanndorf",
-          "contactType": "business",
-          "country": "Malediven",
-          "emailAddress": "Tore_Schwennen@hotmail.com",
-          "faxNumber": "+49-724-6808400",
-          "phoneNumber": "+49-779-2795227",
-          "postCode": "90362",
-          "socialNetworkId": "Nika0",
-          "stateOrProvince": "Hessen",
-          "street1": "Tempelhofer Str.",
-          "street2": "Zauberkuhle"
-        },
-        "validFor": {
-          "endDateTime": "2025-03-05T12:51:31.625Z",
-          "startDateTime": "2024-06-10T05:35:43.986Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Neumair-Blum",
@@ -379,50 +116,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2025-08-27T03:05:49.523Z",
-      "startDateTime": "2023-11-14T16:15:59.454Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "fokussiert-brust.ch"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e3092f0c8d998659a609b3",
-    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a609b3",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
     "name": "Norris-Gutschank Marketing- und Vertriebsservice GmbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Norris-Gutschank Marketing- und Vertriebsservice GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": true,
-        "characteristic": {
-          "city": "Süd Ricostadt",
-          "contactType": "business",
-          "country": "Niederlande",
-          "emailAddress": "Angelo_Hordt15@gmail.com",
-          "faxNumber": "(0248) 938229604",
-          "phoneNumber": "(03326) 2575599",
-          "postCode": "26841",
-          "socialNetworkId": "Noel_Spiegelburg",
-          "stateOrProvince": "Schleswig-Holstein",
-          "street1": "Lindenstr.",
-          "street2": "Löchergraben"
-        },
-        "validFor": {
-          "endDateTime": "2025-06-08T08:11:03.482Z",
-          "startDateTime": "2023-09-29T07:12:06.240Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Kluge KG",
@@ -434,50 +133,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2025-03-08T20:40:42.871Z",
-      "startDateTime": "2024-03-27T14:33:13.641Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "gewaltig-pocken.name"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e2c8efa4a4ceda4e6d94d8",
-    "href": "https://{host}/partyManagement/party/66e2c8efa4a4ceda4e6d94d8",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Umminger-Hanniske Marketing- und Vertriebsservice GmbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Umminger-Hanniske Marketing- und Vertriebsservice GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "Miloland",
-          "contactType": "personal",
-          "country": "Finnland",
-          "emailAddress": "Jane68@hotmail.com",
-          "faxNumber": "+49-3652-04018411",
-          "phoneNumber": "+49-6677-40510460",
-          "postCode": "23385",
-          "socialNetworkId": "Carina_Hensel",
-          "stateOrProvince": "Hamburg",
-          "street1": "An den Irlen",
-          "street2": "Fürstenbergstr."
-        },
-        "validFor": {
-          "endDateTime": "2025-07-19T15:29:49.606Z",
-          "startDateTime": "2024-03-28T06:15:04.179Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Baseda OHG",
@@ -489,50 +150,12 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2024-10-28T10:35:37.587Z",
-      "startDateTime": "2024-02-17T22:33:08.967Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "querdenkend-elektronik.name"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   },
   {
     "_id": "66e3092f0c8d998659a60b56",
-    "href": "https://{host}/partyManagement/party/66e3092f0c8d998659a60b56",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
     "name": "Burmeister, Thomas und Milde Marketing Solutions KG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Burmeister, Thomas und Milde Marketing Solutions KG",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": false,
-        "characteristic": {
-          "city": "Alistadt",
-          "contactType": "personal",
-          "country": "Schweiz",
-          "emailAddress": "Zehra_Molitor5@hotmail.com",
-          "faxNumber": "(02507) 7494287",
-          "phoneNumber": "(06708) 2207447",
-          "postCode": "45318",
-          "socialNetworkId": "Leni_Michel",
-          "stateOrProvince": "Schleswig-Holstein",
-          "street1": "Johann-Janssen-Str.",
-          "street2": "Feldtorstr."
-        },
-        "validFor": {
-          "endDateTime": "2025-07-05T20:54:39.500Z",
-          "startDateTime": "2023-11-08T14:15:15.338Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Abt Gruppe",
@@ -544,17 +167,6 @@
         }
       }
     ],
-    "existsDuring": {
-      "endDateTime": "2025-01-08T17:06:13.342Z",
-      "startDateTime": "2024-05-29T05:41:32.800Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "bescheiden-weizen.de"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    "status": "validated"
   }
 ]

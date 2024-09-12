@@ -2,1034 +2,1704 @@
   "data": {
     "searchResourcesByCategoryAnCapacityUsage": [
       {
+        "id": "66e301db12a36cf2411b8966",
         "name": "Street Cabinet Baden-Württemberg 4",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Letizia Kähler",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "connected_lines",
+            "value": 16797
           },
           {
-            "author": "Herr Rayan Sürth",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "0.8548272047657519m"
           },
           {
-            "author": "Alexandra Crosskofp",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "cabinet_width",
+            "value": "0.8720302805304527m"
           },
           {
-            "author": "Svenja Porth",
-            "text": "New power backup system installed; generator integrated."
+            "name": "current_capacity_usage",
+            "value": 97
           },
           {
-            "author": "Frau Dilara Schott",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "maximum_capacity",
+            "value": 698
           },
           {
-            "author": "Abigail Holz",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-07-02T19:35:52.641Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b89a0",
         "name": "Street Cabinet Bayern 1",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Nina Laack",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "connected_lines",
+            "value": 2199
           },
           {
-            "author": "Chris Kulma",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_heigth",
+            "value": "1.1356374874245376m"
           },
           {
-            "author": "Jesper Diedrich",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_width",
+            "value": "1.3900492414832115m"
           },
           {
-            "author": "Anja Sillah",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "current_capacity_usage",
+            "value": 96
           },
           {
-            "author": "Kurt Maisch",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "maximum_capacity",
+            "value": 1110
           },
           {
-            "author": "Malena Ghirmai",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Philine Reppin",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "fiber_ready",
+            "value": true
           },
           {
-            "author": "Herr Odin Schwanitz",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "power_backup",
+            "value": false
           },
           {
-            "author": "Sofia Schult",
-            "text": "New power backup system installed; generator integrated."
+            "name": "security_status",
+            "value": "Remote Monitoring"
           },
           {
-            "author": "Jette Ewald",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "last_maintenance",
+            "value": "2024-02-26T20:45:10.775Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b89d0",
         "name": "Street Cabinet Bayern 25",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Jarno Greschner",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "connected_lines",
+            "value": 9713
           },
           {
-            "author": "Jonah Spelmeyer",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "1.8559460922842845m"
           },
           {
-            "author": "Lana Görlich",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "cabinet_width",
+            "value": "1.1504957005381584m"
           },
           {
-            "author": "Bianca Hütter",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "current_capacity_usage",
+            "value": 98
           },
           {
-            "author": "Peer Gruber",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "maximum_capacity",
+            "value": 583
           },
           {
-            "author": "Jacqueline Götz",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Herr Ilja Ehm",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "fiber_ready",
+            "value": true
           },
           {
-            "author": "Tarja Steinmetz",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "power_backup",
+            "value": false
           },
           {
-            "author": "Fatma Schüler",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-07-05T18:47:41.204Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b8a12",
         "name": "Street Cabinet Bayern 26",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Sally Döring",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "connected_lines",
+            "value": 26698
           },
           {
-            "author": "Cara Crews",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "0.9044209685176611m"
           },
           {
-            "author": "Veronika Wimmer",
-            "text": "New power backup system installed; generator integrated."
+            "name": "cabinet_width",
+            "value": "0.5542906322516501m"
           },
           {
-            "author": "Yven Preuss",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "Zoé Newton",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "maximum_capacity",
+            "value": 743
           },
           {
-            "author": "Rike Henkel",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "network_type",
+            "value": "Koaxial"
           },
           {
-            "author": "Lenny Brettschneider",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "fiber_ready",
+            "value": false
           },
           {
-            "author": "Miguel Lott",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-07-18T18:06:46.440Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b8a66",
         "name": "Street Cabinet Berlin 4",
-        "category": "Street Cabinet",
-        "note": []
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 14037
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9369706887053325m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.4589653573930264m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1405
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-02-21T03:44:47.827Z"
+          }
+        ]
       },
       {
+        "id": "66e301db12a36cf2411b8aa6",
         "name": "Street Cabinet Brandenburg 4",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Tamara Gerhardt",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "connected_lines",
+            "value": 10611
           },
           {
-            "author": "Theresa Reif",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "cabinet_heigth",
+            "value": "0.8392682147212326m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2356126450467855m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1452
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-01-07T13:45:06.078Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b8aca",
         "name": "Street Cabinet Brandenburg 22",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Naomi Tonat",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "connected_lines",
+            "value": 43126
           },
           {
-            "author": "Pit Bringmann",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "cabinet_heigth",
+            "value": "0.9282548206159844m"
           },
           {
-            "author": "Elias Pingpank",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_width",
+            "value": "0.957601172151044m"
           },
           {
-            "author": "Hassan Laack",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "current_capacity_usage",
+            "value": 98
           },
           {
-            "author": "Max Boyde",
-            "text": "New power backup system installed; generator integrated."
+            "name": "maximum_capacity",
+            "value": 1364
           },
           {
-            "author": "Caitlin Mehl",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Valentina Striezel",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "fiber_ready",
+            "value": true
           },
           {
-            "author": "Rico Mächtig",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-05-18T03:49:28.849Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b8b12",
         "name": "Street Cabinet Brandenburg 26",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Henrike Sattelmaier",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "connected_lines",
+            "value": 26713
           },
           {
-            "author": "Dr. Can Klink",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_heigth",
+            "value": "1.3512649293057621m"
           },
           {
-            "author": "Anouk Schirrmeister",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "cabinet_width",
+            "value": "1.3489686304237694m"
           },
           {
-            "author": "Bo Uhlemann",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "current_capacity_usage",
+            "value": 97
           },
           {
-            "author": "Kay Gürbig",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "maximum_capacity",
+            "value": 495
           },
           {
-            "author": "Riana Kustermann",
-            "text": "New power backup system installed; generator integrated."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Max Zimmermann",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-05-19T02:10:34.147Z"
           }
         ]
       },
       {
+        "id": "66e301db12a36cf2411b8b40",
         "name": "Street Cabinet Bremen 17",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Patrice Burghagen",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "connected_lines",
+            "value": 48005
           },
           {
-            "author": "Elli Howard",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "cabinet_heigth",
+            "value": "1.9869370649801568m"
           },
           {
-            "author": "Kassandra Kuhlee",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "cabinet_width",
+            "value": "0.7029344290494919m"
           },
           {
-            "author": "Isabell Kurschilgen",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "Josef Haschke",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "maximum_capacity",
+            "value": 507
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-05-09T20:26:30.709Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8b74",
         "name": "Street Cabinet Bremen 11",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Sara Salow",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "connected_lines",
+            "value": 10445
           },
           {
-            "author": "Ahmed Zeyhle",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "0.92270756396465m"
           },
           {
-            "author": "Marlon Borrmann",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_width",
+            "value": "1.3519879297818989m"
           },
           {
-            "author": "Sena Rosenauer",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "current_capacity_usage",
+            "value": 97
           },
           {
-            "author": "Davin Itt",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "maximum_capacity",
+            "value": 686
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-02-02T10:51:21.370Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8bb2",
         "name": "Street Cabinet Hamburg 10",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Robin Gross",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "connected_lines",
+            "value": 57805
           },
           {
-            "author": "Loreen Ludolf",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "cabinet_heigth",
+            "value": "1.1622904904419555m"
           },
           {
-            "author": "Kimi Hepperle",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_width",
+            "value": "0.6061347376089543m"
           },
           {
-            "author": "Mario Kurschilgen",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "René Lindner",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "maximum_capacity",
+            "value": 1328
           },
           {
-            "author": "Niklas Pomp",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-03-26T11:46:41.044Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8be0",
         "name": "Street Cabinet Hamburg 1",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Curt Waldmann",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "connected_lines",
+            "value": 19885
           },
           {
-            "author": "Amira Feller",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "cabinet_heigth",
+            "value": "1.622201581695117m"
           },
           {
-            "author": "Davide Sürth",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "cabinet_width",
+            "value": "1.1442321704234928m"
           },
           {
-            "author": "Aliyah Erm",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "current_capacity_usage",
+            "value": 96
           },
           {
-            "author": "Maria Salzer",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "maximum_capacity",
+            "value": 1318
           },
           {
-            "author": "Arda Schlitzer",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Cecilia Dück",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "fiber_ready",
+            "value": false
           },
           {
-            "author": "Evelina Franz",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "power_backup",
+            "value": true
           },
           {
-            "author": "Zehra Hinrichs",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-03-22T18:38:03.866Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8c06",
         "name": "Street Cabinet Hamburg 20",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Annika Koob",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "connected_lines",
+            "value": 8271
           },
           {
-            "author": "Alana Golling",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "cabinet_heigth",
+            "value": "1.638357894355431m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.8944591677282006m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1431
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-01-01T07:26:40.907Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8c56",
         "name": "Street Cabinet Hessen 28",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Annelie Engel",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "connected_lines",
+            "value": 33765
           },
           {
-            "author": "Ellen Tächl",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "cabinet_heigth",
+            "value": "1.0716245260089636m"
           },
           {
-            "author": "Inga Sarvari",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "cabinet_width",
+            "value": "0.5245594813022763m"
           },
           {
-            "author": "Lorena Ullmann",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "current_capacity_usage",
+            "value": 99
           },
           {
-            "author": "Defne Stöckert",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "maximum_capacity",
+            "value": 671
           },
           {
-            "author": "Cosima Aschenbroich",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "network_type",
+            "value": "DSL"
           },
           {
-            "author": "Naemi Tächl",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "fiber_ready",
+            "value": true
           },
           {
-            "author": "Ecrin Niedermeier",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-05-10T00:33:24.034Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8ca2",
         "name": "Street Cabinet Mecklenburg-Vorpommern 2",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Loreen Mäder",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "connected_lines",
+            "value": 38880
           },
           {
-            "author": "Thalia Dobbrunz",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "cabinet_heigth",
+            "value": "0.7339557467261328m"
           },
           {
-            "author": "Sami Schniedermeier",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "cabinet_width",
+            "value": "1.4657276088837534m"
           },
           {
-            "author": "Dorothea Räntsch",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "current_capacity_usage",
+            "value": 99
           },
           {
-            "author": "Elena Osenberg",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "maximum_capacity",
+            "value": 451
           },
           {
-            "author": "Selin Kohnle",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "network_type",
+            "value": "DSL"
           },
           {
-            "author": "Herr Pit Sielemann",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-06-21T09:58:39.797Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8caa",
         "name": "Street Cabinet Mecklenburg-Vorpommern 6",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Filip Krämer",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "connected_lines",
+            "value": 35016
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.2850479277782143m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.104997371090576m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 795
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-06-22T15:04:49.359Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8d10",
         "name": "Street Cabinet Mecklenburg-Vorpommern 25",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Phil Denner",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "connected_lines",
+            "value": 13578
           },
           {
-            "author": "Franka Pfeiffer",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "cabinet_heigth",
+            "value": "0.7072943531209602m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.4943720460869372m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 872
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-17T18:53:48.537Z"
           }
         ]
       },
       {
+        "id": "66e301dc12a36cf2411b8d34",
         "name": "Street Cabinet Niedersachsen 11",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Natalie Poschmann",
-            "text": "New power backup system installed; generator integrated."
+            "name": "connected_lines",
+            "value": 3022
           },
           {
-            "author": "Leandro Carlowitz",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "cabinet_heigth",
+            "value": "0.8239365248242393m"
           },
           {
-            "author": "Lillian Daub",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_width",
+            "value": "0.7438857157249004m"
           },
           {
-            "author": "Olivia Reichling",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "current_capacity_usage",
+            "value": 98
           },
           {
-            "author": "Joana Hengmith",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "maximum_capacity",
+            "value": 875
           },
           {
-            "author": "Francesco Schwandke",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Joeline Plotzitzka",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-06-19T15:18:07.785Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8dcc",
         "name": "Street Cabinet Nordrhein-Westfalen 23",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Ada Kuhlee",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "connected_lines",
+            "value": 6250
           },
           {
-            "author": "Annabelle Krämer",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "1.5985218629473819m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2568566245026886m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 948
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-04-11T19:57:06.717Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8e0a",
         "name": "Street Cabinet Nordrhein-Westfalen 22",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Henry Wilky",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "connected_lines",
+            "value": 18183
           },
           {
-            "author": "Thies Klose",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "cabinet_heigth",
+            "value": "1.6435266704531386m"
           },
           {
-            "author": "Ada Nabein",
-            "text": "New power backup system installed; generator integrated."
+            "name": "cabinet_width",
+            "value": "1.400147050851956m"
           },
           {
-            "author": "Janosch Spiegelburg",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "current_capacity_usage",
+            "value": 96
           },
           {
-            "author": "Alfred Osei",
-            "text": "New power backup system installed; generator integrated."
+            "name": "maximum_capacity",
+            "value": 951
           },
           {
-            "author": "Herr Leo Borrmann",
-            "text": "New power backup system installed; generator integrated."
+            "name": "network_type",
+            "value": "Koaxial"
           },
           {
-            "author": "Josefin Breuer",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "fiber_ready",
+            "value": false
           },
           {
-            "author": "Jana Büngener",
-            "text": "New power backup system installed; generator integrated."
+            "name": "power_backup",
+            "value": true
           },
           {
-            "author": "Neele Pflügner",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-01-01T16:16:31.605Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8e14",
         "name": "Street Cabinet Nordrhein-Westfalen 27",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Marko Neurohr",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "connected_lines",
+            "value": 26851
           },
           {
-            "author": "Dr. Fabio Schwalm",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "1.6151961494935676m"
           },
           {
-            "author": "Frau Tabea Brandis",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_width",
+            "value": "0.660839234245941m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1083
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-01-04T03:00:26.539Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8e40",
         "name": "Street Cabinet Rheinland-Pfalz 17",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Bent Zaituc",
-            "text": "New power backup system installed; generator integrated."
+            "name": "connected_lines",
+            "value": 25625
           },
           {
-            "author": "Mira Mehlhorn",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "1.733125630952418m"
           },
           {
-            "author": "Elena Brand",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "cabinet_width",
+            "value": "0.5368144926615059m"
           },
           {
-            "author": "Jenny Geissler",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "current_capacity_usage",
+            "value": 96
           },
           {
-            "author": "Celine Pohle",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "maximum_capacity",
+            "value": 1417
           },
           {
-            "author": "Franka Schüler",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-02-21T10:13:31.834Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8e42",
         "name": "Street Cabinet Rheinland-Pfalz 18",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Eva Lenfers",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "connected_lines",
+            "value": 31498
           },
           {
-            "author": "Judy Wierig",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_heigth",
+            "value": "1.666188420006074m"
           },
           {
-            "author": "Leni Hardy",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "cabinet_width",
+            "value": "1.0762538791168481m"
           },
           {
-            "author": "Denny Leibold",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "current_capacity_usage",
+            "value": 97
           },
           {
-            "author": "Mohamed Kirst",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "maximum_capacity",
+            "value": 1399
           },
           {
-            "author": "Eliah Ponitzsch",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "network_type",
+            "value": "DSL"
           },
           {
-            "author": "Joshua Wischek",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "fiber_ready",
+            "value": true
           },
           {
-            "author": "Marlon Kruschinski",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "power_backup",
+            "value": true
           },
           {
-            "author": "Neo Schulz",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-11-04T02:34:45.821Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8ed8",
         "name": "Street Cabinet Saarland 29",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Abdul Merseburg",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "connected_lines",
+            "value": 6791
           },
           {
-            "author": "Niko Rosbach",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_heigth",
+            "value": "1.0310293720569461m"
           },
           {
-            "author": "Kim Sagonas",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "cabinet_width",
+            "value": "1.3899527790490538m"
           },
           {
-            "author": "Noel Moeller",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "Ruby Schweisfurth",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "maximum_capacity",
+            "value": 1213
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-01-29T20:53:56.341Z"
           }
         ]
       },
       {
+        "id": "66e301dd12a36cf2411b8ef8",
         "name": "Street Cabinet Saarland 13",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Michel Rosenthal",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "connected_lines",
+            "value": 49208
           },
           {
-            "author": "Kian Bourrouag",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "cabinet_heigth",
+            "value": "1.7581877193879336m"
           },
           {
-            "author": "Prof. Dr. Theodor Frank",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_width",
+            "value": "1.2584989273454994m"
           },
           {
-            "author": "Mattes Sporrer",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "current_capacity_usage",
+            "value": 97
           },
           {
-            "author": "Alisha Kwadwo",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "maximum_capacity",
+            "value": 883
           },
           {
-            "author": "Nikolas Baseda",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-10-24T03:02:07.558Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b8f48",
         "name": "Street Cabinet Sachsen 21",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Tom Northoff",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "connected_lines",
+            "value": 44600
           },
           {
-            "author": "Ayman Gruning",
-            "text": "New power backup system installed; generator integrated."
+            "name": "cabinet_heigth",
+            "value": "0.9398252207785844m"
           },
           {
-            "author": "Valerie Mathiszik",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_width",
+            "value": "1.1459828671067953m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1214
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-05-05T20:42:26.631Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b8f6c",
         "name": "Street Cabinet Sachsen 7",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Johannes Proske",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "connected_lines",
+            "value": 18496
           },
           {
-            "author": "Annie Kröger",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "1.6135382427833975m"
           },
           {
-            "author": "Angelo Dilla",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_width",
+            "value": "0.9332243714015931m"
           },
           {
-            "author": "Abdul Schöckel",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "current_capacity_usage",
+            "value": 99
           },
           {
-            "author": "Fynn Preuk",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "maximum_capacity",
+            "value": 1291
           },
           {
-            "author": "Lisanne Bertenbreiter",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "network_type",
+            "value": "Koaxial"
           },
           {
-            "author": "Prof. Dr. Olivia Hackbusch",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "fiber_ready",
+            "value": false
           },
           {
-            "author": "Dario Löwa",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "power_backup",
+            "value": false
           },
           {
-            "author": "Thalia Kasten",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-20T16:41:31.268Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b8f90",
         "name": "Street Cabinet Sachsen 25",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Maria Knobel",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "connected_lines",
+            "value": 39551
           },
           {
-            "author": "Joey Pöche",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_heigth",
+            "value": "0.9290446470025926m"
           },
           {
-            "author": "Sina Dittmann",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "cabinet_width",
+            "value": "0.7609000466763973m"
           },
           {
-            "author": "Herr Taha Rosenauer",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "current_capacity_usage",
+            "value": 97
           },
           {
-            "author": "Marko Stengl",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "maximum_capacity",
+            "value": 472
           },
           {
-            "author": "Alissa Dahm",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "network_type",
+            "value": "DSL"
           },
           {
-            "author": "Thilo Küter",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "fiber_ready",
+            "value": true
           },
           {
-            "author": "Karoline Günz",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-03-27T02:00:14.942Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b8ff4",
         "name": "Street Cabinet Sachsen-Anhalt 11",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Dr. Lian Krauspe",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "connected_lines",
+            "value": 31708
           },
           {
-            "author": "Leonard Ophey",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "0.9455600865650922m"
           },
           {
-            "author": "Edwin Bedewitz",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_width",
+            "value": "1.4147801734507084m"
           },
           {
-            "author": "Sammy Schott",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "Alea Best",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "maximum_capacity",
+            "value": 607
           },
           {
-            "author": "Sally Lokar",
-            "text": "New power backup system installed; generator integrated."
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-06T04:41:35.339Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b900c",
         "name": "Street Cabinet Sachsen-Anhalt 23",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Levent Clarius",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "connected_lines",
+            "value": 39064
           },
           {
-            "author": "Wilhelm Evers",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "cabinet_heigth",
+            "value": "0.8661224392941221m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.3217204632237554m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1034
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-07-07T06:43:49.356Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b9052",
         "name": "Street Cabinet Schleswig-Holstein 26",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Luk Deckert",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "connected_lines",
+            "value": 26105
           },
           {
-            "author": "Jannek Amann",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "1.7714052251307293m"
           },
           {
-            "author": "Domenic Nodler",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_width",
+            "value": "0.8758169822394848m"
           },
           {
-            "author": "Sandy Lohse",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "Susanne Kleiber",
-            "text": "New power backup system installed; generator integrated."
+            "name": "maximum_capacity",
+            "value": 806
           },
           {
-            "author": "Laurenz Zekl",
-            "text": "New power backup system installed; generator integrated."
+            "name": "network_type",
+            "value": "Koaxial"
           },
           {
-            "author": "Samantha Frey",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "fiber_ready",
+            "value": false
           },
           {
-            "author": "Nikita Mallmann",
-            "text": "New power backup system installed; generator integrated."
+            "name": "power_backup",
+            "value": true
           },
           {
-            "author": "Miriam Rokossa",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-07-14T13:06:36.295Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b9064",
         "name": "Street Cabinet Schleswig-Holstein 3",
-        "category": "Street Cabinet",
-        "note": []
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 32357
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.0501862265169621m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.6515659028664231m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1015
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-13T08:08:26.141Z"
+          }
+        ]
       },
       {
+        "id": "66e301de12a36cf2411b9072",
         "name": "Street Cabinet Schleswig-Holstein 10",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Melisa Ryzih",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "connected_lines",
+            "value": 14470
           },
           {
-            "author": "Hasan Krauspe",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "cabinet_heigth",
+            "value": "1.26725929423701m"
           },
           {
-            "author": "Magnus Marahrens",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_width",
+            "value": "1.2420869807247072m"
           },
           {
-            "author": "Hannah Kröger",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 802
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-03-13T20:50:03.948Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b9088",
         "name": "Street Cabinet Schleswig-Holstein 21",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Malte Knetsch",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "connected_lines",
+            "value": 24464
           },
           {
-            "author": "Carl Sattelmaier",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "1.025639968086034m"
           },
           {
-            "author": "Dominic Buss",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_width",
+            "value": "0.6927965504582971m"
           },
           {
-            "author": "Anton Ripken",
-            "text": "Fiber upgrade completed; network capacity increased by 20%."
+            "name": "current_capacity_usage",
+            "value": 100
           },
           {
-            "author": "Ludwig Hinrichs",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "maximum_capacity",
+            "value": 785
           },
           {
-            "author": "Liana Höhne",
-            "text": "Routine maintenance completed; all connections are stable."
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-08-17T22:39:59.682Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b9092",
         "name": "Street Cabinet Schleswig-Holstein 26",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Frederike Rosenauer",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "connected_lines",
+            "value": 52166
           },
           {
-            "author": "Marvin Weimer",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "1.3282587058842181m"
           },
           {
-            "author": "Carl Wartenberg",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "cabinet_width",
+            "value": "0.8821783473249525m"
           },
           {
-            "author": "Jonte Döbel",
-            "text": "New power backup system installed; generator integrated."
+            "name": "current_capacity_usage",
+            "value": 96
           },
           {
-            "author": "Valentina Thust",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "maximum_capacity",
+            "value": 941
           },
           {
-            "author": "Jannes Terheiden",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "network_type",
+            "value": "FTTH"
           },
           {
-            "author": "Eileen Knies",
-            "text": "Power backup system test passed; no issues detected."
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-10-02T06:39:27.365Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b90aa",
         "name": "Street Cabinet Thüringen 6",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Arda Krüger",
-            "text": "Ventilation system cleaned during maintenance; airflow improved."
+            "name": "connected_lines",
+            "value": 9119
           },
           {
-            "author": "Batuhan Müller",
-            "text": "Security check completed; no unauthorized access detected."
+            "name": "cabinet_heigth",
+            "value": "0.9571290931897238m"
           },
           {
-            "author": "Jessy Herbrand",
-            "text": "Firmware update applied successfully; new network optimizations enabled."
+            "name": "cabinet_width",
+            "value": "1.2947557952720672m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1324
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-09-10T17:50:50.562Z"
           }
         ]
       },
       {
+        "id": "66e301de12a36cf2411b90c2",
         "name": "Street Cabinet Thüringen 18",
-        "category": "Street Cabinet",
-        "note": [
+        "resourceCharacteristic": [
           {
-            "author": "Anny Bittner",
-            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+            "name": "connected_lines",
+            "value": 19886
           },
           {
-            "author": "Medine Koj",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_heigth",
+            "value": "1.6440317868022247m"
           },
           {
-            "author": "Frau Zehra Berends",
-            "text": "Cooling system inspected; fan replacement scheduled for next week."
+            "name": "cabinet_width",
+            "value": "1.2271672564093024m"
           },
           {
-            "author": "Herr Tyler Reus",
-            "text": "Cabinet door lock replaced after malfunction; security restored."
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1466
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-04-28T18:28:28.023Z"
           }
         ]
       }

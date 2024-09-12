@@ -2,7 +2,7 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const query = (status) => `
   {
-    digitalIdentitiesByStatus(status: "${status}"){
+    digitalIdentitiesByStatus(status: "${status}" ){
       id
       nickname
       status
@@ -12,6 +12,7 @@ const query = (status) => `
       }
       creationDate
       lastUpdate
+    } 
   }
 `;
 
