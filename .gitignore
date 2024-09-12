@@ -7,7 +7,7 @@ node_modules/
 .env
 
 #ignore mock-data
-mock_data/
+mock_data
 
 #ignore logs
 logs/
