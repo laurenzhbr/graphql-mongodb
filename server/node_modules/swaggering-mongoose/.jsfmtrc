@@ -1,8 +1,0 @@
-{
-  "plugins": [
-    "esformatter-quotes"
-  ],
-  "quotes": {
-    "type": "single"
-  }
-}
