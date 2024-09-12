@@ -7,7 +7,7 @@ const rest_use_case_1 = async () => {
 
     // 1st API Call
     const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active`
-    accumulatedMetrics, res = await fetchMetrics(url, accumulatedMetrics);
+    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
     accumulatedMetrics.total_transaction_time = total_transaction_time;

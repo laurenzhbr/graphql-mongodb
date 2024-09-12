@@ -1,0 +1,36 @@
+{
+  "data": {
+    "digitalIdentity": {
+      "nickname": "Giuliana.Kasten94",
+      "resource": {
+        "id": "66e07529def2563e777ee8db",
+        "name": "Router for Modem Hamburg 0 0",
+        "category": "Router",
+        "resourceRelationship": [
+          {
+            "resource": {
+              "name": "Modem Hamburg 0",
+              "category": "Modem",
+              "resourceRelationship": [
+                {
+                  "resource": {
+                    "name": "Street Cabinet Hamburg 0",
+                    "category": "Street Cabinet",
+                    "resourceRelationship": [
+                      {
+                        "resource": {
+                          "name": "Central Office Hamburg",
+                          "resourceStatus": "available"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

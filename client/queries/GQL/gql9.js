@@ -1,4 +1,4 @@
-const axiosInstance = require('../../utils/interceptors');
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const query = () => `
 	mutation {
@@ -30,17 +30,17 @@ const query = () => `
         {
           name: "ethernet_ports",
           valueType: "Number",
-          value: 4
+          value: "4"
         },
         {
           name: "usb_ports",
           valueType: "Number",
-          value: 1
+          value: "1"
         },
         {
           name: "coaxial_input",
           valueType: "Boolean",
-          value: true
+          value: "true"
         },
         {
           name: "wifi_capability",
@@ -78,14 +78,13 @@ const query = () => `
           value: "1GB SSD"
         }
       ],
-      administrativeState: "unlocked",
-      operationalState: "disable",
-      relatedParty: [
+      administrativeState: unlocked,
+      operationalState: disable,
+      relatedParties: [
         {
           id: "66db3aa516d68c5f3c138b53",
           name: "Walsh LLC Manufacturing",
           role: "Gerätehersteller",
-          href: "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b53"
         }
       ],
       note: [
@@ -97,23 +96,20 @@ const query = () => `
       ],
       place: {
         id: "66db17e94e5b0dd1a4758935",
-        href: "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a4758935"
       },
       resourceRelationship: [
         {
           relationshipType: "isTargeted",
           resource: {
             id: "66db6d63658d40350e57e43f",
-            href: "https://{host}/resourceInventoryManagement/resource/66db6d63658d40350e57e43f",
             name: "Modem Hüfingen 0"
           }
         }
       ],
-      resourceStatus: "available",
-      usageState: "idle",
+      resourceStatus: available,
+      usageState: idle,
       startOperatingDate: "2008-01-29T22:25:19.167Z",
       version: "4",
-      href: "https://{host}/resourceInventoryManagement/resource/66e07529def2563e777ee859"
     }) {
       id
       category
@@ -126,11 +122,10 @@ const query = () => `
       }
       administrativeState
       operationalState
-      relatedParty {
+      relatedParties {
         id
         name
-        role
-        href
+        organizationType
       }
       note {
         author
@@ -139,32 +134,37 @@ const query = () => `
       }
       place {
         id
-        href
       }
       resourceRelationship {
         relationshipType
         resource {
           id
           name
-          href
         }
       }
       resourceStatus
       usageState
       startOperatingDate
       version
-      href
     }
   }
 
 `;
 
-const gql_use_case_9 =  async (id) => {
-    const res = await axiosInstance.post('http://localhost:4000/graphql', {
-        query: query(),
-    });
+const gql_use_case_9 =  async () => {
+  const transaction_start = null;
+  //const actualHost = process.env.HOST || 'localhost:4000';
+  let accumulatedMetrics = {};
 
-    return {'request_times': res.duration}
+  // send API Call + fetch metrics
+  const url = 'http://localhost:4000/graphql'
+  const data = { query: query()};
+
+  accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
+
+  const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+  accumulatedMetrics.total_transaction_time = total_transaction_time;
+  return accumulatedMetrics
 }
 
 module.exports = {gql_use_case_9};

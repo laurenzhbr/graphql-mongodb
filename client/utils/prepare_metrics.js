@@ -26,7 +26,7 @@ const fetchMetrics = async (url, previousMetrics = {}, method="get", data=null,)
         if (method.toLowerCase() === 'get') {
             res = await axiosInstance.get(url);
         } else if (method.toLowerCase() === 'post') {
-            res = await axiosInstance.post(url, data);
+            res = await axiosInstance.post(url, JSON.stringify(data), {headers: {'Content-Type': 'application/json'}});
         } else if (method.toLowerCase() === 'patch') {
             res = await axiosInstance.patch(url, data);
         } else if (method.toLowerCase() === 'delete') {

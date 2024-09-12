@@ -1,0 +1,8 @@
+{
+  "data": {
+    "deleteDigitalIdentity": {
+      "success": true,
+      "message": "DigitalIdentity with ID 66e2761c1986d66b3d733818 successfully deleted."
+    }
+  }
+}

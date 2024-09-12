@@ -74,7 +74,7 @@ exports.deleteDigitalIdentityById = async (req, res) => {
       }
 
       // Erfolgreich gelöscht
-      res.status(200).json({ message: `DigitalIdentity mit ID ${id} erfolgreich gelöscht.` });
+      res.status(204).json();
   } catch (error) {
       res.status(500).json({ message: error.message });
   }

@@ -1,0 +1,24 @@
+{
+  "data": {
+    "searchResourcesByCategoryAnCapacityUsage": [
+      {
+        "name": "Street Cabinet Baden-Württemberg 0",
+        "category": "Street Cabinet",
+        "note": [
+          {
+            "author": "Prof. Dr. Yannis Jahn",
+            "text": "Power backup system test passed; no issues detected."
+          },
+          {
+            "author": "Carl Karst",
+            "text": "Minor network interruptions detected; cause traced to a faulty connection."
+          },
+          {
+            "author": "Leonard Forkel",
+            "text": "New power backup system installed; generator integrated."
+          }
+        ]
+      }
+    ]
+  }
+}

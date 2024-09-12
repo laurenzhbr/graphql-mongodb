@@ -1,0 +1,216 @@
+{
+  "data": {
+    "organizations": [
+      {
+        "name": "Feeney LLC Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 846,
+            "creditAgencyName": "Collier, Kertzmann and Schuster"
+          }
+        ]
+      },
+      {
+        "name": "D'Amore, Lynch and Mohr Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 840,
+            "creditAgencyName": "Denesik, Gibson and White"
+          }
+        ]
+      },
+      {
+        "name": "Leannon Group Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 828,
+            "creditAgencyName": "Hettinger - Turcotte"
+          }
+        ]
+      },
+      {
+        "name": "Beahan, Hirthe and Hegmann Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 826,
+            "creditAgencyName": "Walter LLC"
+          }
+        ]
+      },
+      {
+        "name": "Frami - Douglas Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 825,
+            "creditAgencyName": "Denesik, Bins and Cormier"
+          }
+        ]
+      },
+      {
+        "name": "Carter - Von Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 822,
+            "creditAgencyName": "Morar, Larson and Lang"
+          }
+        ]
+      },
+      {
+        "name": "Gusikowski Group Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 821,
+            "creditAgencyName": "Daniel, Stamm and Herzog"
+          }
+        ]
+      },
+      {
+        "name": "Rau Inc Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 816,
+            "creditAgencyName": "Moore - Crist"
+          }
+        ]
+      },
+      {
+        "name": "McLaughlin - Lang Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 812,
+            "creditAgencyName": "Ruecker, Kunze and Lynch"
+          }
+        ]
+      },
+      {
+        "name": "Becker, Hyatt and Legros Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 786,
+            "creditAgencyName": "Zemlak - Gorczany"
+          }
+        ]
+      },
+      {
+        "name": "Ferry, Pouros and Mayert Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 786,
+            "creditAgencyName": "Armstrong Inc"
+          }
+        ]
+      },
+      {
+        "name": "Spinka Inc Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 779,
+            "creditAgencyName": "Mayert - Kuhlman"
+          }
+        ]
+      },
+      {
+        "name": "Bins - Mayert Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 778,
+            "creditAgencyName": "Abernathy Group"
+          }
+        ]
+      },
+      {
+        "name": "Schneider, Johnson and Kihn Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 775,
+            "creditAgencyName": "Franecki Inc"
+          }
+        ]
+      },
+      {
+        "name": "Legros - Romaguera Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 772,
+            "creditAgencyName": "Quitzon, McGlynn and Connelly"
+          }
+        ]
+      },
+      {
+        "name": "Bartell LLC Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 772,
+            "creditAgencyName": "Klein - Mann"
+          }
+        ]
+      },
+      {
+        "name": "Hoeger, Kovacek and Bruen Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 768,
+            "creditAgencyName": "Heidenreich - Lang"
+          }
+        ]
+      },
+      {
+        "name": "Wolf and Sons Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 767,
+            "creditAgencyName": "Boehm and Sons"
+          }
+        ]
+      },
+      {
+        "name": "Morissette - Runte Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 766,
+            "creditAgencyName": "Haag - Nicolas"
+          }
+        ]
+      },
+      {
+        "name": "Donnelly, Reichert and Cartwright Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 755,
+            "creditAgencyName": "Morissette LLC"
+          }
+        ]
+      },
+      {
+        "name": "Wisozk Inc Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 754,
+            "creditAgencyName": "Wolff Inc"
+          }
+        ]
+      }
+    ]
+  }
+}

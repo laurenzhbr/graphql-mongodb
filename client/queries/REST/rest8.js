@@ -1,7 +1,7 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 const {faker} = require('@faker-js/faker/locale/de');
 
-const rest_use_case_8 = async (digi_id = "66db7b5fbbe1351f628ed5e7", resource_id = "66db6d63658d40350e57e43f", resource_name="Router for Modem Hüfingen 0 0" ) => {
+const rest_use_case_8 = async (digi_id = "66db7b5fbbe1351f628ed5e7", resource_name="Router for Modem Hüfingen" ) => {
     const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
@@ -15,6 +15,7 @@ const rest_use_case_8 = async (digi_id = "66db7b5fbbe1351f628ed5e7", resource_id
     updateData = {
         "resourceIdentified": {
             id: faker.database.mongodbObjectId(),
+            name: `${resource_name} ${faker.number.int({ min: 0, max: 20 }).toString()} ${faker.number.int({ min: 0, max: 20 }).toString()}`
         }
     };
 

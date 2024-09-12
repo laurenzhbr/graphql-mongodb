@@ -1,0 +1,38 @@
+{
+  "duration_of_all_calls": [
+    19,
+    15,
+    15,
+    16,
+    15
+  ],
+  "total_transaction_time": [
+    20,
+    16,
+    15,
+    17,
+    15
+  ],
+  "api_call_count": 11,
+  "cpu_used_by_server": [
+    4257.07,
+    4269.88,
+    4281.01,
+    4292.38,
+    4300.13
+  ],
+  "memory_used_by_server": [
+    35.58,
+    37.53,
+    39.42,
+    29.44,
+    31.3
+  ],
+  "total_data_transferred": [
+    3354,
+    3354,
+    3354,
+    3354,
+    3354
+  ]
+}

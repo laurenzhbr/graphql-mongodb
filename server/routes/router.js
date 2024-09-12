@@ -17,12 +17,17 @@ const router = express.Router();
 //GraphQL route
 router.use('/graphql', graphqlRouter)
 
+
 // REST routes
 router.use('/resourceInventoryManagement/resource', restResourceRoutes)
 router.use('/partyManagement/organization', restPartyRoutes)
 router.use('/geographicAdressManagement/geographicAdress', restGeoAdressRoutes)
 router.use('/resourceCatalog/resourceSpecification', restResourceCatalogRoutes)
 router.use('/digitalIdentityManagement/digitalIdentity', restDigitalIdentityRoutes)
+// Health-check-Endpunkt
+router.get('/health-check', (req, res) => {
+  res.status(200).json({ status: 'ok', message: 'Server is healthy' });
+});
 
 /* // Show 404 if no router is connected
 router.use('*', (req, res, next) => {

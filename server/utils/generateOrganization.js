@@ -2,8 +2,10 @@ const { faker } = require('@faker-js/faker/locale/de');
 const mongoose = require('mongoose');
 const Organization = require('../models/PartyModels/Organization'); // Dein Mongoose-Schema hier importieren
 
-// Verbinde dich mit MongoDB
-mongoose.connect('mongodb://localhost:27017/resource_inventory', {
+const dbName = process.env.DB_NAME || 'resource_inventory';
+
+// MongoDB-Verbindung
+mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

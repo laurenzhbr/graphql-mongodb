@@ -38,15 +38,15 @@
   },
   {
     "_id": "66db7b5fbbe1351f628ed5e7",
-    "nickname": "NewNickname",
+    "nickname": "neuerUser",
     "status": "active",
     "resourceIdentified": {
-      "id": "66cae3e2d6434ed77a229b79",
-      "href": "https://{host}/resourceInventoryManagement/resource/66cae3e2d6434ed77a229b79",
-      "name": "iPhone handy"
+      "id": "8331eacc174faa92eeece18e",
+      "name": "Router for Modem Hüfingen 4 15",
+      "href": "https://{host}/resourceInventoryManagement/resource/8331eacc174faa92eeece18e"
     },
     "creationDate": "2024-09-06T21:59:59.221Z",
-    "lastUpdate": "2024-09-10T13:22:08.056Z",
+    "lastUpdate": "2024-09-11T14:40:22.138Z",
     "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
     "__v": 0
   },
@@ -94,15 +94,15 @@
   },
   {
     "_id": "66db7b5fbbe1351f628ed611",
-    "nickname": "Ilyas17",
+    "nickname": "Giuliana.Kasten94",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd565",
-      "name": "Router for Modem Bremerhaven 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd565"
+      "id": "66e07529def2563e777ee8db",
+      "name": "Router for Modem Hamburg 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e07529def2563e777ee8db"
     },
     "creationDate": "2024-09-06T21:59:59.261Z",
-    "lastUpdate": "2024-09-06T21:59:59.261Z",
+    "lastUpdate": "2024-09-11T08:48:07.819Z",
     "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed611",
     "__v": 0
   },
@@ -111,12 +111,12 @@
     "nickname": "Leandro16",
     "status": "active",
     "resourceIdentified": {
-      "id": "66db76c734ed489b211cd58d",
-      "name": "Router for Modem Bremen 0 0",
-      "href": "https://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd58d"
+      "id": "3c4b4588355df688ceb0c2d6",
+      "name": "Router for Modem Neuental 15 7",
+      "href": "https://{host}/resourceInventoryManagement/resource/3c4b4588355df688ceb0c2d6"
     },
     "creationDate": "2024-09-06T21:59:59.264Z",
-    "lastUpdate": "2024-09-06T21:59:59.264Z",
+    "lastUpdate": "2024-09-11T14:35:33.465Z",
     "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed615",
     "__v": 0
   },

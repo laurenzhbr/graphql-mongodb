@@ -9,8 +9,10 @@ const GeoAdress = require('../models/GeoAdressModels/GeographicAdress')
 const xlsx = require('xlsx');
 
 
-// Verbinde dich mit der MongoDB-Datenbank
-mongoose.connect('mongodb://localhost:27017/resource_inventory', {
+const dbName = process.env.DB_NAME || 'resource_inventory';
+
+// MongoDB-Verbindung
+mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

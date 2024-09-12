@@ -1,0 +1,27 @@
+{
+  "data": {
+    "resourcesByCategoryAndStates": [
+      {
+        "id": "66db6dd3658d40350e57e665",
+        "name": "Modem Bremen 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66db6dd4658d40350e57e967",
+        "name": "Modem Raguhn-Jeßnitz 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      },
+      {
+        "id": "66db6dd4658d40350e57ea17",
+        "name": "Modem Arenshausen, Uder u.a. 0",
+        "resourceStatus": "available",
+        "administrativeState": "unlocked",
+        "operationalState": "enable"
+      }
+    ]
+  }
+}

@@ -1,7 +1,8 @@
 const {
     GraphQLObjectType,
     GraphQLString,
-    GraphQLEnumType
+    GraphQLEnumType,
+    GraphQLID
   } = require('graphql');
   const { GraphQLDateTime } = require('../customScalars/customScalars');
   const ResourceType = require('./resource'); // resource type
@@ -24,13 +25,9 @@ const {
     name: 'DigitalIdentity',
     description: 'Represents a Digital Identity with associated metadata and resources.',
     fields: {
-/*       id: {
-        type: new GraphQLNonNull(GraphQLID),
+      id: {
+        type: GraphQLID,
         description: 'Unique identifier for the digital identity.',
-      }, */
-      href: {
-        type: GraphQLString,
-        description: 'Hyperlink reference',
       },
       creationDate: {
         type: GraphQLDateTime, // Nutze GraphQLDate oder einen eigenen DateTime-Scalar-Typ

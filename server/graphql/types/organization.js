@@ -36,27 +36,31 @@ const PartyCreditProfileType = new GraphQLObjectType({
       },
       isHeadOffice: {
         type: GraphQLBoolean,
-        description: 'Indicates whether the organization is the head office.',
+        description: 'If value is true, the organization is the head office',
       },
       isLegalEntity: {
         type: GraphQLBoolean,
-        description: 'Indicates whether the organization is a legal entity.',
+        description: 'If value is true, the organization is a legal entity known by a national referential.',
       },
       name: {
         type: GraphQLString,
-        description: 'The name of the organization.',
+        description: 'Organization name (department name for example)',
       },
       organizationType: {
         type: GraphQLString,
-        description: 'The type of organization, such as "Corporation", "Non-profit", etc.',
+        description: 'Type of Organization (company, department...).',
       },
       tradingName: {
         type: GraphQLString,
-        description: 'The type of organization, such as "Corporation", "Non-profit", etc.',
+        description: 'Name that the organization (unit) trades under',
       },
       tradeRegisterNumber: {
         type: GraphQLString,
         description: 'The type of organization, such as "Corporation", "Non-profit", etc.',
+      },
+      status:{
+        type: GraphQLString,
+        description: 'Status of the organization'
       },
       creditRating: {
         type: new GraphQLList(PartyCreditProfileType),

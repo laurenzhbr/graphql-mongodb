@@ -1,4 +1,4 @@
-const { GraphQLSchema, GraphQLInt, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNonNull, GraphQLID } = require('graphql');
+const { GraphQLBoolean, GraphQLInt, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNonNull, GraphQLID } = require('graphql');
 const ResourceType = require('../types/resource');
 const DigitalIdentityType = require('../types/digitalIdentity')
 const Resource = require('../../models/ResourceModels/Resource');
@@ -34,9 +34,13 @@ const RootQuery = new GraphQLObjectType({
     },
     digitalIdentitiesByStatus:{
       type: new GraphQLList(DigitalIdentityType),
-      args: {status: { type: GraphQLString}},
+      args: {
+        status: { type: GraphQLString}, 
+        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)', defaultValue: 100}
+      },
       resolve(parent, args) {
-        return DigitalIdentity.find({'status': args.status});
+        const limit = args.limit;
+        return DigitalIdentity.find({'status': args.status}).limit(limit);
       }
     },
     searchResourcesByCategoryAnCapacityUsage:{
@@ -199,28 +203,76 @@ const Mutation = new GraphQLObjectType({
     }
     },
     deleteDigitalIdentitesByStatus: {
-      type: GraphQLInt, // Gibt die Anzahl der gelöschten Dokumente zurück
+      type: DigitalIdentityType, // Gibt die Anzahl der gelöschten Dokumente zurück
       description: 'Deletes specific amount of DigitalIdentities based on their status',
       args: {
         status: { type: new GraphQLNonNull(GraphQLString) }, // Filter basierend auf dem Status
-        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)'} // Limit-Argument}
+        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)', defaultValue: 10} // Limit-Argument}
       },
-      async resolve(parent, { status, limit }) {
+      async resolve(_, { status, limit }) {
+        try {
+          // Finde die IDs der DigitalIdentities, die gelöscht werden sollen
+          const identitiesToDelete = await DigitalIdentity.find({ status })
+            .limit(limit)
+            .exec();
+  
+          // Lösche die DigitalIdentities und speichere die gelöschten Datensätze
+          const deletedIdentities = [];
+          for (let identity of identitiesToDelete) {
+            const deletedIdentity = await DigitalIdentity.findByIdAndDelete(identity._id);
+            deletedIdentities.push(deletedIdentity);
+          }
+  
+          // Rückgabe der gelöschten Identitäten und einer Bestätigungsmeldung
+          /* return {
+            message: `${deletedIdentities.length} DigitalIdentities mit Status '${status}' erfolgreich gelöscht.`,
+            deletedIdentities
+          }; */
+        } catch (error) {
+          throw new Error('Löschvorgang fehlgeschlagen: ' + error.message);
+        }
+      }
+
+      /* async resolve(parent, { status, limit }) {
         // Finde die Ressourcen, die gelöscht werden sollen
-        const resourcesToDelete = await Resource.find({ resourceStatus: status })
+        const resourcesToDelete = await DigitalIdentity.find({ status: status })
           .limit(limit || 0) // Wenn kein Limit gesetzt ist, werden alle passenden gelöscht
-          .select('_id'); // Nur die IDs holen
+          // .select('_id'); // Nur die IDs holen
 
         // Extrahiere die IDs
         const idsToDelete = resourcesToDelete.map(resource => resource._id);
 
         // Lösche die gefundenen Ressourcen
-        const result = await Resource.deleteMany({ _id: { $in: idsToDelete } });
+        const result = await DigitalIdentity.deleteMany({ _id: { $in: idsToDelete } });
 
         // Gibt die Anzahl der gelöschten Einträge zurück
         return result.deletedCount;
-      },
+      }, */
     },
+    deleteDigitalIdentity: {
+      type: new GraphQLObjectType({
+        name: 'DeleteResponse',
+        fields: {
+          success: { type: GraphQLBoolean },
+          message: { type: GraphQLString }
+        }
+      }),
+      args: {
+        id: { type: new GraphQLNonNull(GraphQLID) }
+      },
+      resolve: async (_, { id }) => {
+        try {
+          const deletedIdentity = await DigitalIdentity.findByIdAndDelete(id);
+          if (!deletedIdentity) {
+            return { success: false, message: `DigitalIdentity with ID ${id} not found.` };
+          }
+          return { success: true, message: `DigitalIdentity with ID ${id} successfully deleted.` };
+        } catch (error) {
+          return { success: false, message: `Error: ${error.message}` };
+        }
+      }
+    }
+
     /* ,
     deleteResource: {
       type: ResourceType,

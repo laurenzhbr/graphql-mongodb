@@ -2,6 +2,7 @@ const axios = require('axios');
 const ProgressBar = require('./utils/progress-cli-ui');
 const fs = require('fs');
 const path = require('path');
+const {warmUpServer} = require('./utils/warmup-routine');
 
 // Import GraphQL-Query for Use-Case
 const { gql_use_case_1 } = require('./queries/GQL/gql1');
@@ -54,20 +55,37 @@ const rest_requests = [
     rest_use_case_10,
 ]
 
+const iteration_count = [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    5,
+]
+
 async function runTestSuite(){
 
     // Conduct all REST testcases
-    /* for (let i = 8; i < 9; i++){
-        await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, 50);
-    } */
+    for (let i = 0; i < rest_requests.length; i++){
+        await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, iteration_count[i]);
+    }
 
     // Conduct all GraphQL testcases
-    for (let i = 0; i < gql_queries.length; i++){
-        await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, 50, 1);
+    for (let i = 9; i < gql_queries.length; i++){
+        await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, iteration_count[i]);
     }
 }
 
 const runSingleTestProcedure = async (method, api, use_case, iterationCount) => {
+    console.log(`=================== Warm-up for ${api} - ${use_case} ==================`);
+    await warmUpServer(api); // Schalter für REST oder GraphQL basierend auf dem API-Parameter
+  
+
     console.log("")
     console.log(`=================== Test Suite for ${api} ==================`)
     console.log("===================================================")

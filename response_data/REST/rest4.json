@@ -1,0 +1,11 @@
+{
+  "_id": "66db17e94e5b0dd1a4758cdd",
+  "city": "Hamburg",
+  "country": "DE",
+  "postcode": "20354",
+  "stateOrProvince": "Hamburg",
+  "streetName": "Am Blauen Berg",
+  "streetNr": "53",
+  "href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a4758cdd",
+  "__v": 0
+}

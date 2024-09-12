@@ -2,8 +2,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const {faker} = require('@faker-js/faker/locale/de');
 
+const dbName = process.env.DB_NAME || 'resource_inventory';
+
 // MongoDB-Verbindung
-mongoose.connect('mongodb://localhost:27017/resource_inventory', {
+mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

@@ -34,6 +34,16 @@ const {
       resource: { type: ResourceRefInputType }, // Eingebettete Ressource mit ID, href, category und name
     },
   });
+
+  // InputType für ResourceRelationship
+  const relatedPartyInputType = new GraphQLInputObjectType({
+    name: 'RelatedPartyInput',
+    fields: {
+      id: { type: GraphQLID }, // Art der Beziehung
+      name: { type: GraphQLString }, // Eingebettete Ressource mit ID, href, category und name
+      role: { type: GraphQLString },
+    },
+  });
   
   // InputType für Characteristic
   const CharacteristicInputType = new GraphQLInputObjectType({
@@ -104,7 +114,7 @@ const {
         description: 'Eine Liste von Merkmalen, die mit der Ressource verknüpft sind.',
       },
       relatedParties: {
-        type: new GraphQLList(GraphQLID), // Liste von IDs der verknüpften Organisationen
+        type: new GraphQLList(relatedPartyInputType), // Liste von IDs der verknüpften Organisationen
         description: 'Verknüpfte Parteien zur Ressource.',
       },
       note: {

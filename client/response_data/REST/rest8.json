@@ -3,11 +3,12 @@
   "nickname": "neuerUser",
   "status": "active",
   "resourceIdentified": {
-    "id": "fb88abbd9a9abd0b6bb27ea7",
-    "href": "https://{host}/resourceInventoryManagement/resource/fb88abbd9a9abd0b6bb27ea7"
+    "id": "625ed31d7f26d3f87dab1391",
+    "name": "Router for Modem Hüfingen 8 18",
+    "href": "https://{host}/resourceInventoryManagement/resource/625ed31d7f26d3f87dab1391"
   },
   "creationDate": "2024-09-06T21:59:59.221Z",
-  "lastUpdate": "2024-09-11T09:40:10.348Z",
+  "lastUpdate": "2024-09-11T14:41:38.265Z",
   "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
   "__v": 0
 }

@@ -13,16 +13,15 @@ const { createTestResourceSpecification1 } = require('./utils/writeSpecification
 const router = require('./routes/router')
 
 const { getMemoryUsage, getCpuUsage } = require('./utils/tracing'); // Importiere die Tracing-Funktionen
-
+const dbName = process.env.DB_NAME || 'resource_inventory';
 const app = express();
 
 // Middleware für JSON-Verarbeitung
 app.use(express.json());
 
 
-
 // Verbinde dich mit der lokalen MongoDB-Datenbank
-db_orig = mongoose.connect(`${process.env.DB_URL}`, {
+db_orig = mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {

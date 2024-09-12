@@ -1,36 +1,31 @@
-const axiosInstance = require('../../utils/interceptors');
+const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const query = (id) => `
+const query = (category, resourceStatus, administrativeState, operationalState) => `
 	{
-    {
-      digitalIdentity(id: ${id}) {
-        creationDate
-        nickname
-        status
-        resource{
-          id
-          category
-        place{
-          country
-          city
-          postcode
-          streetNr
-        }
-        relatedParties{
-          name
-          organizationType
-        }
-      }
-    }
+  resourcesByCategoryAndStates(category: "${category}", resourceStatus: "${resourceStatus}", administrativeState: "${administrativeState}", operationalState: "${operationalState}") {
+    id
+    name
+    resourceStatus
+    administrativeState
+    operationalState
   }
+}
 `;
 
 const gql_use_case_7 =  async (id) => {
-    const res = await axiosInstance.post('http://localhost:4000/graphql', {
-        query: query("66db76c734ed489b211cd3fd"),
-    });
+  const transaction_start = null;
+  //const actualHost = process.env.HOST || 'localhost:4000';
+  let accumulatedMetrics = {};
 
-    return {'request_times': res.duration}
+  // send API Call + fetch metrics
+  const url = 'http://localhost:4000/graphql'
+  const data = { query: query("Modem", "available", "unlocked", "enable")};
+
+  accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
+
+  const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
+  accumulatedMetrics.total_transaction_time = total_transaction_time;
+  return accumulatedMetrics
 }
 
 module.exports = {gql_use_case_7};
