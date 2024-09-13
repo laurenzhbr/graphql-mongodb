@@ -1,7 +1,7 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 const {faker} = require('@faker-js/faker/locale/de');
 
-const rest_use_case_8 = async (digi_id = "66e3054dc708e7d6a4bd3406", resource_name="Router for Modem Hüfingen" ) => {
+const rest_use_case_8 = async (digi_id = "66e4207b1c97fe16e772f57c", resource_name="Router for Modem Hüfingen" ) => {
     const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};

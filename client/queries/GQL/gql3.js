@@ -29,7 +29,7 @@ const gql_use_case_3 =  async (id) => {
 
   // send API Call + fetch metrics
   const url = 'http://localhost:4000/graphql'
-  const data = { query: query("66e3054dc708e7d6a4bd33ae")};
+  const data = { query: query("66e4207b1c97fe16e772f4fa")};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 
