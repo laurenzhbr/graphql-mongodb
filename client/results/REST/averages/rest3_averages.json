@@ -1,8 +1,8 @@
 {
-    "duration_of_all_calls": 10.5,
-    "total_transaction_time": 10.86,
+    "duration_of_all_calls": 6.0,
+    "total_transaction_time": 6.34,
     "api_call_count": 5,
-    "cpu_used_by_server": 1641.9263999999998,
-    "memory_used_by_server": 29.887800000000002,
+    "cpu_used_by_server": 2677.4946,
+    "memory_used_by_server": 28.0916,
     "total_data_transferred": 14616.0
 }

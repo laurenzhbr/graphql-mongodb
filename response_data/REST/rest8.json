@@ -1,0 +1,14 @@
+{
+  "_id": "66e3054dc708e7d6a4bd3406",
+  "nickname": "Heidi_Häber70",
+  "status": "active",
+  "resourceIdentified": {
+    "id": "9dbabf6c03f8d9669d149ed8",
+    "name": "Router for Modem Hüfingen 16 12",
+    "href": "https://{host}/resourceInventoryManagement/resource/9dbabf6c03f8d9669d149ed8"
+  },
+  "creationDate": "2024-09-12T15:14:21.759Z",
+  "lastUpdate": "2024-09-13T08:05:13.687Z",
+  "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd3406",
+  "__v": 0
+}

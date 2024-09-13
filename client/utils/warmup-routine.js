@@ -6,17 +6,23 @@ const warmUpServer = async (api) => {
 
   try {
     if (api === "REST") {
-      // Warm-up API-Call für REST
-      await axiosInstance.get(`http://${actualHost}/health-check`);
+      for (let i = 0; i < 5; i++){
+        // Warm-up API-Call für REST
+        await axiosInstance.get(`http://${actualHost}/health-check`);
+      }
+      
     } else if (api === "GraphQL") {
-      // Warm-up API-Call für GraphQL
+      for (let i = 0; i < 5; i++) {
+        // Warm-up API-Call für GraphQL
       await axiosInstance.post(`http://${actualHost}/graphql`, {
         query: `{
-                    digitalIdentitiesByStatus(status: "suspended", limit: 1){
-                        id
-                    }
-                }`,
-      });
+                  digitalIdentitiesByStatus(status: "suspended", limit: 1){
+                    id
+                  }
+              }`,
+        });
+      }
+      
     } else {
       console.log("Unknown API type for warm-up.");
     }

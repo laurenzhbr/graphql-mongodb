@@ -1,0 +1,298 @@
+[
+  {
+    "_id": "66e301dd12a36cf2411b8f30",
+    "name": "Street Cabinet Sachsen 9",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 56583
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.409144509397447m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.9332691580057144m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 58
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 411
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "Koaxial"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Access Controlled"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2024-04-10T09:11:21.956Z"
+      }
+    ],
+    "relatedParty": [
+      {
+        "id": "66e2c8efa4a4ceda4e6d9092",
+        "name": "Rohrer AG Transportgesellschaft mbH",
+        "role": "Logistikunternehmen",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9092"
+      },
+      {
+        "id": "66e2c8efa4a4ceda4e6d9090",
+        "name": "Krause UG Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+      }
+    ],
+    "place": {
+      "id": "66e2c8e42bbab4dec56c4c6f",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/66e2c8e42bbab4dec56c4c6f"
+    }
+  },
+  {
+    "_id": "66e301de12a36cf2411b8f50",
+    "name": "Street Cabinet Sachsen 25",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 18173
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.0866592421894894m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.5229445279110223m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 59
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 847
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "Koaxial"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Motion Detectors"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2024-08-05T02:02:48.543Z"
+      }
+    ],
+    "relatedParty": [
+      {
+        "id": "66e2c8efa4a4ceda4e6d9092",
+        "name": "Rohrer AG Transportgesellschaft mbH",
+        "role": "Logistikunternehmen",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9092"
+      },
+      {
+        "id": "66e2c8efa4a4ceda4e6d9090",
+        "name": "Krause UG Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+      }
+    ],
+    "place": {
+      "id": "66e2c8e42bbab4dec56c455f",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/66e2c8e42bbab4dec56c455f"
+    }
+  },
+  {
+    "_id": "66e301de12a36cf2411b8f52",
+    "name": "Street Cabinet Sachsen 26",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 21868
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "0.8052817232906818m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "1.2940804238896817m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 23
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 721
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "FTTH"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Access Controlled"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2023-08-10T05:23:19.421Z"
+      }
+    ],
+    "relatedParty": [
+      {
+        "id": "66e2c8efa4a4ceda4e6d9092",
+        "name": "Rohrer AG Transportgesellschaft mbH",
+        "role": "Logistikunternehmen",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9092"
+      },
+      {
+        "id": "66e2c8efa4a4ceda4e6d9090",
+        "name": "Krause UG Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+      }
+    ],
+    "place": {
+      "id": "66e2c8e42bbab4dec56c4143",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/66e2c8e42bbab4dec56c4143"
+    }
+  },
+  {
+    "_id": "66e301de12a36cf2411b8f74",
+    "name": "Street Cabinet Sachsen 11",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 20298
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.67373962753918m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.9301433770451695m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 55
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 738
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "DSL"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Motion Detectors"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2023-07-13T18:40:35.764Z"
+      }
+    ],
+    "relatedParty": [
+      {
+        "id": "66e2c8efa4a4ceda4e6d9092",
+        "name": "Rohrer AG Transportgesellschaft mbH",
+        "role": "Logistikunternehmen",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9092"
+      },
+      {
+        "id": "66e2c8efa4a4ceda4e6d9090",
+        "name": "Krause UG Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "https://{host}/partyManagement/organization/66e2c8efa4a4ceda4e6d9090"
+      }
+    ],
+    "place": {
+      "id": "66e2c8e42bbab4dec56c4100",
+      "href": "https://{host}/geographicAdressManagement/geographicAdress/66e2c8e42bbab4dec56c4100"
+    }
+  }
+]

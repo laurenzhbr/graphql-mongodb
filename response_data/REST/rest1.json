@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "66e3054dc708e7d6a4bd33ae",
+    "nickname": "Ylvie_Mordhorst",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a4449753",
+      "name": "Router 2 for Modem Heubach 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a4449753"
+    },
+    "creationDate": "2024-09-12T15:14:21.681Z",
+    "lastUpdate": "2024-09-12T15:14:21.681Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33ae",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33be",
+    "nickname": "Lya_Niklaus0",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a444976c",
+      "name": "Router 1 for Modem Heubach 3",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444976c"
+    },
+    "creationDate": "2024-09-12T15:14:21.703Z",
+    "lastUpdate": "2024-09-12T15:14:21.703Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33be",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33ca",
+    "nickname": "Jane39",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a444977e",
+      "name": "Router 1 for Modem Heubach 5",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444977e"
+    },
+    "creationDate": "2024-09-12T15:14:21.711Z",
+    "lastUpdate": "2024-09-12T15:14:21.711Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33ca",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33d2",
+    "nickname": "Emirhan.Klopsch",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a4449789",
+      "name": "Router 2 for Modem Heubach 6",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a4449789"
+    },
+    "creationDate": "2024-09-12T15:14:21.715Z",
+    "lastUpdate": "2024-09-12T15:14:21.715Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33d2",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33d4",
+    "nickname": "Jasmine_Freimann",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a444978e",
+      "name": "Router 0 for Modem Heubach 7",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444978e"
+    },
+    "creationDate": "2024-09-12T15:14:21.717Z",
+    "lastUpdate": "2024-09-12T15:14:21.717Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33d4",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33de",
+    "nickname": "Samira_Malkus51",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a444979b",
+      "name": "Router 2 for Modem Heubach 8",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a444979b"
+    },
+    "creationDate": "2024-09-12T15:14:21.722Z",
+    "lastUpdate": "2024-09-12T15:14:21.722Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33de",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33e0",
+    "nickname": "Joelina74",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a44497a0",
+      "name": "Router 0 for Modem Heubach 9",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a44497a0"
+    },
+    "creationDate": "2024-09-12T15:14:21.726Z",
+    "lastUpdate": "2024-09-12T15:14:21.727Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33e0",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33e2",
+    "nickname": "Tia82",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a44497a2",
+      "name": "Router 1 for Modem Heubach 9",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a44497a2"
+    },
+    "creationDate": "2024-09-12T15:14:21.728Z",
+    "lastUpdate": "2024-09-12T15:14:21.728Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33e2",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33e8",
+    "nickname": "Nika63",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3021b9db75159a44497ab",
+      "name": "Router 1 for Modem Heubach 10",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3021b9db75159a44497ab"
+    },
+    "creationDate": "2024-09-12T15:14:21.735Z",
+    "lastUpdate": "2024-09-12T15:14:21.735Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33e8",
+    "__v": 0
+  },
+  {
+    "_id": "66e3054dc708e7d6a4bd33fa",
+    "nickname": "Vincent0",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "3deb1bdb47a130d4d589e51e",
+      "name": "Router for Modem Neuental 6 17",
+      "href": "https://{host}/resourceInventoryManagement/resource/3deb1bdb47a130d4d589e51e"
+    },
+    "creationDate": "2024-09-12T15:14:21.747Z",
+    "lastUpdate": "2024-09-13T07:10:14.247Z",
+    "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e3054dc708e7d6a4bd33fa",
+    "__v": 0
+  }
+]
