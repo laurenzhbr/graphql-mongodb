@@ -1,0 +1,1708 @@
+{
+  "data": {
+    "searchResourcesByCategoryAnCapacityUsage": [
+      {
+        "id": "66e301db12a36cf2411b8966",
+        "name": "Street Cabinet Baden-Württemberg 4",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 16797
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.8548272047657519m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.8720302805304527m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 698
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-07-02T19:35:52.641Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b89a0",
+        "name": "Street Cabinet Bayern 1",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 2199
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.1356374874245376m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.3900492414832115m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1110
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-02-26T20:45:10.775Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b89d0",
+        "name": "Street Cabinet Bayern 25",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 9713
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.8559460922842845m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.1504957005381584m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 583
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-07-05T18:47:41.204Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b8a12",
+        "name": "Street Cabinet Bayern 26",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 26698
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9044209685176611m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.5542906322516501m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 743
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-07-18T18:06:46.440Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b8a66",
+        "name": "Street Cabinet Berlin 4",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 14037
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9369706887053325m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.4589653573930264m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1405
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-02-21T03:44:47.827Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b8aa6",
+        "name": "Street Cabinet Brandenburg 4",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 10611
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.8392682147212326m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2356126450467855m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1452
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-01-07T13:45:06.078Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b8aca",
+        "name": "Street Cabinet Brandenburg 22",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 43126
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9282548206159844m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.957601172151044m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1364
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-05-18T03:49:28.849Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b8b12",
+        "name": "Street Cabinet Brandenburg 26",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 26713
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.3512649293057621m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.3489686304237694m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 495
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-05-19T02:10:34.147Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301db12a36cf2411b8b40",
+        "name": "Street Cabinet Bremen 17",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 48005
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.9869370649801568m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.7029344290494919m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 507
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-05-09T20:26:30.709Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8b74",
+        "name": "Street Cabinet Bremen 11",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 10445
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.92270756396465m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.3519879297818989m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 686
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-02-02T10:51:21.370Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8bb2",
+        "name": "Street Cabinet Hamburg 10",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 57805
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.1622904904419555m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.6061347376089543m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1328
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-03-26T11:46:41.044Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8be0",
+        "name": "Street Cabinet Hamburg 1",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 19885
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.622201581695117m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.1442321704234928m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1318
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-03-22T18:38:03.866Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8c06",
+        "name": "Street Cabinet Hamburg 20",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 8271
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.638357894355431m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.8944591677282006m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1431
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-01-01T07:26:40.907Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8c56",
+        "name": "Street Cabinet Hessen 28",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 33765
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.0716245260089636m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.5245594813022763m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 671
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-05-10T00:33:24.034Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8ca2",
+        "name": "Street Cabinet Mecklenburg-Vorpommern 2",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 38880
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.7339557467261328m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.4657276088837534m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 451
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-06-21T09:58:39.797Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8caa",
+        "name": "Street Cabinet Mecklenburg-Vorpommern 6",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 35016
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.2850479277782143m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.104997371090576m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 795
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-06-22T15:04:49.359Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8d10",
+        "name": "Street Cabinet Mecklenburg-Vorpommern 25",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 13578
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.7072943531209602m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.4943720460869372m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 872
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-17T18:53:48.537Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dc12a36cf2411b8d34",
+        "name": "Street Cabinet Niedersachsen 11",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 3022
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.8239365248242393m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.7438857157249004m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 875
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-06-19T15:18:07.785Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8dcc",
+        "name": "Street Cabinet Nordrhein-Westfalen 23",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 6250
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.5985218629473819m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2568566245026886m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 948
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-04-11T19:57:06.717Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8e0a",
+        "name": "Street Cabinet Nordrhein-Westfalen 22",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 18183
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.6435266704531386m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.400147050851956m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 951
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-01-01T16:16:31.605Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8e14",
+        "name": "Street Cabinet Nordrhein-Westfalen 27",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 26851
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.6151961494935676m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.660839234245941m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1083
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-01-04T03:00:26.539Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8e40",
+        "name": "Street Cabinet Rheinland-Pfalz 17",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 25625
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.733125630952418m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.5368144926615059m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1417
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-02-21T10:13:31.834Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8e42",
+        "name": "Street Cabinet Rheinland-Pfalz 18",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 31498
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.666188420006074m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.0762538791168481m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1399
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-11-04T02:34:45.821Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8ed8",
+        "name": "Street Cabinet Saarland 29",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 6791
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.0310293720569461m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.3899527790490538m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1213
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-01-29T20:53:56.341Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301dd12a36cf2411b8ef8",
+        "name": "Street Cabinet Saarland 13",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 49208
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.7581877193879336m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2584989273454994m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 883
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-10-24T03:02:07.558Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b8f48",
+        "name": "Street Cabinet Sachsen 21",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 44600
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9398252207785844m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.1459828671067953m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1214
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Video Surveillance"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-05-05T20:42:26.631Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b8f6c",
+        "name": "Street Cabinet Sachsen 7",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 18496
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.6135382427833975m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.9332243714015931m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1291
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-20T16:41:31.268Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b8f90",
+        "name": "Street Cabinet Sachsen 25",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 39551
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9290446470025926m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.7609000466763973m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 472
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Access Controlled"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-03-27T02:00:14.942Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b8ff4",
+        "name": "Street Cabinet Sachsen-Anhalt 11",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 31708
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9455600865650922m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.4147801734507084m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 607
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": false
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-06T04:41:35.339Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b900c",
+        "name": "Street Cabinet Sachsen-Anhalt 23",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 39064
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.8661224392941221m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.3217204632237554m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 97
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1034
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-07-07T06:43:49.356Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b9052",
+        "name": "Street Cabinet Schleswig-Holstein 26",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 26105
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.7714052251307293m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.8758169822394848m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 806
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-07-14T13:06:36.295Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b9064",
+        "name": "Street Cabinet Schleswig-Holstein 3",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 32357
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.0501862265169621m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.6515659028664231m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1015
+          },
+          {
+            "name": "network_type",
+            "value": "Koaxial"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Motion Detectors"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-04-13T08:08:26.141Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b9072",
+        "name": "Street Cabinet Schleswig-Holstein 10",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 14470
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.26725929423701m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2420869807247072m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 802
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Guarded"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-03-13T20:50:03.948Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b9088",
+        "name": "Street Cabinet Schleswig-Holstein 21",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 24464
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.025639968086034m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.6927965504582971m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 100
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 785
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2023-08-17T22:39:59.682Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b9092",
+        "name": "Street Cabinet Schleswig-Holstein 26",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 52166
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.3282587058842181m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "0.8821783473249525m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 96
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 941
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-10-02T06:39:27.365Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b90aa",
+        "name": "Street Cabinet Thüringen 6",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 9119
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "0.9571290931897238m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2947557952720672m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 99
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1324
+          },
+          {
+            "name": "network_type",
+            "value": "DSL"
+          },
+          {
+            "name": "fiber_ready",
+            "value": true
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2022-09-10T17:50:50.562Z"
+          }
+        ]
+      },
+      {
+        "id": "66e301de12a36cf2411b90c2",
+        "name": "Street Cabinet Thüringen 18",
+        "resourceCharacteristic": [
+          {
+            "name": "connected_lines",
+            "value": 19886
+          },
+          {
+            "name": "cabinet_heigth",
+            "value": "1.6440317868022247m"
+          },
+          {
+            "name": "cabinet_width",
+            "value": "1.2271672564093024m"
+          },
+          {
+            "name": "current_capacity_usage",
+            "value": 98
+          },
+          {
+            "name": "maximum_capacity",
+            "value": 1466
+          },
+          {
+            "name": "network_type",
+            "value": "FTTH"
+          },
+          {
+            "name": "fiber_ready",
+            "value": false
+          },
+          {
+            "name": "power_backup",
+            "value": true
+          },
+          {
+            "name": "security_status",
+            "value": "Remote Monitoring"
+          },
+          {
+            "name": "last_maintenance",
+            "value": "2024-04-28T18:28:28.023Z"
+          }
+        ]
+      }
+    ]
+  }
+}
