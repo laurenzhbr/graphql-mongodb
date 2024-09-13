@@ -36,11 +36,20 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(DigitalIdentityType),
       args: {
         status: { type: GraphQLString}, 
-        //limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)'}
+        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)', defaultValue: 10},
+        sortBy: { type: GraphQLString, description: 'Declare sorting by creation date - desc or asc'}
       },
-      resolve(parent, args) {
+      async resolve(parent, args) {
         const limit = args.limit;
-        return DigitalIdentity.find({'status': args.status}).limit(limit);
+
+        // Abfrage mit den dynamisch erzeugten Filtern
+        let query = DigitalIdentity.find();
+
+        // Sortiere nach Creditrating, wenn creditRating_gt angegeben ist
+        query = args.sortByCreationDate ? query.sort({ 'sortByCreationDate': args.sortBy === 'asc' ? 1 : -1 }) : query;
+
+        // Führe die Abfrage aus
+        return await query.limit(limit);
       }
     },
     searchResourcesByCategoryAnCapacityUsage:{

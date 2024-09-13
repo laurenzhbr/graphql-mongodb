@@ -6,7 +6,7 @@ exports.getAllResources = async (req, res) => {
     try {
 
         // URL-Query-Parameter
-        const { offset = 0, limit = 10000, fields, current_capacity_usage, ...filters } = req.query;
+        const { offset = 0, limit = undefined, fields, current_capacity_usage, ...filters } = req.query;
 
         // Offset und Limit für Pagination
         const skip = parseInt(offset, 10);
@@ -60,7 +60,6 @@ exports.getAllResources = async (req, res) => {
 // Controller-Funktion zum Erstellen einer neuen Ressource
 exports.createResource = async (req, res) => {
     const resource = new Resource(req.body);
-
     try {
         const newResource = await resource.save();
         res.status(201).json(newResource);

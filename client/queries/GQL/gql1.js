@@ -1,8 +1,8 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const query = (status) => `
+const query = (status, limit, sortBy) => `
   {
-    digitalIdentitiesByStatus(status: "${status}" ){
+    digitalIdentitiesByStatus(status: "${status}", limit: ${limit}, sortBy: "${sortBy}" ){
       id
       nickname
       status
@@ -23,7 +23,7 @@ const gql_use_case_1 =  async () => {
 
   // send API Call + fetch metrics
   const url = 'http://localhost:4000/graphql'
-  const data = { query: query("active"),};
+  const data = { query: query("active", 40, "desc"),};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

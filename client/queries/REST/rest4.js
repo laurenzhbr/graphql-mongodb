@@ -1,6 +1,6 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_4 = async (category="Street%20Cabinet", city="Leipzig") => {
+const rest_use_case_4 = async (category="Street%20Cabinet") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
@@ -13,42 +13,37 @@ const rest_use_case_4 = async (category="Street%20Cabinet", city="Leipzig") => {
     const streetCabinetsInLeipzig = [];
 
     // 2. Schritt: Prüfen, ob sich die Street Cabinets in Leipzig befinden
-    for (const cabinet of streetCabinets) {
-      const placeHref = cabinet.place.href
-        .replace("{host}", actualHost)
-        .replace("https", "http");  // Href der GeographicAddress-Referenz
+    for (let cabinet of streetCabinets) {
+        let resultForCabinet = [];
+      const placeHref = cabinet.place.href.replace("{host}", actualHost).replace("https", "http");  // Href der GeographicAddress-Referenz
 
-      // Abfrage auf die GeographicAddress, um die Stadt zu erhalten
+      // Abfrage auf die GeographicAddress, um die Stadt zu erhalten -> Beschränkung auf field city, weil nur das notwendig ist
+      //accumulatedMetrics = await fetchMetrics(`${placeHref}?fields=city`, accumulatedMetrics);
       accumulatedMetrics = await fetchMetrics(placeHref, accumulatedMetrics);
       const geographicAddress = accumulatedMetrics.data;
 
       // Prüfen, ob die Stadt "Berlin" ist
-      if (geographicAddress.city === 'Leipzig') {
+      if (geographicAddress.city == "Leipzig") {
         // 3. Schritt: Characteristics und Wartungsfirmen sammeln
-        streetCabinetsInLeipzig.push(cabinet);
+        //streetCabinetsInLeipzig.push(cabinet);
 
 
         ////////////////// underneath for detailed use case
-        /* const filteredCharacteristics = cabinet.resourceCharacteristic.filter((characteristic) =>
+        const filteredCharacteristics = cabinet.resourceCharacteristic.filter((characteristic) =>
             ['connected_lines', 'maximum_capacity', 'power_backup'].includes(characteristic.name)
           );
         const maintenanceCompany = cabinet.relatedParty.find(party => party.role === 'Wartungsfirma');
-        relatedOrganizationHref = maintenanceCompanies.href
+        const relatedOrganizationHref = maintenanceCompany.href
         .replace("{host}", actualHost)
         .replace("https", "http");
 
-        const relatedOrganization = await axiosInstance.get(placeHref);
-        const contactMediumType = relatedOrganization.data.contactMediumType
+        accumulatedMetrics = await fetchMetrics(`${relatedOrganizationHref}?fields=name,organizationType,contactMedium`, accumulatedMetrics);
+        const organizationData = accumulatedMetrics.data;
 
         // Speichern der relevanten Informationen für Street Cabinets in Leipzig
-        streetCabinetsInLeipzig.push({
-          name: cabinet.name,
-          characteristics: filteredCharacteristics,
-          maintenanceCompanies: {
-            name: maintenanceCompany.name,
-            href: maintenanceCompany.href,
-          },
-        }); */
+        cabinet.characteristic=filteredCharacteristics
+        resultForCabinet.push({resource: cabinet, maintenanceCompany: organizationData, city: geographicAddress.city})
+        streetCabinetsInLeipzig.push(cabinet);
       }
     }
     

@@ -1,4 +1,4 @@
-Q1: GET all "active" DigitalIdentities --> simple, field selection, ohne Roundtrip (GQL weniger Felder aufgrund href nicht notwendig)
+Q1: GET 40 "active" DigitalIdentities sorted by creationDate --> simple, field selection, ohne Roundtrip (GQL weniger Felder aufgrund href nicht notwendig)
 
 Q2: Abfrage aller Street-Cabinets, die Ihre maximale Kapazität fast erreicht haben (>95%) -> simple, field selection -> GQL weniger Felder aufgrund Field-Selection von Characteristicen
 

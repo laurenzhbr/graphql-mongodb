@@ -3,31 +3,41 @@ const GeoAddress = require('../models/GeoAdressModels/GeographicAdress');
 // Controller-Funktion zum Abrufen aller GeoAdressen
 exports.getAllGeoAddresses = async (req, res) => {
     try {
-        const filters = {};
+        // URL-Query-Parameter
+        const { offset = 0, limit = 10, fields, ...filters } = req.query;
 
-        if (req.query.name) {
-            filters.name = req.query.name;
-        }
-        if (req.query.category) {
-            filters.category = req.query.category;
-        }
-        if (req.query.description) {
-            filters.description = req.query.description;
-        }
-        if (req.query.startOperatingDate) {
-            filters.startOperatingDate = { $gte: new Date(req.query.startOperatingDate) };
-        }
-        if (req.query.endOperatingDate) {
-            filters.endOperatingDate = { $lte: new Date(req.query.endOperatingDate) };
-        }
+        // Offset und Limit für Pagination
+        const skip = parseInt(offset, 10);
+        const limitVal = parseInt(limit, 10);
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
-        let fields = null;
-        if (req.query.fields) {
-            fields = req.query.fields.split(',').join(' ');
+        // Fields für die Projektion (nur First-Level-Attribute erlaubt)
+        let selectedFields = null;
+        if (fields) {
+          selectedFields = fields
+            .split(',')
+            .map((field) => field.trim())
+            .filter((field) => !field.includes('.')) // Nur First-Level-Felder
+            .join(' ');
         }
 
-        const geoAddresses = await GeoAddress.find(filters).select(fields);
+        const filterObj = { ...filters };
+
+        // Get X-Total-Count
+        const totalCount = await GeoAddress.countDocuments(filterObj);
+        
+        // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
+        const geoAddresses = await GeoAddress.find(filterObj)
+          .select(selectedFields)
+          .skip(skip)
+          .limit(limitVal); 
+
+        // Get X-Result-Count
+        const resultCount = geoAddresses.length;
+        
+        // Header mit x-Result-Count und x-Total-Count
+        res.set('x-Result-Count', resultCount);
+        res.set('x-Total-Count', totalCount);
+
         res.json(geoAddresses);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -56,25 +66,20 @@ exports.createGeoAddress = async (req, res) => {
 // Controller-Funktion zum Abrufen einer spezifischen GeoAdresse
 exports.getGeoAddressById = async (req, res) => {
     try {
-        const filters = { _id: req.params.id };
-
-        if (req.query.name) {
-            filters.name = req.query.name;
-        }
-        if (req.query.category) {
-            filters.category = req.query.category;
-        }
-        if (req.query.description) {
-            filters.description = req.query.description;
-        }
+        const { id } = req.params;
+        const { fields } = req.query;
 
         // Auswahl der Felder, die zurückgegeben werden sollen
-        let fields = null;
-        if (req.query.fields) {
-            fields = req.query.fields.split(',').join(' ');
+        let selectedFields = null;
+        if (fields) {
+          selectedFields = fields
+            .split(',')
+            .map((field) => field.trim())
+            .filter((field) => !field.includes('.')) // Nur First-Level-Felder
+            .join(' ');
         }
 
-        const geoAddress = await GeoAddress.findOne(filters).select(fields);
+        const geoAddress = await GeoAddress.findById(id).select(selectedFields);
         if (!geoAddress) {
             return res.status(404).json({ message: 'GeoAddress not found with the specified criteria' });
         }

@@ -4,7 +4,7 @@ const DigitalIdentity = require('../models/DigtialIdentityModels/DigitalIdentity
 exports.getDigitalIdentities = async (req, res) => {
     try {
         // URL-Query-Parameter
-        const { offset = 0, limit = 10, fields, ...filters } = req.query;
+        const { offset = 10, limit = 10, fields, sortByCreationDate, ...filters } = req.query;
 
         // Offset und Limit für Pagination
         const skip = parseInt(offset, 10);
@@ -26,11 +26,14 @@ exports.getDigitalIdentities = async (req, res) => {
         const totalCount = await DigitalIdentity.countDocuments(filterObj);
         
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
-        const digitalIdentities = await DigitalIdentity.find(filterObj)
+        let query = DigitalIdentity.find(filterObj)
           .select(selectedFields)
           .skip(skip)
-          .limit(limitVal); 
         
+        query = sortByCreationDate ? query.sort({'creationDate': sortByCreationDate === 'asc' ? 1 : -1 }) : query;
+        
+        const digitalIdentities = await query.limit(limitVal);
+
         // Get X-Result-Count
         const resultCount = digitalIdentities.length;
 
