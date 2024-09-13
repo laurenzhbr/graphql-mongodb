@@ -1,0 +1,482 @@
+[
+  {
+    "_id": "66e420991c97fe16e775a9b8",
+    "nickname": "Ansgar_Wezel",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31a0a750e30ccd1a7981e",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31a0a750e30ccd1a7981e"
+    },
+    "creationDate": "2024-09-13T11:23:05.826Z",
+    "lastUpdate": "2024-09-13T11:23:05.826Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a9a3",
+    "nickname": "Yannik_Gaba44",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31a0a750e30ccd1a79800",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31a0a750e30ccd1a79800"
+    },
+    "creationDate": "2024-09-13T11:23:05.824Z",
+    "lastUpdate": "2024-09-13T11:23:05.824Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a9a1",
+    "nickname": "Emir81",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d789",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d789"
+    },
+    "creationDate": "2024-09-13T11:23:05.823Z",
+    "lastUpdate": "2024-09-13T11:23:05.823Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a994",
+    "nickname": "Svea.Marten91",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d77d",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d77d"
+    },
+    "creationDate": "2024-09-13T11:23:05.821Z",
+    "lastUpdate": "2024-09-13T11:23:05.821Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a992",
+    "nickname": "Ruby.Auer",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d77b",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d77b"
+    },
+    "creationDate": "2024-09-13T11:23:05.821Z",
+    "lastUpdate": "2024-09-13T11:23:05.821Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a990",
+    "nickname": "Leni_Neumann61",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d779",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d779"
+    },
+    "creationDate": "2024-09-13T11:23:05.821Z",
+    "lastUpdate": "2024-09-13T11:23:05.821Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a97e",
+    "nickname": "Murat.Scharf43",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d767",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d767"
+    },
+    "creationDate": "2024-09-13T11:23:05.819Z",
+    "lastUpdate": "2024-09-13T11:23:05.819Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a980",
+    "nickname": "Aileen_Schoberg21",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d769",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d769"
+    },
+    "creationDate": "2024-09-13T11:23:05.819Z",
+    "lastUpdate": "2024-09-13T11:23:05.819Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a984",
+    "nickname": "Baran_Jambor",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d76d",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d76d"
+    },
+    "creationDate": "2024-09-13T11:23:05.819Z",
+    "lastUpdate": "2024-09-13T11:23:05.819Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a97c",
+    "nickname": "Nele_Klemme",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d765",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d765"
+    },
+    "creationDate": "2024-09-13T11:23:05.818Z",
+    "lastUpdate": "2024-09-13T11:23:05.818Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a96c",
+    "nickname": "Emilia.Hirt33",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d757",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d757"
+    },
+    "creationDate": "2024-09-13T11:23:05.816Z",
+    "lastUpdate": "2024-09-13T11:23:05.816Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a967",
+    "nickname": "Sofie_Hering",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d753",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d753"
+    },
+    "creationDate": "2024-09-13T11:23:05.815Z",
+    "lastUpdate": "2024-09-13T11:23:05.815Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a952",
+    "nickname": "Juri.Köpernick",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d73f",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d73f"
+    },
+    "creationDate": "2024-09-13T11:23:05.813Z",
+    "lastUpdate": "2024-09-13T11:23:05.813Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a954",
+    "nickname": "Elena.Seigel48",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d741",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d741"
+    },
+    "creationDate": "2024-09-13T11:23:05.813Z",
+    "lastUpdate": "2024-09-13T11:23:05.813Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a950",
+    "nickname": "Valerie_Koester6",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d73d",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d73d"
+    },
+    "creationDate": "2024-09-13T11:23:05.813Z",
+    "lastUpdate": "2024-09-13T11:23:05.813Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a945",
+    "nickname": "Yannic_Schlangen16",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d733",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d733"
+    },
+    "creationDate": "2024-09-13T11:23:05.811Z",
+    "lastUpdate": "2024-09-13T11:23:05.811Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a93b",
+    "nickname": "Tomke_Sillah",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e319e2750e30ccd1a6d729",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e319e2750e30ccd1a6d729"
+    },
+    "creationDate": "2024-09-13T11:23:05.810Z",
+    "lastUpdate": "2024-09-13T11:23:05.810Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a928",
+    "nickname": "Emre.Schwatlo",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd9036",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd9036"
+    },
+    "creationDate": "2024-09-13T11:23:05.807Z",
+    "lastUpdate": "2024-09-13T11:23:05.807Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a91f",
+    "nickname": "Francesca_Welzel13",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd902a",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd902a"
+    },
+    "creationDate": "2024-09-13T11:23:05.806Z",
+    "lastUpdate": "2024-09-13T11:23:05.806Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a908",
+    "nickname": "Nike.Kneifel55",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd9009",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd9009"
+    },
+    "creationDate": "2024-09-13T11:23:05.803Z",
+    "lastUpdate": "2024-09-13T11:23:05.803Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8ea",
+    "nickname": "Christian62",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd8fdf",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd8fdf"
+    },
+    "creationDate": "2024-09-13T11:23:05.795Z",
+    "lastUpdate": "2024-09-13T11:23:05.795Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8ec",
+    "nickname": "Franka_Horak",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd8fe2",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd8fe2"
+    },
+    "creationDate": "2024-09-13T11:23:05.795Z",
+    "lastUpdate": "2024-09-13T11:23:05.795Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8dc",
+    "nickname": "Alia_Hort",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd8fcd",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd8fcd"
+    },
+    "creationDate": "2024-09-13T11:23:05.793Z",
+    "lastUpdate": "2024-09-13T11:23:05.793Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8de",
+    "nickname": "Emir87",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd8fd0",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd8fd0"
+    },
+    "creationDate": "2024-09-13T11:23:05.793Z",
+    "lastUpdate": "2024-09-13T11:23:05.793Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8d8",
+    "nickname": "Omar.Kustermann",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e3138aca7e327e3edd8fc7",
+      "name": "Router X1000",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e3138aca7e327e3edd8fc7"
+    },
+    "creationDate": "2024-09-13T11:23:05.792Z",
+    "lastUpdate": "2024-09-13T11:23:05.792Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8cc",
+    "nickname": "Emil_Möllinger23",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edcce15",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edcce15"
+    },
+    "creationDate": "2024-09-13T11:23:05.791Z",
+    "lastUpdate": "2024-09-13T11:23:05.791Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8c8",
+    "nickname": "Mirco_Zender32",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edcce11",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edcce11"
+    },
+    "creationDate": "2024-09-13T11:23:05.790Z",
+    "lastUpdate": "2024-09-13T11:23:05.790Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8ca",
+    "nickname": "Stefanie_Buder",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edcce13",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edcce13"
+    },
+    "creationDate": "2024-09-13T11:23:05.790Z",
+    "lastUpdate": "2024-09-13T11:23:05.790Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8bf",
+    "nickname": "Ela.Wenk11",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edcce09",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edcce09"
+    },
+    "creationDate": "2024-09-13T11:23:05.788Z",
+    "lastUpdate": "2024-09-13T11:23:05.789Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8b9",
+    "nickname": "Leandro_Bürger",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edcce03",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edcce03"
+    },
+    "creationDate": "2024-09-13T11:23:05.788Z",
+    "lastUpdate": "2024-09-13T11:23:05.788Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8a9",
+    "nickname": "Helene.Benninger",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edccdf3",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edccdf3"
+    },
+    "creationDate": "2024-09-13T11:23:05.786Z",
+    "lastUpdate": "2024-09-13T11:23:05.786Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a8a5",
+    "nickname": "Lenn_Tasche3",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edccdef",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edccdef"
+    },
+    "creationDate": "2024-09-13T11:23:05.786Z",
+    "lastUpdate": "2024-09-13T11:23:05.786Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a89c",
+    "nickname": "Maik532_42",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31362ca7e327e3edccde7",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31362ca7e327e3edccde7"
+    },
+    "creationDate": "2024-09-13T11:23:05.784Z",
+    "lastUpdate": "2024-09-13T11:23:05.785Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a88e",
+    "nickname": "Natalie.Lindenmayer66",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31361ca7e327e3edccdd9",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31361ca7e327e3edccdd9"
+    },
+    "creationDate": "2024-09-13T11:23:05.782Z",
+    "lastUpdate": "2024-09-13T11:23:05.782Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a875",
+    "nickname": "Lennart.Brandis91",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31361ca7e327e3edccdc1",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31361ca7e327e3edccdc1"
+    },
+    "creationDate": "2024-09-13T11:23:05.779Z",
+    "lastUpdate": "2024-09-13T11:23:05.779Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a866",
+    "nickname": "Milena1467_27",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31361ca7e327e3edccdb3",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31361ca7e327e3edccdb3"
+    },
+    "creationDate": "2024-09-13T11:23:05.777Z",
+    "lastUpdate": "2024-09-13T11:23:05.777Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a869",
+    "nickname": "Marvin.Zahn",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31361ca7e327e3edccdb5",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31361ca7e327e3edccdb5"
+    },
+    "creationDate": "2024-09-13T11:23:05.777Z",
+    "lastUpdate": "2024-09-13T11:23:05.777Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a858",
+    "nickname": "Stefan_Pressler87",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31306a13b753bd7f303f5",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31306a13b753bd7f303f5"
+    },
+    "creationDate": "2024-09-13T11:23:05.775Z",
+    "lastUpdate": "2024-09-13T11:23:05.775Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a846",
+    "nickname": "Merlin.Hirt",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31306a13b753bd7f303e3",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31306a13b753bd7f303e3"
+    },
+    "creationDate": "2024-09-13T11:23:05.773Z",
+    "lastUpdate": "2024-09-13T11:23:05.773Z"
+  },
+  {
+    "_id": "66e420991c97fe16e775a84c",
+    "nickname": "Nick.Normann",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66e31306a13b753bd7f303e9",
+      "name": "Router for Modem Hüfingen 0 0",
+      "href": "https://{host}/resourceInventoryManagement/resource/66e31306a13b753bd7f303e9"
+    },
+    "creationDate": "2024-09-13T11:23:05.773Z",
+    "lastUpdate": "2024-09-13T11:23:05.773Z"
+  }
+]

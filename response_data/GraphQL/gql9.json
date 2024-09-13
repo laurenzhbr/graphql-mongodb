@@ -1,0 +1,32 @@
+{
+  "data": {
+    "createResource": {
+      "id": "66e46833c0021befe1d800a2",
+      "name": "Router X1000",
+      "category": "Router",
+      "description": "Neue Resource Beschreibung",
+      "resourceCharacteristic": [
+        {
+          "name": "max_download_speed",
+          "value": "1 Gbps"
+        },
+        {
+          "name": "max_upload_speed",
+          "value": "100 Mbps"
+        }
+      ],
+      "resourceRelationship": [],
+      "note": [
+        {
+          "author": "Admin",
+          "text": "Initial configuration",
+          "date": "2024-09-10T12:34:56.000Z"
+        }
+      ],
+      "place": {
+        "id": "66e2c81f65afefb37d2bed73",
+        "country": "DE"
+      }
+    }
+  }
+}

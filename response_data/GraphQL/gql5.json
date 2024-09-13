@@ -1,0 +1,609 @@
+{
+  "data": {
+    "organizations": [
+      {
+        "name": "Scholz, Haaf und Roggatz Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 848
+          }
+        ]
+      },
+      {
+        "name": "Heinrich-Oeser Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 848
+          }
+        ]
+      },
+      {
+        "name": "Decker KG Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 847
+          }
+        ]
+      },
+      {
+        "name": "Rüdiger, Werrmann und Achilles Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 846
+          }
+        ]
+      },
+      {
+        "name": "Schreiner, Riethmüller und Malkus Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 846
+          }
+        ]
+      },
+      {
+        "name": "Soller, Frauendorf und Grosser Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 846
+          }
+        ]
+      },
+      {
+        "name": "Paesler-Görmer Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 846
+          }
+        ]
+      },
+      {
+        "name": "Norris-Gutschank Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 846
+          }
+        ]
+      },
+      {
+        "name": "Umminger-Hanniske Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 844
+          }
+        ]
+      },
+      {
+        "name": "Burmeister, Thomas und Milde Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 843
+          }
+        ]
+      },
+      {
+        "name": "Lauckner UG Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 840
+          }
+        ]
+      },
+      {
+        "name": "Boxhammer-Hannecker Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 838
+          }
+        ]
+      },
+      {
+        "name": "Ecker GmbH & Co. KG Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 838
+          }
+        ]
+      },
+      {
+        "name": "Knoblich, Böhm und Zschunke Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 831
+          }
+        ]
+      },
+      {
+        "name": "Matschke OHG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 831
+          }
+        ]
+      },
+      {
+        "name": "Keil-Tucholke Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 830
+          }
+        ]
+      },
+      {
+        "name": "Blassneck Gruppe Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 830
+          }
+        ]
+      },
+      {
+        "name": "Gilde-Dreher Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 829
+          }
+        ]
+      },
+      {
+        "name": "Leschnik-Krebs Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 829
+          }
+        ]
+      },
+      {
+        "name": "Braun, Thomas und Schäffer Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 827
+          }
+        ]
+      },
+      {
+        "name": "Eberhard-Ertl Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 826
+          }
+        ]
+      },
+      {
+        "name": "Marquart KG Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 826
+          }
+        ]
+      },
+      {
+        "name": "Venghaus-Kulma Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 825
+          }
+        ]
+      },
+      {
+        "name": "Lenzen, Streese und Goldkamp Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 823
+          }
+        ]
+      },
+      {
+        "name": "Nolte UG Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 823
+          }
+        ]
+      },
+      {
+        "name": "Benninger, Kaufmann und Kleeberg Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 819
+          }
+        ]
+      },
+      {
+        "name": "Bourrouag-Streck Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 818
+          }
+        ]
+      },
+      {
+        "name": "Leiteritz, Biesenbach und Meisch Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 818
+          }
+        ]
+      },
+      {
+        "name": "Grotke-Kohlmann Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 813
+          }
+        ]
+      },
+      {
+        "name": "Sagafe-Räntsch Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 813
+          }
+        ]
+      },
+      {
+        "name": "Dold UG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 812
+          }
+        ]
+      },
+      {
+        "name": "Wilky-Gratzky Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 808
+          }
+        ]
+      },
+      {
+        "name": "Hering-Drees Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 806
+          }
+        ]
+      },
+      {
+        "name": "Hoppe-Steinkamp Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 806
+          }
+        ]
+      },
+      {
+        "name": "Alexa-Klinger Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 806
+          }
+        ]
+      },
+      {
+        "name": "Brix GmbH & Co. KG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 805
+          }
+        ]
+      },
+      {
+        "name": "Spielvogel OHG Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 803
+          }
+        ]
+      },
+      {
+        "name": "Ahrens GmbH & Co. KG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 803
+          }
+        ]
+      },
+      {
+        "name": "Grossheim, Sielemann und Jakobs Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 801
+          }
+        ]
+      },
+      {
+        "name": "Arendt GmbH Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 798
+          }
+        ]
+      },
+      {
+        "name": "Wittich, Laux und Langfeld Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 797
+          }
+        ]
+      },
+      {
+        "name": "Kühnke-Bozsik Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 795
+          }
+        ]
+      },
+      {
+        "name": "Dolch-Urhig Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 793
+          }
+        ]
+      },
+      {
+        "name": "Hirschberg, Büker und Griem Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 791
+          }
+        ]
+      },
+      {
+        "name": "Erhardt-Golling Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 790
+          }
+        ]
+      },
+      {
+        "name": "Ranftl, Jahnke und Brehmer Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 789
+          }
+        ]
+      },
+      {
+        "name": "Pressler, Stengl und Spelmeyer Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 788
+          }
+        ]
+      },
+      {
+        "name": "Waibel-Raubuch Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 787
+          }
+        ]
+      },
+      {
+        "name": "Roos-Hillard Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 786
+          }
+        ]
+      },
+      {
+        "name": "Mebold Gruppe Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 783
+          }
+        ]
+      },
+      {
+        "name": "Möcks GmbH & Co. KG Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 777
+          }
+        ]
+      },
+      {
+        "name": "Radtke AG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 776
+          }
+        ]
+      },
+      {
+        "name": "Maak GmbH Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 774
+          }
+        ]
+      },
+      {
+        "name": "Blank, Uhlemann und Gabler Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 774
+          }
+        ]
+      },
+      {
+        "name": "Löser, Kröger und Förster Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 773
+          }
+        ]
+      },
+      {
+        "name": "Hanniske, Dold und Reiber Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 772
+          }
+        ]
+      },
+      {
+        "name": "Schulz GmbH Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 770
+          }
+        ]
+      },
+      {
+        "name": "Letzelter, Marten und Jasper Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 770
+          }
+        ]
+      },
+      {
+        "name": "Koester-Tonn Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 768
+          }
+        ]
+      },
+      {
+        "name": "Naumann-Fenske Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 767
+          }
+        ]
+      },
+      {
+        "name": "Spielvogel, Hajek und Franta Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 767
+          }
+        ]
+      },
+      {
+        "name": "Göckeritz KG Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 766
+          }
+        ]
+      },
+      {
+        "name": "Simon, Manz und Kleinsteuber Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 764
+          }
+        ]
+      },
+      {
+        "name": "Krippner-Belz Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 762
+          }
+        ]
+      },
+      {
+        "name": "Pingpank-Biba Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 761
+          }
+        ]
+      },
+      {
+        "name": "Kurrat Gruppe Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 761
+          }
+        ]
+      },
+      {
+        "name": "Gabler Gruppe Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 752
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "66e4207b1c97fe16e772f57c",
+  "nickname": "Kassandra75",
+  "status": "active",
+  "resourceIdentified": {
+    "id": "55f0cc8df5fe2dacb964a7e3",
+    "name": "Router for Modem Hüfingen 19 9",
+    "href": "https://{host}/resourceInventoryManagement/resource/55f0cc8df5fe2dacb964a7e3"
+  },
+  "creationDate": "2024-09-13T11:22:35.661Z",
+  "lastUpdate": "2024-09-13T16:25:25.542Z",
+  "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e4207b1c97fe16e772f57c",
+  "__v": 0
+}
