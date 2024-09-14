@@ -13,9 +13,16 @@ def read_averages(folder, prefix):
                 data[filename.split('_')[0]] = json.load(f)  # Beispiel: 'rest1' als Schlüssel
     return data
 
+import re
+
+# Funktion zum Sortieren der Use-Cases basierend auf den Nummern (z.B. 'rest1', 'rest10', 'rest2')
+def sort_use_cases(use_cases):
+    # Extrahiere die Zahl am Ende des Use-Case-Namens und sortiere nach dieser Zahl
+    return sorted(use_cases, key=lambda x: int(re.search(r'\d+', x).group()))
+
 # Funktion zum Erstellen von Balkendiagrammen für jede Metrik
 def create_bar_chart_for_metric(rest_data, gql_data, metric, output_dir):
-    use_cases = sorted(rest_data.keys())  # Liste der Use-Cases (z.B. rest1, gql1, etc.)
+    use_cases = sort_use_cases(rest_data.keys())  # Liste der Use-Cases (z.B. rest1, gql1, etc.)
     rest_values = [rest_data[uc][metric] for uc in use_cases]
     gql_values = [gql_data[uc.replace("rest", "gql")][metric] for uc in use_cases]
     
@@ -66,9 +73,9 @@ def create_all_charts(rest_folder, gql_folder, output_folder):
 
 if __name__ == "__main__":
     # Verzeichnisse für die JSON-Dateien mit den Averages
-    rest_averages_folder = "client/results/REST/averages"
-    gql_averages_folder = "client/results/GraphQL/averages"
-    output_folder = "client/results/comparison_charts"  # Ordner für die Diagramme
+    rest_averages_folder = "results/REST/averages"
+    gql_averages_folder = "results/GraphQL/averages"
+    output_folder = "results/comparison_charts"  # Ordner für die Diagramme
 
     # Erstelle die Diagramme
     create_all_charts(rest_averages_folder, gql_averages_folder, output_folder)
