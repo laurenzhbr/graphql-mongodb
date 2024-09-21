@@ -8,9 +8,6 @@ const ContactMediumSchema = new Schema({
     preferred: Boolean,
     characteristic: MediumCharacteristic,
     validFor: ValidFor,
-    "@baseType": String,
-    "@schemaLocation": String,
-    "@type": String
 }, { _id: false });
 
 module.exports = mongoose.model('ContactMedium', ContactMediumSchema);

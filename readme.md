@@ -1,18 +1,55 @@
-# Mein Telekommunikations-Projekt
+# GraphQL vs. Rest - TMF APis
 
-Dies ist ein Projekt zur Verwaltung und Abfrage von Ressourcen in einem Telekommunikationsunternehmen, das auf MongoDB, GraphQL und REST basiert.
+This is the GitHub-project for my implementation to my bachelor thesis where I compare the implementation of TMF-APIs in REST and GraphQL 
 
-## Voraussetzungen
+## Prerequisites
 
-Bevor du dieses Projekt ausführst, stelle sicher, dass folgende Tools installiert sind:
+Before executing this project, make sure that the following tools are installed:
 
 - [Node.js](https://nodejs.org/en/) (Version 14.x oder höher)
 - [MongoDB](https://www.mongodb.com/) (Lokal oder gehostet)
 
+# Data Models
+## Overall Data Structure with all Pivot-Objects
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/AllPivotModelsCombined.png)
+
+## Data Model for "Resource"
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/resource.png)
+
+## Data Model for "Digtial Identity"
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/DigtialIdentity.png)
+
+## Data Model for "Organization" (Party)
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/Organization.png)
+
+## Data Model for "GeographicAddress"
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/GeographicAddress.png)
+
+
 ## Installation
 
-### Server-Seite:
-
-1. **Klone das Repository**:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/laurenzhbr/graphql-mongodb.git
+
+2. **setup server**
+    ```bash
+    cd graphql-mongodb/server
+    npm install && npm start
+
+3. **setup client**
+    ```bash
+    cd graphql-mongodb/client
+    npm install
+    node client
+
+## Starting the rest suite
+### Prerequisite is having set up the client and server
+
+1. **mock DB data**
+    ```bash
+    setup-data.sh
+
+2. **start testsuite**
+    ```bash
+    run-testsuite.sh

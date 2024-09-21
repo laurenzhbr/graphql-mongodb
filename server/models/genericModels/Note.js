@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
 
 const NoteSchema = new mongoose.Schema({
-  /* id: {
-    "type": String,
-  },
-  href: String, */
+  id: String,
   author: String,
   date: Date,
   text: String,

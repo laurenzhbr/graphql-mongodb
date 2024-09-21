@@ -5,12 +5,6 @@ const ContactMedium = require('./support_modules/ContactMedium').schema;
 const PartyCreditProfile = require('./support_modules/PartyCreditProfile').schema;
 const ValidFor = require('../genericModels/ValidFor').schema;
 const ExternalReference = require('./support_modules//ExternalReference').schema;
-const OrganizationChildRelationship = require('./support_modules/OrganizationChildRelationship').schema;
-const OrganizationIdentification = require('./support_modules/OrganizationIdentification').schema;
-const TaxExemptionCertificate = require('./support_modules/TaxExemptionCertificate').schema;
-const OtherName = require('./support_modules/OtherName').schema;
-const PartyCharacteristic = require('./support_modules/PartyCharacteristic').schema;
-const RelatedParty = require('../genericModels/RelatedParty').schema;
 
 const OrganizationSchema = new Schema({
     href: String,
@@ -20,26 +14,15 @@ const OrganizationSchema = new Schema({
     nameType: String,
     organizationType: String,
     tradingName: String,
-    tradeRegisterNumber: String,
     contactMedium: { type: [ContactMedium], default: undefined },
     creditRating: { type: [PartyCreditProfile], default: undefined },
     existsDuring: ValidFor,
-    externalReference: { type: [ExternalReference], default: undefined },
-    organizationChildRelationship: { type: [OrganizationChildRelationship], default: undefined },
-    organizationIdentification: { type: [OrganizationIdentification], default: undefined },
-    organizationParentRelationship: OrganizationChildRelationship,
-    otherName: { type: [OtherName], default: undefined },
-    partyCharacteristic: { type: [PartyCharacteristic], default: undefined },
-    relatedParty: { type: [RelatedParty], default: undefined },
+    externalReference: { type: [ExternalReference], default: undefined },    
     status: {
         type: String,
         enum: ['initialized', 'validated', 'closed'],  // Beschränkung auf die zulässigen Werte
         required: true
-    },
-    taxExemptionCertificate: { type: [TaxExemptionCertificate], default: undefined },
-    "@baseType": String,
-    "@schemaLocation": String,
-    "@type": String
+    }
 });
 
 OrganizationSchema.pre('save', function (next) {

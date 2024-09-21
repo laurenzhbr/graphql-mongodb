@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const ResourceCharacteristic = require('./support_models/Characteristic').schema;
+const Characteristic = require('./support_models/Characteristic').schema;
 const ResourceSpecificationRef = require('./ref_models/ResourceSpecificationRef').schema;
 const RelatedPlaceRefOrValue = require('./ref_models/RelatedPlaceRefOrValue').schema;
 const ResourceRelationship = require('./support_models/ResourceRelationship').schema;
@@ -10,10 +10,9 @@ const ResourceSchema = new mongoose.Schema({
   href: String,
   description: String,
   category: String,
-  value: String,
   endOperatingDate: Date,
   name: String,
-  resourceCharacteristic: { type: [ResourceCharacteristic], default: undefined },
+  resourceCharacteristic: { type: [Characteristic], default: undefined },
   administrativeState: {
     type: String,
     enum: ['locked', 'unlocked', 'shutdown']

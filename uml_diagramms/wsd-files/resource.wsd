@@ -1,0 +1,167 @@
+------------------------
+/Users/laurenz/graphql-mongodb/uml_diagramms/Resource_Resource.png
+
+@startuml resource
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor #FCF2E3
+}
+
+class Resource <<Pivot>>{
+    administrativeState : ResourceAdministrativeStateType
+    category : String
+    description : String
+    endOperatingDate : DateTime
+    href : String
+    id : String
+    name : String
+    operationalState : ResourceOperationalStateType
+    resourceStatus : ResourceStatusType
+    resourceVersion : String
+    startOperatingDate : DateTime
+    usageState : ResourceUsageStateType
+}
+
+class ResourceStatusType <<Enumeration>> {
+    standby
+    alarm
+    available
+    reserved
+    unknown
+    suspended
+}
+
+class ResourceUsageStateType <<Enumeration>> {
+    idle
+    active
+    busy
+}
+
+class ResourceAdministrativeStateType <<Enumeration>> {
+    locked
+    unlocked
+    shutdown
+}
+
+class ResourceOperationalStateType <<Enumeration>> {
+    enable
+    disable
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+}
+
+class Characteristic  {
+    id : String
+    name : String
+    value : Any
+}
+
+
+
+/' class ResourceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+ '/
+class RelatedParty  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+}
+
+
+class ResourceRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+}
+
+class ResourceRefOrValue  {
+    administrativeState : ResourceAdministrativeStateType
+    category : String
+    description : String
+    endOperatingDate : DateTime
+    href : String
+    id : String
+    name : String
+    operationalState : ResourceOperationalStateType
+    resourceStatus : ResourceStatusType
+    resourceVersion : String
+    startOperatingDate : DateTime
+    usageState : ResourceUsageStateType
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String
+}
+
+Resource *-->  "0..*" Note : note
+
+Resource *-->  "0..*" RelatedParty : relatedParty
+
+Resource *-->  "0..1" RelatedPlaceRefOrValue : place
+
+Resource *-->  "0..*" ResourceRelationship : resourceRelationship
+
+/' Resource *-->  "0..1" ResourceSpecificationRef : resourceSpecification '/
+
+Resource -right[hidden]-> ResourceUsageStateType
+
+ResourceUsageStateType -right[hidden]-> ResourceAdministrativeStateType
+
+ResourceAdministrativeStateType -right[hidden]-> ResourceOperationalStateType
+
+ResourceOperationalStateType -right[hidden]-> ResourceStatusType
+
+Characteristic "0..*" <--* Resource : resourceCharacteristic
+
+
+Note "0..*" <--* ResourceRefOrValue : note
+
+ResourceRelationship *-->  "1" ResourceRefOrValue : resource
+
+ResourceRelationship "0..*" <--* ResourceRefOrValue : resourceRelationship
+
+RelatedParty "0..*" <--* ResourceRefOrValue : relatedParty
+
+RelatedPlaceRefOrValue "0..1" <--* ResourceRefOrValue : place
+
+/' ResourceSpecificationRef "0..1" <--* ResourceRefOrValue : resourceSpecification '/
+
+Characteristic "0..*" <--* ResourceRefOrValue : resourceCharacteristic
+
+@enduml
+
+PlantUML version 1.2019.00(Sun Jan 13 16:46:42 CET 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_231-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: de
+Country: DE
+
+------------------------

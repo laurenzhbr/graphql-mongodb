@@ -8,10 +8,6 @@ const RelatedPartySchema = new mongoose.Schema({
   href: String,
   name: String,
   role: String,
-  "@baseType": String,
-  "@schemaLocation": String,
-  "@type": String,
-  "@referredType": String
 }, { _id: false });
 
 //Pre-save Hook to generate href-attribute
