@@ -15,4 +15,4 @@ Bevor du dieses Projekt ausführst, stelle sicher, dass folgende Tools installie
 
 1. **Klone das Repository**:
    ```bash
-   git clone https://github.com/dein-repository-url.git
+   git clone https://github.com/laurenzhbr/graphql-mongodb.git
