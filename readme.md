@@ -9,23 +9,6 @@ Before executing this project, make sure that the following tools are installed:
 - [Node.js](https://nodejs.org/en/) (Version 14.x oder höher)
 - [MongoDB](https://www.mongodb.com/) (Lokal oder gehostet)
 
-# Data Models
-## Overall Data Structure with all Pivot-Objects
-![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/AllPivotModelsCombined.png)
-
-## Data Model for "Resource"
-![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/resource.png)
-
-## Data Model for "Digtial Identity"
-![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/DigtialIdentity.png)
-
-## Data Model for "Organization" (Party)
-![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/Organization.png)
-
-## Data Model for "GeographicAddress"
-![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/GeographicAddress.png)
-
-
 ## Installation
 
 1. **Clone the Repository**:
@@ -43,7 +26,7 @@ Before executing this project, make sure that the following tools are installed:
     npm install
     node client
 
-## Starting the rest suite
+## Starting the Test-Suite
 ### Prerequisite is having set up the client and server
 
 1. **mock DB data**
@@ -53,3 +36,21 @@ Before executing this project, make sure that the following tools are installed:
 2. **start testsuite**
     ```bash
     run-testsuite.sh
+
+# Data Models
+## Overall Data Structure with all Pivot-Objects
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/AllPivotModelsCombined.png)
+
+## Data Model for "Resource"
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/resource.png)
+
+## Data Model for "Digital Identity"
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/DigitalIdentity.png)
+
+## Data Model for "Organization" (Party)
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/Organization.png)
+
+## Data Model for "GeographicAddress"
+![UML Diagram (All Pivot Object combined for over all interconnection)](./uml_diagramms/images/GeographicAddress.png)
+
+
