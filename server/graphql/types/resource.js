@@ -67,10 +67,6 @@ const ResourceType = new GraphQLObjectType({
       type: GraphQLString,
       description: 'The category of the resource.',
     },
-    value: {
-      type: GraphQLString,
-      description: 'The value associated with the resource.',
-    },
     endOperatingDate: {
       type: GraphQLDateTime,
       description: 'The date until the resource is operating.',
@@ -82,6 +78,10 @@ const ResourceType = new GraphQLObjectType({
     administrativeState: {
       type: ResourceAdministrativeStateType,
       description: 'The administrative state of the resource, such as locked, unlocked, or shutdown.',
+    },
+    value: {
+      type: GraphQLString,
+      description: 'The value associated with the resource.',
     },
     operationalState: {
       type: ResourceOperationalStateType,

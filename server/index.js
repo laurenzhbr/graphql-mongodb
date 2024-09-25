@@ -21,13 +21,8 @@ app.use(express.json());
 
 
 // Verbinde dich mit der lokalen MongoDB-Datenbank
-db_orig = mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => {
+db_orig = mongoose.connect(`mongodb://localhost:27017/${dbName}`).then(() => {
   console.log('MongoDB connected');
-
-
 }).catch(err => {
   console.error('MongoDB connection error:', err);
 });

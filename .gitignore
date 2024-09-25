@@ -11,3 +11,6 @@ mock_data
 
 #ignore logs
 logs/
+
+#ignore output directory for wsd images
+out

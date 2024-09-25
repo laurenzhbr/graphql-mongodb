@@ -1,7 +1,7 @@
 ------------------------
 /Users/laurenz/graphql-mongodb/uml_diagramms/Resource_GeographicAddress.png
 
-@startuml AllPivotModelsCombined
+@startuml ResourceRelationshipModel
 hide circle
 hide methods
 hide stereotype
@@ -10,27 +10,33 @@ skinparam class {
    BackgroundColor #FFFFFF
 }
 
-class DigitalIdentity {
+class CentralOffice {
 
 }
 
-class Resource {
+class StreetCabinet {
 
 }
 
-class Organization {
+class Modem {
 
 }
 
-class GeographicAddress {
+class Router {
 
 }
 
-DigitalIdentity -->  "0..1" Resource
+CentralOffice -->  "30" StreetCabinet
 
-Resource --> "0..1" GeographicAddress
+StreetCabinet --> "30" Modem
 
-Resource --> "0..*" Organization
+Modem --> "3" Router
+
+note right of CentralOffice
+  3 Central Offices for each state in GER 
+  -> in total 48 Central Offices
+end note
+
 
 @enduml
 

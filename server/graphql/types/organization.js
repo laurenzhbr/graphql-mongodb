@@ -20,9 +20,6 @@ const PartyCreditProfileType = new GraphQLObjectType({
     ratingScore: { type: GraphQLInt },
     lastExecuted: { type: GraphQLDate }, // GraphQLDate für Date-Typ
     validFor: { type: ValidForType }, // Falls ValidFor ein Objekt ist
-    /* "@baseType": { type: GraphQLString },
-    "@schemaLocation": { type: GraphQLString },
-    "@type": { type: GraphQLString } */
   })
 });
   

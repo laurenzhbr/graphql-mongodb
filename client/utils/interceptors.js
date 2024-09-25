@@ -8,12 +8,18 @@ const axiosInstance = axios.create({
 });
 
 // Konverter für Byte-Einheiten
-const convertBytes = (bytes) => {
+/* const convertBytes = (bytes) => {
     const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
     if (bytes === 0) return '0 Byte';
     const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
     return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${sizes[i]}`;
-  };
+  }; */
+
+const convertBytes = (bytes) => {
+    if (bytes === 0) return '0 MB';
+    const mb = bytes / (1024 * 1024); // Convert bytes to MB
+    return `${mb.toFixed(2)} MB`;     // Return the value with two decimal places
+};
 
 // Füge einen Request Interceptor hinzu
 axiosInstance.interceptors.request.use(config => {

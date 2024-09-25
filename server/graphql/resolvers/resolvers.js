@@ -10,7 +10,8 @@ const DigitalIdentityUpdateInput = require('../types/inputs/DigitalIdentityInput
 const ResourceInputType = require('../types/inputs/ResourceInputType');
 
 const RootQuery = new GraphQLObjectType({
-  name: 'RootQueryType',
+  name: 'RootQuery',
+  description: 'Entry points for fetching data',
   fields: {
     resource: {
       type: ResourceType,
@@ -21,59 +22,52 @@ const RootQuery = new GraphQLObjectType({
     },
     resources: {
       type: new GraphQLList(ResourceType),
-      resolve(parent, args) {
-        return Resource.find({});
-      },
-    },
-    digitalIdentity: {
-      type: DigitalIdentityType,
-      args: { id: { type: GraphQLID } },
-      resolve(parent, args) {
-        return DigitalIdentity.findOne({ _id: args.id }); // Nutze findById, um die DigitalIdentity basierend auf der ID abzurufen
-      },
-    },
-    digitalIdentitiesByStatus:{
-      type: new GraphQLList(DigitalIdentityType),
       args: {
-        status: { type: GraphQLString}, 
-        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)', defaultValue: 10},
-        sortBy: { type: GraphQLString, description: 'Declare sorting by creation date - desc or asc'}
+        category: {type: GraphQLString, description: 'category of the resources'},
+        capacity: {type: GraphQLInt, description: 'current capacity usage of the resource'},
+        resourceStatus: { type: GraphQLString, description: 'enum: standby, alarm, available, reserved, unknown, suspended'},
+        operationalState: { type: GraphQLString, description: 'enum: enable, disable' },
+        administrativeState: { type: GraphQLString, description: 'enum: locked, unlocked, shutdown' },
+        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
+        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
+        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
+        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
       },
       async resolve(parent, args) {
-        const limit = args.limit;
+        sortBy = args.sortBy || 'id';
+        direction = args.direction || 'asc'
+        limit = parseInt(args.limit) || 0
+        offset = parseInt(args.offset) || 0
 
-        // Abfrage mit den dynamisch erzeugten Filtern
-        let query = DigitalIdentity.find();
-
-        // Sortiere nach Creditrating, wenn creditRating_gt angegeben ist
-        query = args.sortByCreationDate ? query.sort({ 'sortByCreationDate': args.sortBy === 'asc' ? 1 : -1 }) : query;
-
-        // Führe die Abfrage aus
-        return await query.limit(limit);
-      }
-    },
-    searchResourcesByCategoryAnCapacityUsage:{
-      type: new GraphQLList(ResourceType),
-      args: {category: { type: GraphQLString}, capacity: { type: GraphQLInt }},
-      resolve(parent, args) {
-        // Filter für Kapazitätsnutzung
-        const filterObj = {};
-        if (args.capacity) {
-          filterObj['resourceCharacteristic'] = {
-            $elemMatch: {
-              name: 'current_capacity_usage',
-              value: { $gt: args.capacity },
+        const filter = {
+          ...(args.category && { category: args.category }),
+          ...(args.resourceStatus && { resourceStatus: args.resourceStatus }),
+          ...(args.operationalState && { operationalState: args.operationalState }),
+          ...(args.administrativeState && { administrativeState: args.administrativeState }),
+          ...(args.capacity && {
+            resourceCharacteristic: {
+              $elemMatch: {
+                name: 'current_capacity_usage',
+                value: { $gt: args.capacity },
+              },
             },
-          };
-          return Resource.find(filterObj);
+          }),
         }
-      }
+        return Resource.find(filter)
+        .sort({ [sortBy]: direction === 'asc' ? 1 : -1 })
+        .skip(offset)
+        .limit(limit)
+      },
     },
-    resourcesByCategoryAndCity:{
+    searchResourcesInCity:{
       type: new GraphQLList(ResourceType),
       args: {
         category: { type: GraphQLString },
-        city: { type: GraphQLString }
+        city: { type: GraphQLString },
+        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
+        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
+        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
+        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
       },
       async resolve(parent, args){
         // Filter nach Kategorie
@@ -99,35 +93,36 @@ const RootQuery = new GraphQLObjectType({
         return filteredResources;
       }
     },
-    resourcesByCategoryAndStates: {
-      type: new GraphQLList(ResourceType),
-      args: {
-        category: { type: GraphQLString },
-        resourceStatus: { type: GraphQLString },
-        operationalState: { type: GraphQLString },
-        administrativeState: { type: GraphQLString },
+    digitalIdentity: {
+      type: DigitalIdentityType,
+      args: { id: { type: GraphQLID } },
+      resolve(parent, args) {
+        return DigitalIdentity.findOne({ _id: args.id }); // Nutze findById, um die DigitalIdentity basierend auf der ID abzurufen
       },
-      resolve(parent, args){
-        // Filter nach Kategorie
-        const filter = { category: args.category };
+    },
+    digitalIdentities:{
+      type: new GraphQLList(DigitalIdentityType),
+      args: {
+        status: { type: GraphQLString, description: 'status of the Digital Identity'}, 
+        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
+        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
+        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
+        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
+      },
+      async resolve(parent, args) {
+        sortBy = args.sortBy || 'id';
+        direction = args.direction || 'asc'
+        limit = parseInt(args.limit) || 0
+        offset = parseInt(args.offset) || 0
 
-        // Optional: Filter für usageState
-        if (args.resourceStatus) {
-          filter['resourceStatus'] = args.resourceStatus;
+        const filter = {
+          ...(args.status && { status: args.status }),
         }
 
-        // Optional: Filter für administrativeState
-        if (args.administrativeState) {
-          filter['administrativeState'] = args.administrativeState;
-        }
-
-        // Optional: Filter für operationalState
-        if (args.operationalState) {
-          filter['operationalState'] = args.operationalState;
-        }
-
-        // Führe die Abfrage basierend auf den Filtern aus
-        return Resource.find(filter);
+        return DigitalIdentity.find(filter)
+        .sort({ [sortBy]: direction === 'asc' ? 1 : -1 })
+        .skip(offset)
+        .limit(limit)
       }
     },
     organizations: {
@@ -135,31 +130,32 @@ const RootQuery = new GraphQLObjectType({
       args: {
         organizationType: { type: GraphQLString },
         status: { type: GraphQLString },
-        sortBy: { type: GraphQLString},
         creditRating_gt: { type: GraphQLInt },
-        limit: { type: GraphQLInt},
+        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
+        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
+        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
+        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
       },
       async resolve(parent, args){
-        let limit = args.limit || 100;
+        sortBy = args.sortBy || 'id';
+        direction = args.direction || 'asc'
+        limit = parseInt(args.limit) || 0
+        offset = parseInt(args.offset) || 0
+
         // Filter-Objekt
         const filter = {
-          ...(args.organizationType && { organizationType: { $in: args.organizationType } }), // Füge nur hinzu, wenn organizationType angegeben ist
-          ...(args.status && { status: args.status }), // Füge nur hinzu, wenn status angegeben ist
+          ...(args.organizationType && { organizationType: { $in: args.organizationType } }),
+          ...(args.status && { status: args.status }),
           ...(args.creditRating_gt && {
             creditRating: {
-              $elemMatch: { ratingScore: { $gt: args.creditRating_gt } } // Füge nur hinzu, wenn creditRating_gt angegeben ist
+              $elemMatch: { ratingScore: { $gt: args.creditRating_gt } }
             }
           })
         };
-
-        // Abfrage mit den dynamisch erzeugten Filtern
-        let query = Organization.find(filter);
-
-        // Sortiere nach Creditrating, wenn creditRating_gt angegeben ist
-        query = args.creditRating_gt ? query.sort({ 'creditRating.ratingScore': args.sortBy === 'asc' ? 1 : -1 }) : query;
-
-        // Führe die Abfrage aus
-        return await query.limit(limit);
+        return Organization.find(filter)
+        .sort({ [sortBy]: direction === 'asc' ? 1 : -1 })
+        .skip(offset)
+        .limit(limit)
       }
     }
   },
@@ -168,6 +164,7 @@ const RootQuery = new GraphQLObjectType({
 
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',
+  description: 'Entry points for manipulating data',
   fields: {
     createResource: {
       type: ResourceType,
@@ -200,20 +197,6 @@ const Mutation = new GraphQLObjectType({
 
         // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
         const updatedDigitalIdentity = await digitalIdentity.save();
-
-        // Manuelles Mapping: `resourceIdentified` -> `resource`
-        const updatedDataWithResource = {
-          ...updatedDigitalIdentity.toObject(),
-          resourceIdentified: updatedDigitalIdentity.resourceIdentified // Mappe das Feld `resourceIdentified` zu `resource`
-        };
-        /* // Führe die Aktualisierung durch
-        if (!data.resourceIdentified.href){
-          data.resourceIdentified.href = `https://{host}/resourceInventoryManagement/resource/${data.resourceIdentified.id}`;
-        }
-        const updatedDigitalIdentity = await DigitalIdentity.findByIdAndUpdate(id, data, {
-          new: true,
-          runValidators: true
-      }); */
         return updatedDigitalIdentity;
     }
     },
