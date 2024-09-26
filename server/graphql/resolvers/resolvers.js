@@ -28,16 +28,15 @@ const RootQuery = new GraphQLObjectType({
         resourceStatus: { type: GraphQLString, description: 'enum: standby, alarm, available, reserved, unknown, suspended'},
         operationalState: { type: GraphQLString, description: 'enum: enable, disable' },
         administrativeState: { type: GraphQLString, description: 'enum: locked, unlocked, shutdown' },
-        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
-        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
-        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
+        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data'},
+        limit: { type: GraphQLInt, description: 'value for limiting the amount of data'},
+        sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
       },
       async resolve(parent, args) {
-        sortBy = args.sortBy || 'id';
-        direction = args.direction || 'asc'
         limit = parseInt(args.limit) || 0
         offset = parseInt(args.offset) || 0
+        sortField = args.sort ? args.sort.replace('-', '') : 'id';
+        sortDirection = args.sort && args.sort.startsWith('-') ? -1 : 1;
 
         const filter = {
           ...(args.category && { category: args.category }),
@@ -54,7 +53,7 @@ const RootQuery = new GraphQLObjectType({
           }),
         }
         return Resource.find(filter)
-        .sort({ [sortBy]: direction === 'asc' ? 1 : -1 })
+        .sort({ [sortField]: sortDirection})
         .skip(offset)
         .limit(limit)
       },
@@ -66,8 +65,7 @@ const RootQuery = new GraphQLObjectType({
         city: { type: GraphQLString },
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
-        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
+        sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
       },
       async resolve(parent, args){
         // Filter nach Kategorie
@@ -106,21 +104,20 @@ const RootQuery = new GraphQLObjectType({
         status: { type: GraphQLString, description: 'status of the Digital Identity'}, 
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
-        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
+        sort: { type: GraphQLString, description: 'field and direction for sorting results ( {field} => asc sorting || -{field} => desc sorting )'},
       },
       async resolve(parent, args) {
-        sortBy = args.sortBy || 'id';
-        direction = args.direction || 'asc'
-        limit = parseInt(args.limit) || 0
-        offset = parseInt(args.offset) || 0
+        limit = parseInt(args.limit) || 0;
+        offset = parseInt(args.offset) || 0;
+        sortField = args.sort ? args.sort.replace('-', '') : 'id';
+        sortDirection = args.sort && args.sort.startsWith('-') ? -1 : 1;
 
         const filter = {
           ...(args.status && { status: args.status }),
         }
 
         return DigitalIdentity.find(filter)
-        .sort({ [sortBy]: direction === 'asc' ? 1 : -1 })
+        .sort({ [sortField]: sortDirection })
         .skip(offset)
         .limit(limit)
       }
@@ -133,14 +130,13 @@ const RootQuery = new GraphQLObjectType({
         creditRating_gt: { type: GraphQLInt },
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sortBy: { type: GraphQLString, description: 'Field after which the sorting should happen'},
-        direction: {type: GraphQLString, description: 'direction the results should be sorted by -> asc or desc'},
+        sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
       },
       async resolve(parent, args){
-        sortBy = args.sortBy || 'id';
-        direction = args.direction || 'asc'
         limit = parseInt(args.limit) || 0
         offset = parseInt(args.offset) || 0
+        sortField = args.sort ? args.sort.replace('-', '') : 'id';
+        sortDirection = args.sort && args.sort.startsWith('-') ? -1 : 1;
 
         // Filter-Objekt
         const filter = {
@@ -153,14 +149,13 @@ const RootQuery = new GraphQLObjectType({
           })
         };
         return Organization.find(filter)
-        .sort({ [sortBy]: direction === 'asc' ? 1 : -1 })
+        .sort({ [sortField]: sortDirection })
         .skip(offset)
         .limit(limit)
       }
     }
   },
 });
-
 
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',

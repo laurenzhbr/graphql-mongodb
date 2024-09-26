@@ -5,8 +5,7 @@ const rest_use_case_1 = async () => {
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
 
-    // 1st API Call
-    const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active&fields=nickname,status,creationDate,lastUpdate,resourceIdentified&limit=40&sortByCreationDate=desc`
+    const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active&limit=40&sort=-creationDate`
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;

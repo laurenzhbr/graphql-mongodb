@@ -4,11 +4,15 @@ const DigitalIdentity = require('../models/DigtialIdentityModels/DigitalIdentity
 exports.getDigitalIdentities = async (req, res) => {
     try {
         // URL-Query-Parameter
-        const { offset = 10, limit = 10, fields, sortByCreationDate, ...filters } = req.query;
+        const { offset = 0, limit = 0, fields, sort = "id", ...filters } = req.query;
 
         // Offset und Limit für Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
+
+        // Setze das Sortierfeld und -richtung inline
+        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
         // Fields für die Projektion (nur First-Level-Attribute erlaubt)
         let selectedFields = null;
@@ -26,38 +30,26 @@ exports.getDigitalIdentities = async (req, res) => {
         const totalCount = await DigitalIdentity.countDocuments(filterObj);
         
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
-        let query = DigitalIdentity.find(filterObj)
+        let digitalIdentities = await DigitalIdentity.find(filterObj)
+          .sort({ [sortField]: sortDirection })
           .select(selectedFields)
           .skip(skip)
+          .limit(limitVal)
         
-        query = sortByCreationDate ? query.sort({'creationDate': sortByCreationDate === 'asc' ? 1 : -1 }) : query;
-        
-        const digitalIdentities = await query.limit(limitVal);
-
         // Get X-Result-Count
         const resultCount = digitalIdentities.length;
 
         // Header mit x-Result-Count und x-Total-Count
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
-
-        /* if (req.query.name) {
-            filters.name = req.query.name;
+        
+        if (offset == 0 && limit == 0){
+          res.status(200).json(geoAddresses)
+        } else if (resultCount == 0 ){
+          res.status(404).json({message: "No results found"})
+        } else  {
+          res.status(206).json(geoAddresses)
         }
-        if (req.query.category) {
-            filters.category = req.query.category;
-        }
-        if (req.query.description) {
-            filters.description = req.query.description;
-        }
-        if (req.query.startOperatingDate) {
-            filters.startOperatingDate = { $gte: new Date(req.query.startOperatingDate) };
-        }
-        if (req.query.endOperatingDate) {
-            filters.endOperatingDate = { $lte: new Date(req.query.endOperatingDate) };
-        } */
-
-        res.json(digitalIdentities);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -98,25 +90,25 @@ exports.createDigitalIdentity = async (req, res) => {
 // Controller-Funktion zum Abrufen einer spezifischen DigitalIdentity
 exports.getDigitalIdentityById = async (req, res) => {
     try {
-        // Auswahl der Felder, die zurückgegeben werden sollen
-        const { id } = req.params;
-        const { fields } = req.query;
+      // Auswahl der Felder, die zurückgegeben werden sollen
+      const { id } = req.params;
+      const { fields } = req.query;
 
-        // Fields für die Projektion (nur First-Level-Attribute erlaubt)
-    let selectFields = null;
-    if (fields) {
-      selectFields = fields
-        .split(',')
-        .map((field) => field.trim())
-        .filter((field) => !field.includes('.')) // Nur First-Level-Felder
-        .join(' ');
-    }
+      // Fields für die Projektion (nur First-Level-Attribute erlaubt)
+      let selectFields = null;
+      if (fields) {
+        selectFields = fields
+          .split(',')
+          .map((field) => field.trim())
+          .filter((field) => !field.includes('.')) // Nur First-Level-Felder
+          .join(' ');
+      }
 
-    const digitalIdentity = await DigitalIdentity.findById(id).select(fields);
-    if (!digitalIdentity) {
-      return res.status(404).json({ message: 'DigitalIdentity not found with the specified criteria' });
-    }
-      res.json(digitalIdentity);
+      const digitalIdentity = await DigitalIdentity.findById(id).select(selectFields);
+      if (!digitalIdentity) {
+        return res.status(404).json({ message: 'DigitalIdentity not found with the specified criteria' });
+      }
+      res.status(200).json(digitalIdentity);
     } catch (err) {
       res.status(500).json({ message: err.message });
     }

@@ -37,19 +37,6 @@ const rest_use_case_6 = async (id = "66e301dfd4e340e8e8f51322") => {
         })
     );
     useCaseData.relatedParty = relatedPartyDetails;
-
-    /* const resourceSpecification = res1.data.resourceSpecification
-    const href_resourceSpecification = resourceSpecification.href
-        .replace("{host}", actualHost)
-        .replace("https", "http");
-    const res4 = await axiosInstance.get(href_resourceSpecification.replace("https", "http"));
-    total_duration += res4.duration; */
-    /* for (resourceSpec of resourceSpecifications) {
-        const href_resourceSpecification = resourceSpec.href.replace("{host}", actualHost)
-        const res5 = await axiosInstance.get(href_resourceSpecification.replace("https", "http"));
-        total_duration += res5.duration;
-    }    
- */
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
     accumulatedMetrics.total_transaction_time = total_transaction_time;
     accumulatedMetrics.data = useCaseData

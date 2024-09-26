@@ -6,11 +6,15 @@ exports.getAllResources = async (req, res) => {
     try {
 
         // URL-Query-Parameter
-        const { offset = 0, limit = undefined, fields, current_capacity_usage, ...filters } = req.query;
+        const { offset = 0, limit = 0, fields, sort = "id", ...filters } = req.query;
 
         // Offset und Limit für Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
+
+        // Setze das Sortierfeld und -richtung inline
+        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
         // Fields für die Projektion (nur First-Level-Attribute erlaubt)
         let selectedFields = null;
@@ -22,26 +26,59 @@ exports.getAllResources = async (req, res) => {
             .join(' ');
         }
 
+        // Create the filter object for MongoDB queries
         const filterObj = { ...filters };
 
-        // Falls ein Filter für `current_capacity_usage` angegeben wurde
-        if (current_capacity_usage) {
-            filterObj['resourceCharacteristic'] = {
-              $elemMatch: {
-                "name": "current_capacity_usage",
-                "value": { $gt: parseInt(current_capacity_usage) }
-              }
-            };
+        // Dynamisches Filtern der resourceCharacteristics
+        const characteristicsFilter = [];
+
+        for (const key in filters) {
+            if (filters.hasOwnProperty(key) && key.includes('.')) {
+                const operatorMatch = key.match(/(gt|lt|gte|lte)$/); // Erkennung von Vergleichsoperatoren
+                const operator = operatorMatch ? operatorMatch[0] : null;
+                const value = filters[key].replace(operator, '');
+
+                // Mapping der Operatoren zu MongoDB
+                const mongoOperator = operator === 'gt' ? '$gt'
+                    : operator === 'lt' ? '$lt'
+                    : operator === 'gte' ? '$gte'
+                    : operator === 'lte' ? '$lte'
+                    : null;
+
+                // Hinzufügen des Filters für die spezifische Characteristic
+                if (mongoOperator) {
+                    characteristicsFilter.push({
+                        $elemMatch: {
+                            name: key.replace(`.${operator}`, ''), // Entferne den Operator aus dem Namen
+                            value: { [mongoOperator]: parseInt(value, 10) }
+                        }
+                    });
+                } else {
+                    characteristicsFilter.push({
+                        $elemMatch: {
+                            name: key,
+                            value: filters[key]
+                        }
+                    });
+                }
+              delete filterObj[key];
+            }
         }
 
+        // Wenn es dynamische Characteristics-Filter gibt, dann füge sie zu filterObj hinzu
+        if (characteristicsFilter.length > 0) {
+            filterObj['resourceCharacteristic'] = { $all: characteristicsFilter };
+        }
+        
         // Get X-Total-Count
         const totalCount = await Resource.countDocuments(filterObj);
         
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
         const resources = await Resource.find(filterObj)
-          .select(selectedFields)
-          .skip(skip)
-          .limit(limitVal); 
+            .sort({ [sortField]: sortDirection })
+            .select(selectedFields)
+            .skip(skip)
+            .limit(limitVal)
         
         // Get X-Result-Count
         const resultCount = resources.length;
@@ -50,9 +87,14 @@ exports.getAllResources = async (req, res) => {
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
 
-        res.json(resources);
+        if (offset == 0 && limit == 0){
+          res.status(200).json(resources)
+        } else if (resultCount == 0 ){
+          res.status(404).json({message: "No results found"})
+        } else  {
+          res.status(206).json(resources)
+        }
     } catch (err) {
-      console.log(err.message);  
       res.status(500).json({ message: err.message });
     }
 };
@@ -71,29 +113,24 @@ exports.createResource = async (req, res) => {
 // Controller-Funktion zum Abrufen einer spezifischen Ressource
 exports.getResourceById = async (req, res) => {
     try {
-        const filters = { _id: req.params.id };
-
-        if (req.query.name) {
-            filters.name = req.query.name;
-        }
-        if (req.query.category) {
-            filters.category = req.query.category;
-        }
-        if (req.query.description) {
-            filters.description = req.query.description;
-        }
+      const { id } = req.params;
+        const {fields} = req.query
 
         // Auswahl der Felder, die zurückgegeben werden sollen
-        let fields = null;
-        if (req.query.fields) {
-            fields = req.query.fields.split(',').join(' ');
+        let selectedFields = null;
+        if (fields) {
+          selectedFields = fields
+            .split(',')
+            .map((field) => field.trim())
+            .filter((field) => !field.includes('.')) // Nur First-Level-Felder
+            .join(' ');
         }
 
-        const resource = await Resource.findOne(filters).select(fields);
+        const resource = await Resource.findById(id).select(selectedFields);
         if (!resource) {
             return res.status(404).json({ message: 'Resource not found with the specified criteria' });
         }
-        res.json(resource);
+        res.status(200).json(resource);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -134,9 +171,19 @@ exports.updateResourceById = async (req, res) => {
 // Controller-Funktion zum Löschen einer Ressource
 exports.deleteResourceById = async (req, res) => {
     try {
-        await Resource.findByIdAndDelete(req.params.id);
-        res.json({ message: 'Resource deleted' });
+      const { id } = req.params;
+
+      // Suche und lösche die Resource anhand der ID
+      const deletedResource = await Resource.findByIdAndDelete(id);
+
+      // Falls die Resource nicht gefunden wurde
+      if (!deletedResource) {
+          return res.status(404).json({ message: `Resource mit ID ${id} nicht gefunden.` });
+      }
+
+      // Erfolgreich gelöscht
+      res.status(204).json();
     } catch (err) {
-        res.status(500).json({ message: err.message });
+      res.status(500).json({ message: err.message });
     }
 };

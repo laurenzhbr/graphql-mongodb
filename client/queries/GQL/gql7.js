@@ -2,7 +2,7 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const query = (category, resourceStatus, administrativeState, operationalState) => `
 	{
-  resourcesByCategoryAndStates(category: "${category}", resourceStatus: "${resourceStatus}", administrativeState: "${administrativeState}", operationalState: "${operationalState}") {
+  resources(category: "${category}", resourceStatus: "${resourceStatus}", administrativeState: "${administrativeState}", operationalState: "${operationalState}") {
     id
     name
     resourceStatus

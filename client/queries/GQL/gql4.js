@@ -2,7 +2,7 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const query = (category, city, characteristics) => `
 	{
-    resourcesByCategoryAndCity(category: "${category}", city: "${city}") {
+    searchResourcesInCity(category: "${category}", city: "${city}") {
       name
       category
       resourceCharacteristic(names: ["${characteristics.join('", "')}"]){

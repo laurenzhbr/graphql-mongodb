@@ -4,11 +4,15 @@ const GeoAddress = require('../models/GeoAdressModels/GeographicAdress');
 exports.getAllGeoAddresses = async (req, res) => {
     try {
         // URL-Query-Parameter
-        const { offset = 0, limit = 10, fields, ...filters } = req.query;
+        const { offset = 0, limit = 10, fields, sort = "id", ...filters } = req.query;
 
         // Offset und Limit für Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
+
+        // Setze das Sortierfeld und -richtung inline
+        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
         // Fields für die Projektion (nur First-Level-Attribute erlaubt)
         let selectedFields = null;
@@ -27,10 +31,10 @@ exports.getAllGeoAddresses = async (req, res) => {
         
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
         const geoAddresses = await GeoAddress.find(filterObj)
-          .select(selectedFields)
-          .skip(skip)
-          .limit(limitVal); 
-
+            .sort({ [sortField]: sortDirection })
+            .select(selectedFields)
+            .skip(skip)
+            .limit(limitVal)
         // Get X-Result-Count
         const resultCount = geoAddresses.length;
         
@@ -38,7 +42,13 @@ exports.getAllGeoAddresses = async (req, res) => {
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
 
-        res.json(geoAddresses);
+        if (offset == 0 && limit == 0){
+        res.status(200).json(geoAddresses)
+        } else if (resultCount == 0 ){
+            res.status(404).json({message: "No results found"})
+        } else  {
+            res.status(206).json(geoAddresses)
+        }
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -46,14 +56,7 @@ exports.getAllGeoAddresses = async (req, res) => {
 
 // Controller-Funktion zum Erstellen einer neuen GeoAdresse
 exports.createGeoAddress = async (req, res) => {
-    const geoAddress = new GeoAddress({
-        // href-Attribut wird automatisch gesetzt
-        category: req.body.category,
-        name: req.body.name,
-        description: req.body.description,
-        endOperatingDate: req.body.endOperatingDate,
-        startOperatingDate: req.body.startOperatingDate,
-    });
+    const geoAddress = new GeoAddress( req.body );
 
     try {
         const newGeoAddress = await geoAddress.save();
@@ -83,7 +86,7 @@ exports.getGeoAddressById = async (req, res) => {
         if (!geoAddress) {
             return res.status(404).json({ message: 'GeoAddress not found with the specified criteria' });
         }
-        res.json(geoAddress);
+        res.status(200).json(geoAddress);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
