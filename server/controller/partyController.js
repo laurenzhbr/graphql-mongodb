@@ -1,7 +1,7 @@
 const Organization = require('../models/PartyModels/Organization');
 
 // Controller-Funktion zum Abrufen aller Ressourcen
-exports.getAllParties = async (req, res) => {
+exports.getOrganizationList = async (req, res) => {
     try {
         // URL-Query-Parameter
         const { offset = 0, limit = 0, fields, sort = "id", ...filters } = req.query;
@@ -75,8 +75,8 @@ exports.getAllParties = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Erstellen einer neuen Ressource
-exports.createParty = async (req, res) => {
+// Controller-Funktion zum Erstellen einer neuen Organisation
+exports.createOrganization = async (req, res) => {
     const organization = new Organization(req.body);
     try {
         const newOrganization = await organization.save();
@@ -86,8 +86,28 @@ exports.createParty = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Abrufen einer spezifischen Ressource
-exports.getPartyById = async (req, res) => {
+// Controller zum Löschen einer spezifischen Organisation anhand der ID
+exports.deleteOrganzationById = async (req, res) => {
+  try {
+      const { id } = req.params;
+
+      // Suche und lösche die Organization anhand der ID
+      const deletedOrganization = await Organization.findByIdAndDelete(id);
+
+      // Falls die Organization nicht gefunden wurde
+      if (!deletedOrganization) {
+          return res.status(404).json({ message: `Organization with ID ${id} not found.` });
+      }
+
+      // Erfolgreich gelöscht
+      res.status(204).json();
+  } catch (error) {
+      res.status(500).json({ message: error.message });
+  }
+};
+
+// Controller-Funktion zum Abrufen einer spezifischen Organisation
+exports.getOrganizationById = async (req, res) => {
     try {
       const { id } = req.params;
       const { fields } = req.query;
@@ -110,4 +130,37 @@ exports.getPartyById = async (req, res) => {
     } catch (err) {
       res.status(500).json({ message: err.message });
     }
+};
+
+exports.patchOrganizationById = async (req, res) => {
+  try {
+    const { id } = req.params;  // ID der Organisation aus den URL-Parametern
+    const updateData = req.body; // Die Daten, die aktualisiert werden sollen
+
+    // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
+    if (!updateData || Object.keys(updateData).length === 0) {
+        return res.status(400).json({ success: false, message: 'No data for PATCH' });
+    }
+
+    // Finde die Organisation basierend auf der ID
+    const organization = await Organization.findById(id);
+
+    if (!organization) {
+      return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
+    }
+
+    // Aktualisiere nur die übermittelten Felder
+    Object.assign(organization, updateData);
+
+    // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+    const updatedOrganization = await organization.save();
+
+    // Erfolgreiches Update
+    res.status(200).json(
+      updatedOrganization
+    );
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
 };

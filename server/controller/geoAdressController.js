@@ -1,7 +1,7 @@
 const GeoAddress = require('../models/GeographicAddressModels/GeographicAddress');
 
 // Controller-Funktion zum Abrufen aller GeoAdressen
-exports.getAllGeoAddresses = async (req, res) => {
+exports.getGeoAddressList = async (req, res) => {
     try {
         // URL-Query-Parameter
         const { offset = 0, limit = 10, fields, sort = "id", ...filters } = req.query;
@@ -56,18 +56,18 @@ exports.getAllGeoAddresses = async (req, res) => {
 
 // Controller-Funktion zum Erstellen einer neuen GeoAdresse
 exports.createGeoAddress = async (req, res) => {
-    const geoAddress = new GeoAddress( req.body );
+    const geographicAddress = new GeoAddress( req.body );
 
     try {
-        const newGeoAddress = await geoAddress.save();
-        res.status(201).json(newGeoAddress);
+        const newGeographicAddress = await geographicAddress.save();
+        res.status(201).json(newGeographicAddress);
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
 };
 
 // Controller zum Löschen einer spezifischen DigitalIdentity anhand der ID
-exports.deleteGeographicAddressById = async (req, res) => {
+exports.deleteGeoAddressById = async (req, res) => {
   try {
       const { id } = req.params;
 
@@ -110,4 +110,37 @@ exports.getGeoAddressById = async (req, res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
+};
+
+exports.patchGeoAddressById = async (req, res) => {
+  try {
+    const { id } = req.params;  // ID der DigitalIdentity aus den URL-Parametern
+    const updateData = req.body; // Die Daten, die aktualisiert werden sollen
+
+    // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
+    if (!updateData || Object.keys(updateData).length === 0) {
+        return res.status(400).json({ success: false, message: 'No data for PATCH' });
+    }
+
+    // Finde die DigitalIdentity basierend auf der ID
+    const geographicAddress = await GeoAddress.findById(id);
+
+    if (!geographicAddress) {
+      return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
+    }
+
+    // Aktualisiere nur die übermittelten Felder
+    Object.assign(geographicAddress, updateData);
+
+    // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+    const updatedGeographicAddress = await geographicAddress.save();
+
+    // Erfolgreiches Update
+    res.status(200).json(
+      updatedGeographicAddress
+    );
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
 };

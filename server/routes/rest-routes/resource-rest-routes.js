@@ -3,7 +3,7 @@ const router = express.Router();
 const resourceController = require('../../controller/resourceController')
 
 // GET /resource - Alle Ressourcen abrufen
-router.get('/', resourceController.getAllResources);
+router.get('/', resourceController.getResourceList);
 
 // POST /resource - Eine neue Ressource erstellen
 router.post('/', resourceController.createResource);
@@ -12,7 +12,7 @@ router.post('/', resourceController.createResource);
 router.get('/:id', resourceController.getResourceById);
 
 // PATCH /resource/:id - Eine Ressource aktualisieren
-router.patch('/:id', resourceController.updateResourceById);
+router.patch('/:id', resourceController.patchResourceById);
 
 // DELETE /resource/:id - Eine Ressource löschen
 router.delete('/:id', resourceController.deleteResourceById);

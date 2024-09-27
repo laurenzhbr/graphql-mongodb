@@ -2,7 +2,7 @@
 
 const Resource = require('../models/ResourceModels/Resource'); // Importiere das Mongoose-Modell
 
-exports.getAllResources = async (req, res) => {
+exports.getResourceList = async (req, res) => {
     try {
 
         // URL-Query-Parameter
@@ -137,7 +137,7 @@ exports.getResourceById = async (req, res) => {
 };
 
 // Controller-Funktion zum Aktualisieren einer Ressource
-exports.updateResourceById = async (req, res) => {
+exports.patchResourceById = async (req, res) => {
     try {
         const { id } = req.params; // ID des Street-Cabinets
         const { newRelatedParty } = req.body; // Neue relatedParty-Daten (ID und andere Details)

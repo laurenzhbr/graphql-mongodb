@@ -65,7 +65,7 @@ exports.deleteDigitalIdentityById = async (req, res) => {
 
       // Falls die DigitalIdentity nicht gefunden wurde
       if (!deletedDigitalIdentity) {
-          return res.status(404).json({ message: `DigitalIdentity mit ID ${id} nicht gefunden.` });
+          return res.status(404).json({ message: `DigitalIdentity with ID ${id} not found.` });
       }
 
       // Erfolgreich gelöscht
@@ -121,14 +121,14 @@ exports.patchDigitalIdentity = async (req, res) => {
 
       // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
       if (!updateData || Object.keys(updateData).length === 0) {
-          return res.status(400).json({ success: false, message: 'Keine Daten zum Aktualisieren vorhanden' });
+          return res.status(400).json({ success: false, message: 'No data for PATCH' });
       }
 
       // Finde die DigitalIdentity basierend auf der ID
       const digitalIdentity = await DigitalIdentity.findById(id);
 
       if (!digitalIdentity) {
-        return res.status(404).json({ success: false, message: 'DigitalIdentity nicht gefunden' });
+        return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
       }
 
       // Aktualisiere nur die übermittelten Felder
@@ -143,6 +143,6 @@ exports.patchDigitalIdentity = async (req, res) => {
       );
     } catch (error) {
       console.error(error);
-      res.status(500).json({ success: false, message: 'Serverfehler' });
+      res.status(500).json({ success: false, message: 'Server Error' });
     }
   };
