@@ -16,7 +16,7 @@ const RelatedPlaceRefOrValueSchema = new mongoose.Schema({
 //Pre-save Hook to generate href-attribute
 RelatedPlaceRefOrValueSchema.pre('save', function(next){
     if (!this.href) {
-      this.href = `https://{host}/geographicAdressManagement/geographicAdress/${this.id}`;
+      this.href = `https://{host}/geographicAddressManagement/geographicAddress/${this.id}`;
     }
     next();
   })

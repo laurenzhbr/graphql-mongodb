@@ -90,7 +90,7 @@ const rest_use_case_9 = async () => {
                 "id": "66db3aa516d68c5f3c138b53",
                 "name": "Walsh LLC Manufacturing",
                 "role": "Gerätehersteller",
-                "href": "https://{host}/partyManagement/party/66db3aa516d68c5f3c138b53"
+                "href": "http://{host}/partyManagement/organization/66db3aa516d68c5f3c138b53"
             }
         ],
         "note": [
@@ -102,14 +102,14 @@ const rest_use_case_9 = async () => {
         ],
         "place": {
             "id": "66db17e94e5b0dd1a4758935",
-            "href": "https://{host}/geographicAdressManagement/geographicAdress/66db17e94e5b0dd1a4758935"
+            "href": "http://{host}/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a4758935"
         },
         "resourceRelationship": [
             {
                 "relationshipType": "isTargeted",
                 "resource": {
                     "id": "66db6d63658d40350e57e43f",
-                    "href": "https://{host}/resourceInventoryManagement/resource/66db6d63658d40350e57e43f",
+                    "href": "http://{host}/resourceInventoryManagement/resource/66db6d63658d40350e57e43f",
                     "name": "Modem Hüfingen 0"
                 }
             }
@@ -118,7 +118,7 @@ const rest_use_case_9 = async () => {
         "usageState": "idle",
         "startOperatingDate": "2008-01-29T22:25:19.167Z",
         "version": "4",
-        "href": "https://{host}/resourceInventoryManagement/resource/66e07529def2563e777ee859",
+        "href": "http://{host}/resourceInventoryManagement/resource/66e07529def2563e777ee859",
         "__v": 0
     }
 

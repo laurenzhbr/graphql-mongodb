@@ -1,4 +1,4 @@
-const GeoAddress = require('../models/GeoAdressModels/GeographicAdress');
+const GeoAddress = require('../models/GeographicAddressModels/GeographicAddress');
 
 // Controller-Funktion zum Abrufen aller GeoAdressen
 exports.getAllGeoAddresses = async (req, res) => {
@@ -64,6 +64,26 @@ exports.createGeoAddress = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
+};
+
+// Controller zum Löschen einer spezifischen DigitalIdentity anhand der ID
+exports.deleteGeographicAddressById = async (req, res) => {
+  try {
+      const { id } = req.params;
+
+      // Suche und lösche die DigitalIdentity anhand der ID
+      const deletedGeographicAddress = await GeoAddress.findByIdAndDelete(id);
+
+      // Falls die DigitalIdentity nicht gefunden wurde
+      if (!deletedGeographicAddress) {
+          return res.status(404).json({ message: `GeographicAddress with ID ${id} not found.` });
+      }
+
+      // Erfolgreich gelöscht
+      res.status(204).json();
+  } catch (error) {
+      res.status(500).json({ message: error.message });
+  }
 };
 
 // Controller-Funktion zum Abrufen einer spezifischen GeoAdresse

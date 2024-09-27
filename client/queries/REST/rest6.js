@@ -12,12 +12,8 @@ const rest_use_case_6 = async (id = "66e301dfd4e340e8e8f51322") => {
     useCaseData.resource = resourceData;
 
     // Sammle die RelatedParty IDs und die place href
-    const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href
-        .replace("{host}", actualHost)
-        .replace("https", "http"));
-    const href_geoAdress = resourceData.place.href
-        .replace("{host}", actualHost)
-        .replace("https", "http");
+    const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href.replace("{host}", actualHost));
+    const href_geoAdress = resourceData.place.href.replace("{host}", actualHost)
 
     //GET Data from GeoAdress
     accumulatedMetrics = await fetchMetrics(href_geoAdress, accumulatedMetrics);
@@ -27,7 +23,7 @@ const rest_use_case_6 = async (id = "66e301dfd4e340e8e8f51322") => {
     // 2. Abfrage der Related Parties (Organization)
     const relatedPartyDetails = await Promise.all(
         relatedPartyHrefs.map(async (partyHref) => {
-            const orgUrl = partyHref.replace("{host}", actualHost).replace("https", "http");
+            const orgUrl = partyHref.replace("{host}", actualHost);
             accumulatedMetrics, orgResponse = await fetchMetrics(orgUrl, accumulatedMetrics);
             return {
                 name: orgResponse.data.name,

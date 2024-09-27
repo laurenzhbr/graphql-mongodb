@@ -1,4 +1,4 @@
-const GeoAdress = require('../models/GeoAdressModels/GeographicAdress');
+const GeoAdress = require('../models/GeographicAddressModels/GeographicAddress');
 
 function createTestGeoAdress1() {
     const newGeoAdress = new GeoAdress({

@@ -15,7 +15,7 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
     // 2. Schritt: Prüfen, ob sich die Street Cabinets in Leipzig befinden
     for (let cabinet of streetCabinets) {
         let resultForCabinet = [];
-      const placeHref = cabinet.place.href.replace("{host}", actualHost).replace("https", "http");  // Href der GeographicAddress-Referenz
+      const placeHref = cabinet.place.href.replace("{host}", actualHost)  // Href der GeographicAddress-Referenz
 
       // Abfrage auf die GeographicAddress, um die Stadt zu erhalten -> Beschränkung auf field city, weil nur das notwendig ist
       //accumulatedMetrics = await fetchMetrics(`${placeHref}?fields=city`, accumulatedMetrics);
@@ -33,10 +33,8 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
             ['connected_lines', 'maximum_capacity', 'power_backup'].includes(characteristic.name)
           );
         const maintenanceCompany = cabinet.relatedParty.find(party => party.role === 'Wartungsfirma');
-        const relatedOrganizationHref = maintenanceCompany.href
-        .replace("{host}", actualHost)
-        .replace("https", "http");
-
+        const relatedOrganizationHref = maintenanceCompany.href.replace("{host}", actualHost)
+        
         accumulatedMetrics = await fetchMetrics(`${relatedOrganizationHref}?fields=name,organizationType,contactMedium`, accumulatedMetrics);
         const organizationData = accumulatedMetrics.data;
 

@@ -18,7 +18,7 @@ const PlaceType = require('./geographicAdress');
 const ResourceSpecificationType = require('./resourceSpecification');
 
 const Resource = require('../../models/ResourceModels/Resource')
-const GeographicAdress = require('../../models/GeoAdressModels/GeographicAdress')
+const GeographicAdress = require('../../models/GeographicAddressModels/GeographicAddress')
 const Organization = require('../../models/PartyModels/Organization')
 const ResourceSpecification = require('../../models/ResourceCatalogModels/ResourceSpecification');
 
