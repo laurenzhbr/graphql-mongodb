@@ -1,0 +1,26 @@
+{
+  "data": {
+    "resource": {
+      "resourceRelationship": [
+        {
+          "resource": {
+            "resourceRelationship": [
+              {
+                "resource": {
+                  "resourceRelationship": [
+                    {
+                      "resource": {
+                        "name": "Central Office Saarbrücken 1",
+                        "resourceStatus": "alarm"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

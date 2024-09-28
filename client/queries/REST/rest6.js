@@ -1,13 +1,18 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_6 = async (id = "66f7de5dbb06839f89522cce") => {
+const rest_use_case_6 = async (id = "66f7e21acfa2a96703f22d60") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
     let useCaseData = {};
 
-    const resourceUrl = `http://${actualHost}/resourceInventoryManagement/resource/${id}`;
-    accumulatedMetrics = await fetchMetrics(resourceUrl, accumulatedMetrics);
+    const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity/${id}`
+    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
+    useCaseData.digitalIdentity = accumulatedMetrics.data;
+
+    // get router information
+    const href_resourceIdentified = `${accumulatedMetrics.data.resourceIdentified.href.replace("{host}", actualHost)}`
+    accumulatedMetrics = await fetchMetrics(href_resourceIdentified, accumulatedMetrics);
     const resourceData = accumulatedMetrics.data;
     useCaseData.resource = resourceData;
 
@@ -24,12 +29,8 @@ const rest_use_case_6 = async (id = "66f7de5dbb06839f89522cce") => {
     const relatedPartyDetails = await Promise.all(
         relatedPartyHrefs.map(async (partyHref) => {
             const orgUrl = partyHref.replace("{host}", actualHost);
-            accumulatedMetrics, orgResponse = await fetchMetrics(orgUrl, accumulatedMetrics);
-            return {
-                name: orgResponse.data.name,
-                organizationType: orgResponse.data.organizationType,
-                status: orgResponse.data.status,
-            };
+            accumulatedMetrics = await fetchMetrics(orgUrl, accumulatedMetrics);
+            return accumulatedMetrics.data;
         })
     );
     useCaseData.relatedParty = relatedPartyDetails;

@@ -5,7 +5,7 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
 
-    const url = `http://${actualHost}/resourceInventoryManagement/resource?category=${category}&fields=name,place,relatedParty,resourceCharacteristic`
+    const url = `http://${actualHost}/resourceInventoryManagement/resource?category=${category}`
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
     const streetCabinets = accumulatedMetrics.data;
@@ -15,7 +15,7 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
     // 2. Schritt: Prüfen, ob sich die Street Cabinets in Leipzig befinden
     for (let cabinet of streetCabinets) {
         let resultForCabinet = [];
-      const placeHref = cabinet.place.href.replace("{host}", actualHost)  // Href der GeographicAddress-Referenz
+      const placeHref = cabinet.place.href.replace("{host}", actualHost);  // Href der GeographicAddress-Referenz
 
       // Abfrage auf die GeographicAddress, um die Stadt zu erhalten -> Beschränkung auf field city, weil nur das notwendig ist
       //accumulatedMetrics = await fetchMetrics(`${placeHref}?fields=city`, accumulatedMetrics);
@@ -24,23 +24,9 @@ const rest_use_case_4 = async (category="Street%20Cabinet") => {
 
       // Prüfen, ob die Stadt "Berlin" ist
       if (geographicAddress.city == "Leipzig") {
-        // 3. Schritt: Characteristics und Wartungsfirmen sammeln
-        //streetCabinetsInLeipzig.push(cabinet);
-
-
-        ////////////////// underneath for detailed use case
-        const filteredCharacteristics = cabinet.resourceCharacteristic.filter((characteristic) =>
-            ['connected_lines', 'maximum_capacity', 'power_backup'].includes(characteristic.name)
-          );
         const maintenanceCompany = cabinet.relatedParty.find(party => party.role === 'Wartungsfirma');
-        const relatedOrganizationHref = maintenanceCompany.href.replace("{host}", actualHost)
-        
-        accumulatedMetrics = await fetchMetrics(`${relatedOrganizationHref}?fields=name,organizationType,contactMedium`, accumulatedMetrics);
-        const organizationData = accumulatedMetrics.data;
 
-        // Speichern der relevanten Informationen für Street Cabinets in Leipzig
-        cabinet.characteristic=filteredCharacteristics
-        resultForCabinet.push({resource: cabinet, maintenanceCompany: organizationData, city: geographicAddress.city})
+        resultForCabinet.push({resource: cabinet, maintenanceCompany: maintenanceCompany, city: geographicAddress.city})
         streetCabinetsInLeipzig.push(cabinet);
       }
     }

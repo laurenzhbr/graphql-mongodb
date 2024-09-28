@@ -4,12 +4,12 @@ const query = (category, city, characteristics) => `
 	{
     searchResourcesInCity(category: "${category}", city: "${city}") {
       name
-      category
-      resourceCharacteristic(names: ["${characteristics.join('", "')}"]){
+      resourceCharacteristic{
         name
         value
       }
       relatedParties {
+        id
         organizationType
         name
       }

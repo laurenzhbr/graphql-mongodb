@@ -58,7 +58,7 @@ axiosInstance.interceptors.response.use(response => {
         responseDataSize = JSON.stringify(response.data).length;
     }
 
-    // console.log(`Response Data Size: ${convertBytes(responseDataSize)}`);
+    console.log(`Response Data Size: ${convertBytes(responseDataSize)}`);
 
     // Gesamtgröße des Datentransfers
     const totalDataTransferred = response.config.metadata.requestDataSize + responseDataSize;

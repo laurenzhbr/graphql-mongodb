@@ -31,7 +31,7 @@ Before executing this project, make sure that the following tools are installed:
 
 1. **mock DB data**
     ```bash
-    ./setup-data.sh
+    ./setup-data.sh {db_name}
 
 2. **start testsuite**
     ```bash

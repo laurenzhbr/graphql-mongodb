@@ -28,6 +28,11 @@ const {rest_use_case_8} = require('./queries/REST/rest8');
 const {rest_use_case_9} = require('./queries/REST/rest9');
 const {rest_use_case_10} = require('./queries/REST/rest10');
 
+// Import optimized REST-Request for Use-Case
+const {rest_use_case_3_opt} = require('./queries/REST_optimized/rest3');
+const {rest_use_case_4_opt} = require('./queries/REST_optimized/rest4');
+const {rest_use_case_6_opt} = require('./queries/REST_optimized/rest6');
+
 
 const gql_queries = [
     gql_use_case_1,
@@ -79,6 +84,12 @@ async function runTestSuite(){
     for (let i = 0; i < gql_queries.length; i++){
         await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, iteration_count[i]);
     }
+
+    //Conduct the payload optimized use cases for REST
+    await runSingleTestProcedure(rest_use_case_3_opt, "REST_opt", `rest3`, 50);
+    await runSingleTestProcedure(rest_use_case_4_opt, "REST_opt", `rest4`, 50);
+    await runSingleTestProcedure(rest_use_case_6_opt, "REST_opt", `rest6`, 50);
+
 }
 
 const runSingleTestProcedure = async (method, api, use_case, iterationCount) => {

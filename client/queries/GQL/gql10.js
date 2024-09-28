@@ -2,7 +2,7 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const query1 = (status, limit) => `
 	{
-    digitalIdentitiesByStatus(status: "${status}", limit: ${limit}){
+    digitalIdentities(status: "${status}", limit: ${limit}){
       id
     }
   }
@@ -28,7 +28,7 @@ const gql_use_case_10 =  async (id) => {
   
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 
-    for (entry of accumulatedMetrics.data.data.digitalIdentitiesByStatus){
+    for (entry of accumulatedMetrics.data.data.digitalIdentities){
       const data = { query: query2(entry.id),};
   
       accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);

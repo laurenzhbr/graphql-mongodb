@@ -15,5 +15,5 @@ logs/
 #ignore output directory for wsd images
 out
 
-results_backup_28
+results_backup/
 tmf_data

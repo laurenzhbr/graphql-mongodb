@@ -1,0 +1,199 @@
+{
+  "digitalIdentity": {
+    "_id": "66f7e21acfa2a96703f22d60",
+    "nickname": "Rocco10",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7de9f05b9728c4884a0ab",
+      "name": "Router 2 for Modem Seebach 19",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7de9f05b9728c4884a0ab"
+    },
+    "creationDate": "2024-09-28T11:01:46.481Z",
+    "lastUpdate": "2024-09-28T11:01:46.481Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e21acfa2a96703f22d60",
+    "__v": 0
+  },
+  "resource": {
+    "_id": "66f7de9f05b9728c4884a0ab",
+    "category": "Router",
+    "endOperatingDate": "2025-06-11T10:34:27.712Z",
+    "name": "Router 2 for Modem Seebach 19",
+    "resourceCharacteristic": [
+      {
+        "name": "router_type",
+        "valueType": "String",
+        "value": "Mesh Router"
+      },
+      {
+        "name": "max_download_speed",
+        "valueType": "String",
+        "value": "4.614436493255198Gbps"
+      },
+      {
+        "name": "max_upload_speed",
+        "valueType": "String",
+        "value": "161Mbps"
+      },
+      {
+        "name": "connection_type",
+        "valueType": "String",
+        "value": "DSL"
+      },
+      {
+        "name": "ethernet_ports",
+        "valueType": "Number",
+        "value": 23
+      },
+      {
+        "name": "usb_ports",
+        "valueType": "Number",
+        "value": 11
+      },
+      {
+        "name": "wifi_capability",
+        "valueType": "String",
+        "value": "Wi-Fi 4 (802.11n)"
+      },
+      {
+        "name": "power_consumption",
+        "valueType": "Number",
+        "value": 21
+      },
+      {
+        "name": "security_features",
+        "valueType": "String",
+        "value": "WPA3, Firewall, IPsec VPN"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2022-10-19T20:08:27.216Z"
+      },
+      {
+        "name": "processor",
+        "valueType": "String",
+        "value": "Intel Puma 7, 1.2 GHz"
+      },
+      {
+        "name": "memory",
+        "valueType": "String",
+        "value": "1GB DDR3"
+      },
+      {
+        "name": "storage",
+        "valueType": "String",
+        "value": "256MB NAND Flash"
+      }
+    ],
+    "administrativeState": "locked",
+    "operationalState": "disable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1e",
+        "name": "Bohge Gruppe Manufacturing",
+        "role": "Gerätehersteller",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1e"
+      }
+    ],
+    "note": [
+      {
+        "author": "Frieda Göbel",
+        "date": "2023-05-27T23:35:38.661Z",
+        "text": "Backup power system checked; no issues detected."
+      },
+      {
+        "author": "Chiara Schönberg",
+        "date": "2024-09-16T23:39:10.478Z",
+        "text": "Replaced faulty Ethernet port; connectivity restored."
+      }
+    ],
+    "place": {
+      "id": "66f7de4878e947f6ef1c178d",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4878e947f6ef1c178d"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de62b43b5a54073fef00",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de62b43b5a54073fef00",
+          "name": "Modem Seebach 19"
+        }
+      }
+    ],
+    "resourceStatus": "suspended",
+    "usageState": "busy",
+    "startOperatingDate": "2015-12-27T16:16:25.029Z",
+    "version": "1",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de9f05b9728c4884a0ab",
+    "__v": 0
+  },
+  "geographicAddress": {
+    "_id": "66f7de4878e947f6ef1c178d",
+    "city": "Seebach",
+    "country": "DE",
+    "postcode": "77889",
+    "stateOrProvince": "Baden-Württemberg",
+    "streetName": "Im Oberdorf",
+    "streetNr": "33",
+    "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4878e947f6ef1c178d",
+    "__v": 0
+  },
+  "relatedParty": [
+    {
+      "_id": "66f7de5a9c9c5bcf84326a1e",
+      "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1e",
+      "isHeadOffice": true,
+      "isLegalEntity": false,
+      "name": "Bohge Gruppe Manufacturing",
+      "organizationType": "Gerätehersteller",
+      "tradingName": "Bohge Gruppe Manufacturing",
+      "contactMedium": [
+        {
+          "mediumType": "email",
+          "preferred": true,
+          "characteristic": {
+            "city": "Plauen",
+            "contactType": "business",
+            "country": "Pakistan",
+            "emailAddress": "Malina_Busch@hotmail.com",
+            "faxNumber": "+49-9450-13823930",
+            "phoneNumber": "(09590) 8738479",
+            "postCode": "05065",
+            "socialNetworkId": "Lily_Geiger",
+            "stateOrProvince": "Bremen",
+            "street1": "Am Köttersbach",
+            "street2": "Frischenberg"
+          },
+          "validFor": {
+            "endDateTime": "2024-11-25T01:23:52.000Z",
+            "startDateTime": "2024-09-17T18:55:28.502Z"
+          }
+        }
+      ],
+      "creditRating": [
+        {
+          "creditAgencyName": "Köseoglu UG",
+          "ratingScore": 776,
+          "lastExecuted": "2024-09-27T20:24:06.112Z",
+          "validFor": {
+            "endDateTime": "2025-09-18T19:11:45.092Z",
+            "startDateTime": "2024-05-18T06:12:02.709Z"
+          }
+        }
+      ],
+      "existsDuring": {
+        "endDateTime": "2025-02-02T18:24:38.231Z",
+        "startDateTime": "2024-08-14T14:27:41.057Z"
+      },
+      "externalReference": [
+        {
+          "externalReferenceType": "socialMediaAccount",
+          "name": "vollstandig-asthetik.name"
+        }
+      ],
+      "status": "closed",
+      "__v": 0
+    }
+  ]
+}

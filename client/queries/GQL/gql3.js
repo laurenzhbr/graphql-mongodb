@@ -1,25 +1,23 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 const query = (id) => `
-  {
-    digitalIdentity(id: "${id}") {
-      resourceIdentified{
-        resourceRelationship(relationshipType: "isTargeted"){
-          resource{
-            resourceRelationship(relationshipType: "isTargeted"){
-              resource{
-                resourceRelationship(relationshipType: "isTargeted"){
-                  resource{
-                    name
-                    resourceStatus
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+{
+	resource(id: "66f7e10305b9728c48875c62") {
+		resourceRelationship(relationshipType: "isTargeted"){
+			resource{
+				resourceRelationship(relationshipType: "isTargeted"){
+					resource{
+						resourceRelationship(relationshipType: "isTargeted"){
+							resource{
+								name
+								resourceStatus
+							}
+						}
+					}
+				}
+			}
+		}
 	}
+  }
 `;
 
 const gql_use_case_3 =  async (id) => {

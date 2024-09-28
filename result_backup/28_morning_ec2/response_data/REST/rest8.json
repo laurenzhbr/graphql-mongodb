@@ -1,0 +1,14 @@
+{
+  "_id": "66e4207b1c97fe16e772f57c",
+  "nickname": "Kassandra75",
+  "status": "active",
+  "resourceIdentified": {
+    "id": "ad6aba5e9d54d80b9af0c2df",
+    "name": "Router for Modem Hüfingen 14 12",
+    "href": "https://{host}/resourceInventoryManagement/resource/ad6aba5e9d54d80b9af0c2df"
+  },
+  "creationDate": "2024-09-13T11:22:35.661Z",
+  "lastUpdate": "2024-09-13T16:47:56.722Z",
+  "href": "https://{host}/digitalIdentityManagement/digitalIdentity/66e4207b1c97fe16e772f57c",
+  "__v": 0
+}
