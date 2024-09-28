@@ -1,0 +1,562 @@
+[
+  {
+    "_id": "66f7e232cfa2a96703f4dc55",
+    "nickname": "Cosima_De",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889367",
+      "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 29",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889367"
+    },
+    "creationDate": "2024-09-28T11:02:10.610Z",
+    "lastUpdate": "2024-09-28T11:02:10.610Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc55",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc53",
+    "nickname": "Emir.Seigel",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889365",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 29",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889365"
+    },
+    "creationDate": "2024-09-28T11:02:10.610Z",
+    "lastUpdate": "2024-09-28T11:02:10.610Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc53",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc3c",
+    "nickname": "Darius_Feuerbach91",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889343",
+      "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 25",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889343"
+    },
+    "creationDate": "2024-09-28T11:02:10.599Z",
+    "lastUpdate": "2024-09-28T11:02:10.599Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc3c",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc3a",
+    "nickname": "Riccardo.Hasler36",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889341",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 25",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889341"
+    },
+    "creationDate": "2024-09-28T11:02:10.598Z",
+    "lastUpdate": "2024-09-28T11:02:10.598Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc3a",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc34",
+    "nickname": "Darian.Tonn21",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889338",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 24",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889338"
+    },
+    "creationDate": "2024-09-28T11:02:10.597Z",
+    "lastUpdate": "2024-09-28T11:02:10.597Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc34",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc2e",
+    "nickname": "Rieke68",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c4888932f",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 23",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c4888932f"
+    },
+    "creationDate": "2024-09-28T11:02:10.597Z",
+    "lastUpdate": "2024-09-28T11:02:10.597Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc2e",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc26",
+    "nickname": "Frederike82",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889326",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 22",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889326"
+    },
+    "creationDate": "2024-09-28T11:02:10.595Z",
+    "lastUpdate": "2024-09-28T11:02:10.595Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc26",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc24",
+    "nickname": "Livia_Gelling",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889321",
+      "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 21",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889321"
+    },
+    "creationDate": "2024-09-28T11:02:10.595Z",
+    "lastUpdate": "2024-09-28T11:02:10.595Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc24",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc1a",
+    "nickname": "Julika.Gamlin20",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889314",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 20",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889314"
+    },
+    "creationDate": "2024-09-28T11:02:10.594Z",
+    "lastUpdate": "2024-09-28T11:02:10.594Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc1a",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc13",
+    "nickname": "Kai.Dies",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c4888930b",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 19",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c4888930b"
+    },
+    "creationDate": "2024-09-28T11:02:10.593Z",
+    "lastUpdate": "2024-09-28T11:02:10.593Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc13",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc0e",
+    "nickname": "Kenny_Zeyen",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c48889304",
+      "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 18",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c48889304"
+    },
+    "creationDate": "2024-09-28T11:02:10.592Z",
+    "lastUpdate": "2024-09-28T11:02:10.592Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc0e",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc06",
+    "nickname": "Brian_Hillard14",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892f9",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 17",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892f9"
+    },
+    "creationDate": "2024-09-28T11:02:10.591Z",
+    "lastUpdate": "2024-09-28T11:02:10.591Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc06",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbfe",
+    "nickname": "Josua77",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892eb",
+      "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 15",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892eb"
+    },
+    "creationDate": "2024-09-28T11:02:10.590Z",
+    "lastUpdate": "2024-09-28T11:02:10.590Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbfe",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dc00",
+    "nickname": "Sally13",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892f0",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 16",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892f0"
+    },
+    "creationDate": "2024-09-28T11:02:10.590Z",
+    "lastUpdate": "2024-09-28T11:02:10.590Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dc00",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbf2",
+    "nickname": "Katja.Holz",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892d9",
+      "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 13",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892d9"
+    },
+    "creationDate": "2024-09-28T11:02:10.588Z",
+    "lastUpdate": "2024-09-28T11:02:10.588Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbf2",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbe8",
+    "nickname": "Alessia89",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892cc",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 12",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892cc"
+    },
+    "creationDate": "2024-09-28T11:02:10.587Z",
+    "lastUpdate": "2024-09-28T11:02:10.587Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbe8",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbec",
+    "nickname": "Immanuel.Felke83",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892d0",
+      "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 12",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892d0"
+    },
+    "creationDate": "2024-09-28T11:02:10.587Z",
+    "lastUpdate": "2024-09-28T11:02:10.587Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbec",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbd8",
+    "nickname": "Gregor_Splinter74",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892b3",
+      "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 9",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892b3"
+    },
+    "creationDate": "2024-09-28T11:02:10.585Z",
+    "lastUpdate": "2024-09-28T11:02:10.585Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbd8",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbd6",
+    "nickname": "Sena38",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892b1",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 9",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892b1"
+    },
+    "creationDate": "2024-09-28T11:02:10.584Z",
+    "lastUpdate": "2024-09-28T11:02:10.584Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbd6",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbd4",
+    "nickname": "Julius_Schreiner",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892ac",
+      "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 8",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892ac"
+    },
+    "creationDate": "2024-09-28T11:02:10.584Z",
+    "lastUpdate": "2024-09-28T11:02:10.584Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbd4",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbcf",
+    "nickname": "Emma821_100",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20f05b9728c488892a8",
+      "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 8",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20f05b9728c488892a8"
+    },
+    "creationDate": "2024-09-28T11:02:10.583Z",
+    "lastUpdate": "2024-09-28T11:02:10.583Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbcf",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dbaa",
+    "nickname": "Salih.Buchrucker99",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c48889274",
+      "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 2",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c48889274"
+    },
+    "creationDate": "2024-09-28T11:02:10.577Z",
+    "lastUpdate": "2024-09-28T11:02:10.577Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dbaa",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dba4",
+    "nickname": "Robert.Riediger",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888926b",
+      "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 1",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888926b"
+    },
+    "creationDate": "2024-09-28T11:02:10.576Z",
+    "lastUpdate": "2024-09-28T11:02:10.576Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dba4",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4dba6",
+    "nickname": "Anni_Marchewski37",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888926d",
+      "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 1",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888926d"
+    },
+    "creationDate": "2024-09-28T11:02:10.576Z",
+    "lastUpdate": "2024-09-28T11:02:10.576Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4dba6",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db8e",
+    "nickname": "Raul74",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c48889249",
+      "name": "Router 2 for Modem Gräfenthal 27",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c48889249"
+    },
+    "creationDate": "2024-09-28T11:02:10.568Z",
+    "lastUpdate": "2024-09-28T11:02:10.568Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db8e",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db8c",
+    "nickname": "Mara_Lesch",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c48889247",
+      "name": "Router 1 for Modem Gräfenthal 27",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c48889247"
+    },
+    "creationDate": "2024-09-28T11:02:10.568Z",
+    "lastUpdate": "2024-09-28T11:02:10.568Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db8c",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db88",
+    "nickname": "Estelle_Busch26",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c48889240",
+      "name": "Router 2 for Modem Gräfenthal 26",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c48889240"
+    },
+    "creationDate": "2024-09-28T11:02:10.567Z",
+    "lastUpdate": "2024-09-28T11:02:10.567Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db88",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db84",
+    "nickname": "Selin_Howard",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888923c",
+      "name": "Router 0 for Modem Gräfenthal 26",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888923c"
+    },
+    "creationDate": "2024-09-28T11:02:10.566Z",
+    "lastUpdate": "2024-09-28T11:02:10.566Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db84",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db86",
+    "nickname": "Sophia.Hertel3",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888923e",
+      "name": "Router 1 for Modem Gräfenthal 26",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888923e"
+    },
+    "creationDate": "2024-09-28T11:02:10.566Z",
+    "lastUpdate": "2024-09-28T11:02:10.566Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db86",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db7c",
+    "nickname": "Yusuf_Diezel",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888922e",
+      "name": "Router 2 for Modem Gräfenthal 24",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888922e"
+    },
+    "creationDate": "2024-09-28T11:02:10.560Z",
+    "lastUpdate": "2024-09-28T11:02:10.560Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db7c",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db80",
+    "nickname": "Jennifer20",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c48889235",
+      "name": "Router 1 for Modem Gräfenthal 25",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c48889235"
+    },
+    "creationDate": "2024-09-28T11:02:10.560Z",
+    "lastUpdate": "2024-09-28T11:02:10.560Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db80",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db7a",
+    "nickname": "Eda.Schönbeck85",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888922c",
+      "name": "Router 1 for Modem Gräfenthal 24",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888922c"
+    },
+    "creationDate": "2024-09-28T11:02:10.559Z",
+    "lastUpdate": "2024-09-28T11:02:10.559Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db7a",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db6d",
+    "nickname": "Rayan91",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888921a",
+      "name": "Router 1 for Modem Gräfenthal 22",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888921a"
+    },
+    "creationDate": "2024-09-28T11:02:10.557Z",
+    "lastUpdate": "2024-09-28T11:02:10.557Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db6d",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db65",
+    "nickname": "Lewin_Reusse71",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888920f",
+      "name": "Router 0 for Modem Gräfenthal 21",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888920f"
+    },
+    "creationDate": "2024-09-28T11:02:10.555Z",
+    "lastUpdate": "2024-09-28T11:02:10.556Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db65",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db43",
+    "nickname": "Rania_Lipske",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c488891dd",
+      "name": "Router 2 for Modem Gräfenthal 15",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c488891dd"
+    },
+    "creationDate": "2024-09-28T11:02:10.538Z",
+    "lastUpdate": "2024-09-28T11:02:10.538Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db43",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db3b",
+    "nickname": "Mathilda.Reppin28",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c488891d2",
+      "name": "Router 1 for Modem Gräfenthal 14",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c488891d2"
+    },
+    "creationDate": "2024-09-28T11:02:10.536Z",
+    "lastUpdate": "2024-09-28T11:02:10.536Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db3b",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db39",
+    "nickname": "Mandy.Pfeiffer85",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c488891d0",
+      "name": "Router 0 for Modem Gräfenthal 14",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c488891d0"
+    },
+    "creationDate": "2024-09-28T11:02:10.536Z",
+    "lastUpdate": "2024-09-28T11:02:10.536Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db39",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db21",
+    "nickname": "Leah_Reuber",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c488891ac",
+      "name": "Router 0 for Modem Gräfenthal 10",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c488891ac"
+    },
+    "creationDate": "2024-09-28T11:02:10.526Z",
+    "lastUpdate": "2024-09-28T11:02:10.526Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db21",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db23",
+    "nickname": "Kimi_Crosskofp",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c488891ae",
+      "name": "Router 1 for Modem Gräfenthal 10",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c488891ae"
+    },
+    "creationDate": "2024-09-28T11:02:10.526Z",
+    "lastUpdate": "2024-09-28T11:02:10.526Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db23",
+    "__v": 0
+  },
+  {
+    "_id": "66f7e232cfa2a96703f4db01",
+    "nickname": "Katrin.Bahl",
+    "status": "active",
+    "resourceIdentified": {
+      "id": "66f7e20e05b9728c4888917a",
+      "name": "Router 2 for Modem Gräfenthal 4",
+      "href": "http://{host}/resourceInventoryManagement/resource/66f7e20e05b9728c4888917a"
+    },
+    "creationDate": "2024-09-28T11:02:10.520Z",
+    "lastUpdate": "2024-09-28T11:02:10.520Z",
+    "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e232cfa2a96703f4db01",
+    "__v": 0
+  }
+]
