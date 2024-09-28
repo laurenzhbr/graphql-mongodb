@@ -31,11 +31,11 @@ Before executing this project, make sure that the following tools are installed:
 
 1. **mock DB data**
     ```bash
-    setup-data.sh
+    ./setup-data.sh
 
 2. **start testsuite**
     ```bash
-    run-testsuite.sh
+    ./run-testsuite.sh {db_name}
 
 # Data Models
 ## Overall Data Structure with all Pivot-Objects

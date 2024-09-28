@@ -2,20 +2,19 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const {faker} = require('@faker-js/faker/locale/de');
 
+const dbName = process.env.DB_NAME || 'resource_inventory';
+
 // MongoDB-Verbindung
-mongoose.connect('mongodb://localhost:27017/resource_inventory', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log("MongoDB connection error:", err));
+mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
+}).catch((err) => console.log("MongoDB connection error:", err));
+
 
 // Existierende Resource-Collection (mit Central Offices und anderen Resourcen)
 const Resource = require('../models/ResourceModels/Resource');
 const Organization = require('../models/PartyModels/Organization'); // Dein Mongoose-Schema hier importieren
 
 // Existierende GeoAddress-Collection
-const GeoAddress = require('../models/GeoAdressModels/GeographicAdress');
+const GeoAddress = require('../models/GeographicAddressModels/GeographicAddress');
 
 
 // Funktion zur Verknüpfung von Street Cabinets mit Central Offices
@@ -32,7 +31,7 @@ async function linkStreetCabinetsToCentralOffice(centralOfficeId) {
       relationshipType: "targets",
       resource: {
         id: cabinet._id,
-        href: `https://{host}/resourceInventoryManagement/resource/${cabinet._id}`,
+        href: `http://{host}/resourceInventoryManagement/resource/${cabinet._id}`,
         category: "Street Cabinet",
         name: cabinet.name
       }

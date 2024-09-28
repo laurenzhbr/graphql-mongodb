@@ -20,7 +20,6 @@ const ResourceSpecificationType = require('./resourceSpecification');
 const Resource = require('../../models/ResourceModels/Resource')
 const GeographicAdress = require('../../models/GeographicAddressModels/GeographicAddress')
 const Organization = require('../../models/PartyModels/Organization')
-const ResourceSpecification = require('../../models/ResourceCatalogModels/ResourceSpecification');
 
 // Schema für ResourceRelationship, das die vollständige Resource zurückgibt
 const ResourceRelationshipType = new GraphQLObjectType({

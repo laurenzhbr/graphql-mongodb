@@ -15,11 +15,11 @@ const query = (category, capacity_usage) => `
 
 const gql_use_case_2 =  async (id) => {
   const transaction_start = null;
-  //const actualHost = process.env.HOST || 'localhost:4000';
+  const actualHost = process.env.HOST || 'localhost:4000';
   let accumulatedMetrics = {};
 
   // send API Call + fetch metrics
-  const url = 'http://localhost:4000/graphql'
+  const url = `http://${actualHost}/graphql`
   const data = { query: query("Street Cabinet", 95)};
 
 

@@ -44,11 +44,11 @@ exports.getDigitalIdentities = async (req, res) => {
         res.set('x-Total-Count', totalCount);
         
         if (offset == 0 && limit == 0){
-          res.status(200).json(geoAddresses)
+          res.status(200).json(digitalIdentities)
         } else if (resultCount == 0 ){
           res.status(404).json({message: "No results found"})
         } else  {
-          res.status(206).json(geoAddresses)
+          res.status(206).json(digitalIdentities)
         }
     } catch (err) {
         res.status(500).json({ message: err.message });

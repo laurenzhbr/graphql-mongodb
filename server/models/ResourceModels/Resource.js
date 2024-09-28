@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Characteristic = require('./support_models/Characteristic').schema;
-const ResourceSpecificationRef = require('./ref_models/ResourceSpecificationRef').schema;
 const RelatedPlaceRefOrValue = require('./ref_models/RelatedPlaceRefOrValue').schema;
 const ResourceRelationship = require('./support_models/ResourceRelationship').schema;
 const Note = require('../genericModels/Note').schema;
@@ -49,7 +48,7 @@ const ResourceSchema = new mongoose.Schema({
 //Pre-save Hook to generate href-attribute
 ResourceSchema.pre('save', function(next){
   if (!this.href) {
-    this.href = `https://{host}/resourceInventoryManagement/resource/${this._id}`;
+    this.href = `http://{host}/resourceInventoryManagement/resource/${this._id}`;
   }
   next();
 })

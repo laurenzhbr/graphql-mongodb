@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
 const mongoose = require('mongoose');
-const GeoAdress = require('../models/GeoAdressModels/GeographicAdress')
+const GeoAdress = require('../models/GeographicAddressModels/GeographicAddress')
 const xlsx = require('xlsx');
 
 
@@ -13,8 +13,6 @@ const dbName = process.env.DB_NAME || 'resource_inventory';
 
 // MongoDB-Verbindung
 mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
 });
 
 // Relativer Anteil der Bevölkerung pro Bundesland (basierend auf 2023-Daten)

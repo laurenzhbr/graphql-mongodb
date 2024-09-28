@@ -16,7 +16,7 @@ const ResourceSpecificationRefSchema = new mongoose.Schema({
 //Pre-save Hook to generate href-attribute
 ResourceSpecificationRefSchema.pre('save', function(next){
     if (!this.href) {
-      this.href = `https://{host}/resourceCatalog/resourceSpecification/${this.id}`;
+      this.href = `http://{host}/resourceCatalog/resourceSpecification/${this.id}`;
     }
     next();
   })

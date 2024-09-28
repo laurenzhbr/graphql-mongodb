@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const geoAddressController = require('../../controller/geoAdressController'); // Importiere den Controller
+const geoAddressController = require('../../controller/geoAddressController'); // Importiere den Controller
 
 // GET /geographicAddress - Alle GeographicAddress abrufen
 router.get('/', geoAddressController.getGeoAddressList);

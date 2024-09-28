@@ -48,7 +48,7 @@ function createTestResource1() {
       "relatedParty": [
         {
           "id": "party567",
-          "href": "https://{host}/partyManagement/party/party567",
+          "href": "http://{host}/partyManagement/party/party567",
           "name": "Provider Inc.",
           "role": "Manufacturer"
         }
@@ -62,14 +62,14 @@ function createTestResource1() {
       ],
       "place": {
         "id": "place12354",
-        "href": "https://{host}/geographicAdressManagement/geographicAdress/place12354"
+        "href": "http://{host}/geographicAddressManagement/geographicAddress/place12354"
       },
       "resourceRelationship": [
       {
         "relationshipType": "targets",
         "resource": {
           "id": "9874654",
-          "href": "https://{host}/resourceInventoryManagement/resource/9874654",
+          "href": "http://{host}/resourceInventoryManagement/resource/9874654",
           "category": "Street Cabinet",
           "name": "Street Cabinet ABC123"
         }
@@ -158,7 +158,7 @@ function createTestResource2() {
       "relatedParty": [
         {
           "id": "party12345",
-          "href": "https://{host}/partyManagement/party/party12345",
+          "href": "http://{host}/partyManagement/party/party12345",
           "name": "John Doe",
           "role": "Technician"
         }
@@ -172,7 +172,7 @@ function createTestResource2() {
       ],
       "place": {
         "id": "place123",
-        "href": "https://{host}/geographicAdressManagement/geographicAdress/place123"
+        "href": "http://{host}/geographicAddressManagement/geographicAddress/place123"
       },
       "resourceRelationship": [
       {
@@ -181,7 +181,7 @@ function createTestResource2() {
           "id": "891156154",
           "name": "Router R500",
           "category": "Router",
-          "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+          "href": "http://{host}/resourceInventoryManagement/resource/123456789"
         }
       },
       {
@@ -190,7 +190,7 @@ function createTestResource2() {
             "id": "9874654",
             "name": "Street Cabinet ABC123",
             "category": "Street Cabinet",
-            "href": "https://{host}/resourceInventoryManagement/resource/135841351564"
+            "href": "http://{host}/resourceInventoryManagement/resource/135841351564"
           }
         }
       ]
@@ -278,7 +278,7 @@ function createTestResource3() {
       "relatedParty": [
         {
           "id": "party67890",
-          "href": "https://{host}/partyManagement/party/party67890",
+          "href": "http://{host}/partyManagement/party/party67890",
           "name": "Jane Smith",
           "role": "Network Engineer"
         }
@@ -292,7 +292,7 @@ function createTestResource3() {
       ],
       "place": {
         "id": "place456",
-        "href": "https://{host}/geographicAdressManagement/geographicAdress/place456"
+        "href": "http://{host}/geographicAddressManagement/geographicAddress/place456"
       },
       "resourceRelationship": [
       {
@@ -301,7 +301,7 @@ function createTestResource3() {
             "id": "123456789",
             "name": "Modem X200",
             "category": "Modem",
-            "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+            "href": "http://{host}/resourceInventoryManagement/resource/123456789"
           }
         }
       ]
@@ -520,7 +520,7 @@ function createTestResource5() {
     "relatedParty": [
       {
         "id": "party67890",
-        "href": "https://{host}/partyManagement/party/party67890",
+        "href": "http://{host}/partyManagement/party/party67890",
         "name": "Jane Smith",
         "role": "Network Engineer"
       }
@@ -534,14 +534,14 @@ function createTestResource5() {
     ],
     "place": {
       "id": "place456",
-      "href": "https://{host}/geographicAdressManagement/geographicAdress/place456"
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/place456"
     },
     "resourceRelationship": [
     {
       "relationshipType": "targets",
       "resource": {
         "id": "123456789",
-        "href": "https://{host}/resourceInventoryManagement/resource/123456789",
+        "href": "http://{host}/resourceInventoryManagement/resource/123456789",
         "category": "Modem",
         "name": "Modem X200"
       }
@@ -550,7 +550,7 @@ function createTestResource5() {
         "relationshipType": "isTargeted",
         "resource": {
           "id": "135841351564",
-          "href": "https://{host}/resourceInventoryManagement/resource/135841351564",
+          "href": "http://{host}/resourceInventoryManagement/resource/135841351564",
           "category": "Central Office",
           "name": "Central Office Berlin Ost"
         }

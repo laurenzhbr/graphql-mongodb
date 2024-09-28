@@ -8,7 +8,6 @@ const CharacteristicSchema = new mongoose.Schema({
   valueType: {
     type: String,
   },
-  //characteristicRelationship: [characteristicRelationship],
   value: {
     type: mongoose.Schema.Types.Mixed, // Referenz auf das Any Schema
     required: true,

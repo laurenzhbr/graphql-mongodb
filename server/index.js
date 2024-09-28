@@ -1,14 +1,8 @@
 // Import packages
 const express = require('express');
-const { graphqlHTTP } = require('express-graphql');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const {createDigitalIDTest1} = require('./utils/writeDigitalIdentityTest')
-const { createTestGeoAdress1 } = require('./utils/writeGeoAdressTest');
-const { createTestResource1, createTestResource2, createTestResource3, createTestResource5 } = require('./utils/writeResourceTest');
-const { createTestOrganization } = require('./utils/writeOrganizationTest')
-const { createTestResourceSpecification1 } = require('./utils/writeSpecificationTest')
 // Import router for REST and GraphQL
 const router = require('./routes/router')
 

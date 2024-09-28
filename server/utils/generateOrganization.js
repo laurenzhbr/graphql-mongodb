@@ -6,8 +6,6 @@ const dbName = process.env.DB_NAME || 'resource_inventory';
 
 // MongoDB-Verbindung
 mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 });
 
 // Funktion zum Generieren von zufälligen Kontaktinformationen
@@ -76,12 +74,6 @@ function generateCompanyName(organizationType) {
 
 // Funktion zum Generieren von zufälligen Organisationseinträgen
 const generateOrganization = (randomObject=null) => {
-    let relationship_id;
-    let org_name;
-    if (randomObject != null) {
-        relationship_id = randomObject._id.toString()
-        org_name = randomObject.name
-    }
     //let relationship_id = new mongoose.Types.ObjectId()
     let organizationType = faker.helpers.arrayElement(['Energieversorger', 'Marketing- und Vertriebspartner', 'Logistikunternehmen', 'Gerätehersteller', 'Sicherheitsdienstleister', 'Wartungsfirma']);
     let company_name = generateCompanyName(organizationType);
@@ -101,17 +93,6 @@ const generateOrganization = (randomObject=null) => {
           name: faker.internet.domainName(),
         }],
       status: faker.helpers.arrayElement(['initialized', 'validated', 'closed']),
-      // Füge organizationParentRelationship nur hinzu, wenn randomObject nicht null ist
-      ...(randomObject && {
-        organizationParentRelationship: {
-          relationshipType: faker.helpers.arrayElement(['parent', 'subsidiary']),
-          organization: {
-            id: relationship_id,
-            href: `https://{host}/partyManagement/party/${relationship_id}`,
-            name: org_name,
-          },
-        }
-      })
     };
     if (Math.random() > 0.5) {
       organization.contactMedium = generateContactMedium();

@@ -74,7 +74,7 @@
     "relatedParty": [
       {
         "id": "party12345",
-        "href": "https://{host}/partyManagement/party/party12345",
+        "href": "http://{host}/partyManagement/party/party12345",
         "name": "John Doe",
         "role": "Technician"
       }
@@ -88,7 +88,7 @@
     ],
     "place": {
       "id": "place123",
-      "href": "https://{host}/geographicAdressManagement/geographicAdress/place123"
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/place123"
     },
     "resourceRelationship": [
     {
@@ -97,7 +97,7 @@
         "id": "891156154",
         "name": "Router R500",
         "category": "Router",
-        "href": "https://{host}/resourceInventoryManagement/resource/123456789"
+        "href": "http://{host}/resourceInventoryManagement/resource/123456789"
       }
     },
     {
@@ -106,7 +106,7 @@
           "id": "9874654",
           "name": "Street Cabinet ABC123",
           "category": "Street Cabinet",
-          "href": "https://{host}/resourceInventoryManagement/resource/135841351564"
+          "href": "http://{host}/resourceInventoryManagement/resource/135841351564"
         }
       }
     ]

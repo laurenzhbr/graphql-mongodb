@@ -1,20 +1,25 @@
 {
   "data": {
     "resource": {
-      "name": "Modem Heubach 9",
+      "name": "Street Cabinet Bayern 9",
       "relatedParties": [
         {
-          "name": "Schütze, Hamann und Riester Technik & Innovation GmbH",
-          "organizationType": "Gerätehersteller",
-          "status": "validated"
+          "name": "Plass-Moeller Instandhaltung GmbH",
+          "organizationType": "Wartungsfirma",
+          "status": "closed"
+        },
+        {
+          "name": "Schellenbeck UG Versandlogistik GmbH",
+          "organizationType": "Logistikunternehmen",
+          "status": "closed"
         }
       ],
       "place": {
         "country": "DE",
-        "stateOrProvince": "Baden-Württemberg",
-        "postcode": "73540",
-        "streetName": "Am Hohen Ufer",
-        "streetNr": "40"
+        "stateOrProvince": "Bayern",
+        "postcode": "82481",
+        "streetName": "Walter-Nernst-Str.",
+        "streetNr": "3"
       }
     }
   }

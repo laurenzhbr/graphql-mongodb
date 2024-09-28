@@ -24,11 +24,11 @@ const query = (category, city, characteristics) => `
 
 const gql_use_case_4 =  async () => {
   const transaction_start = null;
-  //const actualHost = process.env.HOST || 'localhost:4000';
+  const actualHost = process.env.HOST || 'localhost:4000';
   let accumulatedMetrics = {};
 
   // send API Call + fetch metrics
-  const url = 'http://localhost:4000/graphql'
+  const url = `http://${actualHost}/graphql`
   const data = { query: query("Street Cabinet", "Leipzig", ["connected_lines", "maximum_capacity", "power_backup"])};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);

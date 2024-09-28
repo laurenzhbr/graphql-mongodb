@@ -6,7 +6,7 @@ const rest_use_case_5 = async () => {
     let accumulatedMetrics = {};
 
     // 1. Abfrage aller Modems mit Verbindungstyp "FTTH" und Betriebsstatus "enable"
-    const url = `http://${actualHost}/partyManagement/organization?organizationType=Marketing-%20und%20Vertriebspartner&status=validated&creditRating_gt=750&limit=10&sortBy=desc&fields=name,%20organizationType,creditRating,status`;
+    const url = `http://${actualHost}/partyManagement/organization?organizationType=Marketing-%20und%20Vertriebspartner&creditRating.ratingScore.gt=750&limit=10&sort=-creditRating.ratingScore`;
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;

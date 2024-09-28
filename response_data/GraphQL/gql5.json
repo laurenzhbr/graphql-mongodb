@@ -2,92 +2,92 @@
   "data": {
     "organizations": [
       {
-        "name": "Heinrich-Oeser Vertriebsgesellschaft mbH",
+        "name": "Filsinger OHG Sales & Consulting KG",
         "organizationType": "Marketing- und Vertriebspartner",
         "creditRating": [
           {
-            "ratingScore": 848
+            "ratingScore": 845
           }
         ]
       },
       {
-        "name": "Scholz, Haaf und Roggatz Sales & Partners AG",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 848
-          }
-        ]
-      },
-      {
-        "name": "Decker KG Vertriebsgesellschaft mbH",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 847
-          }
-        ]
-      },
-      {
-        "name": "Schreiner, Riethmüller und Malkus Marketing- und Vertriebsservice GmbH",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 846
-          }
-        ]
-      },
-      {
-        "name": "Paesler-Görmer Sales & Partners AG",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 846
-          }
-        ]
-      },
-      {
-        "name": "Norris-Gutschank Marketing- und Vertriebsservice GmbH",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 846
-          }
-        ]
-      },
-      {
-        "name": "Soller, Frauendorf und Grosser Vertriebsgesellschaft mbH",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 846
-          }
-        ]
-      },
-      {
-        "name": "Rüdiger, Werrmann und Achilles Sales & Consulting KG",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 846
-          }
-        ]
-      },
-      {
-        "name": "Umminger-Hanniske Marketing- und Vertriebsservice GmbH",
-        "organizationType": "Marketing- und Vertriebspartner",
-        "creditRating": [
-          {
-            "ratingScore": 844
-          }
-        ]
-      },
-      {
-        "name": "Burmeister, Thomas und Milde Marketing Solutions KG",
+        "name": "Preuss, Bos und Goldkamp Sales & Consulting KG",
         "organizationType": "Marketing- und Vertriebspartner",
         "creditRating": [
           {
             "ratingScore": 843
+          }
+        ]
+      },
+      {
+        "name": "Schweisfurth, Wickert und Brunner Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 839
+          }
+        ]
+      },
+      {
+        "name": "Schötz, Sarvari und Swillims Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 838
+          }
+        ]
+      },
+      {
+        "name": "Fischer-Fricke Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 834
+          }
+        ]
+      },
+      {
+        "name": "Tudow KG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 826
+          }
+        ]
+      },
+      {
+        "name": "Krippner-Hense Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 820
+          }
+        ]
+      },
+      {
+        "name": "Ritter Gruppe Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 817
+          }
+        ]
+      },
+      {
+        "name": "Seidel, Koster und Klapper Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 812
+          }
+        ]
+      },
+      {
+        "name": "Franzis-Weiss Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 809
           }
         ]
       }

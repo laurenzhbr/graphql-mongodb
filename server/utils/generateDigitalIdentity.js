@@ -6,8 +6,6 @@ const dbName = process.env.DB_NAME || 'resource_inventory';
 
 // MongoDB-Verbindung
 mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 });
 
 // Funktion zur Generierung von DigitalIdentities für Router

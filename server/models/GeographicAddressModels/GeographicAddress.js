@@ -28,7 +28,7 @@ const GeographicAddressSchema = new Schema({
 //Pre-save Hook to generate href-attribute
 GeographicAddressSchema.pre('save', function(next){
     if (!this.href) {
-      this.href = `https://{host}/geographicAddressManagement/geographicAddress/${this._id}`;
+      this.href = `http://{host}/geographicAddressManagement/geographicAddress/${this._id}`;
     }
     next();
   })

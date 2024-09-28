@@ -31,7 +31,7 @@ const query = (id) => `
 `;
 
 const gql_use_case_1 =  async (id) => {
-    const res = await axiosInstance.post('http://localhost:4000/graphql', {
+    const res = await axiosInstance.post(`http://${actualHost}/graphql`, {
         query: query(id),
     });
 

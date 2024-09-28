@@ -6,7 +6,7 @@ const query = (digi_id, resource_name) => `
     updateDigitalIdentity(id: "${digi_id}", data: {
       resourceIdentified: {
         id: "${faker.database.mongodbObjectId()}",
-        name: "${resource_name} ${faker.number.int({ min: 0, max: 20 })} ${faker.number.int({ min: 0, max: 20 })}"
+        name: "Router ${faker.number.int({ min: 0, max: 20 })} ${resource_name} ${faker.number.int({ min: 0, max: 20 })}"
       }
     }) {
       nickname
@@ -22,12 +22,12 @@ const query = (digi_id, resource_name) => `
 const gql_use_case_8 =  async () => {
 
   const transaction_start = null;
-  //const actualHost = process.env.HOST || 'localhost:4000';
+  const actualHost = process.env.HOST || 'localhost:4000';
   let accumulatedMetrics = {};
 
   // send API Call + fetch metrics
-  const url = 'http://localhost:4000/graphql'
-  const data = { query: query("66e4207b1c97fe16e772f55e", "Router for Modem Neuental")};
+  const url = `http://${actualHost}/graphql`
+  const data = { query: query("66f7e21acfa2a96703f22d24", "Router for Modem Neuental")};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

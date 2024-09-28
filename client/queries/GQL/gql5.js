@@ -1,8 +1,8 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const query = (organizationType, status, creditRating_gt, sortBy, limit) => `
+const query = (organizationType, status, creditRating_gt, sort, limit) => `
 	{
-    organizations(organizationType: "${organizationType}", status: "${status}", creditRating_gt: ${creditRating_gt}, sortBy: "${sortBy}", limit: ${limit}) {
+    organizations(organizationType: "${organizationType}", status: "${status}", creditRating_gt: ${creditRating_gt}, sort: "${sort}", limit: ${limit}) {
       name
       organizationType
       creditRating {
@@ -14,12 +14,12 @@ const query = (organizationType, status, creditRating_gt, sortBy, limit) => `
 
 const gql_use_case_5 =  async () => {
   const transaction_start = null;
-  //const actualHost = process.env.HOST || 'localhost:4000';
+  const actualHost = process.env.HOST || 'localhost:4000';
   let accumulatedMetrics = {};
 
   // send API Call + fetch metrics
-  const url = 'http://localhost:4000/graphql'
-  const data = { query: query("Marketing- und Vertriebspartner", "validated", 750, "desc", 10),};
+  const url = `http://${actualHost}/graphql`
+  const data = { query: query("Marketing- und Vertriebspartner", "validated", 750, "-creditRating.ratingScore", 10)};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

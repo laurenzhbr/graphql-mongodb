@@ -16,7 +16,7 @@ const warmUpServer = async (api) => {
         // Warm-up API-Call für GraphQL
       await axiosInstance.post(`http://${actualHost}/graphql`, {
         query: `{
-                  digitalIdentitiesByStatus(status: "suspended", limit: 1){
+                  digitalIdentities(status: "suspended", limit: 1){
                     id
                   }
               }`,

@@ -2,438 +2,444 @@
   "data": {
     "digitalIdentities": [
       {
-        "id": "66e4207b1c97fe16e772f54c",
-        "nickname": "Willi_Astafei20",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a44497ec",
-          "name": "Router 2 for Modem Heubach 17"
-        },
-        "creationDate": "2024-09-13T11:22:35.639Z",
-        "lastUpdate": "2024-09-13T11:22:35.639Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f54e",
-        "nickname": "Aylin_Filipowski5",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a44497f1",
-          "name": "Router 0 for Modem Heubach 18"
-        },
-        "creationDate": "2024-09-13T11:22:35.640Z",
-        "lastUpdate": "2024-09-13T11:22:35.640Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f554",
-        "nickname": "Merve_Moormann",
+        "id": "66f7e232cfa2a96703f4dc53",
+        "nickname": "Emir.Seigel",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a44497fa",
-          "name": "Router 0 for Modem Heubach 19"
+          "id": "66f7e20f05b9728c48889365",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 29"
         },
-        "creationDate": "2024-09-13T11:22:35.642Z",
-        "lastUpdate": "2024-09-13T11:22:35.642Z"
+        "creationDate": "2024-09-28T11:02:10.610Z",
+        "lastUpdate": "2024-09-28T11:02:10.610Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f556",
-        "nickname": "Judy.Daubner86",
+        "id": "66f7e232cfa2a96703f4dc55",
+        "nickname": "Cosima_De",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a44497fc",
-          "name": "Router 1 for Modem Heubach 19"
+          "id": "66f7e20f05b9728c48889367",
+          "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 29"
         },
-        "creationDate": "2024-09-13T11:22:35.642Z",
-        "lastUpdate": "2024-09-13T11:22:35.642Z"
+        "creationDate": "2024-09-28T11:02:10.610Z",
+        "lastUpdate": "2024-09-28T11:02:10.610Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f558",
-        "nickname": "Sofie_Breu",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a44497fe",
-          "name": "Router 2 for Modem Heubach 19"
-        },
-        "creationDate": "2024-09-13T11:22:35.643Z",
-        "lastUpdate": "2024-09-13T11:22:35.643Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f55a",
-        "nickname": "Julius94",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449803",
-          "name": "Router 0 for Modem Heubach 20"
-        },
-        "creationDate": "2024-09-13T11:22:35.644Z",
-        "lastUpdate": "2024-09-13T11:22:35.644Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f55c",
-        "nickname": "Alena.Wehrsen",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449805",
-          "name": "Router 1 for Modem Heubach 20"
-        },
-        "creationDate": "2024-09-13T11:22:35.644Z",
-        "lastUpdate": "2024-09-13T11:22:35.645Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f55e",
-        "nickname": "Noel12",
-        "status": "active",
-        "resourceIdentified": null,
-        "creationDate": "2024-09-13T11:22:35.645Z",
-        "lastUpdate": "2024-09-13T16:28:35.880Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f560",
-        "nickname": "Oscar62",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444980c",
-          "name": "Router 0 for Modem Heubach 21"
-        },
-        "creationDate": "2024-09-13T11:22:35.646Z",
-        "lastUpdate": "2024-09-13T11:22:35.646Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f562",
-        "nickname": "Henrik92",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444980e",
-          "name": "Router 1 for Modem Heubach 21"
-        },
-        "creationDate": "2024-09-13T11:22:35.647Z",
-        "lastUpdate": "2024-09-13T11:22:35.647Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f564",
-        "nickname": "Dominik_Tremmel",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449810",
-          "name": "Router 2 for Modem Heubach 21"
-        },
-        "creationDate": "2024-09-13T11:22:35.648Z",
-        "lastUpdate": "2024-09-13T11:22:35.648Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f566",
-        "nickname": "Ashley34",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449815",
-          "name": "Router 0 for Modem Heubach 22"
-        },
-        "creationDate": "2024-09-13T11:22:35.649Z",
-        "lastUpdate": "2024-09-13T11:22:35.649Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f568",
-        "nickname": "John_Scherbarth",
+        "id": "66f7e232cfa2a96703f4dc3c",
+        "nickname": "Darius_Feuerbach91",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a4449817",
-          "name": "Router 1 for Modem Heubach 22"
+          "id": "66f7e20f05b9728c48889343",
+          "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 25"
         },
-        "creationDate": "2024-09-13T11:22:35.650Z",
-        "lastUpdate": "2024-09-13T11:22:35.650Z"
+        "creationDate": "2024-09-28T11:02:10.599Z",
+        "lastUpdate": "2024-09-28T11:02:10.599Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f56c",
-        "nickname": "Talea47",
+        "id": "66f7e232cfa2a96703f4dc3a",
+        "nickname": "Riccardo.Hasler36",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a444981e",
-          "name": "Router 0 for Modem Heubach 23"
+          "id": "66f7e20f05b9728c48889341",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 25"
         },
-        "creationDate": "2024-09-13T11:22:35.655Z",
-        "lastUpdate": "2024-09-13T11:22:35.655Z"
+        "creationDate": "2024-09-28T11:02:10.598Z",
+        "lastUpdate": "2024-09-28T11:02:10.598Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f56e",
-        "nickname": "Sam.Wolf82",
+        "id": "66f7e232cfa2a96703f4dc2e",
+        "nickname": "Rieke68",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a4449820",
-          "name": "Router 1 for Modem Heubach 23"
+          "id": "66f7e20f05b9728c4888932f",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 23"
         },
-        "creationDate": "2024-09-13T11:22:35.656Z",
-        "lastUpdate": "2024-09-13T11:22:35.656Z"
+        "creationDate": "2024-09-28T11:02:10.597Z",
+        "lastUpdate": "2024-09-28T11:02:10.597Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f574",
-        "nickname": "Inka93",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449829",
-          "name": "Router 1 for Modem Heubach 24"
-        },
-        "creationDate": "2024-09-13T11:22:35.658Z",
-        "lastUpdate": "2024-09-13T11:22:35.658Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f576",
-        "nickname": "Karoline.Kölotzei",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444982b",
-          "name": "Router 2 for Modem Heubach 24"
-        },
-        "creationDate": "2024-09-13T11:22:35.659Z",
-        "lastUpdate": "2024-09-13T11:22:35.659Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f578",
-        "nickname": "Lara68",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449830",
-          "name": "Router 0 for Modem Heubach 25"
-        },
-        "creationDate": "2024-09-13T11:22:35.660Z",
-        "lastUpdate": "2024-09-13T11:22:35.660Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f57c",
-        "nickname": "Kassandra75",
-        "status": "active",
-        "resourceIdentified": null,
-        "creationDate": "2024-09-13T11:22:35.661Z",
-        "lastUpdate": "2024-09-13T16:47:57.077Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f57e",
-        "nickname": "Tiago67",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a4449839",
-          "name": "Router 0 for Modem Heubach 26"
-        },
-        "creationDate": "2024-09-13T11:22:35.662Z",
-        "lastUpdate": "2024-09-13T11:22:35.662Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f580",
-        "nickname": "Fiona_Dreissigacker87",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444983b",
-          "name": "Router 1 for Modem Heubach 26"
-        },
-        "creationDate": "2024-09-13T11:22:35.663Z",
-        "lastUpdate": "2024-09-13T11:22:35.663Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f582",
-        "nickname": "Marina_Itt",
+        "id": "66f7e232cfa2a96703f4dc34",
+        "nickname": "Darian.Tonn21",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a444983d",
-          "name": "Router 2 for Modem Heubach 26"
+          "id": "66f7e20f05b9728c48889338",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 24"
         },
-        "creationDate": "2024-09-13T11:22:35.663Z",
-        "lastUpdate": "2024-09-13T11:22:35.664Z"
+        "creationDate": "2024-09-28T11:02:10.597Z",
+        "lastUpdate": "2024-09-28T11:02:10.597Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f586",
-        "nickname": "Alessa_Morhelfer",
+        "id": "66f7e232cfa2a96703f4dc24",
+        "nickname": "Livia_Gelling",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021b9db75159a4449844",
-          "name": "Router 1 for Modem Heubach 27"
+          "id": "66f7e20f05b9728c48889321",
+          "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 21"
         },
-        "creationDate": "2024-09-13T11:22:35.665Z",
-        "lastUpdate": "2024-09-13T11:22:35.665Z"
+        "creationDate": "2024-09-28T11:02:10.595Z",
+        "lastUpdate": "2024-09-28T11:02:10.595Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f58a",
-        "nickname": "Adelina.Saile86",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444984b",
-          "name": "Router 0 for Modem Heubach 28"
-        },
-        "creationDate": "2024-09-13T11:22:35.666Z",
-        "lastUpdate": "2024-09-13T11:22:35.666Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f58c",
-        "nickname": "Talia_Löser82",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444984d",
-          "name": "Router 1 for Modem Heubach 28"
-        },
-        "creationDate": "2024-09-13T11:22:35.666Z",
-        "lastUpdate": "2024-09-13T11:22:35.666Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f58e",
-        "nickname": "Felicia_Moguenara47",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021b9db75159a444984f",
-          "name": "Router 2 for Modem Heubach 28"
-        },
-        "creationDate": "2024-09-13T11:22:35.667Z",
-        "lastUpdate": "2024-09-13T11:22:35.667Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f590",
-        "nickname": "Aaron3",
+        "id": "66f7e232cfa2a96703f4dc26",
+        "nickname": "Frederike82",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a4449854",
-          "name": "Router 0 for Modem Heubach 29"
+          "id": "66f7e20f05b9728c48889326",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 22"
         },
-        "creationDate": "2024-09-13T11:22:35.667Z",
-        "lastUpdate": "2024-09-13T11:22:35.667Z"
+        "creationDate": "2024-09-28T11:02:10.595Z",
+        "lastUpdate": "2024-09-28T11:02:10.595Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f592",
-        "nickname": "Leonidas.Abramovic29",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021c9db75159a4449856",
-          "name": "Router 1 for Modem Heubach 29"
-        },
-        "creationDate": "2024-09-13T11:22:35.668Z",
-        "lastUpdate": "2024-09-13T11:22:35.668Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f594",
-        "nickname": "Mio12",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021c9db75159a4449858",
-          "name": "Router 2 for Modem Heubach 29"
-        },
-        "creationDate": "2024-09-13T11:22:35.669Z",
-        "lastUpdate": "2024-09-13T11:22:35.669Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f596",
-        "nickname": "Josephine_Görlich",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021c9db75159a444985d",
-          "name": "Router 0 for Modem Gütenbach 0"
-        },
-        "creationDate": "2024-09-13T11:22:35.670Z",
-        "lastUpdate": "2024-09-13T11:22:35.670Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f59a",
-        "nickname": "Oskar_Maurer93",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021c9db75159a4449861",
-          "name": "Router 2 for Modem Gütenbach 0"
-        },
-        "creationDate": "2024-09-13T11:22:35.671Z",
-        "lastUpdate": "2024-09-13T11:22:35.671Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f59c",
-        "nickname": "Nico_Ritschel",
-        "status": "archived",
-        "resourceIdentified": {
-          "id": "66e3021c9db75159a4449866",
-          "name": "Router 0 for Modem Gütenbach 1"
-        },
-        "creationDate": "2024-09-13T11:22:35.672Z",
-        "lastUpdate": "2024-09-13T11:22:35.672Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f59e",
-        "nickname": "Willy_Lippe",
+        "id": "66f7e232cfa2a96703f4dc1a",
+        "nickname": "Julika.Gamlin20",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a4449868",
-          "name": "Router 1 for Modem Gütenbach 1"
+          "id": "66f7e20f05b9728c48889314",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 20"
         },
-        "creationDate": "2024-09-13T11:22:35.673Z",
-        "lastUpdate": "2024-09-13T11:22:35.673Z"
+        "creationDate": "2024-09-28T11:02:10.594Z",
+        "lastUpdate": "2024-09-28T11:02:10.594Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f5a0",
-        "nickname": "Tarik91",
+        "id": "66f7e232cfa2a96703f4dc13",
+        "nickname": "Kai.Dies",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a444986a",
-          "name": "Router 2 for Modem Gütenbach 1"
+          "id": "66f7e20f05b9728c4888930b",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 19"
         },
-        "creationDate": "2024-09-13T11:22:35.673Z",
-        "lastUpdate": "2024-09-13T11:22:35.673Z"
+        "creationDate": "2024-09-28T11:02:10.593Z",
+        "lastUpdate": "2024-09-28T11:02:10.593Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f5a2",
-        "nickname": "Constantin_Rädler",
-        "status": "unknown",
-        "resourceIdentified": {
-          "id": "66e3021c9db75159a444986f",
-          "name": "Router 0 for Modem Gütenbach 2"
-        },
-        "creationDate": "2024-09-13T11:22:35.677Z",
-        "lastUpdate": "2024-09-13T11:22:35.677Z"
-      },
-      {
-        "id": "66e4207b1c97fe16e772f5a4",
-        "nickname": "Elly_Wieser39",
+        "id": "66f7e232cfa2a96703f4dc0e",
+        "nickname": "Kenny_Zeyen",
         "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a4449871",
-          "name": "Router 1 for Modem Gütenbach 2"
+          "id": "66f7e20f05b9728c48889304",
+          "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 18"
         },
-        "creationDate": "2024-09-13T11:22:35.678Z",
-        "lastUpdate": "2024-09-13T11:22:35.678Z"
+        "creationDate": "2024-09-28T11:02:10.592Z",
+        "lastUpdate": "2024-09-28T11:02:10.592Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f5a6",
-        "nickname": "Soraya_Dragu79",
-        "status": "archived",
+        "id": "66f7e232cfa2a96703f4dc06",
+        "nickname": "Brian_Hillard14",
+        "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a4449873",
-          "name": "Router 2 for Modem Gütenbach 2"
+          "id": "66f7e20f05b9728c488892f9",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 17"
         },
-        "creationDate": "2024-09-13T11:22:35.679Z",
-        "lastUpdate": "2024-09-13T11:22:35.679Z"
+        "creationDate": "2024-09-28T11:02:10.591Z",
+        "lastUpdate": "2024-09-28T11:02:10.591Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f5a8",
-        "nickname": "Hamza_Heist",
-        "status": "archived",
+        "id": "66f7e232cfa2a96703f4dbfe",
+        "nickname": "Josua77",
+        "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a4449878",
-          "name": "Router 0 for Modem Gütenbach 3"
+          "id": "66f7e20f05b9728c488892eb",
+          "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 15"
         },
-        "creationDate": "2024-09-13T11:22:35.679Z",
-        "lastUpdate": "2024-09-13T11:22:35.679Z"
+        "creationDate": "2024-09-28T11:02:10.590Z",
+        "lastUpdate": "2024-09-28T11:02:10.590Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f5ac",
-        "nickname": "Eric_Mehlorn7",
-        "status": "archived",
+        "id": "66f7e232cfa2a96703f4dc00",
+        "nickname": "Sally13",
+        "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a444987c",
-          "name": "Router 2 for Modem Gütenbach 3"
+          "id": "66f7e20f05b9728c488892f0",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 16"
         },
-        "creationDate": "2024-09-13T11:22:35.681Z",
-        "lastUpdate": "2024-09-13T11:22:35.681Z"
+        "creationDate": "2024-09-28T11:02:10.590Z",
+        "lastUpdate": "2024-09-28T11:02:10.590Z"
       },
       {
-        "id": "66e4207b1c97fe16e772f5ae",
-        "nickname": "Cara72",
-        "status": "unknown",
+        "id": "66f7e232cfa2a96703f4dbf2",
+        "nickname": "Katja.Holz",
+        "status": "active",
         "resourceIdentified": {
-          "id": "66e3021c9db75159a4449881",
-          "name": "Router 0 for Modem Gütenbach 4"
+          "id": "66f7e20f05b9728c488892d9",
+          "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 13"
         },
-        "creationDate": "2024-09-13T11:22:35.681Z",
-        "lastUpdate": "2024-09-13T11:22:35.681Z"
+        "creationDate": "2024-09-28T11:02:10.588Z",
+        "lastUpdate": "2024-09-28T11:02:10.588Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbe8",
+        "nickname": "Alessia89",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20f05b9728c488892cc",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 12"
+        },
+        "creationDate": "2024-09-28T11:02:10.587Z",
+        "lastUpdate": "2024-09-28T11:02:10.587Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbec",
+        "nickname": "Immanuel.Felke83",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20f05b9728c488892d0",
+          "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 12"
+        },
+        "creationDate": "2024-09-28T11:02:10.587Z",
+        "lastUpdate": "2024-09-28T11:02:10.587Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbd8",
+        "nickname": "Gregor_Splinter74",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20f05b9728c488892b3",
+          "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 9"
+        },
+        "creationDate": "2024-09-28T11:02:10.585Z",
+        "lastUpdate": "2024-09-28T11:02:10.585Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbd6",
+        "nickname": "Sena38",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20f05b9728c488892b1",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 9"
+        },
+        "creationDate": "2024-09-28T11:02:10.584Z",
+        "lastUpdate": "2024-09-28T11:02:10.584Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbd4",
+        "nickname": "Julius_Schreiner",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20f05b9728c488892ac",
+          "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 8"
+        },
+        "creationDate": "2024-09-28T11:02:10.584Z",
+        "lastUpdate": "2024-09-28T11:02:10.584Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbcf",
+        "nickname": "Emma821_100",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20f05b9728c488892a8",
+          "name": "Router 0 for Modem Krayenberggemeinde, Frauensee 8"
+        },
+        "creationDate": "2024-09-28T11:02:10.583Z",
+        "lastUpdate": "2024-09-28T11:02:10.583Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dbaa",
+        "nickname": "Salih.Buchrucker99",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c48889274",
+          "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 2"
+        },
+        "creationDate": "2024-09-28T11:02:10.577Z",
+        "lastUpdate": "2024-09-28T11:02:10.577Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dba4",
+        "nickname": "Robert.Riediger",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888926b",
+          "name": "Router 1 for Modem Krayenberggemeinde, Frauensee 1"
+        },
+        "creationDate": "2024-09-28T11:02:10.576Z",
+        "lastUpdate": "2024-09-28T11:02:10.576Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4dba6",
+        "nickname": "Anni_Marchewski37",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888926d",
+          "name": "Router 2 for Modem Krayenberggemeinde, Frauensee 1"
+        },
+        "creationDate": "2024-09-28T11:02:10.576Z",
+        "lastUpdate": "2024-09-28T11:02:10.576Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db8e",
+        "nickname": "Raul74",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c48889249",
+          "name": "Router 2 for Modem Gräfenthal 27"
+        },
+        "creationDate": "2024-09-28T11:02:10.568Z",
+        "lastUpdate": "2024-09-28T11:02:10.568Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db8c",
+        "nickname": "Mara_Lesch",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c48889247",
+          "name": "Router 1 for Modem Gräfenthal 27"
+        },
+        "creationDate": "2024-09-28T11:02:10.568Z",
+        "lastUpdate": "2024-09-28T11:02:10.568Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db88",
+        "nickname": "Estelle_Busch26",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c48889240",
+          "name": "Router 2 for Modem Gräfenthal 26"
+        },
+        "creationDate": "2024-09-28T11:02:10.567Z",
+        "lastUpdate": "2024-09-28T11:02:10.567Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db86",
+        "nickname": "Sophia.Hertel3",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888923e",
+          "name": "Router 1 for Modem Gräfenthal 26"
+        },
+        "creationDate": "2024-09-28T11:02:10.566Z",
+        "lastUpdate": "2024-09-28T11:02:10.566Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db84",
+        "nickname": "Selin_Howard",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888923c",
+          "name": "Router 0 for Modem Gräfenthal 26"
+        },
+        "creationDate": "2024-09-28T11:02:10.566Z",
+        "lastUpdate": "2024-09-28T11:02:10.566Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db7c",
+        "nickname": "Yusuf_Diezel",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888922e",
+          "name": "Router 2 for Modem Gräfenthal 24"
+        },
+        "creationDate": "2024-09-28T11:02:10.560Z",
+        "lastUpdate": "2024-09-28T11:02:10.560Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db80",
+        "nickname": "Jennifer20",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c48889235",
+          "name": "Router 1 for Modem Gräfenthal 25"
+        },
+        "creationDate": "2024-09-28T11:02:10.560Z",
+        "lastUpdate": "2024-09-28T11:02:10.560Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db7a",
+        "nickname": "Eda.Schönbeck85",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888922c",
+          "name": "Router 1 for Modem Gräfenthal 24"
+        },
+        "creationDate": "2024-09-28T11:02:10.559Z",
+        "lastUpdate": "2024-09-28T11:02:10.559Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db6d",
+        "nickname": "Rayan91",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888921a",
+          "name": "Router 1 for Modem Gräfenthal 22"
+        },
+        "creationDate": "2024-09-28T11:02:10.557Z",
+        "lastUpdate": "2024-09-28T11:02:10.557Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db65",
+        "nickname": "Lewin_Reusse71",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888920f",
+          "name": "Router 0 for Modem Gräfenthal 21"
+        },
+        "creationDate": "2024-09-28T11:02:10.555Z",
+        "lastUpdate": "2024-09-28T11:02:10.556Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db43",
+        "nickname": "Rania_Lipske",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c488891dd",
+          "name": "Router 2 for Modem Gräfenthal 15"
+        },
+        "creationDate": "2024-09-28T11:02:10.538Z",
+        "lastUpdate": "2024-09-28T11:02:10.538Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db39",
+        "nickname": "Mandy.Pfeiffer85",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c488891d0",
+          "name": "Router 0 for Modem Gräfenthal 14"
+        },
+        "creationDate": "2024-09-28T11:02:10.536Z",
+        "lastUpdate": "2024-09-28T11:02:10.536Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db3b",
+        "nickname": "Mathilda.Reppin28",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c488891d2",
+          "name": "Router 1 for Modem Gräfenthal 14"
+        },
+        "creationDate": "2024-09-28T11:02:10.536Z",
+        "lastUpdate": "2024-09-28T11:02:10.536Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db23",
+        "nickname": "Kimi_Crosskofp",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c488891ae",
+          "name": "Router 1 for Modem Gräfenthal 10"
+        },
+        "creationDate": "2024-09-28T11:02:10.526Z",
+        "lastUpdate": "2024-09-28T11:02:10.526Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db21",
+        "nickname": "Leah_Reuber",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c488891ac",
+          "name": "Router 0 for Modem Gräfenthal 10"
+        },
+        "creationDate": "2024-09-28T11:02:10.526Z",
+        "lastUpdate": "2024-09-28T11:02:10.526Z"
+      },
+      {
+        "id": "66f7e232cfa2a96703f4db01",
+        "nickname": "Katrin.Bahl",
+        "status": "active",
+        "resourceIdentified": {
+          "id": "66f7e20e05b9728c4888917a",
+          "name": "Router 2 for Modem Gräfenthal 4"
+        },
+        "creationDate": "2024-09-28T11:02:10.520Z",
+        "lastUpdate": "2024-09-28T11:02:10.520Z"
       }
     ]
   }

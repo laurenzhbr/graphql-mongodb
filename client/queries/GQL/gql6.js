@@ -22,12 +22,12 @@ const query = (id) => `
 
 const gql_use_case_6 =  async () => {
   const transaction_start = null;
-  //const actualHost = process.env.HOST || 'localhost:4000';
+  const actualHost = process.env.HOST || 'localhost:4000';
   let accumulatedMetrics = {};
 
   // send API Call + fetch metrics
-  const url = 'http://localhost:4000/graphql'
-  const data = { query: query("66e301dfd4e340e8e8f51322"),};
+  const url = `http://${actualHost}/graphql`
+  const data = { query: query("66f7de5dbb06839f89522cce"),};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

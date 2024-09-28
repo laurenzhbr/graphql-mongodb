@@ -16,7 +16,7 @@ const ResourceRefOrValueSchema = new mongoose.Schema({
 //Pre-save Hook to generate href-attribute
 ResourceRefOrValueSchema.pre('save', function(next){
     if (!this.href) {
-      this.href = `https://{host}/resourceInventoryManagement/resource${this.id}`;
+      this.href = `http://{host}/resourceInventoryManagement/resource${this.id}`;
     }
     next();
   })

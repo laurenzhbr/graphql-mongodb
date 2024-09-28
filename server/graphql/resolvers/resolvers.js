@@ -127,7 +127,10 @@ const RootQuery = new GraphQLObjectType({
       args: {
         organizationType: { type: GraphQLString },
         status: { type: GraphQLString },
-        creditRating_gt: { type: GraphQLInt },
+        creditRating_gt: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is greater than this value' },
+        creditRating_lt: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is less than this value' },
+        creditRating_gte: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is greater than or equal to this value'},
+        creditRating_lte: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is less than or equal to this value'},        
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
         sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
@@ -138,15 +141,21 @@ const RootQuery = new GraphQLObjectType({
         sortField = args.sort ? args.sort.replace('-', '') : 'id';
         sortDirection = args.sort && args.sort.startsWith('-') ? -1 : 1;
 
-        // Filter-Objekt
+        // Dynamisches Filter-Objekt für MongoDB-Operatoren mit Inline-If-Bedingungen
+        const ratingScoreFilter = {
+          ...(args.creditRating_gt ? { $gt: args.creditRating_gt } : {}),
+          ...(args.creditRating_lt ? { $lt: args.creditRating_lt } : {}),
+          ...(args.creditRating_gte ? { $gte: args.creditRating_gte } : {}),
+          ...(args.creditRating_lte ? { $lte: args.creditRating_lte } : {})
+      };
+
+        // Filter-Objekt für MongoDB Query
         const filter = {
           ...(args.organizationType && { organizationType: { $in: args.organizationType } }),
           ...(args.status && { status: args.status }),
-          ...(args.creditRating_gt && {
-            creditRating: {
-              $elemMatch: { ratingScore: { $gt: args.creditRating_gt } }
-            }
-          })
+          ...(Object.keys(ratingScoreFilter).length > 0 && {
+            creditRating: { $elemMatch: { ratingScore: ratingScoreFilter } }
+          }),
         };
         return Organization.find(filter)
         .sort({ [sortField]: sortDirection })

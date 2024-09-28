@@ -11,7 +11,6 @@ const OrganizationSchema = new Schema({
     isHeadOffice: Boolean,
     isLegalEntity: Boolean,
     name: String,
-    nameType: String,
     organizationType: String,
     tradingName: String,
     contactMedium: { type: [ContactMedium], default: undefined },
@@ -28,7 +27,7 @@ const OrganizationSchema = new Schema({
 OrganizationSchema.pre('save', function (next) {
     // Setze href, wenn es nicht vorhanden ist
     if (!this.href) {
-        this.href = `https://{host}/partyManagement/party/${this._id}`;
+        this.href = `http://{host}/partyManagement/organization/${this._id}`;
     }
 
     next();
@@ -44,7 +43,7 @@ OrganizationSchema.pre('insertMany', function (next, docs) {
   
       // Setze href für jedes Dokument, wenn es nicht vorhanden ist
       if (!doc.href) {
-        doc.href = `https://{host}/partyManagement/party/${doc._id}`;
+        doc.href = `https://{host}/partyManagement/organization/${doc._id}`;
       }
     });
   

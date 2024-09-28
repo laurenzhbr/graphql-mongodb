@@ -6,10 +6,7 @@ const dbName = process.env.DB_NAME || 'resource_inventory';
 
 // MongoDB-Verbindung
 mongoose.connect(`mongodb://localhost:27017/${dbName}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
   })
-  .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB connection error:", err));
 
 // Existierende Resource-Collection (mit Central Offices und anderen Resourcen)
@@ -17,7 +14,7 @@ const Resource = require('../models/ResourceModels/Resource');
 const Organization = require('../models/PartyModels/Organization'); // Dein Mongoose-Schema hier importieren
 
 // Existierende GeoAddress-Collection
-const GeoAddress = require('../models/GeoAdressModels/GeographicAdress');
+const GeoAddress = require('../models/GeographicAddressModels/GeographicAddress');
 
 // Mögliche Notizen für das Street Cabinet
 const noteTexts = [
@@ -112,14 +109,14 @@ async function generateStreetCabinets(centralOffice, numCabinets) {
         note: generateRandomNotes(),
         place: {
           id: geoAddress._id,
-          href: `https://{host}/geographicAdressManagement/geographicAdress/${geoAddress._id}`
+          href: `http://{host}/geographicAddressManagement/geographicAddress/${geoAddress._id}`
         },
         resourceRelationship: [
           {
             relationshipType: "isTargeted",
             resource: {
               id: centralOffice._id,
-              href: `https://{host}/resourceInventoryManagement/resource/${centralOffice._id}`,
+              href: `http://{host}/resourceInventoryManagement/resource/${centralOffice._id}`,
               category: "Central Office",
               name: centralOffice.name
             }

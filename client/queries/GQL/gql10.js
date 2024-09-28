@@ -19,11 +19,11 @@ const query2 = (id) => `
 
 const gql_use_case_10 =  async (id) => {
     const transaction_start = Date.now();
-    //const actualHost = process.env.HOST || 'localhost:4000';
+    const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
   
     // send API Call + fetch metrics
-    const url = 'http://localhost:4000/graphql'
+    const url = `http://${actualHost}/graphql`
     const data = { query: query1("suspended", 10),};
   
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
