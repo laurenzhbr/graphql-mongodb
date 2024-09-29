@@ -97,6 +97,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
     for (let index = 0; index < 5; index++) {
         // Run warmup for usecase
         await method()  
+    }
 
     console.log("")
     console.log(`=================== Test Suite for ${api} ==================`)
