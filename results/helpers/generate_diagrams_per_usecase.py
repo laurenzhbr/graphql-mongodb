@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import re
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -108,11 +109,6 @@ def create_boxplot_for_all_metrics(rest_data, graphql_data, test_case, output_di
     plt.tight_layout()
     plt.savefig(f"{output_dir}/{test_case}_boxplot_all_metrics.png")
     plt.close()
-
-import argparse
-import json
-import os
-import re
 
 def create_output_directory(test_case):
     """
