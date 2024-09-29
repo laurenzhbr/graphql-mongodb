@@ -15,7 +15,6 @@ const {
 const OrganizationType = require('./organization');
 const NoteType = require('./note');
 const PlaceType = require('./geographicAdress');
-const ResourceSpecificationType = require('./resourceSpecification');
 
 const Resource = require('../../models/ResourceModels/Resource')
 const GeographicAdress = require('../../models/GeographicAddressModels/GeographicAddress')
@@ -25,8 +24,8 @@ const Organization = require('../../models/PartyModels/Organization')
 const ResourceRelationshipType = new GraphQLObjectType({
   name: 'ResourceRelationship',
   fields: () => ({
-    relationshipType: { type: GraphQLString },
-    resource: { type: ResourceType } // Vollständige Resource
+    relationshipType: { type: GraphQLString, description: "Type of relationship between Resources (i.e. targets or isTargeted)" },
+    resource: { type: ResourceType, description: "Related Resource(s)" } // Vollständige Resource
   })
 });
 
@@ -128,6 +127,7 @@ const ResourceType = new GraphQLObjectType({
     },
     resourceRelationship: {
       type: new GraphQLList(ResourceRelationshipType),
+      description: "Relationship between Resources",
       args: {relationshipType: {type: GraphQLString}},
       resolve: async (parent, args) => {
         if (parent.resourceRelationship && parent.resourceRelationship.length > 0) {
@@ -150,13 +150,6 @@ const ResourceType = new GraphQLObjectType({
         return null;
       }
     },
-    /* resourceSpecification: {
-      type: ResourceSpecificationType,
-      description: 'The specification that defines this resource.',
-      resolve(parent, args) {
-        return ResourceSpecification.findById(parent.resourceSpecificationGql);
-      }
-    }, */
     resourceStatus: {
       type: ResourceStatusType,
       description: 'The current status of the resource, such as standby, alarm, available, reserved, suspended.',
