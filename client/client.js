@@ -94,8 +94,9 @@ async function runTestSuite(){
 
 const runSingleTestProcedure = async (method, api, use_case, iterationCount) => {
     console.log(`=================== Warm-up for ${api} - ${use_case} ==================`);
-    await warmUpServer(api); // Schalter für REST oder GraphQL basierend auf dem API-Parameter
-  
+    for (let index = 0; index < 5; index++) {
+        // Run warmup for usecase
+        await method()  
 
     console.log("")
     console.log(`=================== Test Suite for ${api} ==================`)
