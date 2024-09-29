@@ -89,7 +89,7 @@ const ResourceType = new GraphQLObjectType({
       type: new GraphQLList(CharacteristicType),
       description: 'A list of characteristics associated with the resource.',
       args: {
-        names: { type: new GraphQLList(GraphQLString) },  // Argument zum Filtern nach mehreren Namen
+        names: { type: new GraphQLList(GraphQLString) },
       },
       resolve(parent, args) {
         // Wenn eine Liste von Namen übergeben wurde, filtere die Characteristiken

@@ -60,40 +60,6 @@ const RootQuery = new GraphQLObjectType({
         .limit(limit)
       },
     },
-    searchResourcesInCity:{
-      type: new GraphQLList(ResourceType),
-      description: 'Search resources by category and city where the resource is located.',
-      args: {
-        category: { type: GraphQLString,  description: 'Category of the resources' },
-        city: { type: GraphQLString, description: 'City in which to search for resources' },
-        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
-        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
-      },
-      async resolve(parent, args){
-        // Filter nach Kategorie
-        const categoryFilter = { category: args.category };
-
-        // Finde alle Ressourcen der angegebenen Kategorie
-        const resources = await Resource.find(categoryFilter);
-
-        const filteredResources = [];
-
-        // 1. Schritt: Für jede Ressource, die GeographicAddress (relatedPlace) abrufen und Stadt überprüfen
-        for (const resource of resources) {
-          if (resource.place && resource.place.id) {
-            // Abrufen der GeographicAddress anhand der place ID
-            const geographicAddress = await GeographicAddress.findById(resource.place.id);
-            
-            // Prüfen, ob die Stadt der gewünschten Stadt entspricht
-            if (geographicAddress && geographicAddress.city === args.city) {
-              filteredResources.push(resource);
-            }
-          }
-        }
-        return filteredResources;
-      }
-    },
     digitalIdentity: {
       type: DigitalIdentityType,
       description: 'Fetch a single Digital Identity by its unique ID.',
@@ -167,6 +133,40 @@ const RootQuery = new GraphQLObjectType({
         .sort({ [sortField]: sortDirection })
         .skip(offset)
         .limit(limit)
+      }
+    },
+    searchResourcesInCity:{
+      type: new GraphQLList(ResourceType),
+      description: 'Search resources by category and city where the resource is located.',
+      args: {
+        category: { type: GraphQLString,  description: 'Category of the resources' },
+        city: { type: GraphQLString, description: 'City in which to search for resources' },
+        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
+        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
+        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
+      },
+      async resolve(parent, args){
+        // Filter nach Kategorie
+        const categoryFilter = { category: args.category };
+
+        // Finde alle Ressourcen der angegebenen Kategorie
+        const resources = await Resource.find(categoryFilter);
+
+        const filteredResources = [];
+
+        // 1. Schritt: Für jede Ressource, die GeographicAddress (relatedPlace) abrufen und Stadt überprüfen
+        for (const resource of resources) {
+          if (resource.place && resource.place.id) {
+            // Abrufen der GeographicAddress anhand der place ID
+            const geographicAddress = await GeographicAddress.findById(resource.place.id);
+            
+            // Prüfen, ob die Stadt der gewünschten Stadt entspricht
+            if (geographicAddress && geographicAddress.city === args.city) {
+              filteredResources.push(resource);
+            }
+          }
+        }
+        return filteredResources;
       }
     }
   },
