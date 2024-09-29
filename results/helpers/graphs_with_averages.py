@@ -84,11 +84,9 @@ def create_comparison_bargraph_for_api_call_count(metric, use_cases, bar_width, 
     # Bars for REST API
     bars_rest1 = ax1.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
     bars_graphql1 = ax1.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST_opt', color='green')
 
     bars_rest2 = ax2.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
     bars_graphql2 = ax2.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST_opt', color='green')
 
 
     # Set the y-axis limits to "break" the axis
@@ -138,6 +136,7 @@ def create_comparison_bargraph_for_data_transmitted(metric, use_cases, bar_width
     # Convert bytes to kilobytes (KB)
     rest_data_kb = [x / 1024 for x in rest_values]
     graphql_data_kb = [x / 1024 for x in gql_values]
+    rest_opt_data_kb = [x / 1024 for x in rest_opt_values]
     print(rest_data_kb)
     print(graphql_data_kb)
 
@@ -145,17 +144,17 @@ def create_comparison_bargraph_for_data_transmitted(metric, use_cases, bar_width
     fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=(8,6), gridspec_kw={'height_ratios': [1, 3]})
 
     # Bars for REST API
-    bars_rest1 = ax1.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
-    bars_graphql1 = ax1.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST_opt', color='green')
+    bars_rest1 = ax1.bar(use_cases - bar_width, rest_data_kb, bar_width, label='REST', color='steelblue')
+    bars_graphql1 = ax1.bar(use_cases, graphql_data_kb, bar_width, label='GraphQL', color='violet')
+    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST_opt', color='green')
 
-    bars_rest2 = ax2.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
-    bars_graphql2 = ax2.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST_opt', color='green')
+    bars_rest2 = ax2.bar(use_cases - bar_width, rest_data_kb, bar_width, label='REST', color='steelblue')
+    bars_graphql2 = ax2.bar(use_cases, graphql_data_kb, bar_width, label='GraphQL', color='violet')
+    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST_opt', color='green')
 
     # Set the y-axis limits to "break" the axis
-    ax1.set_ylim(100, 1600)  # Top part of the y-axis (for larger values)
-    ax2.set_ylim(0, 50)      # Bottom part of the y-axis (for smaller values)
+    ax1.set_ylim(1000, 1600)  # Top part of the y-axis (for larger values)
+    ax2.set_ylim(0, 150)      # Bottom part of the y-axis (for smaller values)
 
     ax2.yaxis.set_ticks(np.arange(0, 151, 25))
 
