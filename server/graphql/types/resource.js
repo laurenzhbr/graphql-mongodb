@@ -127,8 +127,8 @@ const ResourceType = new GraphQLObjectType({
     },
     resourceRelationship: {
       type: new GraphQLList(ResourceRelationshipType),
-      description: "Relationship between Resources",
-      args: {relationshipType: {type: GraphQLString}},
+      description: "Relationship between Resources (i.e. targets or isTargeted)",
+      args: {relationshipType: {type: GraphQLString, description: "targets, isTargeted"}},
       resolve: async (parent, args) => {
         if (parent.resourceRelationship && parent.resourceRelationship.length > 0) {
           const filteredRelationships = parent.resourceRelationship.filter(
