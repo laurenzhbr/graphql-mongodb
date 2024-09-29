@@ -61,7 +61,7 @@ const rest_requests = [
 ]
 
 const iteration_count = [
-    30,
+    50,
     30,
     30,
     30,
