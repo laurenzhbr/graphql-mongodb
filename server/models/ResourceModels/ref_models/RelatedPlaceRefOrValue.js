@@ -7,10 +7,12 @@ const RelatedPlaceRefOrValueSchema = new mongoose.Schema({
     },
     href: {
         type: String,
-    },
+        strict: true,
+      },
     name: {
-        type: String
-    }
+        type: String,
+        strict: true,
+      },
 }, { _id: false });
 
 //Pre-save Hook to generate href-attribute

@@ -6,11 +6,26 @@ const Note = require('../genericModels/Note').schema;
 const RelatedParty = require('../genericModels/RelatedParty').schema;
 
 const ResourceSchema = new mongoose.Schema({
-  href: String,
-  description: String,
-  category: String,
-  endOperatingDate: Date,
-  name: String,
+  href: {
+    type: String,
+    strict: true,
+  },
+  description: {
+    type: String,
+    strict: true,
+  },
+  category: {
+    type: String,
+    strict: true,
+  },
+  endOperatingDate: {
+    type: Date,
+    strict: true,
+  },
+  name: {
+    type: String,
+    strict: true,
+  },
   resourceCharacteristic: { type: [Characteristic], default: undefined },
   administrativeState: {
     type: String,
@@ -41,8 +56,14 @@ const ResourceSchema = new mongoose.Schema({
     type: String,
     enum: ['idle', 'active', 'busy'],
   },
-  startOperatingDate: Date,
-  version: String,
+  startOperatingDate: {
+    type: Date,
+    strict: true,
+  },
+  version: {
+    type: String,
+    strict: true,
+  },
 });
 
 //Pre-save Hook to generate href-attribute

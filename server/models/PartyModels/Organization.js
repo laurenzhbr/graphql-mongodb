@@ -7,12 +7,30 @@ const ValidFor = require('../genericModels/ValidFor').schema;
 const ExternalReference = require('./support_modules//ExternalReference').schema;
 
 const OrganizationSchema = new Schema({
-    href: String,
-    isHeadOffice: Boolean,
-    isLegalEntity: Boolean,
-    name: String,
-    organizationType: String,
-    tradingName: String,
+    href: {
+      type: String,
+      strict: true,
+    },
+    isHeadOffice: {
+      type: Boolean,
+      strict: true,
+    },
+    isLegalEntity: {
+      type: Boolean,
+      strict: true,
+    },
+    name: {
+      type: String,
+      strict: true,
+    },
+    organizationType: {
+      type: String,
+      strict: true,
+    },
+    tradingName: {
+      type: String,
+      strict: true,
+    },
     contactMedium: { type: [ContactMedium], default: undefined },
     creditRating: { type: [PartyCreditProfile], default: undefined },
     existsDuring: ValidFor,

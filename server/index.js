@@ -13,13 +13,13 @@ const app = express();
 // Middleware für JSON-Verarbeitung
 app.use(express.json());
 
-
 // Verbinde dich mit der lokalen MongoDB-Datenbank
 db_orig = mongoose.connect(`mongodb://localhost:27017/${dbName}`).then(() => {
   console.log('MongoDB connected');
 }).catch(err => {
   console.error('MongoDB connection error:', err);
 });
+
 
 // Add middleware to trace CPU and memory usage
 app.use((req, res, next) => {

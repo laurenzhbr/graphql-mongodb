@@ -1,4 +1,6 @@
 const Organization = require('../models/PartyModels/Organization');
+// Alle erlaubten Felder aus dem Mongoose-Schema extrahieren
+const allowedFields = Object.keys(Organization.schema.paths).filter(field => !field.startsWith('_')); // Entfernt interne Felder wie _id
 
 // Controller-Funktion zum Abrufen aller Ressourcen
 exports.getOrganizationList = async (req, res) => {
@@ -14,14 +16,22 @@ exports.getOrganizationList = async (req, res) => {
         const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
         const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
-        // Fields für die Projektion (nur First-Level-Attribute erlaubt)
+        // Auswahl der Felder, die zurückgegeben werden sollen
         let selectedFields = null;
         if (fields) {
-          selectedFields = fields
-            .split(',')
-            .map((field) => field.trim())
-            .filter((field) => !field.includes('.')) // Nur First-Level-Felder
-            .join(' ');
+            const requestedFields = fields.split(',').map((field) => field.trim());
+
+            // Überprüfen, ob ungültige Felder abgefragt wurden
+            const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
+
+            if (invalidFields.length > 0) {
+                return res.status(400).json({
+                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
+                });
+            }
+
+            // Nur First-Level-Felder auswählen
+            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
         // Create a filter object for MongoDB queries, including comparison operators
         const filterObj = {};
@@ -112,14 +122,22 @@ exports.getOrganizationById = async (req, res) => {
       const { id } = req.params;
       const { fields } = req.query;
 
-        // Fields für die Projektion (nur First-Level-Attribute erlaubt)
-      let selectFields = null;
+      // Auswahl der Felder, die zurückgegeben werden sollen
+      let selectedFields = null;
       if (fields) {
-        selectFields = fields
-          .split(',')
-          .map((field) => field.trim())
-          .filter((field) => !field.includes('.')) // Nur First-Level-Felder
-          .join(' ');
+          const requestedFields = fields.split(',').map((field) => field.trim());
+
+          // Überprüfen, ob ungültige Felder abgefragt wurden
+          const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
+
+          if (invalidFields.length > 0) {
+              return res.status(400).json({
+                  message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
+              });
+          }
+
+          // Nur First-Level-Felder auswählen
+          selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
       }
 
       const organization = await Organization.findById(id).select(selectFields);
@@ -146,7 +164,7 @@ exports.patchOrganizationById = async (req, res) => {
     const organization = await Organization.findById(id);
 
     if (!organization) {
-      return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
+      return res.status(404).json({ success: false, message: 'Organization not found.' });
     }
 
     // Aktualisiere nur die übermittelten Felder

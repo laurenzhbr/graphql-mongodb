@@ -1,6 +1,8 @@
 // resourceController.js
 
 const Resource = require('../models/ResourceModels/Resource'); // Importiere das Mongoose-Modell
+// Alle erlaubten Felder aus dem Mongoose-Schema extrahieren
+const allowedFields = Object.keys(Resource.schema.paths).filter(field => !field.startsWith('_')); // Entfernt interne Felder wie _id
 
 exports.getResourceList = async (req, res) => {
     try {
@@ -16,14 +18,22 @@ exports.getResourceList = async (req, res) => {
         const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
         const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
-        // Fields für die Projektion (nur First-Level-Attribute erlaubt)
+        // Auswahl der Felder, die zurückgegeben werden sollen
         let selectedFields = null;
         if (fields) {
-          selectedFields = fields
-            .split(',')
-            .map((field) => field.trim())
-            .filter((field) => !field.includes('.')) // Nur First-Level-Felder
-            .join(' ');
+            const requestedFields = fields.split(',').map((field) => field.trim());
+
+            // Überprüfen, ob ungültige Felder abgefragt wurden
+            const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
+
+            if (invalidFields.length > 0) {
+                return res.status(400).json({
+                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
+                });
+            }
+
+            // Nur First-Level-Felder auswählen
+            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
         // Create the filter object for MongoDB queries
@@ -99,14 +109,23 @@ exports.getResourceList = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Erstellen einer neuen Ressource
+
 exports.createResource = async (req, res) => {
-    const resource = new Resource(req.body);
     try {
-        const newResource = await resource.save();
-        res.status(201).json(newResource);
+        const resource = new Resource(req.body);
+
+        // Verwende runValidators und validateBeforeSave
+        await resource.save({ runValidators: true, validateBeforeSave: true });
+
+        res.status(201).json(resource);
     } catch (err) {
-        res.status(400).json({ message: err.message });
+        if (err.name === 'ValidationError') {
+            return res.status(400).json({
+                message: 'Validation Error',
+                errors: Object.values(err.errors).map(e => e.message)
+            });
+        }
+        res.status(500).json({ message: err.message });
     }
 };
 
@@ -119,11 +138,19 @@ exports.getResourceById = async (req, res) => {
         // Auswahl der Felder, die zurückgegeben werden sollen
         let selectedFields = null;
         if (fields) {
-          selectedFields = fields
-            .split(',')
-            .map((field) => field.trim())
-            .filter((field) => !field.includes('.')) // Nur First-Level-Felder
-            .join(' ');
+            const requestedFields = fields.split(',').map((field) => field.trim());
+
+            // Überprüfen, ob ungültige Felder abgefragt wurden
+            const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
+
+            if (invalidFields.length > 0) {
+                return res.status(400).json({
+                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
+                });
+            }
+
+            // Nur First-Level-Felder auswählen
+            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
         const resource = await Resource.findById(id).select(selectedFields);
@@ -136,37 +163,38 @@ exports.getResourceById = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Aktualisieren einer Ressource
 exports.patchResourceById = async (req, res) => {
     try {
-        const { id } = req.params; // ID des Street-Cabinets
-        const { newRelatedParty } = req.body; // Neue relatedParty-Daten (ID und andere Details)
-
-        // Finde das Street-Cabinet basierend auf der ID
-        const streetCabinet = await Resource.findById(id);
-
-        if (!streetCabinet) {
-        return res.status(404).json({ message: 'Resource nicht gefunden' });
-        }
-
-        // Überprüfe, ob eine relatedParty vorhanden ist und ersetze diese durch die neue Party
-        streetCabinet.relatedParty = streetCabinet.relatedParty.map(party =>
-        party.id === newRelatedParty.oldPartyId
-            ? { ...party.toObject(), id: newRelatedParty.newPartyId, name: newRelatedParty.newPartyName, href: newRelatedParty.newPartyHref }
-            : party
-        );
-
-        // Speichere die aktualisierten Daten (presave-Hook wird ausgeführt)
-        const updatedStreetCabinet = await streetCabinet.save();
-
-        // Rückgabe des aktualisierten Street-Cabinet-Datensatzes
-        res.status(200).json(updatedStreetCabinet);
-
+      const { id } = req.params;  // ID der Organisation aus den URL-Parametern
+      const updateData = req.body; // Die Daten, die aktualisiert werden sollen
+  
+      // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
+      if (!updateData || Object.keys(updateData).length === 0) {
+          return res.status(400).json({ success: false, message: 'No data for PATCH' });
+      }
+  
+      // Finde die Organisation basierend auf der ID
+      const resource = await Resource.findById(id);
+  
+      if (!resource) {
+        return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
+      }
+  
+      // Aktualisiere nur die übermittelten Felder
+      Object.assign(resource, updateData);
+  
+      // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+      const updatedResource = await resource.save();
+  
+      // Erfolgreiches Update
+      res.status(200).json(
+        updatedResource
+      );
     } catch (error) {
-        console.error('Error updating relatedParty:', error);
-        res.status(500).json({ message: 'Interner Serverfehler' });
+      console.error(error);
+      res.status(500).json({ success: false, message: 'Server Error' });
     }
-};
+  };
 
 // Controller-Funktion zum Löschen einer Ressource
 exports.deleteResourceById = async (req, res) => {

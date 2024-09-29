@@ -8,7 +8,7 @@ const RelatedPartySchema = new mongoose.Schema({
   href: String,
   name: String,
   role: String,
-}, { _id: false });
+}, { _id: false }, { strict: true });
 
 //Pre-save Hook to generate href-attribute
 RelatedPartySchema.pre('save', function(next){
