@@ -17,7 +17,7 @@ exports.getOrganizationList = async (req, res) => {
         const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
         // Auswahl der Felder, die zurückgegeben werden sollen
-        let selectedFields = null;
+        let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
@@ -31,7 +31,7 @@ exports.getOrganizationList = async (req, res) => {
             }
 
             // Nur First-Level-Felder auswählen
-            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
+            selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
         // Create a filter object for MongoDB queries, including comparison operators
         const filterObj = {};
@@ -62,7 +62,7 @@ exports.getOrganizationList = async (req, res) => {
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
         let organizations = await Organization.find(filterObj)
           .sort({ [sortField]: sortDirection })
-          .select(selectedFields)
+          .select(selectFields)
           .skip(skip)
           .limit(limitVal)
 
@@ -123,7 +123,7 @@ exports.getOrganizationById = async (req, res) => {
       const { fields } = req.query;
 
       // Auswahl der Felder, die zurückgegeben werden sollen
-      let selectedFields = null;
+      let selectFields = null;
       if (fields) {
           const requestedFields = fields.split(',').map((field) => field.trim());
 
@@ -137,7 +137,7 @@ exports.getOrganizationById = async (req, res) => {
           }
 
           // Nur First-Level-Felder auswählen
-          selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
+          selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
       }
 
       const organization = await Organization.findById(id).select(selectFields);

@@ -15,12 +15,11 @@ const router = express.Router();
 //GraphQL route
 router.use('/graphql', graphqlRouter)
 
-
 // REST routes
-router.use('/resourceInventoryManagement/resource', restResourceRoutes)
-router.use('/partyManagement/organization', restPartyRoutes)
-router.use('/geographicAddressManagement/geographicAddress', restGeoAddressRoutes)
-router.use('/digitalIdentityManagement/digitalIdentity', restDigitalIdentityRoutes)
+router.use('/resourceInventoryManagement', restResourceRoutes)
+router.use('/partyManagement', restPartyRoutes)
+router.use('/geographicAddressManagement', restGeoAddressRoutes)
+router.use('/digitalIdentityManagement', restDigitalIdentityRoutes)
 // Health-check-Endpunkt
 router.get('/health-check', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Server is healthy' });

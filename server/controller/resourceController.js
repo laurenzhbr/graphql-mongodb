@@ -19,7 +19,7 @@ exports.getResourceList = async (req, res) => {
         const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
         // Auswahl der Felder, die zurückgegeben werden sollen
-        let selectedFields = null;
+        let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
@@ -33,7 +33,7 @@ exports.getResourceList = async (req, res) => {
             }
 
             // Nur First-Level-Felder auswählen
-            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
+            selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
         // Create the filter object for MongoDB queries
@@ -86,7 +86,7 @@ exports.getResourceList = async (req, res) => {
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
         const resources = await Resource.find(filterObj)
             .sort({ [sortField]: sortDirection })
-            .select(selectedFields)
+            .select(selectFields)
             .skip(skip)
             .limit(limitVal)
         
@@ -136,7 +136,7 @@ exports.getResourceById = async (req, res) => {
         const {fields} = req.query
 
         // Auswahl der Felder, die zurückgegeben werden sollen
-        let selectedFields = null;
+        let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
@@ -150,10 +150,10 @@ exports.getResourceById = async (req, res) => {
             }
 
             // Nur First-Level-Felder auswählen
-            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
+            selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
-        const resource = await Resource.findById(id).select(selectedFields);
+        const resource = await Resource.findById(id).select(selectFields);
         if (!resource) {
             return res.status(404).json({ message: 'Resource not found with the specified criteria' });
         }

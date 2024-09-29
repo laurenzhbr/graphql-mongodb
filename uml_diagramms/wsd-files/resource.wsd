@@ -67,19 +67,6 @@ class Characteristic  {
     value : Any
 }
 
-
-
-/' class ResourceSpecificationRef  <<Ref>> {
-    href : Uri
-    id : String
-    name : String
-    version : String
-    @baseType : String
-    @referredType : String
-    @schemaLocation : Uri
-    @type : String
-}
- '/
 class RelatedParty  {
     href : Uri
     id : String

@@ -1,6 +1,8 @@
 // Import packages
 const express = require('express');
 const mongoose = require('mongoose');
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./swagger_output.json');  // Die generierte Swagger-Dokumentation
 require('dotenv').config();
 
 // Import router for REST and GraphQL
@@ -37,10 +39,15 @@ app.use((req, res, next) => {
 // start router
 app.use('/', router)
 
+// Swagger-Dokumentation Route
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+
 
 // Starte den Server
 const PORT = 4000;
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://0.0.0.0:${PORT}`);
+  console.log(`GraphiQL available at http://0.0.0.0:${PORT}/graphql`);
+  console.log(`Swagger Docs available at http://0.0.0.0:${PORT}/api-docs`);
   console.log('Press Ctrl-C to terminate...');
 });

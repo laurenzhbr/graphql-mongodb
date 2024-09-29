@@ -1,0 +1,1230 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Meine REST API",
+    "description": "Beschreibung der API",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+        "application/json;charset=utf-8"
+    ],
+    "produces": [
+        "application/json;charset=utf-8"
+    ],
+    "tags": [
+        {
+            "name": "resource"
+        },
+        {
+            "name": "organization"
+        },
+        {
+            "name": "geographicAddress"
+        },
+        {
+            "name": "digitalIdentity"
+        }
+    ],
+  "paths": {
+    "/health-check": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/resourceInventoryManagement/resource/": {
+      "get": {
+        "summary": "List or find Resource objects",
+        "description": "This operation list or find Resource entities",
+        "tags": [
+          "resource"
+        ],
+        "parameters": [
+          {
+            "name": "fields",
+            "description": "Comma-separated properties to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "description": "Requested index for start of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "limit",
+            "description": "Requested number of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "in": "query",
+            "type": "string"
+          }
+          
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "206": {
+            "description": "Partial Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a Resource",
+        "description": "This operation creates a Resource entity.",
+        "tags": [
+          "resource"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/resourceInventoryManagement/resource/{id}": {
+      "get": {
+        "summary": "Retrieves a Resource by ID",
+        "description": "This operation retrieves a Resource entity. Attribute selection is enabled for all first level attributes.",
+        "tags": [
+          "resource"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the Resource",
+            "required": true,
+            "type": "string",
+            "in": "path"
+        },
+        {
+            "name": "fields",
+            "description": "Comma-separated properties to provide in response",
+            "required": false,
+            "type": "string",
+            "in": "query"
+        }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Updates partially a Resource",
+        "description": "This operation updates partially a Resource entity.",
+        "tags": [
+          "resource"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the Resource",
+            "required": true,
+            "type": "string",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletes a Resource",
+        "description": "This operation deletes a Resource entity.",
+        "tags": [
+          "resource"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the Resource",
+            "required": true,
+            "type": "string",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Deleted"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/partyManagement/organization/": {
+      "get": {
+        "summary": "List or find Organization objects",
+        "description": "This operation list or find Organization entities",
+        "tags": [
+          "organization"
+        ],
+        "parameters": [
+          {
+            "name": "fields",
+            "description": "Comma-separated properties to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "description": "Requested index for start of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "limit",
+            "description": "Requested number of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+              "description": "Success",
+              "headers": {
+                  "X-Total-Count": {
+                      "type": "integer",
+                      "description": "Total number of items matching criteria"
+                  },
+                  "X-Result-Count": {
+                      "type": "integer",
+                      "description": "Actual number of items returned in the response body"
+                  }
+              },
+              "schema": {
+                  "items": {
+                      "$ref": "#/definitions/Organization"
+                  },
+                  "type": "array"
+              }
+          },
+          "206": {
+            "description": "Partial Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a Organization",
+        "description": "This operation creates a Organization entity.",
+        "tags": [
+          "organization"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+                "$ref": "#/definitions/Organization"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/partyManagement/organization/{id}": {
+      "get": {
+        "summary": "Retrieves a Organization by ID",
+        "description": "This operation retrieves a Organization entity. Attribute selection is enabled for all first level attributes.",
+        "tags": [
+          "organization"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the Organization",
+            "required": true,
+            "type": "string",
+            "in": "path"
+        },
+        {
+            "name": "fields",
+            "description": "Comma-separated properties to provide in response",
+            "required": false,
+            "type": "string",
+            "in": "query"
+        }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+                "$ref": "#/definitions/Organization"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Updates partially a Organization",
+        "description": "This operation updates partially a Organization entity.",
+        "tags": [
+          "organization"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletes a Organization",
+        "description": "This operation deletes a Organization entity.",
+        "tags": [
+          "organization"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Identifier of the Organization"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Deleted"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/geographicAddressManagement/geographicAddress/": {
+      "get": {
+        "summary": "List or find GeographicAddress objects",
+        "description": "This operation list or find GeographicAddress entities",
+        "tags": [
+          "geographicAddress"
+        ],
+        "parameters": [
+          {
+            "name": "fields",
+            "description": "Comma-separated properties to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "description": "Requested index for start of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "limit",
+            "description": "Requested number of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "headers": {
+              "X-Result-Count": {
+                "description": "Actual number of items returned in the response body",
+                "type": "integer"
+              },
+              "X-Total-Count": {
+                "description": "Total number of items matching criteria",
+                "type": "integer"
+              }
+            },
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GeographicAddress"
+              }
+            }
+          },
+          "206": {
+            "description": "Partial Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/geographicAddressManagement/geographicAddress/{id}": {
+      "get": {
+        "summary": "Retrieves a GeographicAddress by ID",
+        "description": "This operation retrieves a GeographicAddress entity. Attribute selection is enabled for all first level attributes.",
+        "tags": [
+          "geographicAddress"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the GeographicAddress",
+            "required": true,
+            "type": "string",
+            "in": "path"
+        },
+        {
+            "name": "fields",
+            "description": "Comma-separated properties to provide in response",
+            "required": false,
+            "type": "string",
+            "in": "query"
+        }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/digitalIdentityManagement/digitalIdentity/": {
+      "get": {
+        "summary": "List or find DigitalIdentity objects",
+        "description": "This operation list or find DigitalIdentity entities",
+        "tags": [
+          "digitalIdentity"
+        ],
+        "parameters": [
+          {
+            "name": "fields",
+            "description": "Comma-separated properties to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "description": "Requested index for start of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "limit",
+            "description": "Requested number of resources to be provided in response",
+            "required": false,
+            "in": "query",
+            "type": "integer"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "filters",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "headers": {
+              "X-Result-Count": {
+                  "description": "Actual number of items returned in the response body",
+                  "type": "integer"
+              },
+              "X-Total-Count": {
+                  "description": "Total number of items matching criteria",
+                  "type": "integer"
+              }
+            },
+            "schema": {
+              "type": "array",
+              "items": {
+                  "$ref": "#/definitions/DigitalIdentity"
+              }
+            }
+          },
+          "206": {
+            "description": "Partial Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "summary": "Creates a DigitalIdentity",
+        "description": "This operation creates a DigitalIdentity entity.",
+        "tags": [
+          "digitalIdentity"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/digitalIdentityManagement/digitalIdentity/{id}": {
+      "get": {
+        "summary": "Retrieves a DigitalIdentity by ID",
+        "description": "This operation retrieves a DigitalIdentity entity. Attribute selection is enabled for all first level attributes.",
+        "tags": [
+          "digitalIdentity"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the Digital Identity",
+            "required": true,
+            "type": "string",
+            "in": "path"
+          },
+          {
+            "name": "fields",
+            "description": "Comma-separated properties to provide in response",
+            "required": false,
+            "type": "string",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Updates partially a DigitalIdentity",
+        "description": "This operation updates partially a DigitalIdentity entity.",
+        "tags": [
+          "digitalIdentity"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Identifier of the DigitalIdentity",
+            "required": true,
+            "type": "string",
+            "in": "path"
+        },
+        {
+            "name": "digitalIdentity",
+            "description": "The DigitalIdentity to be updated",
+            "required": true,
+            "in": "body"
+        }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Deletes a DigitalIdentity",
+        "description": "This operation deletes a DigitalIdentity entity.",
+        "tags": [
+          "digitalIdentity"
+        ],
+        "parameters": [
+            {
+                "name": "id",
+                "description": "Identifier of the DigitalIdentity",
+                "required": true,
+                "type": "string",
+                "in": "path"
+            }
+        ],
+        "responses": {
+          "204": {
+            "description": "Deleted"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Resource": {
+      "type": "object",
+      "properties": {
+        "administrativeState": {
+          "$ref": "#/definitions/ResourceAdministrativeStateType"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "endOperatingDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "href": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "operationalState": {
+          "$ref": "#/definitions/ResourceOperationalStateType"
+        },
+        "resourceStatus": {
+          "$ref": "#/definitions/ResourceStatusType"
+        },
+        "resourceVersion": {
+          "type": "string"
+        },
+        "startOperatingDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "usageState": {
+          "$ref": "#/definitions/ResourceUsageStateType"
+        },
+        "note": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Note"
+          }
+        },
+        "relatedParty": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RelatedParty"
+          }
+        },
+        "place": {
+          "$ref": "#/definitions/RelatedPlaceRefOrValue"
+        },
+        "resourceRelationship": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ResourceRelationship"
+          }
+        },
+        "resourceCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Characteristic"
+          }
+        }
+      }
+    },
+    "ResourceStatusType": {
+      "type": "string",
+      "enum": [
+        "standby",
+        "alarm",
+        "available",
+        "reserved",
+        "unknown",
+        "suspended"
+      ]
+    },
+    "ResourceUsageStateType": {
+      "type": "string",
+      "enum": [
+        "idle",
+        "active",
+        "busy"
+      ]
+    },
+    "ResourceAdministrativeStateType": {
+      "type": "string",
+      "enum": [
+        "locked",
+        "unlocked",
+        "shutdown"
+      ]
+    },
+    "ResourceOperationalStateType": {
+      "type": "string",
+      "enum": [
+        "enable",
+        "disable"
+      ]
+    },
+    "Note": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "Characteristic": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "RelatedParty": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "ResourceRelationship": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "relationshipType": {
+          "type": "string"
+        }
+      }
+    },
+    "RelatedPlaceRefOrValue": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "ResourceRefOrValue": {
+      "type": "object",
+      "properties": {
+        "administrativeState": {
+          "$ref": "#/definitions/ResourceAdministrativeStateType"
+        },
+        "category": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "endOperatingDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "href": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "operationalState": {
+          "$ref": "#/definitions/ResourceOperationalStateType"
+        },
+        "resourceStatus": {
+          "$ref": "#/definitions/ResourceStatusType"
+        },
+        "resourceVersion": {
+          "type": "string"
+        },
+        "startOperatingDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "usageState": {
+          "$ref": "#/definitions/ResourceUsageStateType"
+        },
+        "note": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Note"
+          }
+        },
+        "relatedParty": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RelatedParty"
+          }
+        },
+        "place": {
+          "$ref": "#/definitions/RelatedPlaceRefOrValue"
+        },
+        "resourceRelationship": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ResourceRelationship"
+          }
+        },
+        "resourceCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Characteristic"
+          }
+        }
+      }
+    },
+    "Organization": {
+      "type": "object",
+      "properties": {
+        "existsDuring": {
+          "$ref": "#/definitions/TimePeriod"
+        },
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "isHeadOffice": {
+          "type": "boolean"
+        },
+        "isLegalEntity": {
+          "type": "boolean"
+        },
+        "name": {
+          "type": "string"
+        },
+        "nameType": {
+          "type": "string"
+        },
+        "organizationType": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/OrganizationStateType"
+        },
+        "tradingName": {
+          "type": "string"
+        },
+        "contactMedium": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContactMedium"
+          }
+        },
+        "creditRating": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PartyCreditProfile"
+          }
+        },
+        "externalReference": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ExternalReference"
+          }
+        }
+      }
+    },
+    "OrganizationStateType": {
+      "type": "string",
+      "enum": [
+        "initialized",
+        "validated",
+        "closed"
+      ]
+    },
+    "ContactMedium": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "mediumType": {
+          "type": "string"
+        },
+        "preferred": {
+          "type": "boolean"
+        },
+        "validFor": {
+          "$ref": "#/definitions/TimePeriod"
+        },
+        "characteristic": {
+          "$ref": "#/definitions/MediumCharacteristic"
+        }
+      }
+    },
+    "MediumCharacteristic": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "contactType": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "emailAddress": {
+          "type": "string"
+        },
+        "faxNumber": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "postCode": {
+          "type": "string"
+        },
+        "socialNetworkId": {
+          "type": "string"
+        },
+        "stateOrProvince": {
+          "type": "string"
+        },
+        "street1": {
+          "type": "string"
+        },
+        "street2": {
+          "type": "string"
+        }
+      }
+    },
+    "ExternalReference": {
+      "type": "object",
+      "properties": {
+        "externalReferenceType": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "PartyCreditProfile": {
+      "type": "object",
+      "properties": {
+        "creditAgencyName": {
+          "type": "string"
+        },
+        "creditAgencyType": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "string"
+        },
+        "ratingReference": {
+          "type": "string"
+        },
+        "ratingScore": {
+          "type": "integer"
+        },
+        "validFor": {
+          "$ref": "#/definitions/TimePeriod"
+        }
+      }
+    },
+    "TimePeriod": {
+      "type": "object",
+      "properties": {
+        "startDateTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endDateTime": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "GeographicAddress": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "postcode": {
+          "type": "string"
+        },
+        "stateOrProvince": {
+          "type": "string"
+        },
+        "streetName": {
+          "type": "string"
+        },
+        "streetNr": {
+          "type": "string"
+        }
+      }
+    },
+    "DigitalIdentity": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "nickname": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "type": "string"
+        },
+        "resourceIdentified": {
+          "$ref": "#/definitions/ResourceRef"
+        }
+      }
+    },
+    "ResourceRef": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

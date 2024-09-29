@@ -18,7 +18,7 @@ exports.getDigitalIdentities = async (req, res) => {
         const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
 
         // Auswahl der Felder, die zurückgegeben werden sollen
-        let selectedFields = null;
+        let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
@@ -32,7 +32,7 @@ exports.getDigitalIdentities = async (req, res) => {
             }
 
             // Nur First-Level-Felder auswählen
-            selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
+            selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
         const filterObj = { ...filters };
@@ -43,7 +43,7 @@ exports.getDigitalIdentities = async (req, res) => {
         // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
         let digitalIdentities = await DigitalIdentity.find(filterObj)
           .sort({ [sortField]: sortDirection })
-          .select(selectedFields)
+          .select(selectFields)
           .skip(skip)
           .limit(limitVal)
         
@@ -106,7 +106,7 @@ exports.getDigitalIdentityById = async (req, res) => {
       const { fields } = req.query;
 
       // Auswahl der Felder, die zurückgegeben werden sollen
-      let selectedFields = null;
+      let selectFields = null;
       if (fields) {
           const requestedFields = fields.split(',').map((field) => field.trim());
 
@@ -120,7 +120,7 @@ exports.getDigitalIdentityById = async (req, res) => {
           }
 
           // Nur First-Level-Felder auswählen
-          selectedFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
+          selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
       }
 
       const digitalIdentity = await DigitalIdentity.findById(id).select(selectFields);
