@@ -11,26 +11,28 @@ const ResourceInputType = require('../types/inputs/ResourceInputType');
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQuery',
-  description: 'Entry points for fetching data',
+  description: 'Entry points for fetching data, including resources, digital identities, and organizations',
   fields: {
     resource: {
       type: ResourceType,
-      args: { id: { type: GraphQLID } },
+      description: 'Fetch a single Resource by its unique ID.',
+      args: { id: { type: GraphQLID, description: 'The unique ID of the resource to retrieve' } },
       resolve(parent, args) {
         return Resource.findOne({ _id: args.id });
       },
     },
     resources: {
       type: new GraphQLList(ResourceType),
+      description: 'Fetch a list of Resources.',
       args: {
-        category: {type: GraphQLString, description: 'category of the resources'},
+        category: {type: GraphQLString, description: 'Category of the Resources'},
         capacity: {type: GraphQLInt, description: 'current capacity usage of the resource'},
         resourceStatus: { type: GraphQLString, description: 'enum: standby, alarm, available, reserved, unknown, suspended'},
         operationalState: { type: GraphQLString, description: 'enum: enable, disable' },
         administrativeState: { type: GraphQLString, description: 'enum: locked, unlocked, shutdown' },
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data'},
-        sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
+        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
       },
       async resolve(parent, args) {
         limit = parseInt(args.limit) || 0
@@ -60,12 +62,13 @@ const RootQuery = new GraphQLObjectType({
     },
     searchResourcesInCity:{
       type: new GraphQLList(ResourceType),
+      description: 'Search resources by category and city where the resource is located.',
       args: {
-        category: { type: GraphQLString },
-        city: { type: GraphQLString },
+        category: { type: GraphQLString,  description: 'Category of the resources' },
+        city: { type: GraphQLString, description: 'City in which to search for resources' },
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
+        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
       },
       async resolve(parent, args){
         // Filter nach Kategorie
@@ -93,18 +96,20 @@ const RootQuery = new GraphQLObjectType({
     },
     digitalIdentity: {
       type: DigitalIdentityType,
-      args: { id: { type: GraphQLID } },
+      description: 'Fetch a single Digital Identity by its unique ID.',
+      args: { id: { type: GraphQLID, description: 'The unique ID of the digital identity to retrieve' } },
       resolve(parent, args) {
         return DigitalIdentity.findOne({ _id: args.id }); // Nutze findById, um die DigitalIdentity basierend auf der ID abzurufen
       },
     },
     digitalIdentities:{
       type: new GraphQLList(DigitalIdentityType),
+      description: 'Fetch a list of Digital Identities.',
       args: {
         status: { type: GraphQLString, description: 'status of the Digital Identity'}, 
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sort: { type: GraphQLString, description: 'field and direction for sorting results ( {field} => asc sorting || -{field} => desc sorting )'},
+        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
       },
       async resolve(parent, args) {
         limit = parseInt(args.limit) || 0;
@@ -124,16 +129,17 @@ const RootQuery = new GraphQLObjectType({
     },
     organizations: {
       type: new GraphQLList(OrganizationType),
+      description: 'Fetch a list of organizations.',
       args: {
-        organizationType: { type: GraphQLString },
-        status: { type: GraphQLString },
+        organizationType: { type: GraphQLString, description: 'Type of the organization' },
+        status: { type: GraphQLString, description: 'Status of the organization' },
         creditRating_gt: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is greater than this value' },
         creditRating_lt: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is less than this value' },
         creditRating_gte: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is greater than or equal to this value'},
         creditRating_lte: { type: GraphQLInt, description: 'Filter organizations where creditRating.ratingScore is less than or equal to this value'},        
         offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
         limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sort: { type: GraphQLString, description: 'field and direction for sorting results ({field} => asc sorting | -{field} => desc sorting'},
+        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
       },
       async resolve(parent, args){
         limit = parseInt(args.limit) || 0
@@ -172,8 +178,9 @@ const Mutation = new GraphQLObjectType({
   fields: {
     createResource: {
       type: ResourceType,
+      description: 'Create a new resource in the database',
       args: {
-        input: { type: ResourceInputType } // Die Input-Daten für die Ressource
+        input: { type: ResourceInputType, description: 'Input data for creating a new resource' } // Die Input-Daten für die Ressource
       },
       async resolve(parent, { input }) {
         // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
@@ -188,15 +195,15 @@ const Mutation = new GraphQLObjectType({
     },
     updateDigitalIdentity: {
       type: DigitalIdentityType,
+      description: 'Update a specific Digital Identity',
       args: {
-        id: { type: GraphQLID },
-        data: { type: DigitalIdentityUpdateInput }  // Verwende den Input-Type hier
+        id: { type: GraphQLID, description: 'Unique ID of the Digital Identity to update' },
+        data: { type: DigitalIdentityUpdateInput, 'description': 'Data for updating the Digital Identity' }
       },
       async resolve(parent, { id, data }) {
 
         const digitalIdentity = await DigitalIdentity.findById(id);
 
-        // Aktualisiere nur die übermittelten Felder
         Object.assign(digitalIdentity, data);
 
         // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
@@ -204,63 +211,18 @@ const Mutation = new GraphQLObjectType({
         return updatedDigitalIdentity;
     }
     },
-    deleteDigitalIdentitesByStatus: {
-      type: DigitalIdentityType, // Gibt die Anzahl der gelöschten Dokumente zurück
-      description: 'Deletes specific amount of DigitalIdentities based on their status',
-      args: {
-        status: { type: new GraphQLNonNull(GraphQLString) }, // Filter basierend auf dem Status
-        limit: { type: GraphQLInt, description: 'Anzahl der zu löschenden Einträge (optional)', defaultValue: 10} // Limit-Argument}
-      },
-      async resolve(_, { status, limit }) {
-        try {
-          // Finde die IDs der DigitalIdentities, die gelöscht werden sollen
-          const identitiesToDelete = await DigitalIdentity.find({ status })
-            .limit(limit)
-            .exec();
-  
-          // Lösche die DigitalIdentities und speichere die gelöschten Datensätze
-          const deletedIdentities = [];
-          for (let identity of identitiesToDelete) {
-            const deletedIdentity = await DigitalIdentity.findByIdAndDelete(identity._id);
-            deletedIdentities.push(deletedIdentity);
-          }
-  
-          // Rückgabe der gelöschten Identitäten und einer Bestätigungsmeldung
-          /* return {
-            message: `${deletedIdentities.length} DigitalIdentities mit Status '${status}' erfolgreich gelöscht.`,
-            deletedIdentities
-          }; */
-        } catch (error) {
-          throw new Error('Löschvorgang fehlgeschlagen: ' + error.message);
-        }
-      }
-
-      /* async resolve(parent, { status, limit }) {
-        // Finde die Ressourcen, die gelöscht werden sollen
-        const resourcesToDelete = await DigitalIdentity.find({ status: status })
-          .limit(limit || 0) // Wenn kein Limit gesetzt ist, werden alle passenden gelöscht
-          // .select('_id'); // Nur die IDs holen
-
-        // Extrahiere die IDs
-        const idsToDelete = resourcesToDelete.map(resource => resource._id);
-
-        // Lösche die gefundenen Ressourcen
-        const result = await DigitalIdentity.deleteMany({ _id: { $in: idsToDelete } });
-
-        // Gibt die Anzahl der gelöschten Einträge zurück
-        return result.deletedCount;
-      }, */
-    },
     deleteDigitalIdentity: {
       type: new GraphQLObjectType({
         name: 'DeleteResponse',
+        description: 'Response after deleting a Digital Identity',
         fields: {
-          success: { type: GraphQLBoolean },
-          message: { type: GraphQLString }
+          success: { type: GraphQLBoolean, description: 'Indicates if the deletion was successful' },
+          message: { type: GraphQLString, description: 'Message with details about the deletion result' }
         }
       }),
+      description: 'Delete a specific Digital Identity from the database',
       args: {
-        id: { type: new GraphQLNonNull(GraphQLID) }
+        id: { type: new GraphQLNonNull(GraphQLID), description: 'Unique ID of the Digital Identity to delete' }
       },
       resolve: async (_, { id }) => {
         try {
@@ -274,31 +236,6 @@ const Mutation = new GraphQLObjectType({
         }
       }
     }
-
-    /* ,
-    deleteResource: {
-      type: ResourceType,
-      args: { id: { type: new GraphQLNonNull(GraphQLString) } },
-      resolve(parent, args) {
-        return Resource.findOneAndDelete({ id: args.id });
-      },
-    },
-    updateResource: {
-      type: ResourceType,
-      args: {
-        id: { type: new GraphQLNonNull(GraphQLString) },
-        href: { type: GraphQLString },
-        category: { type: GraphQLString },
-        description: { type: GraphQLString },
-        name: { type: GraphQLString },
-        resourceVersion: { type: GraphQLString },
-        startOperatingDate: { type: GraphQLString },
-        // Hier ebenfalls weitere Felder ergänzen
-      },
-      resolve(parent, args) {
-        return Resource.findOneAndUpdate({ id: args.id }, args, { new: true });
-      },
-    }, */
   },
 });
 

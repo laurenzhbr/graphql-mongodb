@@ -15,8 +15,8 @@ def create_output_directory(test_case_id):
 # 1. Liniendiagramm für die Dauer der API-Aufrufe
 def create_line_chart(rest_data, graphql_data, test_case, output_dir):
     plt.figure(figsize=(10, 6))
-    plt.plot(rest_data['duration_of_all_calls'], label='REST', marker='o')
-    plt.plot(graphql_data['duration_of_all_calls'], label='GraphQL', marker='o')
+    plt.plot(rest_data['sum_response_time'], label='REST', marker='o')
+    plt.plot(graphql_data['sum_response_time'], label='GraphQL', marker='o')
     plt.title(f'Response Time Over Requests for {test_case}')
     plt.xlabel('Request Number')
     plt.ylabel('Response Time (ms)')
@@ -71,7 +71,7 @@ def create_bar_chart_data_transferred(rest_data, graphql_data, test_case, output
 # 5. Optional: Boxplot für Gesamtübersicht (Response Time)
 def create_combined_boxplot_response_time(rest_data, graphql_data, test_case, output_dir):
     plt.figure(figsize=(10, 6))
-    plt.boxplot([rest_data['duration_of_all_calls'], graphql_data['duration_of_all_calls']],
+    plt.boxplot([rest_data['sum_response_time'], graphql_data['sum_response_time']],
                 tick_labels=['REST', 'GraphQL'])
     plt.title(f'Response Time Distribution for {test_case}')
     plt.ylabel('Response Time (ms)')
@@ -84,8 +84,8 @@ def create_boxplot_for_all_metrics(rest_data, graphql_data, test_case, output_di
     plt.figure(figsize=(10, 6))
 
     metrics_data = [
-        rest_data['duration_of_all_calls'],
-        graphql_data['duration_of_all_calls'],
+        rest_data['sum_response_time'],
+        graphql_data['sum_response_time'],
         rest_data['cpu_used_by_server'],
         graphql_data['cpu_used_by_server'],
         rest_data['memory_used_by_server'],

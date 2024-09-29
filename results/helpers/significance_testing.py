@@ -130,7 +130,7 @@ if __name__ == "__main__":
     gql_data = load_data(gql_file)
 
     # Liste der Metriken, die getestet werden sollen
-    metrics = ["duration_of_all_calls", "cpu_used_by_server", "memory_used_by_server", "api_call_count"]
+    metrics = ["sum_response_time", "cpu_used_by_server", "memory_used_by_server", "api_call_count"]
 
     # Teste jede Metrik
     for metric in metrics:

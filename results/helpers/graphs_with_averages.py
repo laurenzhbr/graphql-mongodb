@@ -19,7 +19,7 @@ def sort_use_cases(use_cases):
     # Extrahiere die Zahl am Ende des Use-Case-Namens und sortiere nach dieser Zahl
     return sorted(use_cases, key=lambda x: int(re.search(r'\d+', x).group()))
 
-def create_comparison_bargraph_for_duration_of_all_calls(metric, use_cases, bar_width, rest_values, gql_values, rest_opt_values, output_dir):
+def create_comparison_bargraph_for_sum_response_time(metric, use_cases, bar_width, rest_values, gql_values, rest_opt_values, output_dir):
     # Create bar graph with broken y-axis with a break at 200ms
 
     # Create the plot with two y-axis scales
@@ -28,11 +28,11 @@ def create_comparison_bargraph_for_duration_of_all_calls(metric, use_cases, bar_
     # Bars for REST API
     bars_rest1 = ax1.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
     bars_graphql1 = ax1.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST_opt', color='green')
+    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST optimized', color='green')
 
     bars_rest2 = ax2.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
     bars_graphql2 = ax2.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST_opt', color='green')
+    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST optimized', color='green')
 
 
     # Set the y-axis limits to "break" the axis
@@ -60,7 +60,7 @@ def create_comparison_bargraph_for_duration_of_all_calls(metric, use_cases, bar_
 
     # Labels and title
     ax2.set_ylabel('Average Duration (ms)')
-    ax1.set_title('Comparison of API Call Duration between REST and GraphQL')
+    ax1.set_title('Comparison of accumulated Response Times between REST and GraphQL')
     ax2.set_xticks(use_cases)
     ax2.set_xticklabels([f'Use Case {i+1}' for i in use_cases], rotation=45, ha='right')
 
@@ -116,7 +116,7 @@ def create_comparison_bargraph_for_api_call_count(metric, use_cases, bar_width, 
 
     # Labels and title
     ax2.set_ylabel('Average amount of API calls total')
-    ax1.set_title('Comparison of API Call Count between REST and GraphQL')
+    ax1.set_title('Comparison of amount of API Calls between REST and GraphQL')
     ax2.set_xticks(use_cases)
     ax2.set_xticklabels([f'Use Case {i+1}' for i in use_cases], rotation=45, ha='right')
 
@@ -146,11 +146,11 @@ def create_comparison_bargraph_for_data_transmitted(metric, use_cases, bar_width
     # Bars for REST API
     bars_rest1 = ax1.bar(use_cases - bar_width, rest_data_kb, bar_width, label='REST', color='steelblue')
     bars_graphql1 = ax1.bar(use_cases, graphql_data_kb, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST_opt', color='green')
+    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST optimized', color='green')
 
     bars_rest2 = ax2.bar(use_cases - bar_width, rest_data_kb, bar_width, label='REST', color='steelblue')
     bars_graphql2 = ax2.bar(use_cases, graphql_data_kb, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST_opt', color='green')
+    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST optimized', color='green')
 
     # Set the y-axis limits to "break" the axis
     ax1.set_ylim(1000, 1600)  # Top part of the y-axis (for larger values)
@@ -194,6 +194,43 @@ def create_comparison_bargraph_for_data_transmitted(metric, use_cases, bar_width
 
     print(f"Chart for {metric} saved at {output_filepath}")
 
+import json
+
+# Funktion zum Erstellen einer JSON-Datei mit den Average-Werten
+def create_json_of_averages(rest_data, gql_data, rest_opt_data, output_dir):
+    # Liste der Testcases
+    use_cases = sort_use_cases(rest_data.keys())
+    
+    # Liste der Metriken
+    metrics = ["sum_response_time", "total_data_transferred", "api_call_count"]
+    
+    # Dictionary zum Speichern der Daten
+    averages_data = {}
+
+    # Durchschnittswerte pro Metrik und Testcase
+    for uc in use_cases:
+        averages_data[uc] = {}
+        for metric in metrics:
+            rest_value = rest_data[uc].get(metric, "N/A")
+            gql_value = gql_data[uc.replace("rest", "gql")].get(metric, "N/A")
+            rest_opt_value = rest_opt_data.get(uc, {}).get(metric, "N/A") if uc in ['rest3', 'rest4', 'rest6'] else "N/A"
+            
+            # Werte für die Metrik im aktuellen Testcase speichern
+            averages_data[uc][metric] = {
+                "REST": rest_value,
+                "GraphQL": gql_value,
+                "REST optimized": rest_opt_value
+            }
+    
+    # JSON-Datei schreiben
+    json_file_path = os.path.join(output_dir, "average_values_comparison.json")
+    
+    with open(json_file_path, 'w') as json_file:
+        json.dump(averages_data, json_file, indent=4)
+    
+    print(f"JSON file of averages saved at {json_file_path}")
+
+
 # Funktion zum Erstellen von Balkendiagrammen für jede Metrik
 def create_bar_chart_for_metric(rest_data, gql_data, rest_opt_data, metric, output_dir):
     use_cases = sort_use_cases(rest_data.keys())  # Liste der Use-Cases (z.B. rest1, gql1, etc.)
@@ -202,13 +239,13 @@ def create_bar_chart_for_metric(rest_data, gql_data, rest_opt_data, metric, outp
     print(rest_values)
     print(gql_values)
 
-    # REST_opt nur für Testcases 3, 4 und 6 hinzufügen
+    # REST optimized nur für Testcases 3, 4 und 6 hinzufügen
     rest_opt_values = []
     for uc in use_cases:
         if uc in ['rest3', 'rest4', 'rest6']:
-            rest_opt_values.append(rest_opt_data.get(uc, {}).get(metric, 0))  # Hinzufügen von REST_opt-Werten
+            rest_opt_values.append(rest_opt_data.get(uc, {}).get(metric, 0))  # Hinzufügen von REST optimized-Werten
         else:
-            rest_opt_values.append(0)  # Keine REST_opt-Werte für andere Use Cases
+            rest_opt_values.append(0)  # Keine REST optimized-Werte für andere Use Cases
 
     
     # Erstelle die X-Achse-Labels (Use-Case Nummer)
@@ -217,8 +254,8 @@ def create_bar_chart_for_metric(rest_data, gql_data, rest_opt_data, metric, outp
     x = np.arange(len(labels))  # Position der Balken
     width = 0.20  # Breite der Balken
     
-    if metric == "duration_of_all_calls":
-        create_comparison_bargraph_for_duration_of_all_calls(metric, x, width, rest_values, gql_values, rest_opt_values, output_dir)
+    if metric == "sum_response_time":
+        create_comparison_bargraph_for_sum_response_time(metric, x, width, rest_values, gql_values, rest_opt_values, output_dir)
     
     if metric == "total_data_transferred":
         create_comparison_bargraph_for_data_transmitted(metric, x, width, rest_values, gql_values, rest_opt_values, output_dir)
@@ -244,7 +281,7 @@ def create_all_charts(rest_folder, gql_folder, rest_opt_folder, output_folder):
     rest_opt_data = read_rest_opt_averages(rest_opt_folder)
 
     # Liste der Metriken, die visualisiert werden sollen
-    metrics = ["duration_of_all_calls", "total_data_transferred", "api_call_count"]
+    metrics = ["sum_response_time", "total_data_transferred", "api_call_count"]
 
     # Erstelle das Ausgabeverzeichnis, falls es nicht existiert
     if not os.path.exists(output_folder):
@@ -253,6 +290,9 @@ def create_all_charts(rest_folder, gql_folder, rest_opt_folder, output_folder):
     # Erstelle Diagramme für jede Metrik
     for metric in metrics:
         create_bar_chart_for_metric(rest_data, gql_data, rest_opt_data, metric, output_folder)
+    
+    # Erstelle eine JSON-Datei mit den Durchschnittswerten
+    create_json_of_averages(rest_data, gql_data, rest_opt_data, output_folder)
 
 if __name__ == "__main__":
     # Verzeichnisse für die JSON-Dateien mit den Averages

@@ -62,14 +62,14 @@ const rest_requests = [
 
 const iteration_count = [
     50,
-    30,
-    30,
-    30,
-    30,
-    30,
-    30,
-    30,
-    30,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
     5,
 ]
 
@@ -86,9 +86,9 @@ async function runTestSuite(){
     }
 
     //Conduct the payload optimized use cases for REST
-    /* await runSingleTestProcedure(rest_use_case_3_opt, "REST_opt", `rest3`, 30);
-    await runSingleTestProcedure(rest_use_case_4_opt, "REST_opt", `rest4`, 30);
-    await runSingleTestProcedure(rest_use_case_6_opt, "REST_opt", `rest6`, 30); */
+    /* await runSingleTestProcedure(rest_use_case_3_opt, "REST_opt", `rest3`, 50);
+    await runSingleTestProcedure(rest_use_case_4_opt, "REST_opt", `rest4`, 50);
+    await runSingleTestProcedure(rest_use_case_6_opt, "REST_opt", `rest6`, 50); */
 
 }
 
@@ -140,7 +140,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
 
     // Stop progress bar.
     progressBar.stop()
-    const results = {'duration_of_all_calls': duration_of_all_calls,
+    const results = {'sum_response_time': duration_of_all_calls,
         'total_transaction_time': total_transaction_time,
         'api_call_count': api_call_count,
         'cpu_used_by_server': cpu_used_by_server,
