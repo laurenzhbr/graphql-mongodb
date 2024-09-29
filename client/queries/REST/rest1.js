@@ -4,8 +4,8 @@ const rest_use_case_1 = async () => {
     const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
-    
-    const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active&fields=nickname,status,creationDate,lastUpdate&sort=-creationDate`
+
+    const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=active&fields=nickname,status,creationDate,lastUpdate&sort=-creationDate&limit=10000`
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
 
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
