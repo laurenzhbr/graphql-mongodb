@@ -6,10 +6,6 @@ const query = (status, sortBy) => `
       id
       nickname
       status
-      resourceIdentified{
-        id
-        name
-      }
       creationDate
       lastUpdate
     } 
