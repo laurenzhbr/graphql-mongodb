@@ -9,20 +9,19 @@ const {
 const ResourceIdentifiedInputType = new GraphQLInputObjectType({
   name: 'ResourceIdentifiedInputType',
   fields: {
-    id: { type: GraphQLNonNull(GraphQLID) },
-    name: { type: GraphQLString },
-    href: { type: GraphQLString },
+    id: { type: GraphQLNonNull(GraphQLID), description: 'Unique identifier for the resource.', },
+    name: { type: GraphQLString, description: 'A name for the resource.', },
   }
 });
 
-const DigitalIdentityUpdateInput = new GraphQLInputObjectType({
-  name: 'DigitalIdentityUpdateInput',
+const DigitalIdentityInput = new GraphQLInputObjectType({
+  name: 'DigitalIdentityInput',
   description: 'Input type for updating a DigitalIdentity',
   fields: {
-      nickname: { type: GraphQLString },
-      status: { type: GraphQLString },
-      resourceIdentified: { type: ResourceIdentifiedInputType }
+      nickname: { type: GraphQLNonNull(GraphQLString), descriptiondescription: 'Nickname associated with this digital identity',},
+      status: { type: GraphQLString, defaultValue: "unknown", description: 'Current lifecycle status of this digital identity', },
+      resourceIdentified: { type: ResourceIdentifiedInputType, description: 'Resource owned by this digital identity', }
   }
 });
 
-module.exports = DigitalIdentityUpdateInput;
+module.exports = DigitalIdentityInput;

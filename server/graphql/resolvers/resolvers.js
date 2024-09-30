@@ -6,7 +6,7 @@ const Organization = require('../../models/PartyModels/Organization');
 const DigitalIdentity = require('../../models/DigtialIdentityModels/DigitalIdentity');
 const GeographicAddress = require('../../models/GeographicAddressModels/GeographicAddress');
 const OrganizationType = require('../types/organization');
-const DigitalIdentityUpdateInput = require('../types/inputs/DigitalIdentityInputType');
+const DigitalIdentityInput = require('../types/inputs/DigitalIdentityInputType');
 const ResourceInputType = require('../types/inputs/ResourceInputType');
 
 const RootQuery = new GraphQLObjectType({
@@ -193,12 +193,29 @@ const Mutation = new GraphQLObjectType({
         return newResource;
       }
     },
+    createDigitalIdentity: {
+      type: DigitalIdentityType,
+      description: 'Create a new digital identity in the database',
+      args: {
+        input: { type: DigitalIdentityInput, description: 'Input data for creating a new digital identity' } // Die Input-Daten für die Ressource
+      },
+      async resolve(parent, { input }) {
+        // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
+        const digitalIdentity = new DigitalIdentity(input);
+          
+        // Speichern der neuen Ressource in der Datenbank
+        const newDigitalIdentity = await digitalIdentity.save();
+        
+        // Rückgabe der erstellten Ressource
+        return newDigitalIdentity;
+      }
+    },
     updateDigitalIdentity: {
       type: DigitalIdentityType,
       description: 'Update a specific Digital Identity',
       args: {
         id: { type: GraphQLID, description: 'Unique ID of the Digital Identity to update' },
-        data: { type: DigitalIdentityUpdateInput, 'description': 'Data for updating the Digital Identity' }
+        data: { type: DigitalIdentityInput, 'description': 'Data for updating the Digital Identity' }
       },
       async resolve(parent, { id, data }) {
 

@@ -47,7 +47,7 @@ const DigitalIdentityType = new GraphQLObjectType({
     },
     resourceIdentified: {
       type: ResourceType,
-      description: 'Resource identified by this digital identity',
+      description: 'Resource owned by this digital identity',
       resolve(parent, args){
           return Resource.findById(parent.resourceIdentified.id);
       }
