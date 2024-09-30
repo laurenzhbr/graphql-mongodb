@@ -46,6 +46,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 // Starte den Server
 const PORT = 4000;
 app.listen(PORT, () => {
+  console.log(`running with DB ${dbName}`)
   console.log(`Server is running on http://0.0.0.0:${PORT}`);
   console.log(`GraphiQL available at http://0.0.0.0:${PORT}/graphql`);
   console.log(`Swagger Docs available at http://0.0.0.0:${PORT}/api-docs`);
