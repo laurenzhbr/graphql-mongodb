@@ -182,9 +182,9 @@ const Mutation = new GraphQLObjectType({
       args: {
         data: { type: ResourceInputType, description: 'Input data for creating a new resource' } // Die Input-Daten für die Ressource
       },
-      async resolve(parent, { input }) {
+      async resolve(parent, { data }) {
         // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
-        const resource = new Resource(input);
+        const resource = new Resource(data);
           
         // Speichern der neuen Ressource in der Datenbank
         const newResource = await resource.save();
