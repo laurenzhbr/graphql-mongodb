@@ -111,17 +111,16 @@ exports.getResourceList = async (req, res) => {
 
 exports.createResource = async (req, res) => {
     try {
-        const resource = new Resource(req.body);
+        const resource = new Resource({ name: 'Router', version: 123 });
 
         // Verwende runValidators und validateBeforeSave
-        await resource.save({ runValidators: true, validateBeforeSave: true });
+        await resource.save();
 
         res.status(201).json(resource);
     } catch (err) {
-        if (err.name === 'ValidationError') {
+        if (err.name === 'MongoServerError' && err.message === 'Document failed validation') {
             return res.status(400).json({
-                message: 'Validation Error',
-                errors: Object.values(err.errors).map(e => e.message)
+                message: 'Validation Error: Document failed validation',
             });
         }
         res.status(500).json({ message: err.message });

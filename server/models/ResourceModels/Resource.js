@@ -61,10 +61,9 @@ const ResourceSchema = new mongoose.Schema({
     strict: true,
   },
   version: {
-    type: String,
-    strict: true,
+
   },
-});
+}, {strict: true});
 
 //Pre-save Hook to generate href-attribute
 ResourceSchema.pre('save', function(next){
