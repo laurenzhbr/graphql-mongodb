@@ -1,14 +1,15 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Meine REST API",
-    "description": "Beschreibung der API",
+    "title": "TMF REST vs GraphQL API ",
+    "description": "This API contains an REST API simulating 4 TMF-APIs and an equivalent GraphQL-API",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "3.120.94.134:443",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "consumes": [
         "application/json;charset=utf-8"
@@ -72,11 +73,15 @@
           },
           {
             "name": "sort",
+            "description": "Sort results by a specific field ({field} => ascending, -{field} => descending)",
+            "required": false,
             "in": "query",
             "type": "string"
           },
           {
-            "name": "filters",
+            "name": "filter",
+            "description": "Attribute filtering connected via & (i.e. status=active&category=Router)",
+            "required": false,
             "in": "query",
             "type": "string"
           }
@@ -225,7 +230,7 @@
         "parameters": [
           {
             "name": "fields",
-            "description": "Comma-separated properties to be provided in response",
+            "description": "Comma-separated properties to be provided in response.",
             "required": false,
             "in": "query",
             "type": "string"
@@ -246,11 +251,15 @@
           },
           {
             "name": "sort",
+            "description": "Sort results by a specific field ({field} => ascending, -{field} => descending)",
+            "required": false,
             "in": "query",
             "type": "string"
           },
           {
-            "name": "filters",
+            "name": "filter",
+            "description": "Attribute filtering connected via & (i.e. status=active&category=Router)",
+            "required": false,
             "in": "query",
             "type": "string"
           }
@@ -437,11 +446,15 @@
           },
           {
             "name": "sort",
+            "description": "Sort results by a specific field ({field} => ascending, -{field} => descending)",
+            "required": false,
             "in": "query",
             "type": "string"
           },
           {
-            "name": "filters",
+            "name": "filter",
+            "description": "Attribute filtering connected via & (i.e. status=active&category=Router)",
+            "required": false,
             "in": "query",
             "type": "string"
           }
@@ -551,11 +564,15 @@
           },
           {
             "name": "sort",
+            "description": "Sort results by a specific field ({field} => ascending, -{field} => descending)",
+            "required": false,
             "in": "query",
             "type": "string"
           },
           {
-            "name": "filters",
+            "name": "filter",
+            "description": "Attribute filtering connected via & (i.e. status=active&category=Router)",
+            "required": false,
             "in": "query",
             "type": "string"
           }
