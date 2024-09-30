@@ -27,7 +27,7 @@ exports.getGeoAddressList = async (req, res) => {
 
             if (invalidFields.length > 0) {
                 return res.status(400).json({
-                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
+                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}`
                 });
             }
 
@@ -81,7 +81,7 @@ exports.getGeoAddressById = async (req, res) => {
 
             if (invalidFields.length > 0) {
                 return res.status(400).json({
-                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
+                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}`
                 });
             }
 

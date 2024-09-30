@@ -28,8 +28,7 @@ exports.getResourceList = async (req, res) => {
 
             if (invalidFields.length > 0) {
                 return res.status(400).json({
-                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
-                });
+                message: `Invalid field(s) requested: ${invalidFields.join(', ')}`                });
             }
 
             // Nur First-Level-Felder auswählen
@@ -146,7 +145,7 @@ exports.getResourceById = async (req, res) => {
             if (invalidFields.length > 0) {
                 return res.status(400).json({
                     //message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
-                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}.`
+                    message: `Invalid field(s) requested: ${invalidFields.join(', ')}`
 
                 });
             }
