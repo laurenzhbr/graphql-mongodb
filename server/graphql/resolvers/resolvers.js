@@ -6,7 +6,7 @@ const Organization = require('../../models/PartyModels/Organization');
 const DigitalIdentity = require('../../models/DigtialIdentityModels/DigitalIdentity');
 const GeographicAddress = require('../../models/GeographicAddressModels/GeographicAddress');
 const OrganizationType = require('../types/organization');
-const DigitalIdentityInput = require('../types/inputs/DigitalIdentityInputType');
+const {DigitalIdentityCreateInput,DigitalIdentityUpdateInput} = require('../types/inputs/DigitalIdentityInputType');
 const ResourceInputType = require('../types/inputs/ResourceInputType');
 
 const RootQuery = new GraphQLObjectType({
@@ -180,7 +180,7 @@ const Mutation = new GraphQLObjectType({
       type: ResourceType,
       description: 'Create a new resource in the database',
       args: {
-        input: { type: ResourceInputType, description: 'Input data for creating a new resource' } // Die Input-Daten für die Ressource
+        data: { type: ResourceInputType, description: 'Input data for creating a new resource' } // Die Input-Daten für die Ressource
       },
       async resolve(parent, { input }) {
         // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
@@ -197,7 +197,7 @@ const Mutation = new GraphQLObjectType({
       type: DigitalIdentityType,
       description: 'Create a new digital identity in the database',
       args: {
-        input: { type: DigitalIdentityInput, description: 'Input data for creating a new digital identity' } // Die Input-Daten für die Ressource
+        data: { type: DigitalIdentityCreateInput, description: 'Input data for creating a new digital identity' } // Die Input-Daten für die Ressource
       },
       async resolve(parent, { input }) {
         // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
@@ -215,7 +215,7 @@ const Mutation = new GraphQLObjectType({
       description: 'Update a specific Digital Identity',
       args: {
         id: { type: GraphQLID, description: 'Unique ID of the Digital Identity to update' },
-        data: { type: DigitalIdentityInput, 'description': 'Data for updating the Digital Identity' }
+        data: { type: DigitalIdentityUpdateInput, 'description': 'Data for updating the Digital Identity' }
       },
       async resolve(parent, { id, data }) {
 
