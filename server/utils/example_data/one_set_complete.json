@@ -6,11 +6,11 @@ digitalIdentity:
 	"resourceIdentified": {
 		"id": "66db76c734ed489b211cd3c1",
 		"name": "Router for Modem Burladingen 0 0",
-		"href": "http://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1"
+		"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1"
 	},
 	"creationDate": "2024-09-06T21:59:59.221Z",
 	"lastUpdate": "2024-09-06T21:59:59.221Z",
-	"href": "http://{host}/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
+	"href": "https://azulastudios.com/digitalIdentityManagement/digitalIdentity/66db7b5fbbe1351f628ed5e7",
 	"__v": 0
 }
 
@@ -27,7 +27,7 @@ Router für digitalIdentity:
 			"id": "66db3aa516d68c5f3c138b53",
 			"name": "Walsh LLC Manufacturing",
 			"role": "Gerätehersteller",
-			"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b53"
+			"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b53"
 		}
 	],
 	"note": [
@@ -59,7 +59,7 @@ Router für digitalIdentity:
 	],
 	"place": {
 		"id": "66db17e94e5b0dd1a47588e5",
-		"href": "http://{host}/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588e5"
+		"href": "https://azulastudios.com/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588e5"
 	},
 	"resourceCharacteristic": [
 		{
@@ -152,7 +152,7 @@ Router für digitalIdentity:
 			"relationshipType": "isTargeted",
 			"resource": {
 				"id": "66db6d6c658d40350e57e46b",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
 				"name": "Modem Burladingen 0"
 			}
 		}
@@ -161,7 +161,7 @@ Router für digitalIdentity:
 	"usageState": "idle",
 	"startOperatingDate": "2015-04-12T08:32:48.876Z",
 	"version": "4",
-	"href": "http://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1",
+	"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1",
 	"__v": 0
 }
 
@@ -178,13 +178,13 @@ entsprechendes Modem zum Router:
 			"id": "66db3aa516d68c5f3c138b53",
 			"name": "Walsh LLC Manufacturing",
 			"role": "Gerätehersteller",
-			"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b53"
+			"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b53"
 		}
 	],
 	"note": [],
 	"place": {
 		"id": "66db17e94e5b0dd1a47588e5",
-		"href": "http://{host}/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588e5"
+		"href": "https://azulastudios.com/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588e5"
 	},
 	"resourceCharacteristic": [
 		{
@@ -268,7 +268,7 @@ entsprechendes Modem zum Router:
 			"relationshipType": "isTargeted",
 			"resource": {
 				"id": "66db583b79a5c83309347c7e",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
 				"name": "Street Cabinet Baden-Württemberg 1"
 			},
 			"_id": "66db6d6c658d40350e57e47b"
@@ -277,7 +277,7 @@ entsprechendes Modem zum Router:
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db76c734ed489b211cd3c1",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db76c734ed489b211cd3c1",
 				"name": "Router for Modem Burladingen 0 0"
 			}
 		}
@@ -286,7 +286,7 @@ entsprechendes Modem zum Router:
 	"usageState": "busy",
 	"startOperatingDate": "2015-12-28T13:30:16.294Z",
 	"version": "2",
-	"href": "http://{host}/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
+	"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
 	"__v": 0
 }
 
@@ -303,13 +303,13 @@ entsprechendes Street Cabinet zum Modem:
 			"id": "66db3aa516d68c5f3c138b52",
 			"name": "D'Amore, Kunde and Schuster Logistik GmbH",
 			"role": "Logistikunternehmen",
-			"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b52"
+			"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b52"
 		},
 		{
 			"id": "66db3aa516d68c5f3c138b61",
 			"name": "Daniel, Turcotte and Rice Reparatur & Wartung KG",
 			"role": "Wartungsfirma",
-			"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b61"
+			"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b61"
 		}
 	],
 	"note": [
@@ -331,7 +331,7 @@ entsprechendes Street Cabinet zum Modem:
 	],
 	"place": {
 		"id": "66db17e94e5b0dd1a47588bd",
-		"href": "http://{host}/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588bd"
+		"href": "https://azulastudios.com/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588bd"
 	},
 	"resourceCharacteristic": [
 		{
@@ -390,7 +390,7 @@ entsprechendes Street Cabinet zum Modem:
 			"relationshipType": "isTargeted",
 			"resource": {
 				"id": "66db504324b321a19656ca22",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db504324b321a19656ca22",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db504324b321a19656ca22",
 				"name": "Central Office Stuttgart"
 			},
 			"_id": "66db583b79a5c83309347c89"
@@ -399,7 +399,7 @@ entsprechendes Street Cabinet zum Modem:
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db6d6c658d40350e57e46b",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db6d6c658d40350e57e46b",
 				"name": "Modem Burladingen 0"
 			}
 		}
@@ -408,7 +408,7 @@ entsprechendes Street Cabinet zum Modem:
 	"usageState": "idle",
 	"startOperatingDate": "2013-04-11T03:25:18.267Z",
 	"version": "2",
-	"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
+	"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
 	"__v": 0
 }
 
@@ -425,13 +425,13 @@ entsprechendes Central Office zum Street Cabinet:
 			"id": "66db3aa516d68c5f3c138b54",
 			"name": "Hodkiewicz Group Energy Supply",
 			"role": "Energieversorger",
-			"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b54"
+			"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b54"
 		},
 		{
 			"id": "66db3aa516d68c5f3c138b61",
 			"name": "Daniel, Turcotte and Rice Reparatur & Wartung KG",
 			"role": "Wartungsfirma",
-			"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b61"
+			"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b61"
 		}
 	],
 	"note": [
@@ -448,7 +448,7 @@ entsprechendes Central Office zum Street Cabinet:
 	],
 	"place": {
 		"id": "66db17e94e5b0dd1a475887b",
-		"href": "http://{host}/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a475887b"
+		"href": "https://azulastudios.com/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a475887b"
 	},
 	"resourceCharacteristic": [
 		{
@@ -496,14 +496,14 @@ entsprechendes Central Office zum Street Cabinet:
 	"usageState": "busy",
 	"startOperatingDate": "2005-05-12T00:00:00.000Z",
 	"version": "3.1",
-	"href": "http://{host}/resourceInventoryManagement/resource/66db504324b321a19656ca22",
+	"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db504324b321a19656ca22",
 	"__v": 0,
 	"resourceRelationship": [
 		{
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db583b79a5c83309347c71",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c71",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347c71",
 				"name": "Street Cabinet Baden-Württemberg 0"
 			},
 			"_id": "66db5c7db4d0328bbd4c0f6f"
@@ -512,7 +512,7 @@ entsprechendes Central Office zum Street Cabinet:
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db583b79a5c83309347c7e",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347c7e",
 				"name": "Street Cabinet Baden-Württemberg 1"
 			},
 			"_id": "66db5c7db4d0328bbd4c0f70"
@@ -521,7 +521,7 @@ entsprechendes Central Office zum Street Cabinet:
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db583b79a5c83309347c8b",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c8b",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347c8b",
 				"name": "Street Cabinet Baden-Württemberg 2"
 			},
 			"_id": "66db5c7db4d0328bbd4c0f71"
@@ -530,7 +530,7 @@ entsprechendes Central Office zum Street Cabinet:
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db583b79a5c83309347c98",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347c98",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347c98",
 				"name": "Street Cabinet Baden-Württemberg 3"
 			},
 			"_id": "66db5c7db4d0328bbd4c0f72"
@@ -539,7 +539,7 @@ entsprechendes Central Office zum Street Cabinet:
 			"relationshipType": "targets",
 			"resource": {
 				"id": "66db583b79a5c83309347ca5",
-				"href": "http://{host}/resourceInventoryManagement/resource/66db583b79a5c83309347ca5",
+				"href": "https://azulastudios.com/resourceInventoryManagement/resource/66db583b79a5c83309347ca5",
 				"name": "Street Cabinet Baden-Württemberg 4"
 			},
 			"_id": "66db5c7db4d0328bbd4c0f73"
@@ -550,7 +550,7 @@ entsprechendes Central Office zum Street Cabinet:
 relatedParty zu Router:
 {
 	"_id": "66db3aa516d68c5f3c138b53",
-	"href": "http://{host}/partyManagement/party/66db3aa516d68c5f3c138b53",
+	"href": "https://azulastudios.com/partyManagement/party/66db3aa516d68c5f3c138b53",
 	"isHeadOffice": false,
 	"isLegalEntity": false,
 	"name": "Walsh LLC Manufacturing",
@@ -581,6 +581,6 @@ GeoAdress zum Router:
 	"stateOrProvince": "Baden-Württemberg",
 	"streetName": "Hufelandstr.",
 	"streetNr": "89",
-	"href": "http://{host}/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588e5",
+	"href": "https://azulastudios.com/geographicAddressManagement/geographicAddress/66db17e94e5b0dd1a47588e5",
 	"__v": 0
 }

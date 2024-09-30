@@ -161,14 +161,14 @@ async function generateRouters(modem, numRouters) {
           note: generateRandomNotes(),
           place: {
             id: geoAddress._id,
-            href: `http://{host}/geographicAddressManagement/geographicAddress/${geoAddress._id}`
+            href: `https://azulastudios.com/geographicAddressManagement/geographicAddress/${geoAddress._id}`
           },
           resourceRelationship: [
             {
               relationshipType: "isTargeted",
               resource: {
                 id: modem._id,
-                href: `http://{host}/resourceInventoryManagement/resource/${modem._id}`,
+                href: `https://azulastudios.com/resourceInventoryManagement/resource/${modem._id}`,
                 category: "Modem",
                 name: modem.name
               }

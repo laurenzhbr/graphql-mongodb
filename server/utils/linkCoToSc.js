@@ -31,7 +31,7 @@ async function linkStreetCabinetsToCentralOffice(centralOfficeId) {
       relationshipType: "targets",
       resource: {
         id: cabinet._id,
-        href: `http://{host}/resourceInventoryManagement/resource/${cabinet._id}`,
+        href: `https://azulastudios.com/resourceInventoryManagement/resource/${cabinet._id}`,
         category: "Street Cabinet",
         name: cabinet.name
       }

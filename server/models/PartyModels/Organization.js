@@ -45,7 +45,7 @@ const OrganizationSchema = new Schema({
 OrganizationSchema.pre('save', function (next) {
     // Setze href, wenn es nicht vorhanden ist
     if (!this.href) {
-        this.href = `http://{host}/partyManagement/organization/${this._id}`;
+        this.href = `https://azulastudios.com/partyManagement/organization/${this._id}`;
     }
 
     next();

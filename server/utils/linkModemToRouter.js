@@ -50,7 +50,7 @@ async function linkRoutersToModems() {
         relationshipType: "targets",
         resource: {
           id: router._id,
-          href: `http://{host}/resourceInventoryManagement/resource/${router._id}`,
+          href: `https://azulastudios.com/resourceInventoryManagement/resource/${router._id}`,
           category: "Router",
           name: router.name
         }

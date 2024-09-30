@@ -45,7 +45,7 @@
     "relatedParty": [
       {
         "id": "party567",
-        "href": "http://{host}/partyManagement/party/party567",
+        "href": "https://azulastudios.com/partyManagement/party/party567",
         "name": "Provider Inc.",
         "role": "Manufacturer"
       }
@@ -59,14 +59,14 @@
     ],
     "place": {
       "id": "place12354",
-      "href": "http://{host}/geographicAddressManagement/geographicAddress/place12354"
+      "href": "https://azulastudios.com/geographicAddressManagement/geographicAddress/place12354"
     },
     "resourceRelationship": [
     {
       "relationshipType": "targets",
       "resource": {
         "id": "9874654",
-        "href": "http://{host}/resourceInventoryManagement/resource/9874654",
+        "href": "https://azulastudios.com/resourceInventoryManagement/resource/9874654",
         "category": "Street Cabinet",
         "name": "Street Cabinet ABC123"
       }

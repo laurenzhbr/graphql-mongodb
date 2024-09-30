@@ -162,14 +162,14 @@ async function generateModems(streetCabinet, numModems) {
           note: generateRandomNotes(),
           place: {
             id: geoAddress._id,
-            href: `http://{host}/geographicAddressManagement/geographicAddress/${geoAddress._id}`
+            href: `https://azulastudios.com/geographicAddressManagement/geographicAddress/${geoAddress._id}`
           },
           resourceRelationship: [
             {
               relationshipType: "isTargeted",
               resource: {
                 id: streetCabinet._id,
-                href: `http://{host}/resourceInventoryManagement/resource/${streetCabinet._id}`,
+                href: `https://azulastudios.com/resourceInventoryManagement/resource/${streetCabinet._id}`,
                 category: "Street Cabinet",
                 name: streetCabinet.name
               }

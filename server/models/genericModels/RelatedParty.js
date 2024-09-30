@@ -13,7 +13,7 @@ const RelatedPartySchema = new mongoose.Schema({
 //Pre-save Hook to generate href-attribute
 RelatedPartySchema.pre('save', function(next){
   if (!this.href) {
-    this.href = `http://{host}/partyManagement/organization/${this.id}`;
+    this.href = `https://azulastudios.com/partyManagement/organization/${this.id}`;
   }
   next();
 })

@@ -35,7 +35,7 @@ const GeographicAddressSchema = new Schema({
 //Pre-save Hook to generate href-attribute
 GeographicAddressSchema.pre('save', function(next){
     if (!this.href) {
-      this.href = `http://{host}/geographicAddressManagement/geographicAddress/${this._id}`;
+      this.href = `https://azulastudios.com/geographicAddressManagement/geographicAddress/${this._id}`;
     }
     next();
   })

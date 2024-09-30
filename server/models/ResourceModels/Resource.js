@@ -68,7 +68,7 @@ const ResourceSchema = new mongoose.Schema({
 //Pre-save Hook to generate href-attribute
 ResourceSchema.pre('save', function(next){
   if (!this.href) {
-    this.href = `http://{host}/resourceInventoryManagement/resource/${this._id}`;
+    this.href = `https://azulastudios.com/resourceInventoryManagement/resource/${this._id}`;
   }
   next();
 })

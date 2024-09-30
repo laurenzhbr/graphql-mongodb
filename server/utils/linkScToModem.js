@@ -55,7 +55,7 @@ async function linkModemsToStreetCabinets() {
         relationshipType: "targets",
         resource: {
           id: modem._id,
-          href: `http://{host}/resourceInventoryManagement/resource/${modem._id}`,
+          href: `https://azulastudios.com/resourceInventoryManagement/resource/${modem._id}`,
           category: "Modem",
           name: modem.name
         }

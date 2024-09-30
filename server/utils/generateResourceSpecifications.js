@@ -15,7 +15,7 @@ const generateAttachment = () => {
   let filename= faker.system.fileName()
     return {
     id: file_id,
-    href: `http://{host}/filestorage/${file_id}.pdf`,
+    href: `https://azulastudios.com/filestorage/${file_id}.pdf`,
     name: filename,
     mimeType: 'application/pdf',
     url: faker.internet.url(),
