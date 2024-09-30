@@ -199,9 +199,9 @@ const Mutation = new GraphQLObjectType({
       args: {
         data: { type: DigitalIdentityCreateInput, description: 'Input data for creating a new digital identity' } // Die Input-Daten für die Ressource
       },
-      async resolve(parent, { input }) {
+      async resolve(parent, { data }) {
         // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
-        const digitalIdentity = new DigitalIdentity(input);
+        const digitalIdentity = new DigitalIdentity(data);
           
         // Speichern der neuen Ressource in der Datenbank
         const newDigitalIdentity = await digitalIdentity.save();
