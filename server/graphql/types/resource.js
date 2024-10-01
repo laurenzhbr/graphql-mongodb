@@ -23,9 +23,10 @@ const Organization = require('../../models/PartyModels/Organization')
 // Schema für ResourceRelationship, das die vollständige Resource zurückgibt
 const ResourceRelationshipType = new GraphQLObjectType({
   name: 'ResourceRelationship',
+  description: "defines the relationship between to Resources in the hierarchy.",
   fields: () => ({
-    relationshipType: { type: GraphQLString, description: "Type of relationship between Resources (i.e. targets or isTargeted)" },
-    resource: { type: ResourceType, description: "Related Resource(s)" } // Vollständige Resource
+    relationshipType: { type: GraphQLString, description: "'targets' = reference to child resource || 'isTargeted' = reference to parent resource"},
+    resource: { type: ResourceType, description: "Related Resource(s) entities" } // Vollständige Resource
   })
 });
 
