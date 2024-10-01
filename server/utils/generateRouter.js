@@ -209,4 +209,4 @@ async function createRoutersForAllModems(amountRouters) {
     }
   }
 // Starte die Erstellung von Modems für das Beispiel Modem
-createRoutersForAllModems(3);
+createRoutersForAllModems(2);

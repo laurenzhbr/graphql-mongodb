@@ -138,7 +138,7 @@ async function main() {
   readCityDataFromExcel();
 
   // Anzahl der gewünschten Adressen
-  const totalAddresses = 100000; // Hier die Anzahl der Adressen einstellen
+  const totalAddresses = 60000; // Hier die Anzahl der Adressen einstellen
 
   // Generiere und speichere die Adressen
   await generateAndSaveAddresses(totalAddresses);

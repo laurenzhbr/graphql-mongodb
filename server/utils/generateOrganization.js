@@ -143,4 +143,4 @@ const generateAndSaveOrganizations = async (total_amount) => {
 };
 
 // Führe die Generierung und Speicherung der Organisationen aus
-generateAndSaveOrganizations(5000);
+generateAndSaveOrganizations(2500);

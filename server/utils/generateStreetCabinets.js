@@ -156,4 +156,4 @@ async function createStreetCabinetsForAllCentralOffices(amountStreetCabinets) {
     }
   }
 // Starte die Erstellung von Street Cabinets für das Beispiel Central Office
-createStreetCabinetsForAllCentralOffices(30);
+createStreetCabinetsForAllCentralOffices(10);

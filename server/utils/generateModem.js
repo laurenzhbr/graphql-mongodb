@@ -210,4 +210,4 @@ async function createModemsForAllStreetCabinets(amountModems) {
     }
   }
 // Starte die Erstellung von Street Cabinets für das Beispiel Street Cabinet
-createModemsForAllStreetCabinets(30);
+createModemsForAllStreetCabinets(10);
