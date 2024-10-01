@@ -7,7 +7,7 @@ hide methods
 hide stereotype
 show <<Enumeration>> stereotype
 skinparam class {
-   BackgroundColor #FFFFFF
+  BackgroundColor #FFFFFF
 }
 
 class CentralOffice {
@@ -26,11 +26,11 @@ class Router {
 
 }
 
-CentralOffice -->  "30" StreetCabinet
+CentralOffice -->  "10" StreetCabinet
 
-StreetCabinet --> "30" Modem
+StreetCabinet --> "10" Modem
 
-Modem --> "3" Router
+Modem --> "2" Router
 
 note right of CentralOffice
   3 Central Offices for each state in GER 
