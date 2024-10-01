@@ -104,7 +104,7 @@ const ResourceType = new GraphQLObjectType({
       }
       
     },
-    relatedParties: {
+    relatedParty: {
       type: new GraphQLList(OrganizationType),
       description: 'Related parties linked to this resource.',
       resolve(parent, args) {
