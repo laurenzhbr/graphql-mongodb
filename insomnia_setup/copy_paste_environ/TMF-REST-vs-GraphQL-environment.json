@@ -1,0 +1,8 @@
+{
+	"base_url": "https://azulastudios.com",
+	"resourceInventoryEndpoint": "/resourceInventoryManagement/resource",
+	"resourceCatalogEndpoint": "/resourceCatalog/resourceSpecification",
+	"geographicAdressEndpoint": "/geographicAddressManagement/geographicAddress",
+	"digitalIdentityEndpoint": "/digitalIdentityManagement/digitalIdentity",
+	"partyEndpoint": "/partyManagement/organization"
+}
