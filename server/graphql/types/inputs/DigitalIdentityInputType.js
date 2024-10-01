@@ -19,7 +19,7 @@ const DigitalIdentityCreateInput = new GraphQLInputObjectType({
   description: 'Input type for updating a DigitalIdentity',
   fields: {
       nickname: { type: GraphQLNonNull(GraphQLString), description: 'Nickname associated with this digital identity',},
-      status: { type: GraphQLString, defaultValue: "unknown", description: 'Current lifecycle status of this digital identity', },
+      status: { type: GraphQLString, defaultValue: "unknown", description: 'Current lifecycle status of this digital identity (default: unknown)', },
       resourceIdentified: { type: ResourceIdentifiedInputType, description: 'Resource owned by this digital identity', }
   }
 });
