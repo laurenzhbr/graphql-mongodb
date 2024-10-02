@@ -65,7 +65,7 @@ const RootQuery = new GraphQLObjectType({
       description: 'Fetch a single Digital Identity by its unique ID.',
       args: { id: { type: GraphQLID, description: 'The unique ID of the digital identity to retrieve' } },
       resolve(parent, args) {
-        return DigitalIdentity.findOne({ _id: args.id }); // Nutze findById, um die DigitalIdentity basierend auf der ID abzurufen
+        return DigitalIdentity.findOne({ _id: args.id });
       },
     },
     digitalIdentities:{
