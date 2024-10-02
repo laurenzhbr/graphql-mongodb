@@ -1,0 +1,2925 @@
+[
+  {
+    "_id": "66f7de60bb06839f89523202",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2025-01-03T18:41:10.815Z",
+    "name": "Street Cabinet Sachsen 3",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 44079
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "0.8651249591028317m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "1.3884726199321449m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 86
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 1250
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "DSL"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Remote Monitoring"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2024-03-08T09:44:10.276Z"
+      }
+    ],
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Lucienne Cors",
+        "date": "2024-03-05T09:34:57.966Z",
+        "text": "Power backup system test passed; no issues detected."
+      },
+      {
+        "author": "Dr. Jamal Dohring",
+        "date": "2023-01-30T06:18:12.011Z",
+        "text": "Security check completed; no unauthorized access detected."
+      },
+      {
+        "author": "Leonidas Burghagen",
+        "date": "2023-12-12T08:26:22.994Z",
+        "text": "Security check completed; no unauthorized access detected."
+      }
+    ],
+    "place": {
+      "id": "66f7de4f78e947f6ef1d5d16",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4f78e947f6ef1d5d16"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea491",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea491",
+          "name": "Central Office Dresden 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a088",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a088",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a08a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a08a",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a08c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a08c",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a08e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a08e",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a090",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a090",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a092",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a092",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a094",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a094",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a096",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a096",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a098",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a098",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a09a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a09a",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a09c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a09c",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a09e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a09e",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0a0",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0a0",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0a2",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0a2",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0a4",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0a4",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0a6",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0a6",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0a8",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0a8",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0aa",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0aa",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0ac",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0ac",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0ae",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0ae",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0b0",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0b0",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0b2",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0b2",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0b4",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0b4",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0b6",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0b6",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0b8",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0b8",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0ba",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0ba",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0bc",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0bc",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0be",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0be",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0c0",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0c0",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a0c2",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a0c2",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "alarm",
+    "usageState": "active",
+    "startOperatingDate": "2005-01-05T08:31:42.419Z",
+    "version": "3",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de60bb06839f89523202",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de60bb06839f89523214",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2025-09-03T02:49:19.566Z",
+    "name": "Street Cabinet Sachsen 12",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 32658
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.2739400983788074m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.6023110467940569m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 91
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 1071
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "Koaxial"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Guarded"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2024-01-25T01:10:21.149Z"
+      }
+    ],
+    "administrativeState": "locked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Ivonne Sattelmaier",
+        "date": "2024-09-23T19:00:10.771Z",
+        "text": "Minor network interruptions detected; cause traced to a faulty connection."
+      },
+      {
+        "author": "Curt Aschenbroich",
+        "date": "2024-04-05T11:44:41.856Z",
+        "text": "Cooling system inspected; fan replacement scheduled for next week."
+      }
+    ],
+    "place": {
+      "id": "66f7de4e78e947f6ef1d5331",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4e78e947f6ef1d5331"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea491",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea491",
+          "name": "Central Office Dresden 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2bf",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2bf",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2c1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2c1",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2c3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2c3",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2c5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2c5",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2c7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2c7",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2c9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2c9",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2cb",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2cb",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2cd",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2cd",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2cf",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2cf",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2d1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2d1",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2d3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2d3",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2d5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2d5",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2d7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2d7",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2d9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2d9",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2db",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2db",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2dd",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2dd",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2df",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2df",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2e1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2e1",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2e3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2e3",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2e5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2e5",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2e7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2e7",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2e9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2e9",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2eb",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2eb",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2ed",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2ed",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2ef",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2ef",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2f1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2f1",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2f3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2f3",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2f5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2f5",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2f7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2f7",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8db43b5a540740a2f9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8db43b5a540740a2f9",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "reserved",
+    "usageState": "idle",
+    "startOperatingDate": "2023-01-26T07:40:07.983Z",
+    "version": "5",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de60bb06839f89523214",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de61bb06839f8952323e",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2024-10-08T10:36:17.356Z",
+    "name": "Street Cabinet Sachsen 1",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 8843
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.3177546785678715m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.99091683072038m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 47
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 840
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "Koaxial"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Guarded"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2024-01-11T01:28:28.622Z"
+      }
+    ],
+    "administrativeState": "locked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Dr. Leonardo Daubner",
+        "date": "2023-08-24T11:52:51.732Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      },
+      {
+        "author": "Fabrice Strutz",
+        "date": "2024-05-11T16:09:44.193Z",
+        "text": "New power backup system installed; generator integrated."
+      },
+      {
+        "author": "Madleen Tischmann",
+        "date": "2023-04-17T12:57:34.249Z",
+        "text": "Security check completed; no unauthorized access detected."
+      },
+      {
+        "author": "Mirko Northoff",
+        "date": "2023-06-07T23:18:04.032Z",
+        "text": "Routine maintenance completed; all connections are stable."
+      },
+      {
+        "author": "Dr. Elea Schorr",
+        "date": "2023-05-14T08:33:26.630Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Dr. Carolin Riethmüller",
+        "date": "2024-08-28T18:00:27.721Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      },
+      {
+        "author": "Lias Hirsch",
+        "date": "2024-02-22T06:25:13.864Z",
+        "text": "Routine maintenance completed; all connections are stable."
+      },
+      {
+        "author": "Diana Sack",
+        "date": "2024-06-09T07:04:55.822Z",
+        "text": "Ventilation system cleaned during maintenance; airflow improved."
+      },
+      {
+        "author": "Loris Ackermann",
+        "date": "2024-08-06T11:32:00.225Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Malia Marchewski",
+        "date": "2023-06-03T08:08:12.027Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      }
+    ],
+    "place": {
+      "id": "66f7de4e78e947f6ef1d5121",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4e78e947f6ef1d5121"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea496",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea496",
+          "name": "Central Office Dresden 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a76c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a76c",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a76e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a76e",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a770",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a770",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a772",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a772",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a774",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a774",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a776",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a776",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a778",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a778",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a77a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a77a",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a77c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a77c",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a77e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a77e",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a780",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a780",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a782",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a782",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a784",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a784",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a786",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a786",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a788",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a788",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a78a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a78a",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a78c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a78c",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a78e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a78e",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a790",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a790",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a792",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a792",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a794",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a794",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a796",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a796",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a798",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a798",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a79a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a79a",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a79c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a79c",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a79e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a79e",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a7a0",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a7a0",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a7a2",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a7a2",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a7a4",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a7a4",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a7a6",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a7a6",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "suspended",
+    "usageState": "active",
+    "startOperatingDate": "2015-05-08T16:47:01.298Z",
+    "version": "4",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de61bb06839f8952323e",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de61bb06839f89523244",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2024-12-01T06:33:49.240Z",
+    "name": "Street Cabinet Sachsen 4",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 34437
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.663557264441624m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "1.4557237091939896m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 79
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 1281
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "DSL"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Access Controlled"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2022-11-12T21:09:46.842Z"
+      }
+    ],
+    "administrativeState": "shutdown",
+    "operationalState": "disable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Maxima Hessler",
+        "date": "2024-03-14T05:11:32.818Z",
+        "text": "Routine maintenance completed; all connections are stable."
+      },
+      {
+        "author": "Jonah Kubera",
+        "date": "2024-01-23T17:04:18.227Z",
+        "text": "New power backup system installed; generator integrated."
+      },
+      {
+        "author": "Lucian Langfeld",
+        "date": "2024-03-02T21:39:08.796Z",
+        "text": "New power backup system installed; generator integrated."
+      },
+      {
+        "author": "Emilio Stengel",
+        "date": "2023-07-17T21:57:10.747Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Claas Kaufmann",
+        "date": "2024-03-13T05:34:52.755Z",
+        "text": "Security check completed; no unauthorized access detected."
+      },
+      {
+        "author": "Herr Timothy Ruch",
+        "date": "2024-08-25T15:43:35.563Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      },
+      {
+        "author": "Joschua Bürklein",
+        "date": "2024-04-13T15:03:28.966Z",
+        "text": "Minor network interruptions detected; cause traced to a faulty connection."
+      },
+      {
+        "author": "Hendrik Swillims",
+        "date": "2024-01-14T04:37:03.668Z",
+        "text": "Routine maintenance completed; all connections are stable."
+      }
+    ],
+    "place": {
+      "id": "66f7de4f78e947f6ef1d6048",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4f78e947f6ef1d6048"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea496",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea496",
+          "name": "Central Office Dresden 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a829",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a829",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a82b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a82b",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a82d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a82d",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a82f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a82f",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a831",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a831",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a833",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a833",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a835",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a835",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a837",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a837",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a839",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a839",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a83b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a83b",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a83d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a83d",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a83f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a83f",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a841",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a841",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a843",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a843",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a845",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a845",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a847",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a847",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a849",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a849",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a84b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a84b",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a84d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a84d",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a84f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a84f",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a851",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a851",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a853",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a853",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a855",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a855",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a857",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a857",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a859",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a859",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a85b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a85b",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a85d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a85d",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a85f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a85f",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a861",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a861",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8eb43b5a540740a863",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8eb43b5a540740a863",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "standby",
+    "usageState": "idle",
+    "startOperatingDate": "2000-10-18T07:19:24.036Z",
+    "version": "1",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de61bb06839f89523244",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de61bb06839f8952324a",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2025-03-30T10:26:47.506Z",
+    "name": "Street Cabinet Sachsen 7",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 25598
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.8174837179249153m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.5244826443959028m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 52
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 1447
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "Koaxial"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Access Controlled"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2023-11-27T07:09:48.808Z"
+      }
+    ],
+    "administrativeState": "unlocked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Joseph Reus",
+        "date": "2023-07-01T12:46:09.327Z",
+        "text": "Ventilation system cleaned during maintenance; airflow improved."
+      },
+      {
+        "author": "Richard Moll",
+        "date": "2023-10-20T12:20:02.828Z",
+        "text": "Cooling system inspected; fan replacement scheduled for next week."
+      },
+      {
+        "author": "Felicitas Axmann",
+        "date": "2023-02-14T17:15:11.040Z",
+        "text": "Power backup system test passed; no issues detected."
+      },
+      {
+        "author": "Albert Decker",
+        "date": "2024-04-23T17:20:46.296Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      },
+      {
+        "author": "Angelique Schelk",
+        "date": "2024-01-15T11:48:47.151Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Isabelle Brandenburg",
+        "date": "2024-08-27T21:45:45.959Z",
+        "text": "Power backup system test passed; no issues detected."
+      },
+      {
+        "author": "Joris Uhlig",
+        "date": "2023-05-19T00:41:42.337Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Aurelia Tonat",
+        "date": "2023-08-22T22:12:48.732Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      },
+      {
+        "author": "Julia Klink",
+        "date": "2024-02-08T06:05:46.988Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      }
+    ],
+    "place": {
+      "id": "66f7de4f78e947f6ef1d55bc",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4f78e947f6ef1d55bc"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea496",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea496",
+          "name": "Central Office Dresden 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8e6",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8e6",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8e8",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8e8",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8ea",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8ea",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8ec",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8ec",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8ee",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8ee",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8f0",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8f0",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8f2",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8f2",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8f4",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8f4",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8f6",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8f6",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8f8",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8f8",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8fa",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8fa",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8fc",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8fc",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a8fe",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a8fe",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a900",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a900",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a902",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a902",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a904",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a904",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a906",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a906",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a908",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a908",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a90a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a90a",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a90c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a90c",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a90e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a90e",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a910",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a910",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a912",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a912",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a914",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a914",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a916",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a916",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a918",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a918",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a91a",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a91a",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a91c",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a91c",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a91e",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a91e",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a920",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a920",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "available",
+    "usageState": "busy",
+    "startOperatingDate": "2011-09-09T09:33:06.342Z",
+    "version": "3",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de61bb06839f8952324a",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de61bb06839f8952324c",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2025-02-04T14:27:51.482Z",
+    "name": "Street Cabinet Sachsen 8",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 53051
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "0.7979935251642019m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.9848487065173686m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 3
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 1408
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "FTTH"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Video Surveillance"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2022-08-05T17:50:18.025Z"
+      }
+    ],
+    "administrativeState": "locked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Levi Siewert",
+        "date": "2024-01-18T20:16:54.482Z",
+        "text": "Cooling system inspected; fan replacement scheduled for next week."
+      }
+    ],
+    "place": {
+      "id": "66f7de4e78e947f6ef1d5045",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4e78e947f6ef1d5045"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea496",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea496",
+          "name": "Central Office Dresden 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a925",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a925",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a927",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a927",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a929",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a929",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a92b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a92b",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a92d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a92d",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a92f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a92f",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a931",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a931",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a933",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a933",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a935",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a935",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a937",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a937",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a939",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a939",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a93b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a93b",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a93d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a93d",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a93f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a93f",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a941",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a941",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a943",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a943",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a945",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a945",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a947",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a947",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a949",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a949",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a94b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a94b",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a94d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a94d",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a94f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a94f",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a951",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a951",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a953",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a953",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a955",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a955",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a957",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a957",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a959",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a959",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a95b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a95b",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a95d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a95d",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740a95f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740a95f",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "unknown",
+    "usageState": "active",
+    "startOperatingDate": "2007-07-04T03:42:45.630Z",
+    "version": "3",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de61bb06839f8952324c",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de61bb06839f8952325c",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2025-04-26T15:59:26.576Z",
+    "name": "Street Cabinet Sachsen 16",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 20984
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "1.5268924023257568m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.9598506374750286m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 25
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 1053
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "DSL"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Access Controlled"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2023-08-28T18:17:12.864Z"
+      }
+    ],
+    "administrativeState": "shutdown",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Giuliana Rödiger",
+        "date": "2023-05-08T18:31:06.331Z",
+        "text": "Cabinet door lock replaced after malfunction; security restored."
+      },
+      {
+        "author": "Arvid Denzinger",
+        "date": "2024-07-11T01:31:37.715Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Prof. Dr. Lucie Schlachter",
+        "date": "2023-11-02T07:41:03.793Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Herr Bent Sprenger",
+        "date": "2023-12-03T20:31:33.753Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Tayler Buchholz",
+        "date": "2024-04-16T02:39:31.706Z",
+        "text": "Cooling system inspected; fan replacement scheduled for next week."
+      },
+      {
+        "author": "Edwin Kreb",
+        "date": "2024-03-09T04:29:23.095Z",
+        "text": "Fiber upgrade completed; network capacity increased by 20%."
+      },
+      {
+        "author": "Fiona Hajek",
+        "date": "2023-02-16T21:05:51.357Z",
+        "text": "Minor network interruptions detected; cause traced to a faulty connection."
+      },
+      {
+        "author": "Prof. Dr. Anton Flottmann",
+        "date": "2024-09-10T01:47:22.403Z",
+        "text": "Cooling system inspected; fan replacement scheduled for next week."
+      },
+      {
+        "author": "Leroy Motchebon",
+        "date": "2023-04-09T23:46:19.936Z",
+        "text": "Power backup system test passed; no issues detected."
+      },
+      {
+        "author": "Melike Koderisch",
+        "date": "2023-08-02T21:54:59.239Z",
+        "text": "Cooling system inspected; fan replacement scheduled for next week."
+      }
+    ],
+    "place": {
+      "id": "66f7de4f78e947f6ef1d61f4",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4f78e947f6ef1d61f4"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea496",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea496",
+          "name": "Central Office Dresden 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab1d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab1d",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab1f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab1f",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab21",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab21",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab23",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab23",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab25",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab25",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab27",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab27",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab29",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab29",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab2b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab2b",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab2d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab2d",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab2f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab2f",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab31",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab31",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab33",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab33",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab35",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab35",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab37",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab37",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab39",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab39",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab3b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab3b",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab3d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab3d",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab3f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab3f",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab41",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab41",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab43",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab43",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab45",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab45",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab47",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab47",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab49",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab49",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab4b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab4b",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab4d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab4d",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab4f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab4f",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab51",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab51",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab53",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab53",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab55",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab55",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de8fb43b5a540740ab57",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de8fb43b5a540740ab57",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "standby",
+    "usageState": "idle",
+    "startOperatingDate": "2013-09-24T03:34:20.283Z",
+    "version": "4",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de61bb06839f8952325c",
+    "__v": 0
+  },
+  {
+    "_id": "66f7de61bb06839f89523270",
+    "category": "Street Cabinet",
+    "endOperatingDate": "2025-01-27T14:28:55.581Z",
+    "name": "Street Cabinet Sachsen 26",
+    "resourceCharacteristic": [
+      {
+        "name": "connected_lines",
+        "valueType": "Number",
+        "value": 54629
+      },
+      {
+        "name": "cabinet_heigth",
+        "valueType": "String",
+        "value": "0.7840313598280773m"
+      },
+      {
+        "name": "cabinet_width",
+        "valueType": "String",
+        "value": "0.7361141357105225m"
+      },
+      {
+        "name": "current_capacity_usage",
+        "valueType": "Number",
+        "value": 10
+      },
+      {
+        "name": "maximum_capacity",
+        "valueType": "Number",
+        "value": 536
+      },
+      {
+        "name": "network_type",
+        "valueType": "String",
+        "value": "DSL"
+      },
+      {
+        "name": "fiber_ready",
+        "valueType": "Boolean",
+        "value": true
+      },
+      {
+        "name": "power_backup",
+        "valueType": "Boolean",
+        "value": false
+      },
+      {
+        "name": "security_status",
+        "valueType": "String",
+        "value": "Access Controlled"
+      },
+      {
+        "name": "last_maintenance",
+        "valueType": "Date-Time",
+        "value": "2022-06-13T13:04:35.521Z"
+      }
+    ],
+    "administrativeState": "locked",
+    "operationalState": "enable",
+    "relatedParty": [
+      {
+        "id": "66f7de5a9c9c5bcf84326a1f",
+        "name": "Schellenbeck UG Versandlogistik GmbH",
+        "role": "Logistikunternehmen",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1f"
+      },
+      {
+        "id": "66f7de5a9c9c5bcf84326a1b",
+        "name": "Plass-Moeller Instandhaltung GmbH",
+        "role": "Wartungsfirma",
+        "href": "http://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326a1b"
+      }
+    ],
+    "note": [
+      {
+        "author": "Edgar Hübner",
+        "date": "2023-10-19T03:07:26.113Z",
+        "text": "Minor network interruptions detected; cause traced to a faulty connection."
+      },
+      {
+        "author": "Lennie Strohschank",
+        "date": "2024-06-30T05:15:05.460Z",
+        "text": "Power backup system test passed; no issues detected."
+      },
+      {
+        "author": "Thomas Ehm",
+        "date": "2023-03-20T12:57:19.922Z",
+        "text": "Firmware update applied successfully; new network optimizations enabled."
+      },
+      {
+        "author": "Raphael Hepperle",
+        "date": "2023-07-25T08:47:52.963Z",
+        "text": "Routine maintenance completed; all connections are stable."
+      }
+    ],
+    "place": {
+      "id": "66f7de4f78e947f6ef1d5f60",
+      "href": "http://{host}/geographicAddressManagement/geographicAddress/66f7de4f78e947f6ef1d5f60"
+    },
+    "resourceRelationship": [
+      {
+        "relationshipType": "isTargeted",
+        "resource": {
+          "id": "66f7de5c0ead6fbe469ea496",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de5c0ead6fbe469ea496",
+          "name": "Central Office Dresden 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad93",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad93",
+          "name": "Modem Leipzig 0"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad95",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad95",
+          "name": "Modem Leipzig 1"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad97",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad97",
+          "name": "Modem Leipzig 2"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad99",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad99",
+          "name": "Modem Leipzig 3"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad9b",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad9b",
+          "name": "Modem Leipzig 4"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad9d",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad9d",
+          "name": "Modem Leipzig 5"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ad9f",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ad9f",
+          "name": "Modem Leipzig 6"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ada1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ada1",
+          "name": "Modem Leipzig 7"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ada3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ada3",
+          "name": "Modem Leipzig 8"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ada5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ada5",
+          "name": "Modem Leipzig 9"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ada7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ada7",
+          "name": "Modem Leipzig 10"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740ada9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740ada9",
+          "name": "Modem Leipzig 11"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adab",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adab",
+          "name": "Modem Leipzig 12"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adad",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adad",
+          "name": "Modem Leipzig 13"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adaf",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adaf",
+          "name": "Modem Leipzig 14"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adb1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adb1",
+          "name": "Modem Leipzig 15"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adb3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adb3",
+          "name": "Modem Leipzig 16"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adb5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adb5",
+          "name": "Modem Leipzig 17"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adb7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adb7",
+          "name": "Modem Leipzig 18"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adb9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adb9",
+          "name": "Modem Leipzig 19"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adbb",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adbb",
+          "name": "Modem Leipzig 20"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adbd",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adbd",
+          "name": "Modem Leipzig 21"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adbf",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adbf",
+          "name": "Modem Leipzig 22"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adc1",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adc1",
+          "name": "Modem Leipzig 23"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adc3",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adc3",
+          "name": "Modem Leipzig 24"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adc5",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adc5",
+          "name": "Modem Leipzig 25"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adc7",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adc7",
+          "name": "Modem Leipzig 26"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adc9",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adc9",
+          "name": "Modem Leipzig 27"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adcb",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adcb",
+          "name": "Modem Leipzig 28"
+        }
+      },
+      {
+        "relationshipType": "targets",
+        "resource": {
+          "id": "66f7de90b43b5a540740adcd",
+          "href": "http://{host}/resourceInventoryManagement/resource/66f7de90b43b5a540740adcd",
+          "name": "Modem Leipzig 29"
+        }
+      }
+    ],
+    "resourceStatus": "suspended",
+    "usageState": "idle",
+    "startOperatingDate": "2002-07-17T20:51:57.471Z",
+    "version": "2",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de61bb06839f89523270",
+    "__v": 0
+  }
+]
