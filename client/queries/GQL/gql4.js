@@ -7,7 +7,7 @@ const query = (id) => `
 			name
 			resourceStatus
 			endOperatingDate
-			relatedParties {
+			relatedParty {
 				id
 				name
 				organizationType
