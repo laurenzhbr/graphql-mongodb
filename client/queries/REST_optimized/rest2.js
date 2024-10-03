@@ -32,7 +32,7 @@ const rest_use_case_2_opt = async (id="66f7e10305b9728c48875c62") => {
     // get information from related modem
     const href_resource_central_office = `${relatedCentralOffice.resource.href.replace("{host}", actualHost)}?fields=name,resourceStatus`
     
-    accumulatedMetrics = await fetchMetrics(`${href_resource_central_office}?fields=resourceStatus,name`, accumulatedMetrics);
+    accumulatedMetrics = await fetchMetrics(`${href_resource_central_office}`, accumulatedMetrics);
     
 
     const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
