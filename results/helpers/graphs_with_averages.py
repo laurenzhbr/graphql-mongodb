@@ -28,16 +28,16 @@ def create_comparison_bargraph_for_sum_response_time(metric, use_cases, bar_widt
     # Bars for REST API
     bars_rest1 = ax1.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
     bars_graphql1 = ax1.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST optimized', color='green')
+    #bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST optimized', color='green')
 
     bars_rest2 = ax2.bar(use_cases - bar_width, rest_values, bar_width, label='REST', color='steelblue')
     bars_graphql2 = ax2.bar(use_cases, gql_values, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST optimized', color='green')
+    #bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_values, bar_width, label='REST optimized', color='green')
 
 
     # Set the y-axis limits to "break" the axis
-    ax1.set_ylim(300, 3500)  # Top part of the y-axis (for larger values)
-    ax2.set_ylim(0, 150)      # Bottom part of the y-axis (for smaller values)
+    ax1.set_ylim(200, 800)  # Top part of the y-axis (for larger values)
+    ax2.set_ylim(0, 120)      # Bottom part of the y-axis (for smaller values)
 
     # Hide the spines between the two axes
     ax1.spines['bottom'].set_visible(False)
@@ -113,7 +113,7 @@ def create_comparison_bargraph_for_data_transmitted(metric, use_cases, bar_width
     # Convert bytes to kilobytes (KB)
     rest_data_kb = [x / 1024 for x in rest_values]
     graphql_data_kb = [x / 1024 for x in gql_values]
-    rest_opt_data_kb = [x / 1024 for x in rest_opt_values]
+    #rest_opt_data_kb = [x / 1024 for x in rest_opt_values]
     print(rest_data_kb)
     print(graphql_data_kb)
 
@@ -123,11 +123,11 @@ def create_comparison_bargraph_for_data_transmitted(metric, use_cases, bar_width
     # Bars for REST API
     bars_rest1 = ax1.bar(use_cases - bar_width, rest_data_kb, bar_width, label='REST', color='steelblue')
     bars_graphql1 = ax1.bar(use_cases, graphql_data_kb, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST optimized', color='green')
+    #bars_rest_opt1 = ax1.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST optimized', color='green')
 
     bars_rest2 = ax2.bar(use_cases - bar_width, rest_data_kb, bar_width, label='REST', color='steelblue')
     bars_graphql2 = ax2.bar(use_cases, graphql_data_kb, bar_width, label='GraphQL', color='violet')
-    bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST optimized', color='green')
+    #bars_rest_opt2 = ax2.bar(use_cases + bar_width, rest_opt_data_kb, bar_width, label='REST optimized', color='green')
 
     # Set the y-axis limits to "break" the axis
     ax1.set_ylim(1000, 1600)  # Top part of the y-axis (for larger values)
@@ -189,13 +189,13 @@ def create_json_of_averages(rest_data, gql_data, rest_opt_data, output_dir):
         for metric in metrics:
             rest_value = rest_data[uc].get(metric, "N/A")
             gql_value = gql_data[uc.replace("rest", "gql")].get(metric, "N/A")
-            rest_opt_value = rest_opt_data.get(uc, {}).get(metric, "N/A") if uc in ['rest3', 'rest5'] else "N/A"
+            #rest_opt_value = rest_opt_data.get(uc, {}).get(metric, "N/A") if uc in ['rest3', 'rest5'] else "N/A"
             
             # Werte für die Metrik im aktuellen Testcase speichern
             averages_data[uc][metric] = {
                 "REST": rest_value,
                 "GraphQL": gql_value,
-                "REST optimized": rest_opt_value
+                #"REST optimized": rest_opt_value
             }
     
     # JSON-Datei schreiben
@@ -218,10 +218,10 @@ def create_bar_chart_for_metric(rest_data, gql_data, rest_opt_data, metric, outp
     # REST optimized nur für Testcases 3, 4 und 6 hinzufügen
     rest_opt_values = []
     for uc in use_cases:
-        if uc in ['rest3', 'rest5']:
+        """ if uc in ['rest3', 'rest5']:
             rest_opt_values.append(rest_opt_data.get(uc, {}).get(metric, 0))  # Hinzufügen von REST optimized-Werten
-        else:
-            rest_opt_values.append(0)  # Keine REST optimized-Werte für andere Use Cases
+        else: """
+        rest_opt_values.append(0)  # Keine REST optimized-Werte für andere Use Cases
 
     
     # Erstelle die X-Achse-Labels (Use-Case Nummer)
