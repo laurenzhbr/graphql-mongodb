@@ -1,8 +1,18 @@
 1. Calculate averages of measurements
-python3 results/helpers/calculate_averages.py /results/REST
+python3 results/helpers/calculate_averages.py results/REST
+python3 results/helpers/calculate_averages.py results/GraphQL
 
 2. Create Graphs for TestCases
 python3 results/helpers/generate_diagrams_per_usecase.py results/REST results/GraphQL
+
+3. Create comparison graphs for testsuite
+python3 results/helpers/graphs_with_averages.py
+
+4. Generate overview table for each metric
+python3 results/helpers/generate_tables_for_metrics.py
+
+5. Significance calculation
+python3 results/helpers/significance_testing.py
 
 
 

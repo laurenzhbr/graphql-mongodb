@@ -1,6 +1,6 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const rest_use_case_6_opt = async (id = "66f7e21acfa2a96703f22d60") => {
+const rest_use_case_4_opt = async (id = "66f7e21acfa2a96703f22d60") => {
     const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
@@ -42,4 +42,4 @@ const rest_use_case_6_opt = async (id = "66f7e21acfa2a96703f22d60") => {
 };
 
 
-module.exports = { rest_use_case_6_opt };
+module.exports = { rest_use_case_4_opt };

@@ -13,8 +13,6 @@ const { gql_use_case_5 } = require('./queries/GQL/gql5');
 const { gql_use_case_6 } = require('./queries/GQL/gql6');
 const { gql_use_case_7 } = require('./queries/GQL/gql7');
 const { gql_use_case_8 } = require('./queries/GQL/gql8');
-const { gql_use_case_9 } = require('./queries/GQL/gql9');
-const { gql_use_case_10 } = require('./queries/GQL/gql10');
 
 // Import REST-Request for Use-Case
 const {rest_use_case_1} = require('./queries/REST/rest1');
@@ -25,14 +23,10 @@ const {rest_use_case_5} = require('./queries/REST/rest5');
 const {rest_use_case_6} = require('./queries/REST/rest6');
 const {rest_use_case_7} = require('./queries/REST/rest7');
 const {rest_use_case_8} = require('./queries/REST/rest8');
-const {rest_use_case_9} = require('./queries/REST/rest9');
-const {rest_use_case_10} = require('./queries/REST/rest10');
 
 // Import optimized REST-Request for Use-Case
-const {rest_use_case_3_opt} = require('./queries/REST_optimized/rest3');
+const {rest_use_case_2_opt} = require('./queries/REST_optimized/rest2');
 const {rest_use_case_4_opt} = require('./queries/REST_optimized/rest4');
-const {rest_use_case_6_opt} = require('./queries/REST_optimized/rest6');
-
 
 const gql_queries = [
     gql_use_case_1,
@@ -43,8 +37,6 @@ const gql_queries = [
     gql_use_case_6,
     gql_use_case_7,
     gql_use_case_8,
-    gql_use_case_9,
-    gql_use_case_10,
 ]
 
 const rest_requests = [
@@ -56,13 +48,9 @@ const rest_requests = [
     rest_use_case_6,
     rest_use_case_7,
     rest_use_case_8,
-    rest_use_case_9,
-    rest_use_case_10,
 ]
 
 const iteration_count = [
-    50,
-    50,
     50,
     50,
     50,
@@ -86,9 +74,8 @@ async function runTestSuite(){
     }
 
     //Conduct the payload optimized use cases for REST
-    await runSingleTestProcedure(rest_use_case_3_opt, "REST_opt", `rest3`, 50);
+    await runSingleTestProcedure(rest_use_case_2_opt, "REST_opt", `rest2`, 50);
     await runSingleTestProcedure(rest_use_case_4_opt, "REST_opt", `rest4`, 50);
-    await runSingleTestProcedure(rest_use_case_6_opt, "REST_opt", `rest6`, 50);
 
 }
 
