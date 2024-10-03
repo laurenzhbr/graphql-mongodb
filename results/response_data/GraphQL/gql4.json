@@ -1,501 +1,95 @@
 {
   "data": {
-    "searchResourcesInCity": [
+    "organizations": [
       {
-        "name": "Street Cabinet Sachsen 3",
-        "resourceCharacteristic": [
+        "name": "Filsinger OHG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 44079
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "0.8651249591028317m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "1.3884726199321449m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 86
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 1250
-          },
-          {
-            "name": "network_type",
-            "value": "DSL"
-          },
-          {
-            "name": "fiber_ready",
-            "value": true
-          },
-          {
-            "name": "power_backup",
-            "value": true
-          },
-          {
-            "name": "security_status",
-            "value": "Remote Monitoring"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2024-03-08T09:44:10.276Z"
+            "ratingScore": 845
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4f78e947f6ef1d5d16",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 12",
-        "resourceCharacteristic": [
+        "name": "Preuss, Bos und Goldkamp Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 32658
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "1.2739400983788074m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "0.6023110467940569m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 91
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 1071
-          },
-          {
-            "name": "network_type",
-            "value": "Koaxial"
-          },
-          {
-            "name": "fiber_ready",
-            "value": true
-          },
-          {
-            "name": "power_backup",
-            "value": false
-          },
-          {
-            "name": "security_status",
-            "value": "Guarded"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2024-01-25T01:10:21.149Z"
+            "ratingScore": 843
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4e78e947f6ef1d5331",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 1",
-        "resourceCharacteristic": [
+        "name": "Schweisfurth, Wickert und Brunner Sales & Partners AG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 8843
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "1.3177546785678715m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "0.99091683072038m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 47
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 840
-          },
-          {
-            "name": "network_type",
-            "value": "Koaxial"
-          },
-          {
-            "name": "fiber_ready",
-            "value": false
-          },
-          {
-            "name": "power_backup",
-            "value": false
-          },
-          {
-            "name": "security_status",
-            "value": "Guarded"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2024-01-11T01:28:28.622Z"
+            "ratingScore": 839
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4e78e947f6ef1d5121",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 4",
-        "resourceCharacteristic": [
+        "name": "Schötz, Sarvari und Swillims Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 34437
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "1.663557264441624m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "1.4557237091939896m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 79
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 1281
-          },
-          {
-            "name": "network_type",
-            "value": "DSL"
-          },
-          {
-            "name": "fiber_ready",
-            "value": false
-          },
-          {
-            "name": "power_backup",
-            "value": true
-          },
-          {
-            "name": "security_status",
-            "value": "Access Controlled"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2022-11-12T21:09:46.842Z"
+            "ratingScore": 838
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4f78e947f6ef1d6048",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 7",
-        "resourceCharacteristic": [
+        "name": "Fischer-Fricke Marketing- und Vertriebsservice GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 25598
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "1.8174837179249153m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "0.5244826443959028m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 52
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 1447
-          },
-          {
-            "name": "network_type",
-            "value": "Koaxial"
-          },
-          {
-            "name": "fiber_ready",
-            "value": true
-          },
-          {
-            "name": "power_backup",
-            "value": false
-          },
-          {
-            "name": "security_status",
-            "value": "Access Controlled"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2023-11-27T07:09:48.808Z"
+            "ratingScore": 834
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4f78e947f6ef1d55bc",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 8",
-        "resourceCharacteristic": [
+        "name": "Tudow KG Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 53051
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "0.7979935251642019m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "0.9848487065173686m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 3
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 1408
-          },
-          {
-            "name": "network_type",
-            "value": "FTTH"
-          },
-          {
-            "name": "fiber_ready",
-            "value": false
-          },
-          {
-            "name": "power_backup",
-            "value": true
-          },
-          {
-            "name": "security_status",
-            "value": "Video Surveillance"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2022-08-05T17:50:18.025Z"
+            "ratingScore": 826
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4e78e947f6ef1d5045",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 16",
-        "resourceCharacteristic": [
+        "name": "Krippner-Hense Marketing Solutions KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 20984
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "1.5268924023257568m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "0.9598506374750286m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 25
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 1053
-          },
-          {
-            "name": "network_type",
-            "value": "DSL"
-          },
-          {
-            "name": "fiber_ready",
-            "value": true
-          },
-          {
-            "name": "power_backup",
-            "value": true
-          },
-          {
-            "name": "security_status",
-            "value": "Access Controlled"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2023-08-28T18:17:12.864Z"
+            "ratingScore": 820
           }
-        ],
-        "relatedParties": [
-          {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
-          }
-        ],
-        "place": {
-          "id": "66f7de4f78e947f6ef1d61f4",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
       },
       {
-        "name": "Street Cabinet Sachsen 26",
-        "resourceCharacteristic": [
+        "name": "Ritter Gruppe Vertriebsgesellschaft mbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "name": "connected_lines",
-            "value": 54629
-          },
-          {
-            "name": "cabinet_heigth",
-            "value": "0.7840313598280773m"
-          },
-          {
-            "name": "cabinet_width",
-            "value": "0.7361141357105225m"
-          },
-          {
-            "name": "current_capacity_usage",
-            "value": 10
-          },
-          {
-            "name": "maximum_capacity",
-            "value": 536
-          },
-          {
-            "name": "network_type",
-            "value": "DSL"
-          },
-          {
-            "name": "fiber_ready",
-            "value": true
-          },
-          {
-            "name": "power_backup",
-            "value": false
-          },
-          {
-            "name": "security_status",
-            "value": "Access Controlled"
-          },
-          {
-            "name": "last_maintenance",
-            "value": "2022-06-13T13:04:35.521Z"
+            "ratingScore": 817
           }
-        ],
-        "relatedParties": [
+        ]
+      },
+      {
+        "name": "Seidel, Koster und Klapper Marketing GmbH",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
           {
-            "id": "66f7de5a9c9c5bcf84326a1b",
-            "organizationType": "Wartungsfirma",
-            "name": "Plass-Moeller Instandhaltung GmbH"
-          },
-          {
-            "id": "66f7de5a9c9c5bcf84326a1f",
-            "organizationType": "Logistikunternehmen",
-            "name": "Schellenbeck UG Versandlogistik GmbH"
+            "ratingScore": 812
           }
-        ],
-        "place": {
-          "id": "66f7de4f78e947f6ef1d5f60",
-          "city": "Leipzig",
-          "country": "DE"
-        }
+        ]
+      },
+      {
+        "name": "Franzis-Weiss Sales & Consulting KG",
+        "organizationType": "Marketing- und Vertriebspartner",
+        "creditRating": [
+          {
+            "ratingScore": 809
+          }
+        ]
       }
     ]
   }

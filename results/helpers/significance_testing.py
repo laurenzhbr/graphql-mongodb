@@ -3,6 +3,7 @@ from scipy import stats
 import matplotlib.pyplot as plt
 import json
 import os
+import pandas as pd
 
 # Funktion zum Laden der JSON-Daten
 def load_data(filename):
@@ -10,43 +11,20 @@ def load_data(filename):
         return json.load(f)
 
 def check_normality(data, alpha=0.05):
-    """
-    Überprüft die Normalverteilung der Daten durch Tests und statistische Kennwerte.
-    Gibt die Ergebnisse zurück.
-    """
-    # Statistische Kennwerte
     mu, std = np.mean(data), np.std(data)
-    # skewness = stats.skew(data)
-    # kurtosis = stats.kurtosis(data)
-    
-    # Shapiro-Wilk Test
     shapiro_stat, shapiro_p = stats.shapiro(data)
-    
-    # D'Agostino's K² Test
-    dagostino_stat, dagostino_p = stats.normaltest(data)
-    
-    # Ergebnis des Shapiro-Wilk-Tests
     shapiro_result = "normalverteilt" if shapiro_p > alpha else "nicht normalverteilt"
-    
-    # Ergebnis des D'Agostino's K² Tests
-    dagostino_result = "normalverteilt" if dagostino_p > alpha else "nicht normalverteilt"
-    
     return {
         "mean": mu,
         "std_dev": std,
         "shapiro_stat": shapiro_stat,
         "shapiro_p": shapiro_p,
         "shapiro_result": shapiro_result,
-        "dagostino_stat": dagostino_stat,
-        "dagostino_p": dagostino_p,
-        "dagostino_result": dagostino_result,
     }
 
-def plot_normality(data, title="Normalverteilung"):
-    # Überprüfe die Normalverteilung und erhalte statistische Ergebnisse
+def plot_normality(data, output_dir, title="Normalverteilung"):
     stats_results = check_normality(data)
     
-    """ # Erstelle das Histogramm und den Q-Q-Plot
     plt.figure(figsize=(12, 6))
 
     # Subplot 1: Histogramm
@@ -57,8 +35,7 @@ def plot_normality(data, title="Normalverteilung"):
     x = np.linspace(xmin, xmax, 100)
     p = stats.norm.pdf(x, mu, std)
     plt.plot(x, p, 'k', linewidth=2)
-    title_hist = "Histogram and Normal Distribution Fit"
-    plt.title(f"{title_hist}\nμ={mu:.2f}, σ={std:.2f}")
+    plt.title(f"Histogram: μ={mu:.2f}, σ={std:.2f}")
     plt.xlabel('Werte')
     plt.ylabel('Dichte')
 
@@ -67,79 +44,84 @@ def plot_normality(data, title="Normalverteilung"):
     stats.probplot(data, dist="norm", plot=plt)
     plt.title("Q-Q-Plot")
 
-    # Gesamtplot anzeigen
-    plt.suptitle(title)
     plt.tight_layout(rect=[0, 0, 1, 0.95])
-    plt.show() """
+    plt.savefig(os.path.join(output_dir, f"{title}.png"))
+    plt.close()
 
-    # Drucke die relevanten Daten für die Normalverteilung
-    print("=== Statistische Kennwerte ===")
-    print(f"Mittelwert (μ): {stats_results['mean']:.2f}")
-    print(f"Standardabweichung (σ): {stats_results['std_dev']:.2f}")
-    print("\n=== Shapiro-Wilk Test ===")
-    print(f"Teststatistik: {stats_results['shapiro_stat']:.4f}")
-    print(f"p-Wert: {stats_results['shapiro_p']:.4f}")
-    print(f"Ergebnis: Die Daten sind {stats_results['shapiro_result']}\n")
-    # print("\n=== D'Agostino's K² Test ===")
-    # print(f"Teststatistik: {stats_results['dagostino_stat']:.4f}")
-    # print(f"p-Wert: {stats_results['dagostino_p']:.4f}")
-    # print(f"Ergebnis: Die Daten sind {stats_results['dagostino_result']}\n")
+    return stats_results
 
-# Shapiro-Wilk-Test zur Überprüfung der Normalverteilung
 def test_normality(data):
     stat, p = stats.shapiro(data)
-    if p > 0.05:
-        return True  # Daten sind normalverteilt
-    else:
-        return False  # Daten sind nicht normalverteilt
+    return p > 0.05
 
-# Durchführung eines statistischen Tests
 def perform_stat_test(rest_data, gql_data, metric):
-    # Daten extrahieren
     rest_values = rest_data[metric]
     gql_values = gql_data[metric]
 
-    # Test auf Normalverteilung
     rest_normal = test_normality(rest_values)
     gql_normal = test_normality(gql_values)
 
-    # Anzeigen des Histogramms und Q-Q-Plots für Normalverteilung
-    print("#####  REST  #####")
-    plot_normality(rest_values, title=f"REST {metric}")
-    print("#####  GraphQL  #####")
-    plot_normality(gql_values, title=f"GQL {metric}")
-
-    # Wähle den passenden Test basierend auf der Verteilung
     if rest_normal and gql_normal:
-        # t-Test für normalverteilte Daten
         stat, p = stats.ttest_ind(rest_values, gql_values)
         test_type = 't-test'
     else:
-        # Mann-Whitney-U-Test für nicht normalverteilte Daten
         stat, p = stats.mannwhitneyu(rest_values, gql_values)
         test_type = 'Mann-Whitney-U-Test'
 
     return test_type, p
 
 if __name__ == "__main__":
-    # Lade die JSON-Daten für REST und GraphQL
-    rest_file = 'results/REST/rest1.json'
-    gql_file = 'results/GraphQL/gql1.json'
+    rest_dir = 'results/REST'
+    gql_dir = 'results/GraphQL'
+    graph_dir = 'results/graphs'
+    
+    # Mehrere Metriken
+    metrics = ["sum_response_time", "total_data_transferred"]
 
-    rest_data = load_data(rest_file)
-    gql_data = load_data(gql_file)
+    # Excel Writer für die Ergebnisse
+    with pd.ExcelWriter('results/statistical_results.xlsx', engine='xlsxwriter') as writer:
+        for metric in metrics:
+            result_data = []  # Ergebnisse für jede Metrik
+            for rest_file in sorted(os.listdir(rest_dir)):
+                if rest_file.startswith("rest") and rest_file.endswith(".json"):
+                    use_case_id = rest_file.replace('rest', '').replace('.json', '')  # Extrahiere die Use-Case-ID
 
-    # Liste der Metriken, die getestet werden sollen
-    metrics = ["sum_response_time", "cpu_used_by_server", "memory_used_by_server", "api_call_count"]
+                    rest_data = load_data(os.path.join(rest_dir, rest_file))
+                    gql_file = f"gql{use_case_id}.json"
+                    gql_data = load_data(os.path.join(gql_dir, gql_file))
 
-    # Teste jede Metrik
-    for metric in metrics:
-        print(f"################## {metric} ############\n")
-        test_type, p_value = perform_stat_test(rest_data, gql_data, metric)
-        print(f"{metric}: {test_type} p-value = {p_value}")
+                    # Erstellen der Verzeichnisse für die Graphen
+                    rest_graph_dir = os.path.join(graph_dir, use_case_id, 'REST')
+                    gql_graph_dir = os.path.join(graph_dir, use_case_id, 'GraphQL')
+                    os.makedirs(rest_graph_dir, exist_ok=True)
+                    os.makedirs(gql_graph_dir, exist_ok=True)
 
-        # Überprüfe, ob der Unterschied signifikant ist (p < 0.05)
-        if p_value < 0.05:
-            print(f"Der Unterschied in {metric} ist signifikant.\n\n")
-        else:
-            print(f"Der Unterschied in {metric} ist nicht signifikant.\n\n")
+                    # Plots für REST
+                    rest_stats = plot_normality(rest_data[metric], rest_graph_dir, title=f"REST {metric}")
+
+                    # Plots für GraphQL
+                    gql_stats = plot_normality(gql_data[metric], gql_graph_dir, title=f"GraphQL {metric}")
+
+                    # Statistischer Test
+                    test_type, p_value = perform_stat_test(rest_data, gql_data, metric)
+
+                    # Ergebnisse für diesen Use-Case und diese Metrik sammeln
+                    result_data.append({
+                        'Use Case': use_case_id,
+                        'Metric': metric,
+                        'REST Mean': rest_stats['mean'],
+                        'REST Std Dev': rest_stats['std_dev'],
+                        'GraphQL Mean': gql_stats['mean'],
+                        'GraphQL Std Dev': gql_stats['std_dev'],
+                        'Shapiro REST p-value': rest_stats['shapiro_p'],
+                        'Shapiro GraphQL p-value': gql_stats['shapiro_p'],
+                        'Significant Difference': 'Yes' if p_value < 0.05 else 'No',
+                        'Test Type': test_type,
+                        'p-value': p_value
+                    })
+
+            # Ergebnisse der Metrik in ein separates Blatt schreiben
+            df = pd.DataFrame(result_data)
+            df.to_excel(writer, index=False, sheet_name=f'{metric}_Results')
+
+    print("Statistical analysis and graph generation complete.")

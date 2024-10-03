@@ -1,0 +1,155 @@
+{
+    "rest1": {
+        "sum_response_time": {
+            "REST": 378.04,
+            "GraphQL": 550.76,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 1613431.0,
+            "GraphQL": 1603680.0,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 1,
+            "GraphQL": 1,
+            "REST optimized": "N/A"
+        }
+    },
+    "rest2": {
+        "sum_response_time": {
+            "REST": 758.48,
+            "GraphQL": 305.56,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 384155.0,
+            "GraphQL": 26858.0,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 1,
+            "GraphQL": 1,
+            "REST optimized": "N/A"
+        }
+    },
+    "rest3": {
+        "sum_response_time": {
+            "REST": 19.36,
+            "GraphQL": 7.78,
+            "REST optimized": 11.2
+        },
+        "total_data_transferred": {
+            "REST": 13900.0,
+            "GraphQL": 779.0,
+            "REST optimized": 9526.0
+        },
+        "api_call_count": {
+            "REST": 4,
+            "GraphQL": 1,
+            "REST optimized": 4
+        }
+    },
+    "rest4": {
+        "sum_response_time": {
+            "REST": 9.36,
+            "GraphQL": 8.92,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 12438.0,
+            "GraphQL": 1787.0,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 1,
+            "GraphQL": 1,
+            "REST optimized": "N/A"
+        }
+    },
+    "rest5": {
+        "sum_response_time": {
+            "REST": 8.62,
+            "GraphQL": 7.84,
+            "REST optimized": 6.58
+        },
+        "total_data_transferred": {
+            "REST": 4013.0,
+            "GraphQL": 975.0,
+            "REST optimized": 1201.0
+        },
+        "api_call_count": {
+            "REST": 4,
+            "GraphQL": 1,
+            "REST optimized": 4
+        }
+    },
+    "rest6": {
+        "sum_response_time": {
+            "REST": 359.8,
+            "GraphQL": 536.32,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 118693.0,
+            "GraphQL": 118232.0,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 1,
+            "GraphQL": 1,
+            "REST optimized": "N/A"
+        }
+    },
+    "rest7": {
+        "sum_response_time": {
+            "REST": 4.24,
+            "GraphQL": 6.14,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 552.04,
+            "GraphQL": 488.98,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 1,
+            "GraphQL": 1,
+            "REST optimized": "N/A"
+        }
+    },
+    "rest8": {
+        "sum_response_time": {
+            "REST": 5.56,
+            "GraphQL": 8.9,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 2036.0,
+            "GraphQL": 2302.0,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 1,
+            "GraphQL": 1,
+            "REST optimized": "N/A"
+        }
+    },
+    "rest9": {
+        "sum_response_time": {
+            "REST": 99.6,
+            "GraphQL": 90.0,
+            "REST optimized": "N/A"
+        },
+        "total_data_transferred": {
+            "REST": 4423.2,
+            "GraphQL": 3338.0,
+            "REST optimized": "N/A"
+        },
+        "api_call_count": {
+            "REST": 11,
+            "GraphQL": 11,
+            "REST optimized": "N/A"
+        }
+    }
+}
