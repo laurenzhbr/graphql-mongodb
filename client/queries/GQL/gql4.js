@@ -1,22 +1,12 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 
-const query = (category, city, characteristics) => `
+const query = (organizationType, status, creditRating_gt, sort, limit) => `
 	{
-    searchResourcesInCity(category: "${category}", city: "${city}") {
+    organizations(organizationType: "${organizationType}", status: "${status}", creditRating_gt: ${creditRating_gt}, sort: "${sort}", limit: ${limit}) {
       name
-      resourceCharacteristic{
-        name
-        value
-      }
-      relatedParties {
-        id
-        organizationType
-        name
-      }
-      place {
-        id
-        city
-        country
+      organizationType
+      creditRating {
+        ratingScore
       }
     }
   }
@@ -29,13 +19,14 @@ const gql_use_case_4 =  async () => {
 
   // send API Call + fetch metrics
   const url = `http://${actualHost}/graphql`
-  const data = { query: query("Street Cabinet", "Leipzig", ["connected_lines", "maximum_capacity", "power_backup"])};
+  const data = { query: query("Marketing- und Vertriebspartner", "validated", 750, "-creditRating.ratingScore", 10)};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 
   const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
   accumulatedMetrics.total_transaction_time = total_transaction_time;
   return accumulatedMetrics
+
 }
 
 module.exports = {gql_use_case_4};
