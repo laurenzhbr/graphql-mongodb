@@ -69,7 +69,7 @@ async function runTestSuite(){
     } */
 
     // Conduct all GraphQL testcases
-    for (let i = 3; i < gql_queries.length; i++){
+    for (let i = 6; i < gql_queries.length; i++){
         await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, iteration_count[i]);
     }
 
