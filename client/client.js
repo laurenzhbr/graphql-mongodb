@@ -69,9 +69,9 @@ async function runTestSuite(){
     } */
 
     // Conduct all GraphQL testcases
-    for (let i = 6; i < gql_queries.length; i++){
+    /* for (let i = 6; i < gql_queries.length; i++){
         await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, iteration_count[i]);
-    }
+    } */
 
     //Conduct the payload optimized use cases for REST
     await runSingleTestProcedure(rest_use_case_2_opt, "REST_opt", `rest2`, 50);

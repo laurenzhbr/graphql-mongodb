@@ -13,7 +13,7 @@ const rest_use_case_2_opt = async (id="66f7e10305b9728c48875c62") => {
     const relatedModem = resourceRelationshipsRouter.find(modem => modem.relationshipType === "isTargeted");
     
     // get information from related modem
-    const href_resource_modem = `${relatedModem.resource.href.replace("{host}", actualHost)}?fields=id,resourceRelationship`
+    const href_resource_modem = `${relatedModem.resource.href.replace("{host}", actualHost)}?fields=resourceRelationship`
     accumulatedMetrics = await fetchMetrics(href_resource_modem, accumulatedMetrics);
 
     // get href to related modem
@@ -21,7 +21,7 @@ const rest_use_case_2_opt = async (id="66f7e10305b9728c48875c62") => {
     const relatedStreetCabinet = resourceRelationshipsModem.find(modem => modem.relationshipType === "isTargeted");
     
     // get information from related modem
-    const href_resource_street_cabinet = `${relatedStreetCabinet.resource.href.replace("{host}", actualHost)}?fields=id,resourceRelationship`
+    const href_resource_street_cabinet = `${relatedStreetCabinet.resource.href.replace("{host}", actualHost)}?fields=resourceRelationship`
 
     accumulatedMetrics = await fetchMetrics(href_resource_street_cabinet, accumulatedMetrics); 
 
@@ -30,7 +30,7 @@ const rest_use_case_2_opt = async (id="66f7e10305b9728c48875c62") => {
     const relatedCentralOffice = resourceRelationshipsStreetCabinet.find(modem => modem.relationshipType === "isTargeted");
     
     // get information from related modem
-    const href_resource_central_office = `${relatedCentralOffice.resource.href.replace("{host}", actualHost)}?fields=id,name,resourceStatus`
+    const href_resource_central_office = `${relatedCentralOffice.resource.href.replace("{host}", actualHost)}?fields=name,resourceStatus`
     
     accumulatedMetrics = await fetchMetrics(`${href_resource_central_office}?fields=resourceStatus,name`, accumulatedMetrics);
     
