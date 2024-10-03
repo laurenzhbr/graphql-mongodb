@@ -2,7 +2,7 @@ const { fetchMetrics } = require('../../utils/prepare_metrics');
 
 const query = () => `
 	mutation {
-    createResource(input: {
+    createResource(data: {
       description: "Create Test Router for GQL",
       category: "Router",
       endOperatingDate: "2030-12-31T23:59:59Z",
