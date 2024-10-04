@@ -24,9 +24,6 @@ const {rest_use_case_6} = require('./queries/REST/rest6');
 const {rest_use_case_7} = require('./queries/REST/rest7');
 const {rest_use_case_8} = require('./queries/REST/rest8');
 
-// Import optimized REST-Request for Use-Case
-const {rest_use_case_2_opt} = require('./queries/REST_optimized/rest2');
-const {rest_use_case_4_opt} = require('./queries/REST_optimized/rest4');
 
 const gql_queries = [
     gql_use_case_1,
@@ -55,9 +52,9 @@ const iteration_count = [
     50,
     50,
     50,
-    50,
-    50,
-    50,
+    1,
+    1,
+    1,
     5,
 ]
 
