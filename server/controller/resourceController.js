@@ -111,7 +111,7 @@ exports.getResourceList = async (req, res) => {
 
 exports.createResource = async (req, res) => {
     try {
-        const resource = new Resource({ name: 'Router', version: 123 });
+        const resource = new Resource(req.body);
 
         // Verwende runValidators und validateBeforeSave
         await resource.save();

@@ -4,9 +4,9 @@ const {faker} = require('@faker-js/faker/locale/de');
 const query = (digi_id, resource_name) => `
 	mutation {
     updateDigitalIdentity(id: "${digi_id}", data: {
+      status: "active"
       resourceIdentified: {
-        id: "${faker.database.mongodbObjectId()}",
-        name: "Router ${faker.number.int({ min: 0, max: 20 })} ${resource_name} ${faker.number.int({ min: 0, max: 20 })}"
+        id: "66f7de9d05b9728c48849ef2",
       }
     }) {
       nickname
@@ -27,7 +27,7 @@ const gql_use_case_6 =  async () => {
 
   // send API Call + fetch metrics
   const url = `http://${actualHost}/graphql`
-  const data = { query: query("66f7e21acfa2a96703f22d24", "Router for Modem Neuental")};
+  const data = { query: query("66f7e21acfa2a96703f22c38")};
 
   accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
 

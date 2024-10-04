@@ -1,16 +1,16 @@
 const { fetchMetrics } = require('../../utils/prepare_metrics');
 const {faker} = require('@faker-js/faker/locale/de');
 
-const rest_use_case_6 = async (digi_id = "66f7e21acfa2a96703f22d48", resource_name="Router for Modem Hüfingen" ) => {
+const rest_use_case_6 = async (digi_id = "66f7e21acfa2a96703f22c36") => {
     const transaction_start = null;
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
 
     // 1. Update-Daten mit den Details des zufälligen Routers füllen
     updateData = {
+        "status": "active",
         "resourceIdentified": {
-            id: faker.database.mongodbObjectId(),
-            name: `Router ${faker.number.int({ min: 0, max: 20 })} ${resource_name} ${faker.number.int({ min: 0, max: 20 }).toString()}`
+            id: "66f7de9d05b9728c48849ef0",
         }
     };
 
