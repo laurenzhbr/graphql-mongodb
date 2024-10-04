@@ -1,14 +1,13 @@
 {
-  "_id": "66f7e21acfa2a96703f22d48",
-  "nickname": "Enno_Kaesmacher",
+  "_id": "66f7e21acfa2a96703f22c36",
+  "nickname": "Ylvie_Heinig73",
   "status": "active",
   "resourceIdentified": {
-    "id": "a6469c3d16fda84dceecf1fe",
-    "name": "Router 15 Router for Modem Hüfingen 6",
-    "href": "http://{host}/resourceInventoryManagement/resource/a6469c3d16fda84dceecf1fe"
+    "id": "66f7de9d05b9728c48849ef0",
+    "href": "http://{host}/resourceInventoryManagement/resource/66f7de9d05b9728c48849ef0"
   },
-  "creationDate": "2024-09-28T11:01:46.475Z",
-  "lastUpdate": "2024-10-03T13:30:44.178Z",
-  "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e21acfa2a96703f22d48",
+  "creationDate": "2024-09-28T11:01:46.347Z",
+  "lastUpdate": "2024-10-04T18:53:48.702Z",
+  "href": "http://{host}/digitalIdentityManagement/digitalIdentity/66f7e21acfa2a96703f22c36",
   "__v": 0
 }

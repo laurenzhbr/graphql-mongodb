@@ -1,9 +1,12 @@
 {
   "data": {
     "updateDigitalIdentity": {
-      "nickname": "Lias.Zintl",
-      "status": "unknown",
-      "resourceIdentified": null
+      "nickname": "Jordan.Hinrichs",
+      "status": "active",
+      "resourceIdentified": {
+        "id": "66f7de9d05b9728c48849ef2",
+        "name": "Router 2 for Modem Langenau 0"
+      }
     }
   }
 }
