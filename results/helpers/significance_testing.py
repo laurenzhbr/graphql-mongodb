@@ -70,18 +70,30 @@ def perform_stat_test(rest_data, gql_data, metric):
 
     return test_type, p
 
+def save_json_results(result_data, output_dir, filename):
+    # Speichert die Daten als JSON in der angegebenen Datei
+    output_filepath = os.path.join(output_dir, filename)
+    with open(output_filepath, 'w') as json_file:
+        json.dump(result_data, json_file, indent=4)
+    print(f"JSON results saved at {output_filepath}")
+
 if __name__ == "__main__":
     rest_dir = 'results/REST'
     gql_dir = 'results/GraphQL'
     graph_dir = 'results/graphs'
-    
+    output_json_dir = 'results/json'
+
     # Mehrere Metriken
     metrics = ["sum_response_time", "total_data_transferred"]
+
+    # Initialisiere ein Dictionary für die JSON-Ausgabe
+    json_results = {}
 
     # Excel Writer für die Ergebnisse
     with pd.ExcelWriter('results/statistical_results.xlsx', engine='xlsxwriter') as writer:
         for metric in metrics:
             result_data = []  # Ergebnisse für jede Metrik
+            json_results[metric] = {}  # Initiiere eine Struktur für die JSON-Daten
             for rest_file in sorted(os.listdir(rest_dir)):
                 if rest_file.startswith("rest") and rest_file.endswith(".json"):
                     use_case_id = rest_file.replace('rest', '').replace('.json', '')  # Extrahiere die Use-Case-ID
@@ -120,8 +132,31 @@ if __name__ == "__main__":
                         'p-value': p_value
                     })
 
+                    # Ergebnisse in JSON-Struktur sammeln
+                    json_results[metric][use_case_id] = {
+                        'REST': {
+                            'mean': rest_stats['mean'],
+                            'std_dev': rest_stats['std_dev'],
+                            'shapiro_p': rest_stats['shapiro_p'],
+                        },
+                        'GraphQL': {
+                            'mean': gql_stats['mean'],
+                            'std_dev': gql_stats['std_dev'],
+                            'shapiro_p': gql_stats['shapiro_p'],
+                        },
+                        'Statistical Test': {
+                            'type': test_type,
+                            'p-value': p_value,
+                            'significant': 'Yes' if p_value < 0.05 else 'No'
+                        }
+                    }
+
             # Ergebnisse der Metrik in ein separates Blatt schreiben
             df = pd.DataFrame(result_data)
             df.to_excel(writer, index=False, sheet_name=f'{metric}_Results')
+
+    # Speichere die JSON-Ergebnisse
+    os.makedirs(output_json_dir, exist_ok=True)
+    save_json_results(json_results, output_json_dir, "statistical_results.json")
 
     print("Statistical analysis and graph generation complete.")

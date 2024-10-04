@@ -8,17 +8,16 @@ const rest_use_case_4 = async (id = "66f7e21acfa2a96703f22d60") => {
 
     const url = `http://${actualHost}/digitalIdentityManagement/digitalIdentity/${id}`
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics);
-    useCaseData.digitalIdentity = accumulatedMetrics.data;
 
     // get router information
-    const href_resourceIdentified = `${accumulatedMetrics.data.resourceIdentified.href.replace("{host}", actualHost)}`
+    const href_resourceIdentified = `${accumulatedMetrics.data.resourceIdentified.href.replace("{host}", actualHost)}?fields=name,resourceStatus,endOperatingDate,relatedParty,place`
     accumulatedMetrics = await fetchMetrics(href_resourceIdentified, accumulatedMetrics);
     const resourceData = accumulatedMetrics.data;
     useCaseData.resource = resourceData;
 
     // Sammle die RelatedParty IDs und die place href
-    const relatedPartyHrefs = resourceData.relatedParty.map(party => party.href.replace("{host}", actualHost));
-    const href_geoAdress = resourceData.place.href.replace("{host}", actualHost)
+    const relatedPartyHrefs = resourceData.relatedParty.map(party => `${party.href.replace("{host}", actualHost)}?fields=name,organizationType,status`);
+    const href_geoAdress = `${resourceData.place.href.replace("{host}", actualHost)}?fields=city,country,postcode,stateOrProvince,streetName,streetNr`
 
     //GET Data from GeoAdress
     accumulatedMetrics = await fetchMetrics(href_geoAdress, accumulatedMetrics);

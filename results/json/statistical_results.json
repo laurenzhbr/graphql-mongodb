@@ -1,0 +1,278 @@
+{
+    "sum_response_time": {
+        "1": {
+            "REST": {
+                "mean": 451.86,
+                "std_dev": 14.459612719571709,
+                "shapiro_p": 0.14979392139680384
+            },
+            "GraphQL": {
+                "mean": 732.76,
+                "std_dev": 34.961441617873824,
+                "shapiro_p": 5.472809627205303e-06
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 7.010500907615667e-18,
+                "significant": "Yes"
+            }
+        },
+        "2": {
+            "REST": {
+                "mean": 18.76,
+                "std_dev": 3.597554725087584,
+                "shapiro_p": 0.0011634700591044134
+            },
+            "GraphQL": {
+                "mean": 10.5,
+                "std_dev": 1.8027756377319946,
+                "shapiro_p": 5.81405056817293e-08
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 3.1831393539882787e-17,
+                "significant": "Yes"
+            }
+        },
+        "3": {
+            "REST": {
+                "mean": 16.7,
+                "std_dev": 4.313930922024598,
+                "shapiro_p": 6.818708741544236e-07
+            },
+            "GraphQL": {
+                "mean": 10.16,
+                "std_dev": 1.3908270920570966,
+                "shapiro_p": 3.60464702927427e-09
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 3.53360157150738e-17,
+                "significant": "Yes"
+            }
+        },
+        "4": {
+            "REST": {
+                "mean": 16.9,
+                "std_dev": 6.974955196988723,
+                "shapiro_p": 1.980423693536049e-09
+            },
+            "GraphQL": {
+                "mean": 14.52,
+                "std_dev": 5.15844937941626,
+                "shapiro_p": 0.00014263709684382857
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 0.010560112224960099,
+                "significant": "Yes"
+            }
+        },
+        "5": {
+            "REST": {
+                "mean": 531.66,
+                "std_dev": 31.90837507614576,
+                "shapiro_p": 0.9240409783210422
+            },
+            "GraphQL": {
+                "mean": 646.12,
+                "std_dev": 33.887838526527474,
+                "shapiro_p": 0.4162028437399276
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 2.1884730218182713e-31,
+                "significant": "Yes"
+            }
+        },
+        "6": {
+            "REST": {
+                "mean": 7.4,
+                "std_dev": 4.4,
+                "shapiro_p": 8.54331360252862e-09
+            },
+            "GraphQL": {
+                "mean": 10.96,
+                "std_dev": 4.979799192738599,
+                "shapiro_p": 7.941766490066619e-07
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 2.269063814709731e-07,
+                "significant": "Yes"
+            }
+        },
+        "7": {
+            "REST": {
+                "mean": 4.34,
+                "std_dev": 2.589285615763545,
+                "shapiro_p": 9.149408744390774e-11
+            },
+            "GraphQL": {
+                "mean": 14.38,
+                "std_dev": 6.196418320287939,
+                "shapiro_p": 2.3990549182157773e-05
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 7.460313300548471e-16,
+                "significant": "Yes"
+            }
+        },
+        "8": {
+            "REST": {
+                "mean": 138.0,
+                "std_dev": 2.6076809620810595,
+                "shapiro_p": 0.05049777531351138
+            },
+            "GraphQL": {
+                "mean": 117.6,
+                "std_dev": 6.740919818541086,
+                "shapiro_p": 0.24583165199154428
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0004842631394519024,
+                "significant": "Yes"
+            }
+        }
+    },
+    "total_data_transferred": {
+        "1": {
+            "REST": {
+                "mean": 1613431.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "GraphQL": {
+                "mean": 1603680.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0,
+                "significant": "Yes"
+            }
+        },
+        "2": {
+            "REST": {
+                "mean": 9551.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "GraphQL": {
+                "mean": 779.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0,
+                "significant": "Yes"
+            }
+        },
+        "3": {
+            "REST": {
+                "mean": 12438.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "GraphQL": {
+                "mean": 1787.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0,
+                "significant": "Yes"
+            }
+        },
+        "4": {
+            "REST": {
+                "mean": 1201.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "GraphQL": {
+                "mean": 971.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0,
+                "significant": "Yes"
+            }
+        },
+        "5": {
+            "REST": {
+                "mean": 118693.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "GraphQL": {
+                "mean": 118232.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0,
+                "significant": "Yes"
+            }
+        },
+        "6": {
+            "REST": {
+                "mean": 552.16,
+                "std_dev": 1.4333178293735134,
+                "shapiro_p": 1.3085996931267482e-06
+            },
+            "GraphQL": {
+                "mean": 490.04,
+                "std_dev": 0.7200000000000001,
+                "shapiro_p": 1.4387703450601768e-06
+            },
+            "Statistical Test": {
+                "type": "Mann-Whitney-U-Test",
+                "p-value": 1.6861823913265552e-18,
+                "significant": "Yes"
+            }
+        },
+        "7": {
+            "REST": {
+                "mean": 1133.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "GraphQL": {
+                "mean": 2301.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 0.0,
+                "significant": "Yes"
+            }
+        },
+        "8": {
+            "REST": {
+                "mean": 4431.8,
+                "std_dev": 15.625619987699688,
+                "shapiro_p": 0.883621224171971
+            },
+            "GraphQL": {
+                "mean": 3338.0,
+                "std_dev": 0.0,
+                "shapiro_p": 1.0
+            },
+            "Statistical Test": {
+                "type": "t-test",
+                "p-value": 7.577653784069605e-15,
+                "significant": "Yes"
+            }
+        }
+    }
+}
