@@ -61,7 +61,7 @@ const iteration_count = [
 async function runTestSuite(){
 
     // Conduct all REST testcases
-    for (let i = 6; i < 7; i++){
+    for (let i = 2; i < 3; i++){
         await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, iteration_count[i]);
     } 
 
