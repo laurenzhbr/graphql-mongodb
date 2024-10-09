@@ -1,35 +1,8 @@
 [
   {
     "_id": "66f7de5a9c9c5bcf84326be8",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326be8",
-    "isHeadOffice": true,
-    "isLegalEntity": true,
     "name": "Plautz-Roth Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Plautz-Roth Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": true,
-        "characteristic": {
-          "city": "Bielefeld",
-          "contactType": "business",
-          "country": "Nepal",
-          "emailAddress": "Stefan.Lukoschek26@hotmail.com",
-          "faxNumber": "+49-5562-06291897",
-          "phoneNumber": "(0543) 007160297",
-          "postCode": "02176",
-          "socialNetworkId": "Korbinian.Fricke",
-          "stateOrProvince": "Nordrhein-Westfalen",
-          "street1": "Am Weidenbusch",
-          "street2": "Gustav-Radbruch-Str."
-        },
-        "validFor": {
-          "endDateTime": "2025-07-22T12:51:43.289Z",
-          "startDateTime": "2024-07-26T23:06:31.963Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Striezel OHG",
@@ -40,51 +13,12 @@
           "startDateTime": "2023-09-30T17:02:28.981Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-05-29T08:42:48.345Z",
-      "startDateTime": "2024-04-09T20:51:23.335Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "dumm-sekunde.com"
-      }
-    ],
-    "status": "initialized",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf843270e2",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf843270e2",
-    "isHeadOffice": false,
-    "isLegalEntity": true,
     "name": "Stenzel GmbH & Co. KG Marketing GmbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Stenzel GmbH & Co. KG Marketing GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "Efflerdorf",
-          "contactType": "personal",
-          "country": "Gibraltar",
-          "emailAddress": "Frederike.Brenner3@hotmail.com",
-          "faxNumber": "(0392) 073496328",
-          "phoneNumber": "(0787) 059112056",
-          "postCode": "81672",
-          "socialNetworkId": "Dylan78",
-          "stateOrProvince": "Hamburg",
-          "street1": "Brucknerstr.",
-          "street2": "Danziger Str."
-        },
-        "validFor": {
-          "endDateTime": "2024-11-21T10:29:59.148Z",
-          "startDateTime": "2024-07-14T05:41:37.535Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Neubert GmbH & Co. KG",
@@ -95,51 +29,12 @@
           "startDateTime": "2024-06-25T16:06:27.222Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-02-25T10:52:15.728Z",
-      "startDateTime": "2023-12-12T08:49:42.750Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "loslich-tsunami.com"
-      }
-    ],
-    "status": "closed",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf84326c23",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326c23",
-    "isHeadOffice": false,
-    "isLegalEntity": true,
     "name": "Filsinger OHG Sales & Consulting KG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Filsinger OHG Sales & Consulting KG",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": false,
-        "characteristic": {
-          "city": "Mathisland",
-          "contactType": "business",
-          "country": "Französisch-Guayana",
-          "emailAddress": "Kilian_Gruber94@yahoo.com",
-          "faxNumber": "+49-6158-14546947",
-          "phoneNumber": "(00492) 5604803",
-          "postCode": "93279",
-          "socialNetworkId": "Nicole13",
-          "stateOrProvince": "Sachsen-Anhalt",
-          "street1": "Marie-Schlei-Str.",
-          "street2": "Schopenhauerstr."
-        },
-        "validFor": {
-          "endDateTime": "2024-10-19T17:28:59.385Z",
-          "startDateTime": "2024-03-15T07:55:44.045Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Kaul-Franke",
@@ -150,51 +45,12 @@
           "startDateTime": "2023-12-13T08:13:04.907Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-06-28T04:41:58.230Z",
-      "startDateTime": "2024-03-01T04:35:17.217Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "heldenmutig-skelett.name"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf84326be6",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326be6",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
     "name": "Lichtl-Kiessling Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Lichtl-Kiessling Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": false,
-        "characteristic": {
-          "city": "Ibbenbüren",
-          "contactType": "personal",
-          "country": "Montserrat",
-          "emailAddress": "Santino.Wittich@hotmail.com",
-          "faxNumber": "(02083) 8952401",
-          "phoneNumber": "+49-5391-29062272",
-          "postCode": "62777",
-          "socialNetworkId": "Maja44",
-          "stateOrProvince": "Sachsen-Anhalt",
-          "street1": "Mendelssohnstr.",
-          "street2": "Meckhofer Feld"
-        },
-        "validFor": {
-          "endDateTime": "2024-10-06T15:47:17.872Z",
-          "startDateTime": "2024-05-18T16:21:18.713Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Erdmann Gruppe",
@@ -205,51 +61,12 @@
           "startDateTime": "2024-07-10T01:27:32.919Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-01-21T13:07:17.019Z",
-      "startDateTime": "2024-01-12T04:15:41.975Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "unbandig-kaffee.com"
-      }
-    ],
-    "status": "initialized",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf843276c3",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf843276c3",
-    "isHeadOffice": false,
-    "isLegalEntity": false,
     "name": "Rücker AG Marketing GmbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Rücker AG Marketing GmbH",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": false,
-        "characteristic": {
-          "city": "Fenjaland",
-          "contactType": "personal",
-          "country": "Norwegen",
-          "emailAddress": "Sophie_Sailer@yahoo.com",
-          "faxNumber": "(03913) 9179770",
-          "phoneNumber": "(03879) 4942664",
-          "postCode": "67511",
-          "socialNetworkId": "Catharina.Reusse",
-          "stateOrProvince": "Bremen",
-          "street1": "Hohe Str.",
-          "street2": "Rennbaumplatz"
-        },
-        "validFor": {
-          "endDateTime": "2024-11-27T18:48:41.661Z",
-          "startDateTime": "2024-06-10T00:32:26.626Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Schwennen, Schwanitz und Schenk",
@@ -260,51 +77,12 @@
           "startDateTime": "2024-03-10T13:54:46.071Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-07-25T23:04:00.537Z",
-      "startDateTime": "2024-08-02T23:24:27.391Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "nordlich-kupfer.com"
-      }
-    ],
-    "status": "closed",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf84326d22",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326d22",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
     "name": "Preuss, Bos und Goldkamp Sales & Consulting KG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Preuss, Bos und Goldkamp Sales & Consulting KG",
-    "contactMedium": [
-      {
-        "mediumType": "phone",
-        "preferred": false,
-        "characteristic": {
-          "city": "Lanascheid",
-          "contactType": "business",
-          "country": "Sambia",
-          "emailAddress": "Giuseppe.Renz@gmail.com",
-          "faxNumber": "(00247) 3096378",
-          "phoneNumber": "(07840) 5180821",
-          "postCode": "58553",
-          "socialNetworkId": "Luana_Klauder5",
-          "stateOrProvince": "Brandenburg",
-          "street1": "Bernsteinstr.",
-          "street2": "Eidechsenweg"
-        },
-        "validFor": {
-          "endDateTime": "2025-02-14T20:30:29.319Z",
-          "startDateTime": "2023-12-27T05:05:47.352Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Waldmann-Martin",
@@ -315,51 +93,12 @@
           "startDateTime": "2024-08-13T22:43:52.012Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-05-27T06:46:24.820Z",
-      "startDateTime": "2024-06-13T03:36:20.529Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "wohlschmeckend-dame.de"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf84326c52",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326c52",
-    "isHeadOffice": false,
-    "isLegalEntity": true,
     "name": "Mathies UG Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Mathies UG Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": false,
-        "characteristic": {
-          "city": "Hannover",
-          "contactType": "personal",
-          "country": "Mayotte",
-          "emailAddress": "Laureen0@yahoo.com",
-          "faxNumber": "+49-808-4961459",
-          "phoneNumber": "(01832) 5328794",
-          "postCode": "11383",
-          "socialNetworkId": "Friederike.Biesenbach89",
-          "stateOrProvince": "Saarland",
-          "street1": "Kumper Weg",
-          "street2": "Albrecht-Haushofer-Str."
-        },
-        "validFor": {
-          "endDateTime": "2025-05-23T06:30:27.041Z",
-          "startDateTime": "2024-06-11T15:45:32.369Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Dieckmann, Wilts und Plotzitzka",
@@ -370,51 +109,12 @@
           "startDateTime": "2024-01-03T02:08:37.334Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-05-10T09:22:43.407Z",
-      "startDateTime": "2024-08-03T06:15:59.222Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "makellos-bahnhof.org"
-      }
-    ],
-    "status": "closed",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf84327020",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84327020",
-    "isHeadOffice": true,
-    "isLegalEntity": true,
     "name": "Schweisfurth, Wickert und Brunner Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Schweisfurth, Wickert und Brunner Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": true,
-        "characteristic": {
-          "city": "Neu Björnstadt",
-          "contactType": "personal",
-          "country": "Osttimor",
-          "emailAddress": "Thilo.Motzenbbacker26@hotmail.com",
-          "faxNumber": "+49-867-7766580",
-          "phoneNumber": "(0227) 244788721",
-          "postCode": "12100",
-          "socialNetworkId": "Marek93",
-          "stateOrProvince": "Mecklenburg-Vorpommern",
-          "street1": "Andreasstr.",
-          "street2": "Goetheplatz"
-        },
-        "validFor": {
-          "endDateTime": "2025-08-24T21:19:37.058Z",
-          "startDateTime": "2024-03-26T02:31:28.312Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Merkel-Stöppler",
@@ -425,51 +125,12 @@
           "startDateTime": "2024-04-04T12:16:23.436Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-05-18T20:34:52.152Z",
-      "startDateTime": "2023-10-16T13:40:22.908Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "socialMediaAccount",
-        "name": "aufrichtig-zeh.name"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf843277f5",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf843277f5",
-    "isHeadOffice": true,
-    "isLegalEntity": false,
     "name": "Schötz, Sarvari und Swillims Vertriebsgesellschaft mbH",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Schötz, Sarvari und Swillims Vertriebsgesellschaft mbH",
-    "contactMedium": [
-      {
-        "mediumType": "email",
-        "preferred": true,
-        "characteristic": {
-          "city": "Alishaland",
-          "contactType": "business",
-          "country": "Dominica",
-          "emailAddress": "Yannic_Schuri@hotmail.com",
-          "faxNumber": "+49-250-5358264",
-          "phoneNumber": "+49-078-8097287",
-          "postCode": "39803",
-          "socialNetworkId": "Annie.Feller73",
-          "stateOrProvince": "Sachsen-Anhalt",
-          "street1": "Telegrafenstr.",
-          "street2": "Kämper Weg"
-        },
-        "validFor": {
-          "endDateTime": "2025-02-07T21:35:32.938Z",
-          "startDateTime": "2024-07-04T09:00:12.029Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Ritosek GmbH & Co. KG",
@@ -480,51 +141,12 @@
           "startDateTime": "2023-12-25T00:55:51.818Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2025-03-10T12:22:37.124Z",
-      "startDateTime": "2024-01-31T09:09:28.736Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "talentiert-burg.ch"
-      }
-    ],
-    "status": "validated",
-    "__v": 0
+    ]
   },
   {
     "_id": "66f7de5a9c9c5bcf84326c19",
-    "href": "https://{host}/partyManagement/organization/66f7de5a9c9c5bcf84326c19",
-    "isHeadOffice": true,
-    "isLegalEntity": true,
     "name": "Gotthardt, Gatzka und Wissing Sales & Partners AG",
     "organizationType": "Marketing- und Vertriebspartner",
-    "tradingName": "Gotthardt, Gatzka und Wissing Sales & Partners AG",
-    "contactMedium": [
-      {
-        "mediumType": "fax",
-        "preferred": true,
-        "characteristic": {
-          "city": "Neu Jildorf",
-          "contactType": "personal",
-          "country": "Mauritius",
-          "emailAddress": "Collin_Hort55@yahoo.com",
-          "faxNumber": "+49-391-4424251",
-          "phoneNumber": "+49-464-1060011",
-          "postCode": "07552",
-          "socialNetworkId": "Jamila64",
-          "stateOrProvince": "Sachsen-Anhalt",
-          "street1": "Quettinger Str.",
-          "street2": "Metzer Str."
-        },
-        "validFor": {
-          "endDateTime": "2025-07-29T09:23:58.873Z",
-          "startDateTime": "2023-10-28T05:00:06.385Z"
-        }
-      }
-    ],
     "creditRating": [
       {
         "creditAgencyName": "Tudow, Schütz und Riedel",
@@ -535,18 +157,6 @@
           "startDateTime": "2024-03-15T15:37:15.756Z"
         }
       }
-    ],
-    "existsDuring": {
-      "endDateTime": "2024-12-18T12:57:57.702Z",
-      "startDateTime": "2024-01-06T15:59:54.297Z"
-    },
-    "externalReference": [
-      {
-        "externalReferenceType": "internetSite",
-        "name": "fesselnd-film.ch"
-      }
-    ],
-    "status": "initialized",
-    "__v": 0
+    ]
   }
 ]
