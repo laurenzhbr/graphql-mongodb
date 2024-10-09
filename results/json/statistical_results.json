@@ -36,9 +36,9 @@
         },
         "3": {
             "REST": {
-                "mean": 16.7,
-                "std_dev": 4.313930922024598,
-                "shapiro_p": 6.818708741544236e-07
+                "mean": 15.16,
+                "std_dev": 5.2966404446592374,
+                "shapiro_p": 8.154447662214437e-06
             },
             "GraphQL": {
                 "mean": 10.16,
@@ -47,7 +47,7 @@
             },
             "Statistical Test": {
                 "type": "Mann-Whitney-U-Test",
-                "p-value": 3.53360157150738e-17,
+                "p-value": 3.929260964413422e-12,
                 "significant": "Yes"
             }
         },
@@ -174,7 +174,7 @@
         },
         "3": {
             "REST": {
-                "mean": 12438.0,
+                "mean": 3560.0,
                 "std_dev": 0.0,
                 "shapiro_p": 1.0
             },

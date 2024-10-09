@@ -29,11 +29,11 @@
     },
     "rest3": {
         "sum_response_time": {
-            "REST": 16.7,
+            "REST": 15.16,
             "GraphQL": 10.16
         },
         "total_data_transferred": {
-            "REST": 12438.0,
+            "REST": 3560.0,
             "GraphQL": 1787.0
         },
         "api_call_count": {
@@ -75,8 +75,8 @@
             "GraphQL": 10.96
         },
         "total_data_transferred": {
-            "REST": 552.16,
-            "GraphQL": 490.04
+            "REST": 474.0,
+            "GraphQL": 531.0
         },
         "api_call_count": {
             "REST": 1,
@@ -85,11 +85,11 @@
     },
     "rest7": {
         "sum_response_time": {
-            "REST": 4.34,
+            "REST": 8.5,
             "GraphQL": 14.38
         },
         "total_data_transferred": {
-            "REST": 1133.0,
+            "REST": 2036.0,
             "GraphQL": 2301.0
         },
         "api_call_count": {
