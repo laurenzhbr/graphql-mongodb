@@ -54,6 +54,10 @@ DigitalIdentitySchema.pre('save', function(next){
       this.href = `https://azulastudios/digitalIdentityManagement/digitalIdentity/${this._id}`;
     }
 
+    if (!this.status) {
+      this.status = "unknown";
+    }
+
     next();
   })
 
