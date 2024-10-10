@@ -51,7 +51,7 @@ DigitalIdentitySchema.pre('save', function(next){
     this.lastUpdate = now; 
 
     if (!this.href) {
-      this.href = `http://{host}/digitalIdentityManagement/digitalIdentity/${this._id}`;
+      this.href = `https://azulastudios/digitalIdentityManagement/digitalIdentity/${this._id}`;
     }
 
     next();
