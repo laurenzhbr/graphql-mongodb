@@ -1,6 +1,5 @@
 {
     "sum_response_time": 8.5,
-    "total_transaction_time": 0.0,
     "api_call_count": 1,
     "cpu_used_by_server": 713.3382,
     "memory_used_by_server": 25.143,

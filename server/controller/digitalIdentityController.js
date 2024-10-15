@@ -1,28 +1,27 @@
 const DigitalIdentity = require('../models/DigtialIdentityModels/DigitalIdentity');
 // Alle erlaubten Felder aus dem Mongoose-Schema extrahieren
-const allowedFields = Object.keys(DigitalIdentity.schema.paths).filter(field => !field.startsWith('_')); // Entfernt interne Felder wie _id
+const allowedFields = Object.keys(DigitalIdentity.schema.paths).filter(field => !field.startsWith('_'));
 
 
-// Controller-Funktion zum Abrufen aller DigitalIdentities
+// Controller for retrieving List of DigitalIdentities
 exports.getDigitalIdentities = async (req, res) => {
     try {
-        // URL-Query-Parameter
         const { offset = 0, limit = 0, fields, sort = "id", ...filters } = req.query;
 
-        // Offset und Limit für Pagination
+        // Offset and Limit for Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
 
-        // Setze das Sortierfeld und -richtung inline
-        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
-        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
+        // field and direction for sorting
+        const sortField = sort ? sort.replace('-', '') : 'id';
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 => desc , 1 => asc 
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
+        // attribute selection functionality
         let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
-            // Überprüfen, ob ungültige Felder abgefragt wurden
+            // Check, if invalid fields are requested
             const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
             if (invalidFields.length > 0) {
@@ -31,7 +30,7 @@ exports.getDigitalIdentities = async (req, res) => {
                 });
             }
 
-            // Nur First-Level-Felder auswählen
+            // only first-level attribute selection
             selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
@@ -40,7 +39,7 @@ exports.getDigitalIdentities = async (req, res) => {
         // Get X-Total-Count
         const totalCount = await DigitalIdentity.countDocuments(filterObj);
         
-        // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
+        // fetch data from DB
         let digitalIdentities = await DigitalIdentity.find(filterObj)
           .sort({ [sortField]: sortDirection })
           .select(selectFields)
@@ -50,7 +49,7 @@ exports.getDigitalIdentities = async (req, res) => {
         // Get X-Result-Count
         const resultCount = digitalIdentities.length;
 
-        // Header mit x-Result-Count und x-Total-Count
+        // Header with x-Result-Count and x-Total-Count
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
         
@@ -66,27 +65,25 @@ exports.getDigitalIdentities = async (req, res) => {
     }
 };
 
-// Controller zum Löschen einer spezifischen DigitalIdentity anhand der ID
+// Controller for deleting specific DigitalIdentity
 exports.deleteDigitalIdentityById = async (req, res) => {
   try {
       const { id } = req.params;
 
-      // Suche und lösche die DigitalIdentity anhand der ID
+      // find and delete by ID
       const deletedDigitalIdentity = await DigitalIdentity.findByIdAndDelete(id);
 
-      // Falls die DigitalIdentity nicht gefunden wurde
       if (!deletedDigitalIdentity) {
           return res.status(404).json({ message: `DigitalIdentity with ID ${id} not found.` });
       }
 
-      // Erfolgreich gelöscht
       res.status(204).json();
   } catch (error) {
       res.status(500).json({ message: error.message });
   }
 };
 
-// Controller-Funktion zum Erstellen einer neuen DigitalIdentity
+// Controller for creating DigitalIdentity
 exports.createDigitalIdentity = async (req, res) => {
     const digitalIdentity = new DigitalIdentity(req.body);
 
@@ -98,19 +95,18 @@ exports.createDigitalIdentity = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Abrufen einer spezifischen DigitalIdentity
+// Controller for retrieving specific DigitalIdentity
 exports.getDigitalIdentityById = async (req, res) => {
     try {
-      // Auswahl der Felder, die zurückgegeben werden sollen
       const { id } = req.params;
       const { fields } = req.query;
 
-      // Auswahl der Felder, die zurückgegeben werden sollen
+      // attribute selection functionality
       let selectFields = null;
       if (fields) {
           const requestedFields = fields.split(',').map((field) => field.trim());
 
-          // Überprüfen, ob ungültige Felder abgefragt wurden
+          // Check, if invalid fields are requested
           const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
           if (invalidFields.length > 0) {
@@ -119,7 +115,7 @@ exports.getDigitalIdentityById = async (req, res) => {
               });
           }
 
-          // Nur First-Level-Felder auswählen
+          // only first-level attribute selection
           selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
       }
 
@@ -133,30 +129,29 @@ exports.getDigitalIdentityById = async (req, res) => {
     }
 };
 
+// Controller for partially updating DigitalIdentity
 exports.patchDigitalIdentity = async (req, res) => {
     try {
-      const { id } = req.params;  // ID der DigitalIdentity aus den URL-Parametern
-      const updateData = req.body; // Die Daten, die aktualisiert werden sollen
+      const { id } = req.params;
+      const updateData = req.body;
 
-      // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
       if (!updateData || Object.keys(updateData).length === 0) {
           return res.status(400).json({ success: false, message: 'No data for PATCH' });
       }
 
-      // Finde die DigitalIdentity basierend auf der ID
+      // find DigitalIdentity entity
       const digitalIdentity = await DigitalIdentity.findById(id);
 
       if (!digitalIdentity) {
         return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
       }
 
-      // Aktualisiere nur die übermittelten Felder
+      // Update object
       Object.assign(digitalIdentity, updateData);
 
-      // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+      // Save object
       const updatedDigitalIdentity = await digitalIdentity.save();
   
-      // Erfolgreiches Update
       res.status(200).json(
         updatedDigitalIdentity
       );

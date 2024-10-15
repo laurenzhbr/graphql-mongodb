@@ -2,19 +2,19 @@ const express = require('express');
 const router = express.Router();
 const digitalIdentityController = require('../../controller/digitalIdentityController'); // Importiere den Controller
 
-// GET /resource - Alle DigitalIdentities abrufen
+// GET /resource - Retrieve List of DigitalIdentities
 router.get('/digitalIdentity/', digitalIdentityController.getDigitalIdentities);
 
-// POST /resource - Eine neue DigitalIdentity erstellen
+// POST /resource - Create new DigitalIdentity
 router.post('/digitalIdentity/', digitalIdentityController.createDigitalIdentity);
 
-// GET /resource/:id - Eine spezifische DigitalIdentity abrufen
+// GET /resource/:id - Retrieve specific DigitalIdentity
 router.get('/digitalIdentity/:id', digitalIdentityController.getDigitalIdentityById);
 
-// Patch /resource - Eine DigitalIdentity updaten
+// Patch /resource - Partialy Update specific DigitalIdentity
 router.patch('/digitalIdentity/:id', digitalIdentityController.patchDigitalIdentity)
 
-// DELETE /resource/:id - Löschen einer DigitalIdentity
+// DELETE /resource/:id - Delete specific DigitalIdentity
 router.delete('/digitalIdentity/:id', digitalIdentityController.deleteDigitalIdentityById);
 
 module.exports = router;

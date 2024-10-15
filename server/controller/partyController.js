@@ -2,26 +2,25 @@ const Organization = require('../models/PartyModels/Organization');
 // Alle erlaubten Felder aus dem Mongoose-Schema extrahieren
 const allowedFields = Object.keys(Organization.schema.paths).filter(field => !field.startsWith('_')); // Entfernt interne Felder wie _id
 
-// Controller-Funktion zum Abrufen aller Ressourcen
+// Controller for retrieving List of Organizations
 exports.getOrganizationList = async (req, res) => {
     try {
-        // URL-Query-Parameter
         const { offset = 0, limit = 0, fields, sort = "id", ...filters } = req.query;
 
-        // Offset und Limit für Pagination
+        // Offset and Limit for Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
 
-        // Setze das Sortierfeld und -richtung inline
-        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
-        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
+        // field and direction for sorting
+        const sortField = sort ? sort.replace('-', '') : 'id';
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 => desc , 1 => asc
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
+        // attribute selection functionality
         let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
-            // Überprüfen, ob ungültige Felder abgefragt wurden
+            // Check, if invalid fields are requested
             const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
             if (invalidFields.length > 0) {
@@ -30,9 +29,10 @@ exports.getOrganizationList = async (req, res) => {
                 });
             }
 
-            // Nur First-Level-Felder auswählen
+            // only first-level attribute selection
             selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
+
         // Create a filter object for MongoDB queries, including comparison operators
         const filterObj = {};
 
@@ -40,7 +40,7 @@ exports.getOrganizationList = async (req, res) => {
         for (const key in filters) {
           if (filters.hasOwnProperty(key)) {
             if (key.includes(".")){
-              const parts = key.split('.'); // Split the nested field by dot (.)
+              const parts = key.split('.');
               const fieldName = parts.slice(0, -1).join('.'); // e.g., "creditRating.ratingScore"
               const operator = parts[parts.length - 1]; // e.g., "gt", "lt"
 
@@ -59,7 +59,7 @@ exports.getOrganizationList = async (req, res) => {
         // Get X-Total-Count
         const totalCount = await Organization.countDocuments(filterObj);
         
-        // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
+        // fetch data from DB
         let organizations = await Organization.find(filterObj)
           .sort({ [sortField]: sortDirection })
           .select(selectFields)
@@ -69,7 +69,7 @@ exports.getOrganizationList = async (req, res) => {
         // Get X-Result-Count
         const resultCount = organizations.length;
 
-        // Header mit x-Result-Count und x-Total-Count
+        // Header with x-Result-Count and x-Total-Count
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
 
@@ -85,7 +85,7 @@ exports.getOrganizationList = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Erstellen einer neuen Organisation
+// Controller for creating Organization
 exports.createOrganization = async (req, res) => {
     const organization = new Organization(req.body);
     try {
@@ -96,38 +96,36 @@ exports.createOrganization = async (req, res) => {
     }
 };
 
-// Controller zum Löschen einer spezifischen Organisation anhand der ID
+// Controller for deleting specific Organization
 exports.deleteOrganzationById = async (req, res) => {
   try {
       const { id } = req.params;
 
-      // Suche und lösche die Organization anhand der ID
+      // find and delete Organization by ID
       const deletedOrganization = await Organization.findByIdAndDelete(id);
 
-      // Falls die Organization nicht gefunden wurde
       if (!deletedOrganization) {
           return res.status(404).json({ message: `Organization with ID ${id} not found.` });
       }
 
-      // Erfolgreich gelöscht
       res.status(204).json();
   } catch (error) {
       res.status(500).json({ message: error.message });
   }
 };
 
-// Controller-Funktion zum Abrufen einer spezifischen Organisation
+// Controller for retrieving specific Organization
 exports.getOrganizationById = async (req, res) => {
     try {
       const { id } = req.params;
       const { fields } = req.query;
 
-      // Auswahl der Felder, die zurückgegeben werden sollen
+      // attribute selection functionality
       let selectFields = null;
       if (fields) {
           const requestedFields = fields.split(',').map((field) => field.trim());
 
-          // Überprüfen, ob ungültige Felder abgefragt wurden
+          // Check, if invalid fields are requested
           const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
           if (invalidFields.length > 0) {
@@ -136,7 +134,7 @@ exports.getOrganizationById = async (req, res) => {
               });
           }
 
-          // Nur First-Level-Felder auswählen
+          // only first-level attribute selection
           selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
       }
 
@@ -150,30 +148,29 @@ exports.getOrganizationById = async (req, res) => {
     }
 };
 
+// Controller for partially Updating Organization
 exports.patchOrganizationById = async (req, res) => {
   try {
-    const { id } = req.params;  // ID der Organisation aus den URL-Parametern
-    const updateData = req.body; // Die Daten, die aktualisiert werden sollen
+    const { id } = req.params;
+    const updateData = req.body; 
 
-    // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
     if (!updateData || Object.keys(updateData).length === 0) {
         return res.status(400).json({ success: false, message: 'No data for PATCH' });
     }
 
-    // Finde die Organisation basierend auf der ID
+    // find Organization by ID
     const organization = await Organization.findById(id);
 
     if (!organization) {
       return res.status(404).json({ success: false, message: 'Organization not found.' });
     }
 
-    // Aktualisiere nur die übermittelten Felder
+    // update Object
     Object.assign(organization, updateData);
 
-    // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+    // save Object
     const updatedOrganization = await organization.save();
 
-    // Erfolgreiches Update
     res.status(200).json(
       updatedOrganization
     );

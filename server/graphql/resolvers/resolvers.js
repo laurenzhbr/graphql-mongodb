@@ -113,7 +113,6 @@ const RootQuery = new GraphQLObjectType({
         sortField = args.sort ? args.sort.replace('-', '') : 'id';
         sortDirection = args.sort && args.sort.startsWith('-') ? -1 : 1;
 
-        // Dynamisches Filter-Objekt für MongoDB-Operatoren mit Inline-If-Bedingungen
         const ratingScoreFilter = {
           ...(args.creditRating_gt ? { $gt: args.creditRating_gt } : {}),
           ...(args.creditRating_lt ? { $lt: args.creditRating_lt } : {}),
@@ -121,7 +120,6 @@ const RootQuery = new GraphQLObjectType({
           ...(args.creditRating_lte ? { $lte: args.creditRating_lte } : {})
       };
 
-        // Filter-Objekt für MongoDB Query
         const filter = {
           ...(args.organizationType && { organizationType: { $in: args.organizationType } }),
           ...(args.status && { status: args.status }),
@@ -135,40 +133,6 @@ const RootQuery = new GraphQLObjectType({
         .limit(limit)
       }
     },
-    searchResourcesInCity:{
-      type: new GraphQLList(ResourceType),
-      description: 'Search resources by category and city where the resource is located.',
-      args: {
-        category: { type: GraphQLString,  description: 'Category of the resources' },
-        city: { type: GraphQLString, description: 'City in which to search for resources' },
-        offset: { type: GraphQLInt, description: 'value for skipping first x entries of data (optional)'},
-        limit: { type: GraphQLInt, description: 'value for limiting the amount of data (optional)'},
-        sort: { type: GraphQLString, description: 'Sort results by a specific field ({field} => ascending, -{field} => descending)'},
-      },
-      async resolve(parent, args){
-        // Filter nach Kategorie
-        const categoryFilter = { category: args.category };
-
-        // Finde alle Ressourcen der angegebenen Kategorie
-        const resources = await Resource.find(categoryFilter);
-
-        const filteredResources = [];
-
-        // 1. Schritt: Für jede Ressource, die GeographicAddress (relatedPlace) abrufen und Stadt überprüfen
-        for (const resource of resources) {
-          if (resource.place && resource.place.id) {
-            // Abrufen der GeographicAddress anhand der place ID
-            const geographicAddress = await GeographicAddress.findById(resource.place.id);
-            
-            // Prüfen, ob die Stadt der gewünschten Stadt entspricht
-            if (geographicAddress && geographicAddress.city === args.city) {
-              filteredResources.push(resource);
-            }
-          }
-        }
-        return filteredResources;
-      }
-    }
   },
 });
 
@@ -180,16 +144,16 @@ const Mutation = new GraphQLObjectType({
       type: ResourceType,
       description: 'Create a new resource in the database',
       args: {
-        data: { type: ResourceInputType, description: 'Input data for creating a new resource' } // Die Input-Daten für die Ressource
+        data: { type: ResourceInputType, description: 'Input data for creating a new resource' }
       },
       async resolve(parent, { data }) {
-        // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
+        // Create new Resource object with given data
         const resource = new Resource(data);
           
-        // Speichern der neuen Ressource in der Datenbank
+        // Save new Resource to DB
         const newResource = await resource.save();
         
-        // Rückgabe der erstellten Ressource
+        // return new Object
         return newResource;
       }
     },
@@ -197,16 +161,16 @@ const Mutation = new GraphQLObjectType({
       type: DigitalIdentityType,
       description: 'Create a new digital identity in the database',
       args: {
-        data: { type: DigitalIdentityCreateInput, description: 'Input data for creating a new digital identity' } // Die Input-Daten für die Ressource
+        data: { type: DigitalIdentityCreateInput, description: 'Input data for creating a new digital identity' }
       },
       async resolve(parent, { data }) {
-        // Erstelle ein neues Resource-Dokument basierend auf den Eingabedaten
+        // Create new DigitalIdentity object with given data
         const digitalIdentity = new DigitalIdentity(data);
           
-        // Speichern der neuen Ressource in der Datenbank
+        // Save new DigitalIdentity to DB
         const newDigitalIdentity = await digitalIdentity.save();
         
-        // Rückgabe der erstellten Ressource
+        // return new Object
         return newDigitalIdentity;
       }
     },
@@ -223,7 +187,6 @@ const Mutation = new GraphQLObjectType({
 
         Object.assign(digitalIdentity, data);
 
-        // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
         const updatedDigitalIdentity = await digitalIdentity.save();
         return updatedDigitalIdentity;
     }

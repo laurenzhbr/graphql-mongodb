@@ -25,8 +25,6 @@ router.get('/health-check', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Server is healthy' });
 });
 
-// Route für den Entry-Point "/"
-// Route für den Entry-Point "/"
 router.get('/', (req, res) => {
   res.send(`
     <html>

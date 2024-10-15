@@ -2,20 +2,20 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const swaggerUi = require('swagger-ui-express');
-const swaggerFile = require('./swagger_output.json');  // Die generierte Swagger-Dokumentation
+const swaggerFile = require('./swagger_output.json');
 require('dotenv').config();
 
 // Import router for REST and GraphQL
 const router = require('./routes/router')
 
-const { getMemoryUsage, getCpuUsage } = require('./utils/tracing'); // Importiere die Tracing-Funktionen
+const { getMemoryUsage, getCpuUsage } = require('./utils/tracing');
 const dbName = process.env.DB_NAME || 'resource_inventory';
 const app = express();
 
-// Middleware für JSON-Verarbeitung
+// Middleware for JSON-Serializer
 app.use(express.json());
 
-// Verbinde dich mit der lokalen MongoDB-Datenbank
+// connect with local MongoDB
 db_orig = mongoose.connect(`mongodb://localhost:27017/${dbName}`).then(() => {
   console.log('MongoDB connected');
 }).catch(err => {
@@ -39,11 +39,11 @@ app.use((req, res, next) => {
 // start router
 app.use('/', router)
 
-// Swagger-Dokumentation Route
+// Swagger-Documentation Route
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 
-// Starte den Server
+// Start the server
 const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`running with DB ${dbName}`)

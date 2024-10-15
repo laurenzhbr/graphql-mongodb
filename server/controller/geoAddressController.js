@@ -6,23 +6,22 @@ const allowedFields = Object.keys(GeoAddress.schema.paths).filter(field => !fiel
 // Controller-Funktion zum Abrufen aller GeoAdressen
 exports.getGeoAddressList = async (req, res) => {
     try {
-        // URL-Query-Parameter
         const { offset = 0, limit = 10, fields, sort = "id", ...filters } = req.query;
 
-        // Offset und Limit für Pagination
+        // Offset and Limit for Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
 
-        // Setze das Sortierfeld und -richtung inline
-        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
-        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
+        // field and direction for sorting
+        const sortField = sort ? sort.replace('-', '') : 'id';
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 => desc , 1 => asc
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
+        // attribute selection functionality
         let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
-            // Überprüfen, ob ungültige Felder abgefragt wurden
+            // Check, if invalid fields are requested
             const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
             if (invalidFields.length > 0) {
@@ -31,7 +30,7 @@ exports.getGeoAddressList = async (req, res) => {
                 });
             }
 
-            // Nur First-Level-Felder auswählen
+            // only first-level attribute selection
             selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
@@ -40,7 +39,7 @@ exports.getGeoAddressList = async (req, res) => {
         // Get X-Total-Count
         const totalCount = await GeoAddress.countDocuments(filterObj);
         
-        // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
+        // fetch data from DB
         const geoAddresses = await GeoAddress.find(filterObj)
             .sort({ [sortField]: sortDirection })
             .select(selectFields)
@@ -49,7 +48,7 @@ exports.getGeoAddressList = async (req, res) => {
         // Get X-Result-Count
         const resultCount = geoAddresses.length;
         
-        // Header mit x-Result-Count und x-Total-Count
+        // Header with x-Result-Count and x-Total-Count
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
 
@@ -65,18 +64,18 @@ exports.getGeoAddressList = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Abrufen einer spezifischen GeoAdresse
+// Controller for retrieving specific GeographicAddress
 exports.getGeoAddressById = async (req, res) => {
     try {
         const { id } = req.params;
         const { fields } = req.query;
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
+        // attribute selection functionality
         let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
-            // Überprüfen, ob ungültige Felder abgefragt wurden
+            // Check, if invalid fields are requested
             const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
             if (invalidFields.length > 0) {
@@ -85,7 +84,7 @@ exports.getGeoAddressById = async (req, res) => {
                 });
             }
 
-            // Nur First-Level-Felder auswählen
+            // only first-level attribute selection
             selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 

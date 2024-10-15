@@ -5,9 +5,8 @@ const {
     GraphQLList,
     GraphQLNonNull,
   } = require('graphql');
-  const { GraphQLDateTime, MixedType } = require('../../customScalars/customScalars'); // Falls du einen Custom Scalar für DateTime verwendest
+  const { GraphQLDateTime, MixedType } = require('../../customScalars/customScalars'); 
 
-  // Enum-Typen, falls sie verwendet werden
   const {
     ResourceAdministrativeStateType,
     ResourceOperationalStateType,
@@ -19,43 +18,43 @@ const {
   const ResourceRefInputType = new GraphQLInputObjectType({
     name: 'ResourceRefInput',
     fields: {
-      id: { type: GraphQLID }, // ID der Ressource
-      href: { type: GraphQLString }, // Hyperlink zur Ressource
-      category: { type: GraphQLString }, // Kategorie der Ressource
-      name: { type: GraphQLString }, // Name der Ressource
+      id: { type: GraphQLID }, 
+      href: { type: GraphQLString }, 
+      category: { type: GraphQLString }, 
+      name: { type: GraphQLString }, 
     },
   });
   
-  // InputType für ResourceRelationship
+  // InputType for resourceRelationship
   const ResourceRelationshipInputType = new GraphQLInputObjectType({
     name: 'ResourceRelationshipInput',
     fields: {
-      relationshipType: { type: GraphQLString }, // Art der Beziehung
-      resource: { type: ResourceRefInputType }, // Eingebettete Ressource mit ID, href, category und name
+      relationshipType: { type: GraphQLString }, 
+      resource: { type: ResourceRefInputType },
     },
   });
 
-  // InputType für ResourceRelationship
+  // InputType for relatedParty (Organization)
   const relatedPartyInputType = new GraphQLInputObjectType({
     name: 'RelatedPartyInput',
     fields: {
-      id: { type: GraphQLID }, // Art der Beziehung
-      name: { type: GraphQLString }, // Eingebettete Ressource mit ID, href, category und name
+      id: { type: GraphQLID },
+      name: { type: GraphQLString },
       role: { type: GraphQLString },
     },
   });
   
-  // InputType für Characteristic
+  // InputType for ResourceCharacteristic
   const CharacteristicInputType = new GraphQLInputObjectType({
     name: 'CharacteristicInput',
     fields: {
-      name: { type: new GraphQLNonNull(GraphQLString) }, // Name der Characteristic
-      valueType: { type: GraphQLString }, // Der Werttyp
-      value: { type: new GraphQLNonNull(MixedType) }, // Der tatsächliche Wert
+      name: { type: new GraphQLNonNull(GraphQLString) }, 
+      valueType: { type: GraphQLString }, 
+      value: { type: new GraphQLNonNull(MixedType) },
     },
   });
   
-  // InputType für Note
+  //InputType for note
   const NoteInputType = new GraphQLInputObjectType({
     name: 'NoteInput',
     fields: {
@@ -65,11 +64,11 @@ const {
     },
   });
   
-  // InputType für Place (Geographic Address)
+  // InputType for place (Geographic Address)
   const PlaceInputType = new GraphQLInputObjectType({
     name: 'PlaceInput',
     fields: {
-      id: { type: GraphQLString }, // Die ID der Place
+      id: { type: GraphQLString },
       name: { type: GraphQLString },
     },
   });
@@ -79,7 +78,7 @@ const {
     name: 'ResourceInput',
     fields: {
       id: {
-        type: GraphQLID, // Falls du ein Update machst, könnte eine ID übergeben werden
+        type: GraphQLID,
       },
       description: {
         type: GraphQLString,
@@ -114,7 +113,7 @@ const {
         description: 'Eine Liste von Merkmalen, die mit der Ressource verknüpft sind.',
       },
       relatedParties: {
-        type: new GraphQLList(relatedPartyInputType), // Liste von IDs der verknüpften Organisationen
+        type: new GraphQLList(relatedPartyInputType),
         description: 'Verknüpfte Parteien zur Ressource.',
       },
       note: {

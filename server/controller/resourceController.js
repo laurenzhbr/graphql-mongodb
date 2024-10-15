@@ -4,26 +4,25 @@ const Resource = require('../models/ResourceModels/Resource'); // Importiere das
 // Alle erlaubten Felder aus dem Mongoose-Schema extrahieren
 const allowedFields = Object.keys(Resource.schema.paths).filter(field => !field.startsWith('_')); // Entfernt interne Felder wie _id
 
+// Controller for retrieving List of Resources
 exports.getResourceList = async (req, res) => {
     try {
-
-        // URL-Query-Parameter
         const { offset = 0, limit = 0, fields, sort = "id", ...filters } = req.query;
 
-        // Offset und Limit für Pagination
+        // Offset and Limit for Pagination
         const skip = parseInt(offset, 10);
         const limitVal = parseInt(limit, 10);
 
-        // Setze das Sortierfeld und -richtung inline
-        const sortField = sort ? sort.replace('-', '') : 'id'; // Entferne '-' wenn vorhanden
-        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 für absteigend, 1 für aufsteigend
+        // field and direction for sorting
+        const sortField = sort ? sort.replace('-', '') : 'id';
+        const sortDirection = sort && sort.startsWith('-') ? -1 : 1; // -1 => desc , 1 => asc 
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
+        // attribute selection functionality
         let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
-            // Überprüfen, ob ungültige Felder abgefragt wurden
+            // Check, if invalid fields are requested
             const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
             if (invalidFields.length > 0) {
@@ -31,14 +30,13 @@ exports.getResourceList = async (req, res) => {
                 message: `Invalid field(s) requested: ${invalidFields.join(', ')}`                });
             }
 
-            // Nur First-Level-Felder auswählen
+            // only first-level attribute selection
             selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
         // Create the filter object for MongoDB queries
         const filterObj = { ...filters };
 
-        // Dynamisches Filtern der resourceCharacteristics
         const characteristicsFilter = [];
 
         for (const key in filters) {
@@ -47,18 +45,18 @@ exports.getResourceList = async (req, res) => {
                 const operator = operatorMatch ? operatorMatch[0] : null;
                 const value = filters[key].replace(operator, '');
 
-                // Mapping der Operatoren zu MongoDB
+                // Mapping MongoDB operators
                 const mongoOperator = operator === 'gt' ? '$gt'
                     : operator === 'lt' ? '$lt'
                     : operator === 'gte' ? '$gte'
                     : operator === 'lte' ? '$lte'
                     : null;
 
-                // Hinzufügen des Filters für die spezifische Characteristic
+                // Filter for specific characteristic
                 if (mongoOperator) {
                     characteristicsFilter.push({
                         $elemMatch: {
-                            name: key.replace(`.${operator}`, ''), // Entferne den Operator aus dem Namen
+                            name: key.replace(`.${operator}`, ''),
                             value: { [mongoOperator]: parseInt(value, 10) }
                         }
                     });
@@ -74,7 +72,7 @@ exports.getResourceList = async (req, res) => {
             }
         }
 
-        // Wenn es dynamische Characteristics-Filter gibt, dann füge sie zu filterObj hinzu
+        // add CharacteristicFilter to FilterObj
         if (characteristicsFilter.length > 0) {
             filterObj['resourceCharacteristic'] = { $all: characteristicsFilter };
         }
@@ -82,7 +80,7 @@ exports.getResourceList = async (req, res) => {
         // Get X-Total-Count
         const totalCount = await Resource.countDocuments(filterObj);
         
-        // Dokumente abfragen anhand der gegebenen Filter und Field-Selections
+        // fetch data from DB
         const resources = await Resource.find(filterObj)
             .sort({ [sortField]: sortDirection })
             .select(selectFields)
@@ -92,7 +90,7 @@ exports.getResourceList = async (req, res) => {
         // Get X-Result-Count
         const resultCount = resources.length;
 
-        // Header mit x-Result-Count und x-Total-Count
+        // Header with x-Result-Count and x-Total-Count
         res.set('x-Result-Count', resultCount);
         res.set('x-Total-Count', totalCount);
 
@@ -108,12 +106,10 @@ exports.getResourceList = async (req, res) => {
     }
 };
 
-
+// Controller for creating new Resource
 exports.createResource = async (req, res) => {
     try {
         const resource = new Resource(req.body);
-
-        // Verwende runValidators und validateBeforeSave
         await resource.save();
 
         res.status(201).json(resource);
@@ -127,29 +123,28 @@ exports.createResource = async (req, res) => {
     }
 };
 
-// Controller-Funktion zum Abrufen einer spezifischen Ressource
+// Controller for retrieving specific Resource
 exports.getResourceById = async (req, res) => {
     try {
       const { id } = req.params;
         const {fields} = req.query
 
-        // Auswahl der Felder, die zurückgegeben werden sollen
+        // attribute selection functionality
         let selectFields = null;
         if (fields) {
             const requestedFields = fields.split(',').map((field) => field.trim());
 
-            // Überprüfen, ob ungültige Felder abgefragt wurden
+            // Check, if invalid fields are requested
             const invalidFields = requestedFields.filter((field) => !allowedFields.includes(field));
 
             if (invalidFields.length > 0) {
                 return res.status(400).json({
-                    //message: `Invalid field(s) requested: ${invalidFields.join(', ')}. Allowed fields are: ${allowedFields.join(', ')}`
                     message: `Invalid field(s) requested: ${invalidFields.join(', ')}`
 
                 });
             }
 
-            // Nur First-Level-Felder auswählen
+            // only first-level attribute selection
             selectFields = requestedFields.filter((field) => !field.includes('.')).join(' ');
         }
 
@@ -163,30 +158,29 @@ exports.getResourceById = async (req, res) => {
     }
 };
 
+// Controller for partially Update of Resource
 exports.patchResourceById = async (req, res) => {
     try {
-      const { id } = req.params;  // ID der Organisation aus den URL-Parametern
-      const updateData = req.body; // Die Daten, die aktualisiert werden sollen
+      const { id } = req.params;  
+      const updateData = req.body;
   
-      // Überprüfen, ob die zu aktualisierenden Daten im Body vorhanden sind
       if (!updateData || Object.keys(updateData).length === 0) {
           return res.status(400).json({ success: false, message: 'No data for PATCH' });
       }
   
-      // Finde die Organisation basierend auf der ID
+      // find Resource by ID
       const resource = await Resource.findById(id);
   
       if (!resource) {
         return res.status(404).json({ success: false, message: 'DigitalIdentity not found.' });
       }
   
-      // Aktualisiere nur die übermittelten Felder
+      // update Object
       Object.assign(resource, updateData);
   
-      // Speichere das Dokument, damit Pre-save-Hooks ausgeführt werden
+      // save Object
       const updatedResource = await resource.save();
   
-      // Erfolgreiches Update
       res.status(200).json(
         updatedResource
       );
@@ -196,20 +190,18 @@ exports.patchResourceById = async (req, res) => {
     }
   };
 
-// Controller-Funktion zum Löschen einer Ressource
+// Controller for deleting of specific Resource
 exports.deleteResourceById = async (req, res) => {
     try {
       const { id } = req.params;
 
-      // Suche und lösche die Resource anhand der ID
+      // find and delete Resource by ID
       const deletedResource = await Resource.findByIdAndDelete(id);
 
-      // Falls die Resource nicht gefunden wurde
       if (!deletedResource) {
           return res.status(404).json({ message: `Resource mit ID ${id} nicht gefunden.` });
       }
 
-      // Erfolgreich gelöscht
       res.status(204).json();
     } catch (err) {
       res.status(500).json({ message: err.message });

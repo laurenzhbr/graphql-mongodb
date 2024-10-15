@@ -18,8 +18,8 @@ const PartyCreditProfileType = new GraphQLObjectType({
     creditAgencyType: { type: GraphQLString },
     ratingReference: { type: GraphQLString },
     ratingScore: { type: GraphQLInt },
-    lastExecuted: { type: GraphQLDate }, // GraphQLDate für Date-Typ
-    validFor: { type: ValidForType }, // Falls ValidFor ein Objekt ist
+    lastExecuted: { type: GraphQLDate },
+    validFor: { type: ValidForType },
   })
 });
 
@@ -28,8 +28,8 @@ const ContactMediumType = new GraphQLObjectType({
   fields: () => ({
     mediumType: { type: GraphQLString },
     preferred: { type: GraphQLBoolean },
-    characteristic: { type: CharacteristicType }, // Hier wird der CharacteristicType verwendet
-    validFor: { type: ValidForType }, // Falls es zeitlich gültig ist
+    characteristic: { type: CharacteristicType },
+    validFor: { type: ValidForType },
   }),
 });
 
@@ -94,7 +94,7 @@ const OrganizationType = new GraphQLObjectType({
       type: new GraphQLList(PartyCreditProfileType),
       args: {
         ratingScore_gt: { type: GraphQLInt },
-        sortBy: { type: GraphQLString } // Argument zur Steuerung der Sortierung
+        sortBy: { type: GraphQLString }
       },
       resolve(parent, args) {
         let ratings = parent.creditRating;
@@ -104,11 +104,10 @@ const OrganizationType = new GraphQLObjectType({
           ratings = ratings.filter(rating => rating.ratingScore > args.ratingScore_gt);
         }
 
-        // Sortierung nach ratingScore, standardmäßig absteigend
         if (args.sortBy === 'asc') {
-          ratings = ratings.sort((a, b) => a.ratingScore - b.ratingScore); // Aufsteigend
+          ratings = ratings.sort((a, b) => a.ratingScore - b.ratingScore);
         } else {
-          ratings = ratings.sort((a, b) => b.ratingScore - a.ratingScore); // Absteigend (Standard)
+          ratings = ratings.sort((a, b) => b.ratingScore - a.ratingScore);
         }
 
         return ratings;

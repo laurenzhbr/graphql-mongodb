@@ -1,19 +1,19 @@
 // swagger.js
 
 const swaggerAutogen = require('swagger-autogen')();
-const { swaggerResource, swaggerOrganization, swaggerDigitalIdentity, swaggerGeographicAddress } = require('./utils/mongooseToSwagger'); // Importiere die Swagger-Definitionen
+const { swaggerResource, swaggerOrganization, swaggerDigitalIdentity, swaggerGeographicAddress } = require('./utils/mongooseToSwagger');
 
 
-const outputFile = './swagger_output.json';  // Die generierte Swagger-Dokumentationsdatei
-const endpointsFiles = ['./index.js'];  // Die Datei(en), die deine Routen enthalten
+const outputFile = './swagger_output.json';
+const endpointsFiles = ['./index.js'];
 
 const doc = {
   info: {
-    title: 'Meine REST API',   // Titel der API
-    description: 'Beschreibung der API',  // Beschreibung
+    title: 'Meine REST API',
+    description: 'Beschreibung der API',
   },
-  host: 'localhost:3000',   // Host-URL (ggf. später auf den Server ändern)
-  schemes: ['http'],   // HTTP oder HTTPS
+  host: 'localhost:3000',
+  schemes: ['http'],
   definitions: {
     Resource: swaggerResource,
     Organization: swaggerOrganization,
@@ -23,5 +23,5 @@ const doc = {
 };
 
 swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
-  require('./index');  // Starte deinen Server nach der Generierung der Dokumentation
+  require('./index');
 });

@@ -20,17 +20,15 @@ const Resource = require('../../models/ResourceModels/Resource')
 const GeographicAdress = require('../../models/GeographicAddressModels/GeographicAddress')
 const Organization = require('../../models/PartyModels/Organization')
 
-// Schema für ResourceRelationship, das die vollständige Resource zurückgibt
 const ResourceRelationshipType = new GraphQLObjectType({
   name: 'ResourceRelationship',
   description: "defines the relationship between to Resources in the hierarchy.",
   fields: () => ({
     relationshipType: { type: GraphQLString, description: "'targets' = reference to child resource || 'isTargeted' = reference to parent resource"},
-    resource: { type: ResourceType, description: "Related Resource(s) entities" } // Vollständige Resource
+    resource: { type: ResourceType, description: "Related Resource(s) entities" }
   })
 });
 
-// GraphQLType für die resourceCharacteristic
 const CharacteristicType = new GraphQLObjectType({
   name: 'Characteristic',
   description: 'Represents a characteristic of a resource.',
@@ -93,13 +91,11 @@ const ResourceType = new GraphQLObjectType({
         names: { type: new GraphQLList(GraphQLString) },
       },
       resolve(parent, args) {
-        // Wenn eine Liste von Namen übergeben wurde, filtere die Characteristiken
         if (args.names && args.names.length > 0) {
           return parent.resourceCharacteristic.filter(characteristic =>
             args.names.includes(characteristic.name)
           );
         }
-        // Wenn keine Namen angegeben wurden, gib alle zurück
         return parent.resourceCharacteristic;
       }
       
@@ -108,10 +104,8 @@ const ResourceType = new GraphQLObjectType({
       type: new GraphQLList(OrganizationType),
       description: 'Related parties linked to this resource.',
       resolve(parent, args) {
-        // Überprüfen, ob relatedParty ein Array ist und die Objekte eine ID haben
-        const relatedPartyIds = parent.relatedParty.map(party => party.id);  // Extrahiere alle IDs
+        const relatedPartyIds = parent.relatedParty.map(party => party.id);
         
-        // Finde alle Organisationen, deren ID in relatedPartyIds ist
         return Organization.find({ _id: { $in: relatedPartyIds } });
       }
     },

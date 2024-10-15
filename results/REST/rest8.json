@@ -6,13 +6,6 @@
     140,
     138
   ],
-  "total_transaction_time": [
-    135,
-    140,
-    153,
-    156,
-    139
-  ],
   "api_call_count": 11,
   "cpu_used_by_server": [
     21615.08,
