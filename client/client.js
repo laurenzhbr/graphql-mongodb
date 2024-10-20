@@ -89,7 +89,8 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
 
     progressBar.start()
     
-    // Array to store batch of results and index of file to write.
+    let duration_of_all_calls = []
+    let total_transaction_time = []
     let cpu_used_by_server= []
     let memory_used_by_server= []
     let total_data_transferred= []
@@ -107,6 +108,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
          
         // Add result to array.
         duration_of_all_calls.push(test_case_result.duration_of_all_calls);
+        total_transaction_time.push(test_case_result.total_transaction_time);
         total_data_transferred.push(test_case_result.total_data_transferred);
         cpu_used_by_server.push(test_case_result.cpu_used_by_server);
         memory_used_by_server.push(test_case_result.memory_used_by_server);
@@ -118,6 +120,7 @@ const runSingleTestProcedure = async (method, api, use_case, iterationCount) => 
     // Stop progress bar.
     progressBar.stop()
     const results = {'sum_response_time': duration_of_all_calls,
+        'total_transaction_time': total_transaction_time,
         'api_call_count': api_call_count,
         'cpu_used_by_server': cpu_used_by_server,
         'memory_used_by_server': memory_used_by_server,
