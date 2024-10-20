@@ -9,10 +9,10 @@ const rest_use_case_8 = async (status="suspended") => {
 
     const digiIdUrl = `http://${actualHost}/digitalIdentityManagement/digitalIdentity?status=${status}&limit=1`
     accumulatedMetrics = await fetchMetrics(digiIdUrl, accumulatedMetrics);
-    accumulatedMetrics = {}
     
     for (entry of accumulatedMetrics.data) {
         const id_digiId =entry._id;
+        accumulatedMetrics = {}
         accumulatedMetrics = await fetchMetrics(`http://${actualHost}/digitalIdentityManagement/digitalIdentity/${id_digiId}`, accumulatedMetrics, "delete");
     }
 

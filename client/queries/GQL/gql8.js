@@ -27,11 +27,10 @@ const gql_use_case_8 =  async (id) => {
     const data = { query: query1("suspended", 1),};
   
     accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "get", data);
-    accumulatedMetrics = {}
 
     for (entry of accumulatedMetrics.data.data.digitalIdentities){
       const data = { query: query2(entry.id),};
-  
+      accumulatedMetrics = {}
       accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
     }
   
