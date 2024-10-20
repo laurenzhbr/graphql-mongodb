@@ -18,7 +18,6 @@ const query2 = (id) => `
 `;
 
 const gql_use_case_8 =  async (id) => {
-    const transaction_start = Date.now();
     const actualHost = process.env.HOST || 'localhost:4000';
     let accumulatedMetrics = {};
   
@@ -34,8 +33,6 @@ const gql_use_case_8 =  async (id) => {
       accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
     }
   
-    const total_transaction_time = transaction_start != null ? (Date.now() - transaction_start) : 0;
-    accumulatedMetrics.total_transaction_time = total_transaction_time;
     return accumulatedMetrics
 }
 
