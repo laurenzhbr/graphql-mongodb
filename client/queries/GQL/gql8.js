@@ -24,9 +24,10 @@ const gql_use_case_8 =  async (id) => {
   
     // send API Call + fetch metrics
     const url = `http://${actualHost}/graphql`
-    const data = { query: query1("suspended", 10),};
+    const data = { query: query1("suspended", 1),};
   
-    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "post", data);
+    accumulatedMetrics = await fetchMetrics(url, accumulatedMetrics, "get", data);
+    accumulatedMetrics = {}
 
     for (entry of accumulatedMetrics.data.data.digitalIdentities){
       const data = { query: query2(entry.id),};

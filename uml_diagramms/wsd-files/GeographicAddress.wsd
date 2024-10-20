@@ -29,13 +29,14 @@ class GeographicAddress <<Pivot>> {
 
 PlantUML version 1.2019.00(Sun Jan 13 16:46:42 CET 2019)
 (GPL source distribution)
-Java Runtime: OpenJDK Runtime Environment
-JVM: OpenJDK 64-Bit Server VM
-Java Version: 13+13-Ubuntu-0ubunt1
-Operating System: Linux
-OS Version: 5.0.0-37-generic
-Default Encoding: UTF-8
-Language: en
-Country: US
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Java Version: 1.8.0_231-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: de
+Country: DE
 
 ------------------------
+

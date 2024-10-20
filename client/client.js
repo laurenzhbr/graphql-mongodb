@@ -55,18 +55,18 @@ const iteration_count = [
     50,
     50,
     50,
-    5,
+    50,
 ]
 
 async function runTestSuite(){
 
     // Conduct all REST testcases
-    for (let i = 0; i < rest_requests.length; i++){
+    for (let i = 7; i < 8; i++){
         await runSingleTestProcedure(rest_requests[i], "REST", `rest${i+1}`, iteration_count[i]);
     } 
 
     // Conduct all GraphQL testcases
-    for (let i = 0; i < gql_queries.length; i++){
+    for (let i = 7; i < 8; i++){
         await runSingleTestProcedure(gql_queries[i], "GraphQL", `gql${i+1}`, iteration_count[i]);
     }
 

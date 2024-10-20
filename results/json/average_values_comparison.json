@@ -1,5 +1,5 @@
 {
-    "rest1": {
+    "uc1": {
         "sum_response_time": {
             "REST": 451.86,
             "GraphQL": 732.76
@@ -13,7 +13,7 @@
             "GraphQL": 1
         }
     },
-    "rest2": {
+    "uc2": {
         "sum_response_time": {
             "REST": 18.76,
             "GraphQL": 10.5
@@ -27,7 +27,7 @@
             "GraphQL": 1
         }
     },
-    "rest3": {
+    "uc3": {
         "sum_response_time": {
             "REST": 15.16,
             "GraphQL": 10.16
@@ -41,7 +41,7 @@
             "GraphQL": 1
         }
     },
-    "rest4": {
+    "uc4": {
         "sum_response_time": {
             "REST": 16.9,
             "GraphQL": 14.52
@@ -55,7 +55,7 @@
             "GraphQL": 1
         }
     },
-    "rest5": {
+    "uc5": {
         "sum_response_time": {
             "REST": 531.66,
             "GraphQL": 646.12
@@ -69,7 +69,7 @@
             "GraphQL": 1
         }
     },
-    "rest6": {
+    "uc6": {
         "sum_response_time": {
             "REST": 7.4,
             "GraphQL": 10.96
@@ -83,7 +83,7 @@
             "GraphQL": 1
         }
     },
-    "rest7": {
+    "uc7": {
         "sum_response_time": {
             "REST": 8.5,
             "GraphQL": 14.38
@@ -97,7 +97,7 @@
             "GraphQL": 1
         }
     },
-    "rest8": {
+    "uc8": {
         "sum_response_time": {
             "REST": 138.0,
             "GraphQL": 117.6
